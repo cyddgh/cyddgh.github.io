@@ -1,39 +1,35 @@
 language: node_js
-# nodejs版本
-node_js: 
-    - '6'
-
-# Travis-CI Caching
-cache:
-  directories:
-    - node_modules
-
+node_js: stable
 
 # S: Build Lifecycle
 install:
+#  - npm install -g hexo
+#  - npm install -g hexo-deploy-git
   - npm install
 
-before_script:
 
-# 无其他依赖项所以执行npm run build 构建就行了
+before_script:
+ # - npm install -g gulp
+#   - npm install -g hexo
+   - hexo -v
+
 script:
-  - npm run build
+  - hexo g
 
 after_script:
-  - cd ./dist
+  - cd ./public
   - git init
-  - git config user.name "${U_NAME}"
-  - git config user.email "${U_EMAIL}"
+  - git config user.name "cyddgh"
+  - git config user.email "623193096@qq.com"
   - git add .
-  - git commit -m "Update tools"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
-# E: Build LifeCycle
+  - git commit -m "Update blog!"
+  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master  #GITHUB_TOKEN为在TravisCI中添加的来自Github的授权Token，见上一步
 
-#指定分支，只有指定的分支提交时才会运行脚本
 branches:
   only:
     - hexo
+
+# 创建全局变量，与GithubPage仓库ssh地址一致
 env:
  global:
-   # 我将其添加到了travis-ci的环境变量中
-   #- GH_REF: github.com/yimogit/metools.git 
+   - GH_REF: git@github.com:cyddgh/cyddgh.github.io.git
