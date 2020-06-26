@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cyddgh.github.io</id>
+    <title>Gridea</title>
+    <updated>2020-06-26T04:38:38.853Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cyddgh.github.io"/>
+    <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://cyddgh.github.io/images/avatar.png</logo>
+    <icon>https://cyddgh.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[卡片笔记的心得索引]]></title>
+        <id>https://cyddgh.github.io/post/qia-pian-bi-ji-de-xin-de-suo-yin/</id>
+        <link href="https://cyddgh.github.io/post/qia-pian-bi-ji-de-xin-de-suo-yin/">
+        </link>
+        <updated>2020-06-26T04:32:56.000Z</updated>
+        <content type="html"><![CDATA[<p>卡片笔记（Zettelkasten，或称Luhmann笔记）最近非常流行，本文列举一些心得，供大家参考。</p>
+<ol>
+<li>How to take smart notes，方法及工具，Yocson，https://sspai.com/post/60466。</li>
+<li>Zettelkasten — How One German Scholar Was So Freakishly Productive，David B. Clear，https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[思圆笔记——知识管理社群]]></title>
+        <id>https://cyddgh.github.io/post/si-yuan-bi-ji-zhi-shi-guan-li-she-qun/</id>
+        <link href="https://cyddgh.github.io/post/si-yuan-bi-ji-zhi-shi-guan-li-she-qun/">
+        </link>
+        <updated>2020-06-26T04:31:31.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://hintsnet.com/pimgeek/">思圆笔记</a>专注于知识管理的讨论，特别是thebrain等软件。有一个 tiddlywiki的主页：https://swarma-km.hintsnet.com/</p>
+<p>其文章干货很多，例如<a href="https://mp.weixin.qq.com/s?__biz=MzUyMDQzNzc2Mg==&amp;mid=2247483685&amp;idx=1&amp;sn=bbf89f7d9803dcc9bae16506365e6f83&amp;chksm=f9eb2848ce9ca15e832ce630920cf5abf3a11061d9113fe6deacf437c8d097827fc5c24c74c5&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1590378241901&amp;sharer_shareid=817327bdcf95e1ebc4f2894c93c8e5ce&amp;key=d29499f40facdd2fff134a8e6be4a476fc52aac7e94fb9860c8a9bb11eced0baa85c11fcc6f0d29015fdfaa6e50118789518dd54b6aad79322e45d64d595966cf009ba68f04356baf61fc09a1d194c0c&amp;ascene=1&amp;uin=MTE1NTQwNDgw&amp;devicetype=Windows+10+x64&amp;version=62090070&amp;lang=zh_CN&amp;exportkey=AR3H0Mb3Pk70%2FbBv%2BFnftlQ%3D&amp;pass_ticket=6dZNtG5%2FF3KQVcODfnuEUnKjLy4dxg28sYbXn5JIAVc%3D">用 TheBrain 8 专业版绘制知识探索路线图</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[时间记录软件-电脑端]]></title>
+        <id>https://cyddgh.github.io/post/shi-jian-ji-lu-ruan-jian-dian-nao-duan/</id>
+        <link href="https://cyddgh.github.io/post/shi-jian-ji-lu-ruan-jian-dian-nao-duan/">
+        </link>
+        <updated>2020-06-11T04:38:04.000Z</updated>
+        <content type="html"><![CDATA[<p>时间记录软件Empoche，类似于Rescue Time（ https://www.rescuetime.com/），ManicTime（ https://www.manictime.com/）。多平台，适用于macOS、Linux和Windows，高级版采用订阅制。<br>
+官网：https://empoche.com/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[解决ANKI启动时OpenGL的问题]]></title>
+        <id>https://cyddgh.github.io/post/jie-jue-anki-qi-dong-shi-opengl-de-wen-ti/</id>
+        <link href="https://cyddgh.github.io/post/jie-jue-anki-qi-dong-shi-opengl-de-wen-ti/">
+        </link>
+        <updated>2020-06-10T04:37:44.000Z</updated>
+        <content type="html"><![CDATA[<p>我在Win10上启动了anki 2.1.22版，出现了“Install a driver providing OpenGL 2.0 or higher, or, if this is not possible”的错误提醒。类似的问题可见 https://anki.tenderapp.com/discussions/ankidesktop/36598-installation-issue-with-opengl-file<br>
+解决方法：<br>
+官方的指导文件（ https://changes.ankiweb.net/#/known-issues）中的Text size节中给出了解决方法<br>
+新建文档，输入以下内容<br>
+set ANKI_WEBSCALE=0.75<br>
+start &quot;Anki&quot; &quot;C:\Program Files\Anki\anki&quot;<br>
+最后保存成startanki.bat</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[文献计量学——知识图谱生成]]></title>
+        <id>https://cyddgh.github.io/post/wen-xian-ji-liang-xue-zhi-shi-tu-pu-sheng-cheng/</id>
+        <link href="https://cyddgh.github.io/post/wen-xian-ji-liang-xue-zhi-shi-tu-pu-sheng-cheng/">
+        </link>
+        <updated>2020-06-10T04:37:18.000Z</updated>
+        <content type="html"><![CDATA[<p>阿里员工推出了一个论文可视化工具：https://www.connectedpapers.com/<br>
+具体的介绍，见https://zhuanlan.zhihu.com/p/147225140<br>
+目前来看访问有些慢</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[类Roam软件]]></title>
+        <id>https://cyddgh.github.io/post/lei-roam-ruan-jian/</id>
+        <link href="https://cyddgh.github.io/post/lei-roam-ruan-jian/">
+        </link>
+        <updated>2020-06-03T04:34:17.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>Obsidian： https://obsidian.md</li>
+<li>Stroll： https://giffmex.org/experiments/stroll.experiment.html</li>
+<li>RemNote： https://www.remnote.io/homepage</li>
+<li>Amplenote： https://www.amplenote.com/</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[准守zk笔记防止链接成灾]]></title>
+        <id>https://cyddgh.github.io/post/zhun-shou-zk-bi-ji-fang-zhi-lian-jie-cheng-zai/</id>
+        <link href="https://cyddgh.github.io/post/zhun-shou-zk-bi-ji-fang-zhi-lian-jie-cheng-zai/">
+        </link>
+        <updated>2020-06-01T04:33:47.000Z</updated>
+        <content type="html"><![CDATA[<p>最近双向链接的讨论很多，有部分人担心链接多了，可视化无意义。这问题确实存在，但如果真的担心自动链接成灾，不如严格按照zk笔记的原则，以时间戳+知识点做标题，如果后续需要用到就加以引用此节点。而不是使用比较宽泛的概念作为标题，我觉得这更属于构建wiki系统。<br>
+从某个意义上，zk笔记中每个note可以相当于一篇文献，你之后在note中的双向连接可以视为一次学术上的引用，然后你可以用文献计量学的方法去分析各节点的脉络，找到主线，或者说是高引文章。</p>
+<p>我这建议只是针对担心泛滥成灾的人提出的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[什么是非线性-求回答]]></title>
+        <id>https://cyddgh.github.io/post/shi-me-shi-fei-xian-xing-qiu-hui-da/</id>
+        <link href="https://cyddgh.github.io/post/shi-me-shi-fei-xian-xing-qiu-hui-da/">
+        </link>
+        <updated>2020-05-30T04:33:23.000Z</updated>
+        <content type="html"><![CDATA[<p>我想问一下有没有那本书是在阐述非线性这一观点的。我感觉传统的PPT可能是线性的，类似于瀑布流。而thebrain、卡片笔记都是非线性的。非线性阅读、非线性写作也一直被提及，但是有那篇文章阐述好这一观点？<br>
+如果想要探讨，请加QQ群：1061411503。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[白描推出web端]]></title>
+        <id>https://cyddgh.github.io/post/bai-miao-tui-chu-web-duan/</id>
+        <link href="https://cyddgh.github.io/post/bai-miao-tui-chu-web-duan/">
+        </link>
+        <updated>2020-05-27T04:32:30.000Z</updated>
+        <content type="html"><![CDATA[<p>白描推出web端：https://web.baimiaoapp.com/<br>
+会员共用，很良心。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tiddlywiki插件列表]]></title>
+        <id>https://cyddgh.github.io/post/tiddlywiki-cha-jian-lie-biao/</id>
+        <link href="https://cyddgh.github.io/post/tiddlywiki-cha-jian-lie-biao/">
+        </link>
+        <updated>2020-05-18T04:29:42.000Z</updated>
+        <content type="html"><![CDATA[<p>版本控制<br>
+http://malsandbox.tiddlyspot.com/</p>
+]]></content>
+    </entry>
+</feed>
