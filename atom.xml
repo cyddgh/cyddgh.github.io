@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-06-26T04:47:31.014Z</updated>
+    <updated>2020-06-26T05:51:21.094Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[RoamResearch插件]]></title>
+        <id>https://cyddgh.github.io/post/roamresearch-cha-jian/</id>
+        <link href="https://cyddgh.github.io/post/roamresearch-cha-jian/">
+        </link>
+        <updated>2020-06-26T05:51:08.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>* 功能扩展：https://github.com/roam-unofficial/roam-toolkit
+* 备份：https://github.com/MatthieuBizien/roam-to-git</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[卡片笔记的心得索引]]></title>
         <id>https://cyddgh.github.io/post/qia-pian-bi-ji-de-xin-de-suo-yin/</id>
@@ -112,16 +122,6 @@ start &quot;Anki&quot; &quot;C:\Program Files\Anki\anki&quot;<br>
         <updated>2020-05-27T04:32:30.000Z</updated>
         <content type="html"><![CDATA[<p>白描推出web端：https://web.baimiaoapp.com/<br>
 会员共用，很良心。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tiddlywiki插件列表]]></title>
-        <id>https://cyddgh.github.io/post/tiddlywiki-cha-jian-lie-biao/</id>
-        <link href="https://cyddgh.github.io/post/tiddlywiki-cha-jian-lie-biao/">
-        </link>
-        <updated>2020-05-18T04:29:42.000Z</updated>
-        <content type="html"><![CDATA[<p>版本控制<br>
-http://malsandbox.tiddlyspot.com/</p>
 ]]></content>
     </entry>
 </feed>
