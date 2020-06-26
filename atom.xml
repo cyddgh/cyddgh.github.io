@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-06-26T04:45:46.578Z</updated>
+    <title>软达通</title>
+    <updated>2020-06-26T04:47:31.014Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。</subtitle>
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 软达通</rights>
     <entry>
         <title type="html"><![CDATA[卡片笔记的心得索引]]></title>
         <id>https://cyddgh.github.io/post/qia-pian-bi-ji-de-xin-de-suo-yin/</id>
