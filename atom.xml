@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-06-26T05:51:21.094Z</updated>
+    <updated>2020-07-02T10:03:15.458Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,54 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[认知差]]></title>
+        <id>https://cyddgh.github.io/post/ren-zhi-chai/</id>
+        <link href="https://cyddgh.github.io/post/ren-zhi-chai/">
+        </link>
+        <updated>2020-07-02T09:56:29.000Z</updated>
+        <content type="html"><![CDATA[<p>评判论文价值的尺度是认知差，是读者读完你论文后，对所讨论的问题认知需要发生改变，这样的论文才算有用。<br>
+认知差可以是对读者原有认知的增加、删除和修改。假设读者不了解劳动环境的变化，对于车间生产效率的影响，则有以下示例：</p>
+<ol>
+<li>增加。有人采用不同光照条件，看工人的生产效率变化，发现增强光照条件可以提升工人劳动效率。这是对读者原有认知的<strong>增加</strong>，因此就具备了认知差。</li>
+<li>删除。你看了上面的实验后，设计了一个对比实验，发现光照先调高，再降低以后，并未导致工人的劳动效率同步变化。于是你也发了一篇文章，讲述自己实验的结果。你证据确凿、论证清晰，于是原先相信 “光照强度影响劳动效率” 的读者，就从头脑中<strong>删除</strong>了这个关联。</li>
+<li>修改。假如你不仅发现了光照并不是影响劳动效率的决定性原因，而且还恰当地指出了实验场景中，工人所在的社会网络才是劳动效率改变的关键因素，并且对你的假设加以了验证，那你就是在<strong>修改</strong>读者的认知。修改是进一步理清。</li>
+</ol>
+<p>本文摘抄自：如何与导师有效沟通你的论文选题？，王树义，http://blog.sciencenet.cn/home.php?mod=space&amp;uid=377709&amp;do=blog&amp;quickforward=1&amp;id=1202867。摘抄过程有所修改。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Zotero入门教程]]></title>
+        <id>https://cyddgh.github.io/post/zotero-ru-men-jiao-cheng/</id>
+        <link href="https://cyddgh.github.io/post/zotero-ru-men-jiao-cheng/">
+        </link>
+        <updated>2020-07-01T02:22:48.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>RefTools，知乎专栏，https://zhuanlan.zhihu.com/reftools</li>
+</ol>
+<p>具体文章</p>
+<ol>
+<li>Zotero 跨平台同步附件的实现，滏阳河边捉蚯蚓，https://zhuanlan.zhihu.com/p/31453719。讲述了Webdav 同步，ZotFile 配合同步盘，软链接配合同步盘三种同步方法。<br>
+1.</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何用Github来给RoamResearch做备份]]></title>
+        <id>https://cyddgh.github.io/post/ru-he-yong-github-lai-gei-roamresearch-zuo-bei-fen/</id>
+        <link href="https://cyddgh.github.io/post/ru-he-yong-github-lai-gei-roamresearch-zuo-bei-fen/">
+        </link>
+        <updated>2020-06-26T06:56:05.000Z</updated>
+        <content type="html"><![CDATA[<p>我们要用到备份软件：https://github.com/MatthieuBizien/roam-to-git<br>
+在这里面就有详细的描述。但对于我一个还没用过GitHub action的外行人，中间还是遇到了不少麻烦。<br>
+具体步骤如下：<br>
+1. 建一个私人的GitHub库（也可以是公开的，弊端就是谁都能看到你的笔记），名称不一定是英文说明中的notes，<br>
+2. 需要配置你的Github secrets。你进入你所设立的库，在页面上方第三行（以code开头的那行）找到 settings（最后一个）点击，之后在左手边的列表找到的secrets（倒数第二个）。<br>
+3. 点击New secrets进行配置。需要设立3个值“ ROAMRESEARCH_USER”、“ ROAMRESEARCH_PASSWORD”和“ ROAMRESEARCH_DATABASE”分别对应你RoamResearch中用户名、密码和库的名称。<br>
+4. 之后参照演示站（ https://github.com/MatthieuBizien/roam-to-git-demo）建立一个main.yml，放在.github/workflows/，文字内容和演示站一致<br>
+5. 点击Github Action查看运行情况</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RoamResearch插件]]></title>
         <id>https://cyddgh.github.io/post/roamresearch-cha-jian/</id>
@@ -91,37 +139,6 @@ start &quot;Anki&quot; &quot;C:\Program Files\Anki\anki&quot;<br>
 <li>RemNote： https://www.remnote.io/homepage</li>
 <li>Amplenote： https://www.amplenote.com/</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[准守zk笔记防止链接成灾]]></title>
-        <id>https://cyddgh.github.io/post/zhun-shou-zk-bi-ji-fang-zhi-lian-jie-cheng-zai/</id>
-        <link href="https://cyddgh.github.io/post/zhun-shou-zk-bi-ji-fang-zhi-lian-jie-cheng-zai/">
-        </link>
-        <updated>2020-06-01T04:33:47.000Z</updated>
-        <content type="html"><![CDATA[<p>最近双向链接的讨论很多，有部分人担心链接多了，可视化无意义。这问题确实存在，但如果真的担心自动链接成灾，不如严格按照zk笔记的原则，以时间戳+知识点做标题，如果后续需要用到就加以引用此节点。而不是使用比较宽泛的概念作为标题，我觉得这更属于构建wiki系统。<br>
-从某个意义上，zk笔记中每个note可以相当于一篇文献，你之后在note中的双向连接可以视为一次学术上的引用，然后你可以用文献计量学的方法去分析各节点的脉络，找到主线，或者说是高引文章。</p>
-<p>我这建议只是针对担心泛滥成灾的人提出的。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[什么是非线性-求回答]]></title>
-        <id>https://cyddgh.github.io/post/shi-me-shi-fei-xian-xing-qiu-hui-da/</id>
-        <link href="https://cyddgh.github.io/post/shi-me-shi-fei-xian-xing-qiu-hui-da/">
-        </link>
-        <updated>2020-05-30T04:33:23.000Z</updated>
-        <content type="html"><![CDATA[<p>我想问一下有没有那本书是在阐述非线性这一观点的。我感觉传统的PPT可能是线性的，类似于瀑布流。而thebrain、卡片笔记都是非线性的。非线性阅读、非线性写作也一直被提及，但是有那篇文章阐述好这一观点？<br>
-如果想要探讨，请加QQ群：1061411503。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[白描推出web端]]></title>
-        <id>https://cyddgh.github.io/post/bai-miao-tui-chu-web-duan/</id>
-        <link href="https://cyddgh.github.io/post/bai-miao-tui-chu-web-duan/">
-        </link>
-        <updated>2020-05-27T04:32:30.000Z</updated>
-        <content type="html"><![CDATA[<p>白描推出web端：https://web.baimiaoapp.com/<br>
-会员共用，很良心。</p>
 ]]></content>
     </entry>
 </feed>
