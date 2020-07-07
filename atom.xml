@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-07-02T10:03:15.458Z</updated>
+    <updated>2020-07-07T05:20:47.707Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[知识卡片可以再分为卡片笔记和卡片写作]]></title>
+        <id>https://cyddgh.github.io/post/zhi-shi-qia-pian-ke-yi-zai-fen-wei-qia-pian-bi-ji-he-qia-pian-xie-zuo/</id>
+        <link href="https://cyddgh.github.io/post/zhi-shi-qia-pian-ke-yi-zai-fen-wei-qia-pian-bi-ji-he-qia-pian-xie-zuo/">
+        </link>
+        <updated>2020-07-07T05:20:07.000Z</updated>
+        <content type="html"><![CDATA[<p>卡片笔记主要依托卢曼笔记、费曼学习等方法，主要倾向知识的复现。例如obsidian。<br>
+卡片写作主要依托批判性思维，非线性写作等方法，主要倾向知识的创新。例如Gingko。<br>
+当然也有很好兼顾两者的软件，例如Roam research。但我们在讨论笔记法时需要明确我们是需要知识的复现，还是要知识的创新。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[必应壁纸]]></title>
+        <id>https://cyddgh.github.io/post/bi-ying-bi-zhi/</id>
+        <link href="https://cyddgh.github.io/post/bi-ying-bi-zhi/">
+        </link>
+        <updated>2020-07-06T05:53:30.000Z</updated>
+        <content type="html"><![CDATA[<p>自动更换美丽的壁纸，给每日好心情<br>
+https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[认知差]]></title>
         <id>https://cyddgh.github.io/post/ren-zhi-chai/</id>
@@ -114,31 +135,6 @@
 set ANKI_WEBSCALE=0.75<br>
 start &quot;Anki&quot; &quot;C:\Program Files\Anki\anki&quot;<br>
 最后保存成startanki.bat</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[文献计量学——知识图谱生成]]></title>
-        <id>https://cyddgh.github.io/post/wen-xian-ji-liang-xue-zhi-shi-tu-pu-sheng-cheng/</id>
-        <link href="https://cyddgh.github.io/post/wen-xian-ji-liang-xue-zhi-shi-tu-pu-sheng-cheng/">
-        </link>
-        <updated>2020-06-10T04:37:18.000Z</updated>
-        <content type="html"><![CDATA[<p>阿里员工推出了一个论文可视化工具：https://www.connectedpapers.com/<br>
-具体的介绍，见https://zhuanlan.zhihu.com/p/147225140<br>
-目前来看访问有些慢</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[类Roam软件]]></title>
-        <id>https://cyddgh.github.io/post/lei-roam-ruan-jian/</id>
-        <link href="https://cyddgh.github.io/post/lei-roam-ruan-jian/">
-        </link>
-        <updated>2020-06-03T04:34:17.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>Obsidian： https://obsidian.md</li>
-<li>Stroll： https://giffmex.org/experiments/stroll.experiment.html</li>
-<li>RemNote： https://www.remnote.io/homepage</li>
-<li>Amplenote： https://www.amplenote.com/</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
