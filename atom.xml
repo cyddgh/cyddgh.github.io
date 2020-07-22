@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-07-20T14:42:37.466Z</updated>
+    <updated>2020-07-22T04:55:04.262Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,40 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[如何将知识块粉碎]]></title>
+        <id>https://cyddgh.github.io/post/202007221253/</id>
+        <link href="https://cyddgh.github.io/post/202007221253/">
+        </link>
+        <updated>2020-07-22T04:54:27.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
+<p>近年来，碎片化阅读、时间碎片化等等的碎片化概念层出不穷，借鉴于此，本来想以知识碎片化为题。但是担心碎片化一词有消极等等含义，又想以如何粉碎知识为题，又担心知识是不可数的，而且有些知识不可再分，最后定为如何将知识块粉碎。<br>
+知识确实是一个无形而抽象的概念，知识也可能无法分解，但由知识组建成的知识块应该是可分的。参考R语言中列表的概念（或者说是集合），知识是元素，由许多的元素构成一个列表，这列表在本文中被称为知识块，在现实生活中可能是一篇网文、一本书、一篇论文等等。</p>
+<h1 id="实操">实操</h1>
+<p>参考一个我的实际操作，给大家讲解。以王树义老师的一篇文章举例（如何与导师有效沟通你的论文选题？，http://blog.sciencenet.cn/home.php?mod=space&amp;uid=377709&amp;do=blog&amp;quickforward=1&amp;id=1202867）<br>
+我摘录得的知识卡片如下：</p>
+<p>评判论文价值的尺度是认知差，是读者读完你论文后，对所讨论的问题认知需要发生改变，这样的论文才算有用。<br>
+认知差可以是对读者原有认知的增加、删除和修改。假设读者不了解劳动环境的变化，对于车间生产效率的影响，则有以下示例：</p>
+<ol>
+<li>增加。有人采用不同光照条件，看工人的生产效率变化，发现增强光照条件可以提升工人劳动效率。这是对读者原有认知的<strong>增加</strong>，因此就具备了认知差。</li>
+<li>删除。你看了上面的实验后，设计了一个对比实验，发现光照先调高，再降低以后，并未导致工人的劳动效率同步变化。于是你也发了一篇文章，讲述自己实验的结果。你证据确凿、论证清晰，于是原先相信 “光照强度影响劳动效率” 的读者，就从头脑中<strong>删除</strong>了这个关联。</li>
+<li>修改。假如你不仅发现了光照并不是影响劳动效率的决定性原因，而且还恰当地指出了实验场景中，工人所在的社会网络才是劳动效率改变的关键因素，并且对你的假设加以了验证，那你就是在<strong>修改</strong>读者的认知。修改是进一步理清。</li>
+</ol>
+<p>本文摘抄自：如何与导师有效沟通你的论文选题？，王树义，http://blog.sciencenet.cn/home.php?mod=space&amp;uid=377709&amp;do=blog&amp;quickforward=1&amp;id=1202867。摘抄过程有所修改。</p>
+<h1 id="说明">说明</h1>
+<ol>
+<li>首先，这篇文章中有许多的知识点，例如文献计量、文献可视化等等。但我这张卡片并没有全部摘录，我只摘取其中的一点——认知差。</li>
+<li>我没有全文复制，我是用自己的话进行了一些概述，并且我还分为了1、2、3点，即使原文中确实有这层次，但我在转述中加强了。</li>
+<li>我在最后标注了参考信息的来源，方便之后的查证。</li>
+</ol>
+<h1 id="总结">总结</h1>
+<ol>
+<li>一张卡片就记录一个知识点。</li>
+<li>需要你的概括能力和逻辑思维。</li>
+<li>记录你文献出处。</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[知识卡片是一套怎样的系统]]></title>
         <id>https://cyddgh.github.io/post/202007202241/</id>
@@ -130,16 +164,6 @@ https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
         <updated>2020-06-26T04:31:31.000Z</updated>
         <content type="html"><![CDATA[<p><a href="https://hintsnet.com/pimgeek/">思圆笔记</a>专注于知识管理的讨论，特别是thebrain等软件。有一个 tiddlywiki的主页：https://swarma-km.hintsnet.com/</p>
 <p>其文章干货很多，例如<a href="https://mp.weixin.qq.com/s?__biz=MzUyMDQzNzc2Mg==&amp;mid=2247483685&amp;idx=1&amp;sn=bbf89f7d9803dcc9bae16506365e6f83&amp;chksm=f9eb2848ce9ca15e832ce630920cf5abf3a11061d9113fe6deacf437c8d097827fc5c24c74c5&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1590378241901&amp;sharer_shareid=817327bdcf95e1ebc4f2894c93c8e5ce&amp;key=d29499f40facdd2fff134a8e6be4a476fc52aac7e94fb9860c8a9bb11eced0baa85c11fcc6f0d29015fdfaa6e50118789518dd54b6aad79322e45d64d595966cf009ba68f04356baf61fc09a1d194c0c&amp;ascene=1&amp;uin=MTE1NTQwNDgw&amp;devicetype=Windows+10+x64&amp;version=62090070&amp;lang=zh_CN&amp;exportkey=AR3H0Mb3Pk70%2FbBv%2BFnftlQ%3D&amp;pass_ticket=6dZNtG5%2FF3KQVcODfnuEUnKjLy4dxg28sYbXn5JIAVc%3D">用 TheBrain 8 专业版绘制知识探索路线图</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[时间记录软件-电脑端]]></title>
-        <id>https://cyddgh.github.io/post/shi-jian-ji-lu-ruan-jian-dian-nao-duan/</id>
-        <link href="https://cyddgh.github.io/post/shi-jian-ji-lu-ruan-jian-dian-nao-duan/">
-        </link>
-        <updated>2020-06-11T04:38:04.000Z</updated>
-        <content type="html"><![CDATA[<p>时间记录软件Empoche，类似于Rescue Time（ https://www.rescuetime.com/），ManicTime（ https://www.manictime.com/）。多平台，适用于macOS、Linux和Windows，高级版采用订阅制。<br>
-官网：https://empoche.com/</p>
 ]]></content>
     </entry>
 </feed>
