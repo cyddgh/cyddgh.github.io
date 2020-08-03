@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-03T15:15:59.060Z</updated>
+    <updated>2020-08-03T15:17:20.807Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[记笔记时需要什么信念呢？]]></title>
+        <id>https://cyddgh.github.io/post/202008032316/</id>
+        <link href="https://cyddgh.github.io/post/202008032316/">
+        </link>
+        <updated>2020-08-03T15:16:06.000Z</updated>
+        <content type="html"><![CDATA[<p>当你想要记笔记时，可能就拥有第二大脑的理念（印象笔记推广了这个概念），想要借助外物来帮助自身的记忆，并且相信外物能提供本身的能力。</p>
+<p>如果你的每日清单上每天都列有3个重要的事情，那就涉及了时间管理中的《吃掉那只青蛙》。<br>
+如果你的笔记中有感恩，可能就涉及到正念思想。<br>
+如果你在制定周计划，可能要去使用SMART原则来制定。<br>
+如果你想要使用卢曼笔记的方式，可能要去阅读一些卢曼笔记的书籍（例如How to take smart notes），了解相关的思想，更有可能还要去了解卢曼笔记在电子化后的衍生版本。<br>
+如果你要构建好一张知识卡片，可能《金字塔原理》可以帮助你。<br>
+如果你要对笔记进行分类，可能要去学习分类系统（例如杜威十进分类法）的概念。<br>
+如果你要梳理好笔记的网络，你可能要对树状和网状、线性和非线性的概念能熟练掌握，并知道如何运用它们来解决你的实际问题。</p>
+<p>以上种种，都可以说明一件事件：笔记系统的合不合理、好不好用多半取决于受到使用者自身素质的影响，而非软件本身。软件本身只能算是器，软件的技巧是术，而使用软件的你心中的理念是道。<br>
+​</p>
+<p>重物而轻人，重术而轻道，是不可取的。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何将知识块粉碎]]></title>
         <id>https://cyddgh.github.io/post/202007221253/</id>
@@ -154,16 +173,6 @@ https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
 <li>How to take smart notes，方法及工具，Yocson，https://sspai.com/post/60466。</li>
 <li>Zettelkasten — How One German Scholar Was So Freakishly Productive，David B. Clear，https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125。</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[思圆笔记——知识管理社群]]></title>
-        <id>https://cyddgh.github.io/post/si-yuan-bi-ji-zhi-shi-guan-li-she-qun/</id>
-        <link href="https://cyddgh.github.io/post/si-yuan-bi-ji-zhi-shi-guan-li-she-qun/">
-        </link>
-        <updated>2020-06-26T04:31:31.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="https://hintsnet.com/pimgeek/">思圆笔记</a>专注于知识管理的讨论，特别是thebrain等软件。有一个 tiddlywiki的主页：https://swarma-km.hintsnet.com/</p>
-<p>其文章干货很多，例如<a href="https://mp.weixin.qq.com/s?__biz=MzUyMDQzNzc2Mg==&amp;mid=2247483685&amp;idx=1&amp;sn=bbf89f7d9803dcc9bae16506365e6f83&amp;chksm=f9eb2848ce9ca15e832ce630920cf5abf3a11061d9113fe6deacf437c8d097827fc5c24c74c5&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1590378241901&amp;sharer_shareid=817327bdcf95e1ebc4f2894c93c8e5ce&amp;key=d29499f40facdd2fff134a8e6be4a476fc52aac7e94fb9860c8a9bb11eced0baa85c11fcc6f0d29015fdfaa6e50118789518dd54b6aad79322e45d64d595966cf009ba68f04356baf61fc09a1d194c0c&amp;ascene=1&amp;uin=MTE1NTQwNDgw&amp;devicetype=Windows+10+x64&amp;version=62090070&amp;lang=zh_CN&amp;exportkey=AR3H0Mb3Pk70%2FbBv%2BFnftlQ%3D&amp;pass_ticket=6dZNtG5%2FF3KQVcODfnuEUnKjLy4dxg28sYbXn5JIAVc%3D">用 TheBrain 8 专业版绘制知识探索路线图</a></p>
 ]]></content>
     </entry>
 </feed>
