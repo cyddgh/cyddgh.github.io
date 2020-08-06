@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-04T15:22:50.712Z</updated>
+    <updated>2020-08-06T11:51:24.391Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[时间戳的作用]]></title>
+        <id>https://cyddgh.github.io/post/202008061440/</id>
+        <link href="https://cyddgh.github.io/post/202008061440/">
+        </link>
+        <updated>2020-08-06T11:50:50.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="hightligh">Hightligh</h2>
+<p>时间戳有索引、不变、版本迭代的优点，但会使双链中上下文功能几乎失效。</p>
+<h2 id="时间戳的优点">时间戳的优点</h2>
+<p>时间戳作为知识卡片标题的一部分，起到了方便检索的作用。时间戳这次的作用如同数据库中的键（key）起到了独一无二的索引效果。<br>
+另一个特性就是不变性。你标题的其他文字可能会改变，但时间戳不会。例如这张卡片现在的名称是202008061440时间戳，过段时间我可能修改成202008061440落山鸡论时间戳，文字改变了，但时间戳不变。<br>
+最后一个是指示版本迭代，新的思想一定是来源于旧的思想的。顺着时间戳，你可以知道不同时期的想法，而文件本身记录的属性（创建时间）可能会被外部因素所改变。</p>
+<h2 id="时间戳的缺点">时间戳的缺点</h2>
+<p>如果你使用了时间戳，那双链中的“Unlinked mentions”功能就几乎失效了。你无法看到这个双链词在其他文档出现的位置。例如将“时间戳”改成“202008061440时间戳”后，就无法发现其他文档提到时间戳的上下文了，而你在其他文章的正文部分很难出现类似“落山鸡论202008061440时间戳”的字段。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[当我们在讨论双链时，我们讨论些什么]]></title>
         <id>https://cyddgh.github.io/post/202008042318/</id>
@@ -242,22 +258,6 @@ https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
 <li>Zotero 跨平台同步附件的实现，滏阳河边捉蚯蚓，https://zhuanlan.zhihu.com/p/31453719。讲述了Webdav 同步，ZotFile 配合同步盘，软链接配合同步盘三种同步方法。<br>
 1.</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何用Github来给RoamResearch做备份]]></title>
-        <id>https://cyddgh.github.io/post/ru-he-yong-github-lai-gei-roamresearch-zuo-bei-fen/</id>
-        <link href="https://cyddgh.github.io/post/ru-he-yong-github-lai-gei-roamresearch-zuo-bei-fen/">
-        </link>
-        <updated>2020-06-26T06:56:05.000Z</updated>
-        <content type="html"><![CDATA[<p>我们要用到备份软件：https://github.com/MatthieuBizien/roam-to-git<br>
-在这里面就有详细的描述。但对于我一个还没用过GitHub action的外行人，中间还是遇到了不少麻烦。<br>
-具体步骤如下：<br>
-1. 建一个私人的GitHub库（也可以是公开的，弊端就是谁都能看到你的笔记），名称不一定是英文说明中的notes，<br>
-2. 需要配置你的Github secrets。你进入你所设立的库，在页面上方第三行（以code开头的那行）找到 settings（最后一个）点击，之后在左手边的列表找到的secrets（倒数第二个）。<br>
-3. 点击New secrets进行配置。需要设立3个值“ ROAMRESEARCH_USER”、“ ROAMRESEARCH_PASSWORD”和“ ROAMRESEARCH_DATABASE”分别对应你RoamResearch中用户名、密码和库的名称。<br>
-4. 之后参照演示站（ https://github.com/MatthieuBizien/roam-to-git-demo）建立一个main.yml，放在.github/workflows/，文字内容和演示站一致<br>
-5. 点击Github Action查看运行情况</p>
 ]]></content>
     </entry>
 </feed>
