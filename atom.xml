@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-06T11:56:04.240Z</updated>
+    <updated>2020-08-11T23:48:38.552Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,70 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[我谈论的ZK软件是什么，对我们有何启示]]></title>
+        <id>https://cyddgh.github.io/post/202008120748/</id>
+        <link href="https://cyddgh.github.io/post/202008120748/">
+        </link>
+        <updated>2020-08-11T23:42:43.000Z</updated>
+        <content type="html"><![CDATA[<p>我所说的zettelkasten（ZK）软件是什么？我给的定义是践行zk笔记的软件。当然这是不是一个固定概念，值得讨论，这里我阐述一下我的观点。我接触ZK软件是从zettelkasten网站上（https://zettelkasten.de/tools）看到的一系列践行zk笔记的软件，例如Zkn3、sublime_zk、sublimeless_zk、zettlr以及一些我还没用过的软件（例如python上的slipbox、zlink、zk-cli）。这些软件共同的特点有：</p>
+<ol>
+<li>支持zk笔记的链接</li>
+<li>在软件名中都含有zk的概念，这些软件是专门为zk笔记所打造。</li>
+<li>软件之间的数据能相互迁移和兼容（Zkn3用的少，不清楚）。</li>
+</ol>
+<h1 id="从zk发展的角度来看obsidian">从ZK发展的角度来看obsidian</h1>
+<p>首先，obsidian似乎并不想从上述的zk软件接过接力棒，我的理由有2点：1.名字上并没有直接体现zk的精神，也没有致敬zk，只是在插件中支持了zk的功能。2.功能上目前还没有支持bib引用，这对科研写作非常重要。<br>
+但基于使用[[]]、markdown语法、兼容性，obsidian可以说是目前最新的zk软件。在我的软件使用中，基于sublime的sublime_zk是我用过最折腾的zk软件，主要还是因为我对sublime编辑器不太熟悉，但其功能之强大令人叹服。而zettrl的出现大大降低了zk软件的门槛，开箱易用，界面美观。而obsidian则在zettrl的优点上，补足了双链的功能，而且可以兼容过往zk软件的[[]]，实现跳转。从这点来看obsidian已经为zk软件做出了重要的贡献。</p>
+<h1 id="对我们的启示">对我们的启示</h1>
+<p>对同一种事物从不同的视角来看待，会有不一样的结果。<br>
+如果你将obsidian看做RoamResearch的替代者，需要块引用等等新颖的功能，似乎obsidian连半成品都谈不上。你还可以从没有支持大纲功能、在线的图片上传、任务管理功能不足、不能进行公开的协作等等角度来批判obsidian。但等等，obsidian目前的标语中从未标榜自己要取代RoamResearch，让我们去官网（https://obsidian.md/）看看它的宣传语：<br>
+A second brain, for you, forever.<br>
+Obsidian is a powerful knowledge base that works on top of a local folder of plain text Markdown files.</p>
+<p>它已经注明了是一款纯文本的markdown文件（plain text Markdown files）。以我的理解，所有块引用的操作都是基于数据库上的遍历检索，而md文件本身就不是数据库软件。即使logseq在md基础上使用org-mode实现了块引用（非常令人兴奋的创新），但这种方式目前也存在不确定性（是否数据结构比较容易损坏？），并且可以预见这样的块引用无法被其他的zk软件所读取，我对其软件之间的迁移和兼容非常悲观。</p>
+<p>但从另一种角度，从ZK软件发展的角度来看，我们似乎会得到一种乐观的结论。obsidian的功能已经足够了，它几乎集过往zk软件所长，符合zk的规则，虽然它还不支持bib的引用，功能上还未包括sublime那样全面功能，但本地、免费、开箱即用的zk软件，目前（2020年8月12日）舍他其谁？</p>
+<h1 id="一条建议">一条建议</h1>
+<p>认清你自己，认清你所使用的工具，找到合适你的工具。</p>
+<ol>
+<li>认清你自己：认清你自己驾驭软件的能力，能折腾可以在各类软件中尝试折腾，不能或不想折腾直接上付费的商业软件（目前来说好像就是RoamResearch）。认清你的需求，知道自己需要什么，不需要什么，不要随波逐流，生活之中总是要取舍，总是有权衡（Trade-off）。</li>
+<li>认清你所使用的工具：认清你现在的软件工具的天然属性，就如同相比于用PS来修剪视频，不然用PR或AE。目前还没有一个软件可以满足所有人的需求。大家对All In One的理解要慎重，因为即使号称All In One的notion也不支持文献引用，不能用来学术写作。</li>
+<li>找到合适你的工具。当你认清了自己的能力与需求（可能还有财力），自己所使用软件的功能与不足，就自然能在软件的海洋中找到一款契合度最高的软件，软件发挥软件所长来完成你的需求，对于软件的短处也无须抱怨，因为你已经在第二步认清了它，也知道世上没有完美的工具。</li>
+</ol>
+<p>希望这能对笔记软件Big bang（大爆发）浪潮下大家的软件选择能有所帮助。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我谈论的ZK软件是什么，对我们有何启示]]></title>
+        <id>https://cyddgh.github.io/post/wo-tan-lun-de-zk-ruan-jian-shi-shi-me-dui-wo-men-you-he-qi-shi/</id>
+        <link href="https://cyddgh.github.io/post/wo-tan-lun-de-zk-ruan-jian-shi-shi-me-dui-wo-men-you-he-qi-shi/">
+        </link>
+        <updated>2020-08-11T23:42:43.000Z</updated>
+        <content type="html"><![CDATA[<p>我所说的zettelkasten（ZK）软件是什么？我给的定义是践行zk笔记的软件。当然这是不是一个固定概念，值得讨论，这里我阐述一下我的观点。我接触ZK软件是从zettelkasten网站上（https://zettelkasten.de/tools）看到的一系列践行zk笔记的软件，例如Zkn3、sublime_zk、sublimeless_zk、zettlr以及一些我还没用过的软件（例如python上的slipbox、zlink、zk-cli）。这些软件共同的特点有：</p>
+<ol>
+<li>支持zk笔记的链接</li>
+<li>在软件名中都含有zk的概念，这些软件是专门为zk笔记所打造。</li>
+<li>软件之间的数据能相互迁移和兼容（Zkn3用的少，不清楚）。</li>
+</ol>
+<h1 id="从zk发展的角度来看obsidian">从ZK发展的角度来看obsidian</h1>
+<p>首先，obsidian似乎并不想从上述的zk软件接过接力棒，我的理由有2点：1.名字上并没有直接体现zk的精神，也没有致敬zk，只是在插件中支持了zk的功能。2.功能上目前还没有支持bib引用，这对科研写作非常重要。<br>
+但基于使用[[]]、markdown语法、兼容性，obsidian可以说是目前最新的zk软件。在我的软件使用中，基于sublime的sublime_zk是我用过最折腾的zk软件，主要还是因为我对sublime编辑器不太熟悉，但其功能之强大令人叹服。而zettrl的出现大大降低了zk软件的门槛，开箱易用，界面美观。而obsidian则在zettrl的优点上，补足了双链的功能，而且可以兼容过往zk软件的[[]]，实现跳转。从这点来看obsidian已经为zk软件做出了重要的贡献。</p>
+<h1 id="对我们的启示">对我们的启示</h1>
+<p>对同一种事物从不同的视角来看待，会有不一样的结果。<br>
+如果你将obsidian看做RoamResearch的替代者，需要块引用等等新颖的功能，似乎obsidian连半成品都谈不上。你还可以从没有支持大纲功能、在线的图片上传、任务管理功能不足、不能进行公开的协作等等角度来批判obsidian。但等等，obsidian目前的标语中从未标榜自己要取代RoamResearch，让我们去官网（https://obsidian.md/）看看它的宣传语：<br>
+A second brain, for you, forever.<br>
+Obsidian is a powerful knowledge base that works on top of a local folder of plain text Markdown files.</p>
+<p>它已经注明了是一款纯文本的markdown文件（plain text Markdown files）。以我的理解，所有块引用的操作都是基于数据库上的遍历检索，而md文件本身就不是数据库软件。即使logseq在md基础上使用org-mode实现了块引用（非常令人兴奋的创新），但这种方式目前也存在不确定性（是否数据结构比较容易损坏？），并且可以预见这样的块引用无法被其他的zk软件所读取，我对其软件之间的迁移和兼容非常悲观。</p>
+<p>但从另一种角度，从ZK软件发展的角度来看，我们似乎会得到一种乐观的结论。obsidian的功能已经足够了，它几乎集过往zk软件所长，符合zk的规则，虽然它还不支持bib的引用，功能上还未包括sublime那样全面功能，但本地、免费、开箱即用的zk软件，目前（2020年8月12日）舍他其谁？</p>
+<h1 id="一条建议">一条建议</h1>
+<p>认清你自己，认清你所使用的工具，找到合适你的工具。</p>
+<ol>
+<li>认清你自己：认清你自己驾驭软件的能力，能折腾可以在各类软件中尝试折腾，不能或不想折腾直接上付费的商业软件（目前来说好像就是RoamResearch）。认清你的需求，知道自己需要什么，不需要什么，不要随波逐流，生活之中总是要取舍，总是有权衡（Trade-off）。</li>
+<li>认清你所使用的工具：认清你现在的软件工具的天然属性，就如同相比于用PS来修剪视频，不然用PR或AE。目前还没有一个软件可以满足所有人的需求。大家对All In One的理解要慎重，因为即使号称All In One的notion也不支持文献引用，不能用来学术写作。</li>
+<li>找到合适你的工具。当你认清了自己的能力与需求（可能还有财力），自己所使用软件的功能与不足，就自然能在软件的海洋中找到一款契合度最高的软件，软件发挥软件所长来完成你的需求，对于软件的短处也无须抱怨，因为你已经在第二步认清了它，也知道世上没有完美的工具。</li>
+</ol>
+<p>希望这能对笔记软件Big bang（大爆发）浪潮下大家的软件选择能有所帮助。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[时间戳的作用]]></title>
         <id>https://cyddgh.github.io/post/202008061440/</id>
@@ -23,7 +87,8 @@
 第二个功能是不变性。你标题的其他文字可能会改变，但时间戳不会。例如这张卡片现在的名称是202008061440时间戳，过段时间我可能修改成202008061440落山鸡论时间戳，文字改变了，但时间戳不变。<br>
 最后一个功能是体现版本迭代。新的思想一定是来源于旧的思想的。顺着时间戳，你可以知道不同时期的想法，而文件本身记录的属性（创建时间）可能会被外部因素所改变。</p>
 <h2 id="时间戳的缺点">时间戳的缺点</h2>
-<p>如果你使用了时间戳，那双链中的“Unlinked mentions”功能就几乎失效了。你无法看到这个双链词在其他文档出现的位置。例如将“时间戳”改成“202008061440时间戳”后，就无法发现其他文档提到时间戳的上下文了，而你在其他文章的正文部分很难出现类似“落山鸡论202008061440时间戳”的字段。</p>
+<p>如果你使用了时间戳，那双链中的“Unlinked mentions”功能就几乎失效了。你无法看到这个双链词在其他文档出现的位置。例如将“时间戳”改成“202008061440时间戳”后，就无法发现其他文档提到时间戳的上下文了，而你在其他文章的正文部分很难出现类似“落山鸡论202008061440时间戳”的字段。<br>
+同时，时间戳也可能污染软件形成知识图谱（太占位置）。这可能也通过第三方插件来完成忽略时间戳，仅匹配后面的正文部分。</p>
 ]]></content>
     </entry>
     <entry>
@@ -226,38 +291,6 @@
         <updated>2020-07-06T05:53:30.000Z</updated>
         <content type="html"><![CDATA[<p>自动更换美丽的壁纸，给每日好心情<br>
 https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[认知差]]></title>
-        <id>https://cyddgh.github.io/post/ren-zhi-chai/</id>
-        <link href="https://cyddgh.github.io/post/ren-zhi-chai/">
-        </link>
-        <updated>2020-07-02T09:56:29.000Z</updated>
-        <content type="html"><![CDATA[<p>评判论文价值的尺度是认知差，是读者读完你论文后，对所讨论的问题认知需要发生改变，这样的论文才算有用。<br>
-认知差可以是对读者原有认知的增加、删除和修改。假设读者不了解劳动环境的变化，对于车间生产效率的影响，则有以下示例：</p>
-<ol>
-<li>增加。有人采用不同光照条件，看工人的生产效率变化，发现增强光照条件可以提升工人劳动效率。这是对读者原有认知的<strong>增加</strong>，因此就具备了认知差。</li>
-<li>删除。你看了上面的实验后，设计了一个对比实验，发现光照先调高，再降低以后，并未导致工人的劳动效率同步变化。于是你也发了一篇文章，讲述自己实验的结果。你证据确凿、论证清晰，于是原先相信 “光照强度影响劳动效率” 的读者，就从头脑中<strong>删除</strong>了这个关联。</li>
-<li>修改。假如你不仅发现了光照并不是影响劳动效率的决定性原因，而且还恰当地指出了实验场景中，工人所在的社会网络才是劳动效率改变的关键因素，并且对你的假设加以了验证，那你就是在<strong>修改</strong>读者的认知。修改是进一步理清。</li>
-</ol>
-<p>本文摘抄自：如何与导师有效沟通你的论文选题？，王树义，http://blog.sciencenet.cn/home.php?mod=space&amp;uid=377709&amp;do=blog&amp;quickforward=1&amp;id=1202867。摘抄过程有所修改。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Zotero入门教程]]></title>
-        <id>https://cyddgh.github.io/post/zotero-ru-men-jiao-cheng/</id>
-        <link href="https://cyddgh.github.io/post/zotero-ru-men-jiao-cheng/">
-        </link>
-        <updated>2020-07-01T02:22:48.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>RefTools，知乎专栏，https://zhuanlan.zhihu.com/reftools</li>
-</ol>
-<p>具体文章</p>
-<ol>
-<li>Zotero 跨平台同步附件的实现，滏阳河边捉蚯蚓，https://zhuanlan.zhihu.com/p/31453719。讲述了Webdav 同步，ZotFile 配合同步盘，软链接配合同步盘三种同步方法。<br>
-1.</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
