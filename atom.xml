@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-16T04:36:18.416Z</updated>
+    <updated>2020-08-16T04:48:04.460Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -27,7 +27,7 @@
 <h1 id="markdown是一种语法而不是文件格式">Markdown是一种语法而不是文件格式</h1>
 <p>obsidian所用的Markdown其实是一种语法而不是文件格式。不是所有的文件后缀都代表着一种新的文件格式。</p>
 <p>Markdown是一种纯文本格式，即txt，其他的一些.org、.csv其实也是纯文本，不是一种文件格式。一种新文件格式通常要用一种新的软件去打开。例如，你无法用记事本去正常打开word、ppt、excel、jpeg、png、rar。相对于纯文本格式而言，这些格式就属于一种新的文件格式。</p>
-<p>Markdown作为纯文本格式，同样具有很好的兼容性，可以用几乎所有的文本工具打开，例如系统自带的记事本、Word、vim等等。Markdown的应用非常广泛，在日常的软件（例如简书）到专业软件（Rstudio、GitHub）都有使用。最为重要的一点，md的文件迁移性特别好，几乎不受编写软件的显著，这是一款可以在各个操作系统中使用的文件格式。</p>
+<p>Markdown作为纯文本格式，同样具有很好的兼容性，可以用几乎所有的文本工具打开，例如系统自带的记事本、Word、vim等等。Markdown的应用非常广泛，在日常的软件（例如简书）到专业软件（Rstudio、GitHub）都有使用。最为重要的一点，md的文件迁移性特别好，几乎不受编写软件的限制，这是一款可以在各个操作系统中使用的文件格式。</p>
 <h1 id="markdown的优点">Markdown的优点</h1>
 <ol>
 <li>简单。一个#就可以体现一级标题，##就是二级标题。</li>
