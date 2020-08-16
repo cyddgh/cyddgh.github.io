@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-12T02:05:43.291Z</updated>
+    <updated>2020-08-16T04:29:51.275Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,74 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown浅析]]></title>
+        <id>https://cyddgh.github.io/post/202008161229/</id>
+        <link href="https://cyddgh.github.io/post/202008161229/">
+        </link>
+        <updated>2020-08-16T04:29:06.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="本文重点">本文重点</h1>
+<ol>
+<li>Markdown是一种语法。</li>
+<li>Markdown的优点是简单、可迁移、不过时。</li>
+<li>Markdown的缺点是排版能力差，块引用实现复杂。</li>
+<li>介绍了在obsidian中如何使用Markdown的个人心得。</li>
+</ol>
+<p>缩写：md=Markdown，ob=obsidian</p>
+<h1 id="markdown是一种语法而不是文件格式">Markdown是一种语法而不是文件格式</h1>
+<p>obsidian所用的Markdown其实是一种语法而不是文件格式。不是所有的文件后缀都代表着一种新的文件格式。</p>
+<p>Markdown是一种纯文本格式，即txt，其他的一些.org、.csv其实也是纯文本，不是一种文件格式。一种新文件格式通常要用一种新的软件去打开。例如，你无法用记事本去正常打开word、ppt、excel、jpeg、png、rar。相对于纯文本格式而言，这些格式就属于一种新的文件格式。</p>
+<p>Markdown作为纯文本格式，同样具有很好的兼容性，可以用几乎所有的文本工具打开，例如系统自带的记事本、Word、vim等等。Markdown的应用非常广泛，在日常的软件（例如简书）到专业软件（Rstudio、GitHub）都有使用。最为重要的一点，md的文件迁移性特别好，几乎不受编写软件的显著，这是一款可以在各个操作系统中使用的文件格式。</p>
+<h1 id="markdown的优点">Markdown的优点</h1>
+<ol>
+<li>简单。一个#就可以体现一级标题，##就是二级标题。</li>
+<li>可迁移性强。win、mac、linux、ios、安卓都 可以轻松打开。</li>
+<li>不过时。因为纯文本是非常基础的文件格式，只要有操作系统在都会支持（想想这几年从32位转64位，和苹果马上要从inter转arm）</li>
+</ol>
+<h1 id="markdown的缺点">Markdown的缺点</h1>
+<ol>
+<li>
+<p>排版能力差。因为是纯文本的原因，大部分的排版功能在md上都是失效的。Word中常见的行间距、段间距、首行缩进在md上很难实现（如果你要实现可能需要学习html和css，不推荐）。</p>
+</li>
+<li>
+<p>md语法在不同的软件中存在一些差异。根据群友的反馈，ob和Typora在图片插入和超链接的语句存在差异。其实这很容易理解，假想md是一种语言，不同的软件就像不同的方言区，都存在一些变体。当然，我目前见过最强的变体还是tiddlywiki自身的格式，大家有兴趣可以去尝试看看。</p>
+</li>
+<li>
+<p>基于md的obsidian目前难以实现块引用。我理解块引用还是基于数据库层面的应用，md是纯文本而非数据库，以为的编程认识，似乎在ob上实现块引用是很难的。</p>
+</li>
+</ol>
+<p>值得高兴的是对于纯文本上的块引用问题，有2个国产软件做出了创造性的解决方法：</p>
+<ol>
+<li>logseq（http://logseq.com/）使用了纯文本上的另一种语法（org-mode）使得在纯文本上也能实现块引用。</li>
+<li>链滴笔记（内测QQ群：724713327）似乎是基于md上实现了块引用的问题，软件开发者还专门撰文论述了这个问题（https://hacpai.com/article/1597226949061?tdsourcetag=s_pctim_aiomsg）。</li>
+</ol>
+<h1 id="在obsidian中如何去使用markdown">在obsidian中如何去使用Markdown</h1>
+<p>ob中的md使用有两大类方法：</p>
+<ol>
+<li>把md当成纯文本的txt文件，不掺杂任何的md语法。这不会减少ob作为思考工具的属性。</li>
+<li>有限度使用md语法。如果你选择这条就继续往下看。</li>
+</ol>
+<p>如果你选择使用md语法，首先，你应该先去了解md的相关语句，可以自行查询相关的参考资料，例如菜鸟教程（https://www.runoob.com/markdown/md-tutorial.html）。</p>
+<p>其次，考虑到md软件之间的迁移性，减少使用一些带有歧义的语法。我经常使用的语法主要：</p>
+<ol>
+<li>#：体现不同级别的标题</li>
+<li><a href=""></a>:超链接，链接到一个特定的网页。</li>
+<li>有序和无序列表（这可能是有歧义的）</li>
+</ol>
+<p>其他可能无误的语法：</p>
+<ol>
+<li>斜体</li>
+<li>加粗</li>
+</ol>
+<p>md中高级语法（不必要就不用，掌握难度高）</p>
+<ol>
+<li>latex：数学公式</li>
+<li>yaml：具体参见https://www.runoob.com/w3cnote/yaml-intro.html</li>
+<li>mermaid：流程图</li>
+</ol>
+<p>图片的插入是目前讨论比较多的问题，因为涉及到不同软件中md语法差异、文件相对位置和绝对位置的概念，我建议使用图床来解决（但这会丧失ob的本地化特性）。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我谈论的ZK软件是什么，对我们有何启示]]></title>
         <id>https://cyddgh.github.io/post/202008120748/</id>
@@ -221,22 +289,6 @@ https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
 <li>修改。假如你不仅发现了光照并不是影响劳动效率的决定性原因，而且还恰当地指出了实验场景中，工人所在的社会网络才是劳动效率改变的关键因素，并且对你的假设加以了验证，那你就是在<strong>修改</strong>读者的认知。修改是进一步理清。</li>
 </ol>
 <p>本文摘抄自：如何与导师有效沟通你的论文选题？，王树义，http://blog.sciencenet.cn/home.php?mod=space&amp;uid=377709&amp;do=blog&amp;quickforward=1&amp;id=1202867。摘抄过程有所修改。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Zotero入门教程]]></title>
-        <id>https://cyddgh.github.io/post/zotero-ru-men-jiao-cheng/</id>
-        <link href="https://cyddgh.github.io/post/zotero-ru-men-jiao-cheng/">
-        </link>
-        <updated>2020-07-01T02:22:48.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>RefTools，知乎专栏，https://zhuanlan.zhihu.com/reftools</li>
-</ol>
-<p>具体文章</p>
-<ol>
-<li>Zotero 跨平台同步附件的实现，滏阳河边捉蚯蚓，https://zhuanlan.zhihu.com/p/31453719。讲述了Webdav 同步，ZotFile 配合同步盘，软链接配合同步盘三种同步方法。<br>
-1.</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
