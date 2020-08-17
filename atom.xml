@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-16T04:49:50.634Z</updated>
+    <updated>2020-08-17T01:56:17.257Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[和obsidian开发者的交流]]></title>
+        <id>https://cyddgh.github.io/post/he-obsidian-kai-fa-zhe-de-jiao-liu/</id>
+        <link href="https://cyddgh.github.io/post/he-obsidian-kai-fa-zhe-de-jiao-liu/">
+        </link>
+        <updated>2020-08-17T01:55:40.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="hightligh">Hightligh</h1>
+<p>Obsidian 开发者的对话重点如下：</p>
+<ol>
+<li>希望开发一款能用几十年的笔记软件。</li>
+<li>大纲软件更适合与头脑风暴，但回顾难度提高。这是牺牲了将来的理解率，获得现在的效率。</li>
+<li>卢曼卡片是严肃写作，是自己的宝藏。</li>
+<li>笔记像人生一样，有意义的是过程，不是结果。</li>
+</ol>
+<h1 id="谈话正文">谈话正文</h1>
+<p>本谈话是基于 QQ 群聊天的讨论记录整理而成。讨论过程中除了本人和 Silver 外还有其他群友参与了讨论，但因为没有征求他们的同意，所以将他们的讨论全部进行删除处理，只留本人与Silver的对话内容。因此，谈话上下文可能有所出入，但应该能比较好体现 Obsidian 开发者的软件精神。</p>
+<p>落山鸡：Silver 我有点好奇，你们这项目（Obsidian）为什么基于 Markdown，而不是大纲。因为你们之前有负责 Dynalist，应该从大纲上更好构建吧？是因为有图要用到不同的开发语言吗？<br>
+Silver：因为大纲除了 OPML 没有标准，也不可读，违背了我们当时想做你的笔记几十年不需要倒来倒去的想法啊！我们想做一个 PKM（个人只是管理）系统，可以等你老了，孩子长大了，笔记还在那，随便读。现在笔记软件每几年就消失几个，想想就害怕。就算是做 Dynalist 的时候，我自己的日记都是用 Notational Velocity 之类完全本地的软件<br>
+落山鸡：Silver，能够理解。我之前主要用的是zk软件，然后迁移过来，依然能用，这让我很放心。不会因为软件改变，影响我的笔记。<br>
+Silver：另外一个想法是，大纲写起来太容易了，太没阻力了，我个人不觉得是件好事。虽然很适合头脑风暴，但是这种笔记你过几年回来看，根本看不懂。至少我去翻15年刚做Dynalist 时的大纲，我自己都不知道自己在写什么。不知道你们有没有这种感受。<br>
+Silver：写大纲的时候，我一般就拼命把脑袋里想的东西都写下来，不管上下文，不管失去现在的情境还能不能看懂。我个人希望大家抱着写文章的心态去做自己的知识系统，这样子长期收益更高。Obsidian 也是带着这种想法做的。<br>
+落山鸡：Silver，我除了用读书用大纲，其他都不用，感觉我对大纲的认识不足，还不会使用。但是大纲告诉了我“知识树”这个概念，还是挺改变我的。<br>
+Silver：看个人吧，我自己的体验是，大纲是牺牲了将来的理解率，获得了现在的效率。很多其他双链软件的用户也说用了几个月，发现自己的图谱很乱。当然也不是所有人都会这么觉得，也看人，和他们写作的习惯。如果你把大纲当段落来写，那也是不错的。<br>
+落山鸡：就如同写论文时的参考文献，调整格式很复杂，但证因为复杂，所以体现了严肃的精神。<br>
+Silver：写大纲就像聊天一样，写的一般都不是很严谨。卢曼式笔记式自己的宝藏，给别人看，也看不懂。像人生一样，有意义的是过程，不是结果。在未来我们可能也会出一个白皮书，更加系统讨论上述内容。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Markdown浅析]]></title>
         <id>https://cyddgh.github.io/post/202008161229/</id>
@@ -273,22 +300,6 @@ Obsidian is a powerful knowledge base that works on top of a local folder of pla
         <updated>2020-07-06T05:53:30.000Z</updated>
         <content type="html"><![CDATA[<p>自动更换美丽的壁纸，给每日好心情<br>
 https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[认知差]]></title>
-        <id>https://cyddgh.github.io/post/ren-zhi-chai/</id>
-        <link href="https://cyddgh.github.io/post/ren-zhi-chai/">
-        </link>
-        <updated>2020-07-02T09:56:29.000Z</updated>
-        <content type="html"><![CDATA[<p>评判论文价值的尺度是认知差，是读者读完你论文后，对所讨论的问题认知需要发生改变，这样的论文才算有用。<br>
-认知差可以是对读者原有认知的增加、删除和修改。假设读者不了解劳动环境的变化，对于车间生产效率的影响，则有以下示例：</p>
-<ol>
-<li>增加。有人采用不同光照条件，看工人的生产效率变化，发现增强光照条件可以提升工人劳动效率。这是对读者原有认知的<strong>增加</strong>，因此就具备了认知差。</li>
-<li>删除。你看了上面的实验后，设计了一个对比实验，发现光照先调高，再降低以后，并未导致工人的劳动效率同步变化。于是你也发了一篇文章，讲述自己实验的结果。你证据确凿、论证清晰，于是原先相信 “光照强度影响劳动效率” 的读者，就从头脑中<strong>删除</strong>了这个关联。</li>
-<li>修改。假如你不仅发现了光照并不是影响劳动效率的决定性原因，而且还恰当地指出了实验场景中，工人所在的社会网络才是劳动效率改变的关键因素，并且对你的假设加以了验证，那你就是在<strong>修改</strong>读者的认知。修改是进一步理清。</li>
-</ol>
-<p>本文摘抄自：如何与导师有效沟通你的论文选题？，王树义，http://blog.sciencenet.cn/home.php?mod=space&amp;uid=377709&amp;do=blog&amp;quickforward=1&amp;id=1202867。摘抄过程有所修改。</p>
 ]]></content>
     </entry>
 </feed>
