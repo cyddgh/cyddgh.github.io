@@ -2,21 +2,23 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>时间戳的作用 | 软达通</title>
+<title>和obsidian开发者的交流 | 软达通</title>
 <link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1597629397111">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="时间戳的作用 | 软达通 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="和obsidian开发者的交流 | 软达通 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
     <meta name="description" content="Hightligh
-时间戳有索引、不变、版本迭代的优点，但会使双链中上下文功能几乎失效。
-时间戳的优点
-时间戳作为知识卡片标题的一部分，起到了方便检索的作用。时间戳这次的作用如同数据库中的键（key）起到了独一无二的索引效果。
-第二个功能是..." />
-    <meta name="keywords" content="知识卡片" />
+Obsidian 开发者的对话重点如下：
+
+希望开发一款能用几十年的笔记软件。
+大纲软件更适合与头脑风暴，但回顾难度提高。这是牺牲了将来的理解率，获得现在的效率。
+卢曼卡片是严肃写作，是自己的宝藏。
+笔记像人生一样，有意..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -78,44 +80,45 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              时间戳的作用
+              和obsidian开发者的交流
             </h2>
             <div class="post-info">
               <span>
-                2020-08-06
+                2020-08-17
               </span>
               <span>
-                2 min read
+                4 min read
               </span>
-              
-                <a href="https://cyddgh.github.io/tag/9RMkrG1EQ/" class="post-tag">
-                  # 知识卡片
-                </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="hightligh">Hightligh</h2>
-<p>时间戳有索引、不变、版本迭代的优点，但会使双链中上下文功能几乎失效。</p>
-<h2 id="时间戳的优点">时间戳的优点</h2>
-<p>时间戳作为知识卡片标题的一部分，起到了方便检索的作用。时间戳这次的作用如同数据库中的键（key）起到了独一无二的索引效果。<br>
-第二个功能是不变性。你标题的其他文字可能会改变，但时间戳不会。例如这张卡片现在的名称是202008061440时间戳，过段时间我可能修改成202008061440落山鸡论时间戳，文字改变了，但时间戳不变。<br>
-最后一个功能是体现版本迭代。新的思想一定是来源于旧的思想的。顺着时间戳，你可以知道不同时期的想法，而文件本身记录的属性（创建时间）可能会被外部因素所改变。</p>
-<h2 id="时间戳的缺点">时间戳的缺点</h2>
-<p>如果你使用了时间戳，那双链中的“Unlinked mentions”功能就几乎失效了。你无法看到这个双链词在其他文档出现的位置。例如将“时间戳”改成“202008061440时间戳”后，就无法发现其他文档提到时间戳的上下文了，而你在其他文章的正文部分很难出现类似“落山鸡论202008061440时间戳”的字段。<br>
-同时，时间戳也可能污染软件形成知识图谱（太占位置）。这可能也通过第三方插件来完成忽略时间戳，仅匹配后面的正文部分。</p>
+                <h1 id="hightligh">Hightligh</h1>
+<p>Obsidian 开发者的对话重点如下：</p>
+<ol>
+<li>希望开发一款能用几十年的笔记软件。</li>
+<li>大纲软件更适合与头脑风暴，但回顾难度提高。这是牺牲了将来的理解率，获得现在的效率。</li>
+<li>卢曼卡片是严肃写作，是自己的宝藏。</li>
+<li>笔记像人生一样，有意义的是过程，不是结果。</li>
+</ol>
+<h1 id="谈话正文">谈话正文</h1>
+<p>本谈话是基于 QQ 群聊天的讨论记录整理而成。讨论过程中除了本人和 Silver 外还有其他群友参与了讨论，但因为没有征求他们的同意，所以将他们的讨论全部进行删除处理，只留本人与Silver的对话内容。因此，谈话上下文可能有所出入，但应该能比较好体现 Obsidian 开发者的软件精神。</p>
+<p>落山鸡：Silver 我有点好奇，你们这项目（Obsidian）为什么基于 Markdown，而不是大纲。因为你们之前有负责 Dynalist，应该从大纲上更好构建吧？是因为有图要用到不同的开发语言吗？<br>
+Silver：因为大纲除了 OPML 没有标准，也不可读，违背了我们当时想做你的笔记几十年不需要倒来倒去的想法啊！我们想做一个 PKM（个人只是管理）系统，可以等你老了，孩子长大了，笔记还在那，随便读。现在笔记软件每几年就消失几个，想想就害怕。就算是做 Dynalist 的时候，我自己的日记都是用 Notational Velocity 之类完全本地的软件<br>
+落山鸡：Silver，能够理解。我之前主要用的是zk软件，然后迁移过来，依然能用，这让我很放心。不会因为软件改变，影响我的笔记。<br>
+Silver：另外一个想法是，大纲写起来太容易了，太没阻力了，我个人不觉得是件好事。虽然很适合头脑风暴，但是这种笔记你过几年回来看，根本看不懂。至少我去翻15年刚做Dynalist 时的大纲，我自己都不知道自己在写什么。不知道你们有没有这种感受。<br>
+Silver：写大纲的时候，我一般就拼命把脑袋里想的东西都写下来，不管上下文，不管失去现在的情境还能不能看懂。我个人希望大家抱着写文章的心态去做自己的知识系统，这样子长期收益更高。Obsidian 也是带着这种想法做的。<br>
+落山鸡：Silver，我除了用读书用大纲，其他都不用，感觉我对大纲的认识不足，还不会使用。但是大纲告诉了我“知识树”这个概念，还是挺改变我的。<br>
+Silver：看个人吧，我自己的体验是，大纲是牺牲了将来的理解率，获得了现在的效率。很多其他双链软件的用户也说用了几个月，发现自己的图谱很乱。当然也不是所有人都会这么觉得，也看人，和他们写作的习惯。如果你把大纲当段落来写，那也是不错的。<br>
+落山鸡：就如同写论文时的参考文献，调整格式很复杂，但证因为复杂，所以体现了严肃的精神。<br>
+Silver：写大纲就像聊天一样，写的一般都不是很严谨。卢曼式笔记式自己的宝藏，给别人看，也看不懂。像人生一样，有意义的是过程，不是结果。在未来我们可能也会出一个白皮书，更加系统讨论上述内容。</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li>
-<ul>
 <li><a href="#hightligh">Hightligh</a></li>
-<li><a href="#%E6%97%B6%E9%97%B4%E6%88%B3%E7%9A%84%E4%BC%98%E7%82%B9">时间戳的优点</a></li>
-<li><a href="#%E6%97%B6%E9%97%B4%E6%88%B3%E7%9A%84%E7%BC%BA%E7%82%B9">时间戳的缺点</a></li>
-</ul>
-</li>
+<li><a href="#%E8%B0%88%E8%AF%9D%E6%AD%A3%E6%96%87">谈话正文</a></li>
 </ul>
 
               </div>
@@ -126,9 +129,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://cyddgh.github.io/post/202008042318/">
+            <a href="https://cyddgh.github.io/post/202008161229/">
               <h3 class="post-title">
-                当我们在讨论双链时，我们讨论些什么
+                Markdown浅析
               </h3>
             </a>
           </div>
