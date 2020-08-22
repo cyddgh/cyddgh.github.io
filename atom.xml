@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-17T02:04:50.876Z</updated>
+    <updated>2020-08-22T01:28:49.543Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[使用obsidian模拟thebrain知识网络的一种可能性]]></title>
+        <id>https://cyddgh.github.io/post/202008220927/</id>
+        <link href="https://cyddgh.github.io/post/202008220927/">
+        </link>
+        <updated>2020-08-22T01:24:52.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="背景">背景</h1>
+<p>我个人认为：obsidian是去中心化、无节点等级的知识图谱；thebrain是去中心化、有节点等级的知识图谱。其中两者很大的差异在于知识图谱中每个节点是否平等，在thebrain中是有父节点、子节点和兄弟节点的区分，存在一定的结构关系，而obsidian中各个卡片都是平等的。目前，双链软件用户普遍反映知识图谱没有发挥预期的作用，这可能是因为双链软件的设计问题导致。节点之间是否有等级差异似乎能一定程度上解决双链软件中知识图谱不可读的问题，增加图谱的意义。</p>
+<h1 id="具体方法">具体方法</h1>
+<p>下文所介绍的方法非常简单，只是作为一种实现的可能性，希望能引起更多人的讨论。<br>
+我的灵感是来自于RoamResearch中单个页面的知识图谱视图，发现其节点之间联系也存在有方向性，这取决于文内双链所处的位置。我将这种思路迁移至obsidian中，设想以下实现方法：</p>
+<ol>
+<li>父节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称A为B的父节点。</li>
+<li>子节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称B为A的子节点。</li>
+<li>兄弟节点：存在有卡片A、B，在卡片A中存在有[[B]]，且卡片B中有[[A]]，则称A和B为兄弟节点。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>卡片</th>
+<th>A为B的父节点，B为A的子节点</th>
+<th>A、B是兄弟节点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>[[B]]</td>
+<td>[[B]]</td>
+</tr>
+<tr>
+<td>B</td>
+<td></td>
+<td>[[A]]</td>
+</tr>
+</tbody>
+</table>
+<h1 id="结语">结语</h1>
+<p>本文希望能扩展obsidian的应用形式。但上述设想的实现可能还需要obsidian软件本身的支持，或者待API功能开发后，由第三方开发者支持。</p>
+<p>另外，最近obsidian已经升级至0.8.4，软件已经内置汉化界面，按Setting-about-Language-简体中文，然后重启就可以发现汉化成功。注意：目前帮助文档（Help）还未汉化，但群文件有群友汉化版。欢迎有志于汉化相关文档的群友报名参与后续帮助文档的汉化。obsidian爱好者群：774176839。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[和obsidian开发者的交流]]></title>
         <id>https://cyddgh.github.io/post/202008162211/</id>
@@ -290,16 +332,6 @@ Obsidian is a powerful knowledge base that works on top of a local folder of pla
         <content type="html"><![CDATA[<p>卡片笔记主要依托卢曼笔记、费曼学习等方法，主要倾向知识的复现。例如obsidian。<br>
 卡片写作主要依托批判性思维，非线性写作等方法，主要倾向知识的创新。例如Gingko。<br>
 当然也有很好兼顾两者的软件，例如Roam research。但我们在讨论笔记法时需要明确我们是需要知识的复现，还是要知识的创新。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[必应壁纸]]></title>
-        <id>https://cyddgh.github.io/post/bi-ying-bi-zhi/</id>
-        <link href="https://cyddgh.github.io/post/bi-ying-bi-zhi/">
-        </link>
-        <updated>2020-07-06T05:53:30.000Z</updated>
-        <content type="html"><![CDATA[<p>自动更换美丽的壁纸，给每日好心情<br>
-https://www.microsoft.com/en-us/bing/bing-wallpaper</p>
 ]]></content>
     </entry>
 </feed>
