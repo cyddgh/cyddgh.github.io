@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-22T01:28:49.543Z</updated>
+    <updated>2020-08-22T07:46:35.268Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -50,6 +50,7 @@
 <h1 id="结语">结语</h1>
 <p>本文希望能扩展obsidian的应用形式。但上述设想的实现可能还需要obsidian软件本身的支持，或者待API功能开发后，由第三方开发者支持。</p>
 <p>另外，最近obsidian已经升级至0.8.4，软件已经内置汉化界面，按Setting-about-Language-简体中文，然后重启就可以发现汉化成功。注意：目前帮助文档（Help）还未汉化，但群文件有群友汉化版。欢迎有志于汉化相关文档的群友报名参与后续帮助文档的汉化。obsidian爱好者群：774176839。</p>
+<p>注：本文中的兄弟节点应该对应thebrain中Jump Thoughts，为方便非thebrain用户理解，翻译为兄弟节点。需要注意：1.thebrain中还有一类sibling Thoughts（即团子大圆帅所说的）。2.经群友D的提醒，兄弟节点在数据结构中有特定含义，本文所指的兄弟节点不是指数据结构上“树的节点有兄弟关系”。</p>
 ]]></content>
     </entry>
     <entry>
