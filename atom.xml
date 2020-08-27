@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-24T13:21:43.164Z</updated>
+    <updated>2020-08-27T15:30:19.613Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian群资源分享渠道]]></title>
+        <id>https://cyddgh.github.io/post/202008272329/</id>
+        <link href="https://cyddgh.github.io/post/202008272329/">
+        </link>
+        <updated>2020-08-27T15:29:37.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://shimo.im/docs/YCVvh9jrw6qGR38D">石墨文档</a></li>
+<li><a href="https://github.com/cyddgh/obsidian-chinese-help">github</a></li>
+<li><a href="https://gitee.com/cyddgi/obsidian-chinese-help">gitee</a></li>
+<li>本人微信号（公众号：ruantongda）</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[有限性和可知性影响笔记方法]]></title>
         <id>https://cyddgh.github.io/post/202008242119/</id>
@@ -328,26 +342,6 @@ Obsidian is a powerful knowledge base that works on top of a local folder of pla
 <li>需要你的概括能力和逻辑思维。</li>
 <li>记录你文献出处。</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[知识卡片是一套怎样的系统]]></title>
-        <id>https://cyddgh.github.io/post/202007202241/</id>
-        <link href="https://cyddgh.github.io/post/202007202241/">
-        </link>
-        <updated>2020-07-20T14:35:17.000Z</updated>
-        <content type="html"><![CDATA[<p>我被知识卡片吸引，进而入坑，是因为看到有文章介绍知识卡片是一个灵感的激发器。截止2020年7月，我已经践行这个系统半年有余，下面将我的一些个人心得做一下分享。本文中知识卡片是指zettelkasten软件所产生的知识卡片文档。</p>
-<h1 id="知识卡片是一套鼓励你创作的系统">知识卡片是一套鼓励你创作的系统</h1>
-<p>在知识卡片这套系统中，你应该有自己的见解。因为zk软件较差的界面，一般的复制粘贴都会惨不忍睹，所以倒逼自己需要总结要点，通过转述的方法将所见的材料“誊抄”到卡片系统中。而在转述的过程中，难免有增删，又难免自己也想在里面指点江山一下，最终沉淀了一些自己的思想，</p>
-<h1 id="知识卡片是一套时间记录系统">知识卡片是一套时间记录系统</h1>
-<p>知识卡片标题是一串时间戳，代表着某一时刻下的自己。有时候，我觉得RoamResearch这类大纲的一个缺点就是太便于修改了，大纲的形式让文档丧失了存档的概念。但知识卡片不同，以时间戳和一个个markdown文本为标志，当时间过去那就成为过往的历史，使得在使用中你不会去修改过去的文档。因为即使是错误的，那也是过去的你。你现在应该新建一个卡片，去反驳过去错误的观点，或者从过去的卡片衍生出新的脉络，最终形成一个知识树。</p>
-<h1 id="知识卡片是一套鼓励思辨的系统">知识卡片是一套鼓励思辨的系统</h1>
-<p>有时候可能[[文献A]]支持了xx想法，但[[文献B]]反对了。我认为~~~<br>
-当你如上使用双链时，你就是在思辨的过程中。知识卡片需要搭配的一个思想就是批评性思维，通过双链来记录你思想演变的过程。让你更方便去审视你的成长。</p>
-<h1 id="知识卡片是一套游戏化的系统">知识卡片是一套游戏化的系统</h1>
-<p>知识卡片有点像收藏卡片，当你看到某个知识点，当你想到一个新的想法，都有一种将它收进盒中的冲动，特别对于我这样松鼠玩家。当你看到文档在系统中整整齐齐时，就有一个内心喜悦作为奖励。</p>
-<h1 id="知识卡片是一套节省心力的系统">知识卡片是一套节省心力的系统</h1>
-<p>知识卡片是一个非线性、无等级的体系，你不必思考某一张卡片需要放在系统的什么位置，文档中的字体没有大小、行间距等等格式，甚至连文档的名称你都不用思考，直接以时间戳命名。你需要的就是写下你此时的想法，或者说是心流，凡有动心起念，哪怕一句，都写下。写下后，你就可以不用执着或担心忘记，进而开始审视这个想法，这个体系也渐渐能成为你的第二大脑。“五色令人目盲”，最简单的文字可以让你节省心力，专注于创作本身。</p>
 ]]></content>
     </entry>
 </feed>
