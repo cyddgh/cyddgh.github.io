@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-08-29T11:52:14.655Z</updated>
+    <updated>2020-09-02T01:38:35.235Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[卢曼笔记法待解决的讨论]]></title>
+        <id>https://cyddgh.github.io/post/202009020931/</id>
+        <link href="https://cyddgh.github.io/post/202009020931/">
+        </link>
+        <updated>2020-09-02T01:30:25.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>知识结构是自下而上还是自上而下？是笔记内容会自我浮现还是需要使用者的顶层设计？</li>
+<li>双向连接（双链）的定义是什么？块引用的定义是什么？</li>
+<li>当知识卡片达到一定数量级后，图谱有意义吗？图谱应该如何展示，更能提升效果？</li>
+<li>卢曼笔记法真的比以往的笔记法优秀吗？有什么适用范围？有什么局限性？</li>
+<li>卢曼本人的成功有多少来自于卢曼自身的天赋，有多少来自于卢曼笔记法的工作流？这种成功可复制吗？</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[将知识树状结构和网状结构融合的一种可能方式]]></title>
         <id>https://cyddgh.github.io/post/202008291942/</id>
@@ -356,25 +371,6 @@ Obsidian is a powerful knowledge base that works on top of a local folder of pla
 <li>RoamResearch中块连接和粒度概念是否是必要的？目前，还未见到能说服我的文章或打动我的作品。<br>
 最后一点个人的感悟，我当初因为要在文本上实现thebrain的链接功能，结果寻找到了zk软件，进而找到了RoamResearch。我认为，最原始的思维导图是具有单一方向的1对多连接；thebrain则是去中心化后的无方向性的多对多连接，但节点之间具有明显的等级关系（父子节点、兄弟节点）；而RoamResearch在大纲软件上进行了杰出的创新，建立了一套去中心化、无方向、无等级的连接方式。从小的方面来说，是否能有一款软件能去用双链复刻thebrain的功能，对知识图谱的清晰化可能会有帮助。从大的方面来说，下一种节点连接方式会是怎样的，又会如何呈现在我们眼前？</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[记笔记时需要什么信念呢？]]></title>
-        <id>https://cyddgh.github.io/post/202008032316/</id>
-        <link href="https://cyddgh.github.io/post/202008032316/">
-        </link>
-        <updated>2020-08-03T15:16:06.000Z</updated>
-        <content type="html"><![CDATA[<p>当你想要记笔记时，可能就拥有第二大脑的理念（印象笔记推广了这个概念），想要借助外物来帮助自身的记忆，并且相信外物能提供本身的能力。</p>
-<p>如果你的每日清单上每天都列有3个重要的事情，那就涉及了时间管理中的《吃掉那只青蛙》。<br>
-如果你的笔记中有感恩，可能就涉及到正念思想。<br>
-如果你在制定周计划，可能要去使用SMART原则来制定。<br>
-如果你想要使用卢曼笔记的方式，可能要去阅读一些卢曼笔记的书籍（例如How to take smart notes），了解相关的思想，更有可能还要去了解卢曼笔记在电子化后的衍生版本。<br>
-如果你要构建好一张知识卡片，可能《金字塔原理》可以帮助你。<br>
-如果你要对笔记进行分类，可能要去学习分类系统（例如杜威十进分类法）的概念。<br>
-如果你要梳理好笔记的网络，你可能要对树状和网状、线性和非线性的概念能熟练掌握，并知道如何运用它们来解决你的实际问题。</p>
-<p>以上种种，都可以说明一件事件：笔记系统的合不合理、好不好用多半取决于受到使用者自身素质的影响，而非软件本身。软件本身只能算是器，软件的技巧是术，而使用软件的你心中的理念是道。<br>
-​</p>
-<p>重物而轻人，重术而轻道，是不可取的。</p>
 ]]></content>
     </entry>
 </feed>
