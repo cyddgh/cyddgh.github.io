@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>通过Quicker将zotero与obsidian连用（仅Win） | 软达通</title>
-<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1599384267573">
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1599384627445">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="通过Quicker将zotero与obsidian连用（仅Win） | 软达通 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
@@ -11,10 +11,10 @@
 
 
 
-    <meta name="description" content="本文所需要用到的工具：
+    <meta name="description" content="通过Quicker将zotero与obsidian连用（仅Win）
+本文所需要用到的工具：
 
-Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（90天）使用时长]
-Quicker动作: https://getqu..." />
+Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -24,7 +24,7 @@ Quicker动作: https://getqu..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://cyddgh.github.io">
-  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1599384267573" alt="">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1599384627445" alt="">
   </a>
   <h1 class="site-title">
     软达通
@@ -91,7 +91,8 @@ Quicker动作: https://getqu..." />
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h4 id="本文所需要用到的工具">本文所需要用到的工具：</h4>
+                <p>通过Quicker将zotero与obsidian连用（仅Win）</p>
+<h4 id="本文所需要用到的工具">本文所需要用到的工具：</h4>
 <ol>
 <li>Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（90天）使用时长]</li>
 <li>Quicker动作: https://getquicker.net/sharedaction?code=f24587bd-3fce-4855-d22c-08d84927c51f</li>
@@ -120,7 +121,21 @@ Quicker动作: https://getqu..." />
 确定PDF所在位置类似于（~\Zotero\storage\MSUJ5A4S），PDF所在目录是8位字母和数字组成的文件夹，上级文件夹是storage，再上级文件夹是Zotero<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171626.png" alt="" loading="lazy"></p>
 </li>
+<li>
+<p>简单解析复制后的md语句<br>
+如上PDF所产生的引用文字，如下</p>
+</li>
 </ul>
+<blockquote>
+<p>&quot;The root-knot nematode Meloidogyne chitwoodi is a pest that  affects potato production in the Pacific Northwest of the United  States.&quot;<a href="zotero://open-pdf/library/items/MSUJ5A4S?page=1">《Zhang-2020-Nature Plants》@page:1</a></p>
+</blockquote>
+<p>可以看到</p>
+<ol>
+<li>“&gt;”：代表markdown的引用开始</li>
+<li>双引号：PDF中的原文</li>
+<li>[《Zhang-2020-Nature Plants》@page:1]：Zhang-2020-Nature Plants为该pdf的文件名，@page:1代表第一页</li>
+<li>(zotero://open-pdf/library/items/MSUJ5A4S?page=1)：请注意，这里的MSUJ5A4S和PDF所在文件夹名称（MSUJ5A4S）。<strong>我认为这也是为什么必须使用内置同步或者webdav同步的原因</strong>。</li>
+</ol>
 <h4 id="后记">后记</h4>
 <p>因具体涉及的知识点较多且前人已有完备的论述，本文仅罗列一些关键的信息。<br>
 本人日常以Endnote为主，使用zotero较少，有不懂的地方可以查看文中所引用的专栏文章。<br>
