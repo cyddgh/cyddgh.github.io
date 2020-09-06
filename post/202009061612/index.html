@@ -2,17 +2,19 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>使用obsidian模拟thebrain知识网络的一种可能性 | 软达通</title>
+<title>通过Quicker将zotero与obsidian连用（仅Win） | 软达通</title>
 <link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1599384267573">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="使用obsidian模拟thebrain知识网络的一种可能性 | 软达通 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="通过Quicker将zotero与obsidian连用（仅Win） | 软达通 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="背景
-我个人认为：obsidian是去中心化、无节点等级的知识图谱；thebrain是去中心化、有节点等级的知识图谱。其中两者很大的差异在于知识图谱中每个节点是否平等，在thebrain中是有父节点、子节点和兄弟节点的区分，存在一定的结构关..." />
+    <meta name="description" content="本文所需要用到的工具：
+
+Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（90天）使用时长]
+Quicker动作: https://getqu..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -75,11 +77,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              使用obsidian模拟thebrain知识网络的一种可能性
+              通过Quicker将zotero与obsidian连用（仅Win）
             </h2>
             <div class="post-info">
               <span>
-                2020-08-22
+                2020-09-06
               </span>
               <span>
                 3 min read
@@ -89,48 +91,60 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="背景">背景</h1>
-<p>我个人认为：obsidian是去中心化、无节点等级的知识图谱；thebrain是去中心化、有节点等级的知识图谱。其中两者很大的差异在于知识图谱中每个节点是否平等，在thebrain中是有父节点、子节点和兄弟节点的区分，存在一定的结构关系，而obsidian中各个卡片都是平等的。目前，双链软件用户普遍反映知识图谱没有发挥预期的作用，这可能是因为双链软件的设计问题导致。节点之间是否有等级差异似乎能一定程度上解决双链软件中知识图谱不可读的问题，增加图谱的意义。</p>
-<h1 id="具体方法">具体方法</h1>
-<p>下文所介绍的方法非常简单，只是作为一种实现的可能性，希望能引起更多人的讨论。<br>
-我的灵感是来自于RoamResearch中单个页面的知识图谱视图，发现其节点之间联系也存在有方向性，这取决于文内双链所处的位置。我将这种思路迁移至obsidian中，设想以下实现方法：</p>
+                <h4 id="本文所需要用到的工具">本文所需要用到的工具：</h4>
 <ol>
-<li>父节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称A为B的父节点。</li>
-<li>子节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称B为A的子节点。</li>
-<li>兄弟节点：存在有卡片A、B，在卡片A中存在有[[B]]，且卡片B中有[[A]]，则称A和B为兄弟节点。</li>
+<li>Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（90天）使用时长]</li>
+<li>Quicker动作: https://getquicker.net/sharedaction?code=f24587bd-3fce-4855-d22c-08d84927c51f</li>
+<li>zotero: https://www.zotero.org/</li>
+<li>PDF-Xchange Viewer：可能不兼容一些PDF软件，这软件我测试后可以</li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>卡片</th>
-<th>A为B的父节点，B为A的子节点</th>
-<th>A、B是兄弟节点</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>[[B]]</td>
-<td>[[B]]</td>
-</tr>
-<tr>
-<td>B</td>
-<td></td>
-<td>[[A]]</td>
-</tr>
-</tbody>
-</table>
-<h1 id="结语">结语</h1>
-<p>本文希望能扩展obsidian的应用形式。但上述设想的实现可能还需要obsidian软件本身的支持，或者待API功能开发后，由第三方开发者支持。</p>
-<p>另外，最近obsidian已经升级至0.8.4，软件已经内置汉化界面，按Setting-about-Language-简体中文，然后重启就可以发现汉化成功。注意：目前帮助文档（Help）还未汉化，但群文件有群友汉化版。欢迎有志于汉化相关文档的群友报名参与后续帮助文档的汉化。obsidian爱好者群：774176839。</p>
-<p>注：本文中的兄弟节点应该对应thebrain中Jump Thoughts，为方便非thebrain用户理解，翻译为兄弟节点。需要注意：1.thebrain中还有一类sibling Thoughts（即团子大圆帅所说的）。2.经群友D的提醒，兄弟节点在数据结构中有特定含义，本文所指的兄弟节点不是指数据结构上“树的节点有兄弟关系”。</p>
+<h4 id="需要注意的事情">需要注意的事情</h4>
+<ol>
+<li>使用本方法时，zotero只能使用自身同步或webdav同步，不能使用zotfile+网盘的同步方法。这两类同步方式的不同请见RefTools专栏内的文章（ https://zhuanlan.zhihu.com/p/31453719 ），需要认识到文件型和文件链接型同步的不同。<strong>本教程使用的是同步文件型</strong>。</li>
+<li>zotero本身同步空间是300M，超出后需要付费。为了免费使用，建议借助其他软件来进行webdav同步。我建议可以使用其它的webdav软件，例如TeraCloud（邀请码3PYKL， https://teracloud.jp/en/ ） ，因为TeraCloud不限制上传和下载的流量，空间是15G，作为文献阅读足够了。</li>
+<li>使用坚果云的webdav同步的方法，已经有人论述了（见 http://help.jianguoyun.com/?p=4190 ）。但请注意，从我个人使用上使用webdav方式进行同步，坚果云无法对zip文件进行增量备份，会导致上传流量占用过多。</li>
+<li>Quicker如何使用请见Quicker的帮助文件。</li>
+<li>Quicker动作的使用请见动作页，Zplusless已经有</li>
+</ol>
+<h4 id="一些操作要点">一些操作要点</h4>
+<p>该动作要实现还有一些注意事项：</p>
+<ul>
+<li>
+<p>zotero首选项中的同步页面设置大致如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906170946.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>需要确认PDF所在的目录<br>
+鼠标移动到PDF-右键-打开文件位置<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171431.png" alt="" loading="lazy"><br>
+确定PDF所在位置类似于（~\Zotero\storage\MSUJ5A4S），PDF所在目录是8位字母和数字组成的文件夹，上级文件夹是storage，再上级文件夹是Zotero<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171626.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h4 id="后记">后记</h4>
+<p>因具体涉及的知识点较多且前人已有完备的论述，本文仅罗列一些关键的信息。<br>
+本人日常以Endnote为主，使用zotero较少，有不懂的地方可以查看文中所引用的专栏文章。<br>
+如果你有更好的方式请留言，随后我会精选方便其他读者查阅。未来本教程可能有所更改，请点击阅读原文，查看最新版本。</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#%E8%83%8C%E6%99%AF">背景</a></li>
-<li><a href="#%E5%85%B7%E4%BD%93%E6%96%B9%E6%B3%95">具体方法</a></li>
-<li><a href="#%E7%BB%93%E8%AF%AD">结语</a></li>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%9C%AC%E6%96%87%E6%89%80%E9%9C%80%E8%A6%81%E7%94%A8%E5%88%B0%E7%9A%84%E5%B7%A5%E5%85%B7">本文所需要用到的工具：</a></li>
+<li><a href="#%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E4%BA%8B%E6%83%85">需要注意的事情</a></li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E8%A6%81%E7%82%B9">一些操作要点</a></li>
+<li><a href="#%E5%90%8E%E8%AE%B0">后记</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
               </div>
@@ -141,9 +155,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://cyddgh.github.io/post/202008162211/">
+            <a href="https://cyddgh.github.io/post/202009020940/">
               <h3 class="post-title">
-                和obsidian开发者的交流
+                软件总在变化
               </h3>
             </a>
           </div>

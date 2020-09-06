@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-09-02T05:10:54.722Z</updated>
+    <updated>2020-09-06T09:24:30.433Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[通过Quicker将zotero与obsidian连用（仅Win）]]></title>
+        <id>https://cyddgh.github.io/post/202009061612/</id>
+        <link href="https://cyddgh.github.io/post/202009061612/">
+        </link>
+        <updated>2020-09-06T09:24:00.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="本文所需要用到的工具">本文所需要用到的工具：</h4>
+<ol>
+<li>Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（90天）使用时长]</li>
+<li>Quicker动作: https://getquicker.net/sharedaction?code=f24587bd-3fce-4855-d22c-08d84927c51f</li>
+<li>zotero: https://www.zotero.org/</li>
+<li>PDF-Xchange Viewer：可能不兼容一些PDF软件，这软件我测试后可以</li>
+</ol>
+<h4 id="需要注意的事情">需要注意的事情</h4>
+<ol>
+<li>使用本方法时，zotero只能使用自身同步或webdav同步，不能使用zotfile+网盘的同步方法。这两类同步方式的不同请见RefTools专栏内的文章（ https://zhuanlan.zhihu.com/p/31453719 ），需要认识到文件型和文件链接型同步的不同。<strong>本教程使用的是同步文件型</strong>。</li>
+<li>zotero本身同步空间是300M，超出后需要付费。为了免费使用，建议借助其他软件来进行webdav同步。我建议可以使用其它的webdav软件，例如TeraCloud（邀请码3PYKL， https://teracloud.jp/en/ ） ，因为TeraCloud不限制上传和下载的流量，空间是15G，作为文献阅读足够了。</li>
+<li>使用坚果云的webdav同步的方法，已经有人论述了（见 http://help.jianguoyun.com/?p=4190 ）。但请注意，从我个人使用上使用webdav方式进行同步，坚果云无法对zip文件进行增量备份，会导致上传流量占用过多。</li>
+<li>Quicker如何使用请见Quicker的帮助文件。</li>
+<li>Quicker动作的使用请见动作页，Zplusless已经有</li>
+</ol>
+<h4 id="一些操作要点">一些操作要点</h4>
+<p>该动作要实现还有一些注意事项：</p>
+<ul>
+<li>
+<p>zotero首选项中的同步页面设置大致如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906170946.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>需要确认PDF所在的目录<br>
+鼠标移动到PDF-右键-打开文件位置<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171431.png" alt="" loading="lazy"><br>
+确定PDF所在位置类似于（~\Zotero\storage\MSUJ5A4S），PDF所在目录是8位字母和数字组成的文件夹，上级文件夹是storage，再上级文件夹是Zotero<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171626.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h4 id="后记">后记</h4>
+<p>因具体涉及的知识点较多且前人已有完备的论述，本文仅罗列一些关键的信息。<br>
+本人日常以Endnote为主，使用zotero较少，有不懂的地方可以查看文中所引用的专栏文章。<br>
+如果你有更好的方式请留言，随后我会精选方便其他读者查阅。未来本教程可能有所更改，请点击阅读原文，查看最新版本。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[软件总在变化]]></title>
         <id>https://cyddgh.github.io/post/202009020940/</id>
@@ -316,23 +358,6 @@ Obsidian is a powerful knowledge base that works on top of a local folder of pla
 <li>找到合适你的工具。当你认清了自己的能力与需求（可能还有财力），自己所使用软件的功能与不足，就自然能在软件的海洋中找到一款契合度最高的软件，软件发挥软件所长来完成你的需求，对于软件的短处也无须抱怨，因为你已经在第二步认清了它，也知道世上没有完美的工具。</li>
 </ol>
 <p>希望这能对笔记软件Big bang（大爆发）浪潮下大家的软件选择能有所帮助。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[时间戳的作用]]></title>
-        <id>https://cyddgh.github.io/post/202008061440/</id>
-        <link href="https://cyddgh.github.io/post/202008061440/">
-        </link>
-        <updated>2020-08-06T11:50:50.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="hightligh">Hightligh</h2>
-<p>时间戳有索引、不变、版本迭代的优点，但会使双链中上下文功能几乎失效。</p>
-<h2 id="时间戳的优点">时间戳的优点</h2>
-<p>时间戳作为知识卡片标题的一部分，起到了方便检索的作用。时间戳这次的作用如同数据库中的键（key）起到了独一无二的索引效果。<br>
-第二个功能是不变性。你标题的其他文字可能会改变，但时间戳不会。例如这张卡片现在的名称是202008061440时间戳，过段时间我可能修改成202008061440落山鸡论时间戳，文字改变了，但时间戳不变。<br>
-最后一个功能是体现版本迭代。新的思想一定是来源于旧的思想的。顺着时间戳，你可以知道不同时期的想法，而文件本身记录的属性（创建时间）可能会被外部因素所改变。</p>
-<h2 id="时间戳的缺点">时间戳的缺点</h2>
-<p>如果你使用了时间戳，那双链中的“Unlinked mentions”功能就几乎失效了。你无法看到这个双链词在其他文档出现的位置。例如将“时间戳”改成“202008061440时间戳”后，就无法发现其他文档提到时间戳的上下文了，而你在其他文章的正文部分很难出现类似“落山鸡论202008061440时间戳”的字段。<br>
-同时，时间戳也可能污染软件形成知识图谱（太占位置）。这可能也通过第三方插件来完成忽略时间戳，仅匹配后面的正文部分。</p>
 ]]></content>
     </entry>
 </feed>
