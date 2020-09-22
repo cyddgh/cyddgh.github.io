@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-09-17T13:58:19.560Z</updated>
+    <updated>2020-09-22T04:01:49.614Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -11,13 +11,54 @@
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
     <entry>
+        <title type="html"><![CDATA[obsidian版本前瞻——0.9版本]]></title>
+        <id>https://cyddgh.github.io/post/202009221134/</id>
+        <link href="https://cyddgh.github.io/post/202009221134/">
+        </link>
+        <updated>2020-09-22T03:55:16.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
+<p>今天obsidian内测版本更新到0.9，该版本增强了图谱功能。具体而言，实现了图谱筛选功能，筛选功能还能支持正则，此外图谱中出现了有方向的箭头标识。</p>
+<h1 id="具体实践">具体实践</h1>
+<p>群友Boninall认为可以在每个卡片中标记上时间戳，之后在图谱中检索这一时间段的新卡片。<br>
+他的卡片模板如下：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922113704.png" alt="" loading="lazy"></p>
+<h2 id="使用正则检索式进行图谱检索">使用正则检索式进行图谱检索</h2>
+<p>图谱的检索式：<code>/2020091[1-9](.*)/</code><br>
+下图是检索2020年09月11-19日的笔记<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922113832.png" alt="" loading="lazy"></p>
+<h2 id="文件夹筛选">文件夹筛选</h2>
+<p>目前支持文件夹筛选，使用<code>path:文件夹名</code>就可以进行筛选<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922114129.png" alt="" loading="lazy"></p>
+<h2 id="多个图谱共存">多个图谱共存</h2>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922104600.png" alt="" loading="lazy"></figure>
+<h2 id="图谱的移动">图谱的移动</h2>
+<p>图谱界面中可以通过键盘上的上下左右键进行移动</p>
+<hr>
+<p>本节感谢Boninall的贡献。</p>
+<h1 id="关于内测版">关于内测版</h1>
+<h2 id="内测版的购买">内测版的购买</h2>
+<p>内测版版本是通过官网（https://obsidian.md/pricing）购买Catalyst（25美元），但本渠道需要万事达或visa的信用卡。如果想要以人民币付款，可以加obsidian群（QQ群：774176839），联系开发者Silver（也是群管理员之一）使用微信付款。</p>
+<h2 id="catalyst的服务">Catalyst的服务</h2>
+<p>依照官网，Catalyst（催化剂）的介绍包括4点，我个人简单翻译如下：</p>
+<ul>
+<li>Support development：支持软件的发展</li>
+<li>Early access to insider builds：更早接触到内测版本</li>
+<li>Special badges in our community：在官方社区的账号上有勋章</li>
+<li>Access to exclusive dev channel：可以加入一个开发频道<br>
+以上4点，最主要的就是能获得内测版本，能比普通用户更早接触到新功能。</li>
+</ul>
+<p>最后放上一张官网的图谱动图<br>
+<img src="https://forum.obsidian.md/uploads/default/original/2X/e/e329874f5048af6fd9f343467147a7ecf0fcadd0.gif" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[推荐视频——构建第二大脑的十大原则]]></title>
         <id>https://cyddgh.github.io/post/202009172156/</id>
         <link href="https://cyddgh.github.io/post/202009172156/">
         </link>
         <updated>2020-09-17T13:32:26.000Z</updated>
         <content type="html"><![CDATA[<p>国内播放地址：https://www.bilibili.com/video/BV1QD4y1d7At</p>
-<p>Ali Abdaal在今年的知识管理圈很好，分享了许多关于知识管理的心得，今天有群友特别推荐了这条视频，看后感觉不错，想推荐给大家​。我自己在看的过程中也对其提出的10点原则进行了摘录，并附上自己的一些想法​。本文是我个人笔记的分享，不对记录的准确性负责，大家有空还是去看看视频。<br>
+<p>Ali Abdaal在今年的知识管理圈很火，分享了许多关于知识管理的心得，今天有群友特别推荐了这条视频，看后感觉不错，想推荐给大家​。我自己在看的过程中也对其提出的10点原则进行了摘录，并附上自己的一些想法​。本文是我个人笔记的分享，不对记录的准确性负责，大家有空还是去看看视频。<br>
 我个人也写几点想法，<br>
 最重要的一点是“我们更能记住我们参与的”，所以我们的笔记卡片应该由我们自己亲手写，最好还是不要进行剪藏。</p>
 <p>​对于“让想法流动起来”，更关注输出，这点也​非常重要。</p>
@@ -341,33 +382,6 @@ Good artists copy;Great artist steal From 毕加索</p>
 <p>本文希望能扩展obsidian的应用形式。但上述设想的实现可能还需要obsidian软件本身的支持，或者待API功能开发后，由第三方开发者支持。</p>
 <p>另外，最近obsidian已经升级至0.8.4，软件已经内置汉化界面，按Setting-about-Language-简体中文，然后重启就可以发现汉化成功。注意：目前帮助文档（Help）还未汉化，但群文件有群友汉化版。欢迎有志于汉化相关文档的群友报名参与后续帮助文档的汉化。obsidian爱好者群：774176839。</p>
 <p>注：本文中的兄弟节点应该对应thebrain中Jump Thoughts，为方便非thebrain用户理解，翻译为兄弟节点。需要注意：1.thebrain中还有一类sibling Thoughts（即团子大圆帅所说的）。2.经群友D的提醒，兄弟节点在数据结构中有特定含义，本文所指的兄弟节点不是指数据结构上“树的节点有兄弟关系”。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[和obsidian开发者的交流]]></title>
-        <id>https://cyddgh.github.io/post/202008162211/</id>
-        <link href="https://cyddgh.github.io/post/202008162211/">
-        </link>
-        <updated>2020-08-17T01:55:40.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="hightligh">Hightligh</h1>
-<p>Obsidian 开发者的对话重点如下：</p>
-<ol>
-<li>希望开发一款能用几十年的笔记软件。</li>
-<li>大纲软件更适合于头脑风暴，但回顾难度提高。这是牺牲了将来的理解率，获得现在的效率。</li>
-<li>卢曼卡片是严肃写作，是自己的宝藏。</li>
-<li>笔记像人生一样，有意义的是过程，不是结果。</li>
-</ol>
-<h1 id="谈话正文">谈话正文</h1>
-<p>本谈话是基于 QQ 群聊天的讨论记录整理而成。讨论过程中除了本人和 Silver 外还有其他群友参与了讨论，但因为没有征求他们的同意，所以将他们的讨论全部进行删除处理，只留本人与Silver的对话内容。因此，谈话上下文可能有所出入，但应该能比较好体现 Obsidian 开发者的软件精神。</p>
-<p>落山鸡：Silver 我有点好奇，你们这项目（Obsidian）为什么基于 Markdown，而不是大纲。因为你们之前有负责 Dynalist，应该从大纲上更好构建吧？是因为有图要用到不同的开发语言吗？<br>
-Silver：因为大纲除了 OPML 没有标准，也不可读，违背了我们当时想做你的笔记几十年不需要倒来倒去的想法啊！我们想做一个 PKM（个人只是管理）系统，可以等你老了，孩子长大了，笔记还在那，随便读。现在笔记软件每几年就消失几个，想想就害怕。就算是做 Dynalist 的时候，我自己的日记都是用 Notational Velocity 之类完全本地的软件<br>
-落山鸡：Silver，能够理解。我之前主要用的是zk软件，然后迁移过来，依然能用，这让我很放心。不会因为软件改变，影响我的笔记。<br>
-Silver：另外一个想法是，大纲写起来太容易了，太没阻力了，我个人不觉得是件好事。虽然很适合头脑风暴，但是这种笔记你过几年回来看，根本看不懂。至少我去翻15年刚做Dynalist 时的大纲，我自己都不知道自己在写什么。不知道你们有没有这种感受。<br>
-Silver：写大纲的时候，我一般就拼命把脑袋里想的东西都写下来，不管上下文，不管失去现在的情境还能不能看懂。我个人希望大家抱着写文章的心态去做自己的知识系统，这样子长期收益更高。Obsidian 也是带着这种想法做的。<br>
-落山鸡：Silver，我除了用读书用大纲，其他都不用，感觉我对大纲的认识不足，还不会使用。但是大纲告诉了我“知识树”这个概念，还是挺改变我的。<br>
-Silver：看个人吧，我自己的体验是，大纲是牺牲了将来的理解率，获得了现在的效率。很多其他双链软件的用户也说用了几个月，发现自己的图谱很乱。当然也不是所有人都会这么觉得，也看人，和他们写作的习惯。如果你把大纲当段落来写，那也是不错的。<br>
-落山鸡：就如同写论文时的参考文献，调整格式很复杂，但证因为复杂，所以体现了严肃的精神。<br>
-Silver：写大纲就像聊天一样，写的一般都不是很严谨。卢曼式笔记是自己的宝藏，给别人看，也看不懂。像人生一样，有意义的是过程，不是结果。在未来我们可能也会出一个白皮书，更加系统讨论上述内容。</p>
 ]]></content>
     </entry>
 </feed>
