@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-09-22T04:01:49.614Z</updated>
+    <updated>2020-10-02T12:54:06.007Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,47 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian版本前瞻——0.9.2版本（发布服务）]]></title>
+        <id>https://cyddgh.github.io/post/202010021951/</id>
+        <link href="https://cyddgh.github.io/post/202010021951/">
+        </link>
+        <updated>2020-10-02T12:53:33.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="本文重点">本文重点</h1>
+<p>介绍了obsidian发布服务的价格<br>
+发布服务的设置<br>
+发布服务的实例，特别是ob教程目前已经可以在网上浏览。</p>
+<p>目前obsidian在0.9.2内测版本中，终于集成了publish（发布）服务。根据官网的价格信息（https://obsidian.md/pricing ），以年付（billed annually）购买发布服务，每月价格为16美元，早鸟价8美元。温馨提醒，本文中所有的价格和解读都是基于个人对官网信息的理解，如有购买需要请直接联系官方。因为翻译错误本人不承担任何责任与风险。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201002203130.png" alt="" loading="lazy"></p>
+<h1 id="开启发布服务">开启发布服务</h1>
+<p>在设置-关于-当前版本，查看版本号为v0.9.2。<br>
+在设置-插件中找到Publish，打开开关，在左边的工具栏内就会出现一个纸飞机，如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201002202939.png" alt="" loading="lazy"></p>
+<h1 id="站点设置">站点设置</h1>
+<p>目前站点设置有以下可选项：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201002203510.png" alt="" loading="lazy"><br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201002203546.png" alt="" loading="lazy"></p>
+<p>比较重要的可能有以下几项：</p>
+<ul>
+<li>homepage file：类似于主页，可以设置进入页面显示的第一页面。</li>
+<li>Show hover preview：鼠标悬浮在双链上，可以实现预览效果，如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201002203839.png" alt="" loading="lazy"></li>
+<li>Show graph view：显示图谱，如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201002204000.png" alt="" loading="lazy"></li>
+<li>Show table of content:显示文内的标题，如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201002204229.png" alt="" loading="lazy"></li>
+</ul>
+<h1 id="发布服务实例">发布服务实例</h1>
+<ul>
+<li>ob教程：https://publish.obsidian.md/chinesehelp 。感谢ob开发者免费为ob教程提供了发布服务。</li>
+<li>ob官方帮助文档：<br>
+https://publish.obsidian.md/help/Index 。</li>
+</ul>
+<h1 id="结语">结语</h1>
+<p>群友jackiexiao之前也将ob教程进行了网页化，发布在了<a href="https://jackiexiao.github.io/obsidian-chinese-help/">Github</a>和<a href="http://jackiegeek.gitee.io/obsidian-chinese-help/">Gitee(国内访问较快)</a>，大家可以去对比两者发布服务的区别。<br>
+目前，ob的发布服务还不是很完善，例如缺少检索框、双链在网页上无法显示等等。这些缺点可能是因为ob目前生成的是静态页而不是动态页。期待有更多的技术大牛能制作相应发布的脚本，例如像jackiexiao将ob发布到github上。大家有什么好的建议可以去官方频道留言，助力ob的发展。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian版本前瞻——0.9版本]]></title>
         <id>https://cyddgh.github.io/post/202009221134/</id>
@@ -339,49 +380,6 @@ Good artists copy;Great artist steal From 毕加索</p>
 <li>多进行创造性的写作，哪怕是转述，而不是简单的复制粘贴。知识卡片的珍贵在于信息是通过你的思考而沉淀下来的。</li>
 <li>不必正确。卡片上的信息不一定是准确无误，它是可以迭代的，最终形成永久笔记。当然永久笔记也不是永远正确，它只是你的暂时性总结。</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[使用obsidian模拟thebrain知识网络的一种可能性]]></title>
-        <id>https://cyddgh.github.io/post/202008220927/</id>
-        <link href="https://cyddgh.github.io/post/202008220927/">
-        </link>
-        <updated>2020-08-22T01:24:52.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="背景">背景</h1>
-<p>我个人认为：obsidian是去中心化、无节点等级的知识图谱；thebrain是去中心化、有节点等级的知识图谱。其中两者很大的差异在于知识图谱中每个节点是否平等，在thebrain中是有父节点、子节点和兄弟节点的区分，存在一定的结构关系，而obsidian中各个卡片都是平等的。目前，双链软件用户普遍反映知识图谱没有发挥预期的作用，这可能是因为双链软件的设计问题导致。节点之间是否有等级差异似乎能一定程度上解决双链软件中知识图谱不可读的问题，增加图谱的意义。</p>
-<h1 id="具体方法">具体方法</h1>
-<p>下文所介绍的方法非常简单，只是作为一种实现的可能性，希望能引起更多人的讨论。<br>
-我的灵感是来自于RoamResearch中单个页面的知识图谱视图，发现其节点之间联系也存在有方向性，这取决于文内双链所处的位置。我将这种思路迁移至obsidian中，设想以下实现方法：</p>
-<ol>
-<li>父节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称A为B的父节点。</li>
-<li>子节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称B为A的子节点。</li>
-<li>兄弟节点：存在有卡片A、B，在卡片A中存在有[[B]]，且卡片B中有[[A]]，则称A和B为兄弟节点。</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>卡片</th>
-<th>A为B的父节点，B为A的子节点</th>
-<th>A、B是兄弟节点</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>[[B]]</td>
-<td>[[B]]</td>
-</tr>
-<tr>
-<td>B</td>
-<td></td>
-<td>[[A]]</td>
-</tr>
-</tbody>
-</table>
-<h1 id="结语">结语</h1>
-<p>本文希望能扩展obsidian的应用形式。但上述设想的实现可能还需要obsidian软件本身的支持，或者待API功能开发后，由第三方开发者支持。</p>
-<p>另外，最近obsidian已经升级至0.8.4，软件已经内置汉化界面，按Setting-about-Language-简体中文，然后重启就可以发现汉化成功。注意：目前帮助文档（Help）还未汉化，但群文件有群友汉化版。欢迎有志于汉化相关文档的群友报名参与后续帮助文档的汉化。obsidian爱好者群：774176839。</p>
-<p>注：本文中的兄弟节点应该对应thebrain中Jump Thoughts，为方便非thebrain用户理解，翻译为兄弟节点。需要注意：1.thebrain中还有一类sibling Thoughts（即团子大圆帅所说的）。2.经群友D的提醒，兄弟节点在数据结构中有特定含义，本文所指的兄弟节点不是指数据结构上“树的节点有兄弟关系”。</p>
 ]]></content>
     </entry>
 </feed>
