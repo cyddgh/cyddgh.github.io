@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-10-02T12:54:06.007Z</updated>
+    <updated>2020-10-12T13:53:26.418Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[ZK、ANKI和GTD]]></title>
+        <id>https://cyddgh.github.io/post/202010092124/</id>
+        <link href="https://cyddgh.github.io/post/202010092124/">
+        </link>
+        <updated>2020-10-12T13:52:44.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="前言">前言</h1>
+<p>本文是个人随笔，想到哪里写到哪里，非严肃写作。对ZK、ANKI和GTD大家可能有不同的理解，在文中的含义也可能不同，但大体上段落开头的ZK、ANKI和GTD，分别指的是知识卡片笔记法（zettelkasten）、使用闪卡间隔复习和时间管理。<br>
+本文主要想罗列一下这三种方法的相似点，主要是因为之前听到张玉新老师和吴刚老师提出zk和GTD有相似之处。在之后的使用中渐渐联想到ZK、GTD与ANKI都可以基于卡片，都有原子化理念，所以想谈谈这三者的共同点，方便这三个方法的使用者能触类旁通。<br>
+本文目前还是未完成状态，后续如有更新还在我本人的博客（点击阅读原文）浏览。</p>
+<h1 id="正文">正文</h1>
+<p>ZK、ANKI和GTD都可以用纸笔来完成，也可以用软件来完成。<br>
+ZK、ANKI和GTD都可以用不同的软件来实现，目前zk有obsidian、RoamResearch、notion，anki则有anki、SuperMemo、Remnote，GTD有omnifocus、滴答清单、Doit。<br>
+ZK、ANKI和GTD都有不同价位的实现方法，ZK的实现可依靠免费的obsidian到月费15美元的RoamResearch，ANKI的实现可依靠免费的anki到有付费课件的SuperMemo，GTD的实现可依靠从低廉的纸币工具，到600+的omnifocus。<br>
+工具会影响效果，但不会决定成败。</p>
+<p>ZK、ANKI和GTD都可以以卡片形式成列。<br>
+ZK、ANKI和GTD都遵循一事一卡，zk中一张卡片记录一个知识、anki中一张卡片记录一个词语或短语或句子、GTD中记录一个行动。</p>
+<p>ZK、ANKI和GTD都可以有提醒的功能，或者说是recall，zk产生联系、anki加深印象、GTD催促行动。<br>
+ZK、ANKI和GTD都不是立刻见效，需要日积月累，形成习惯才能见到效果。而且维护这些系统一般都比较费力，zk要考虑笔记结构、anki要制卡、GTD要回顾排期。<br>
+所有的工具都需要你付出努力。</p>
+<p>ZK、ANKI和GTD都有有一定的门槛，zk你要了解双链、anki你要配置一些插件、GTD需要了解一些流程和操作。<br>
+ZK、ANKI和GTD都有许多的资料（中文或英文），都有许多课程或培训师（免费或收费），也有许多的争议，许多的流派。但最后还是需要靠你的智慧去判断这方法适不适合你。</p>
+<p>ZK、ANKI和GTD都可以有一些魔改（GTD可能弱一些），ZK和ANKi都可以通过html、css来完成一些很酷的事情，anki还能调整复习曲线，GTD也能依靠手账来绘制令人向往的美，但上述这些对系统是否有效的提升似乎都不是很大。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian版本前瞻——0.9.2版本（发布服务）]]></title>
         <id>https://cyddgh.github.io/post/202010021951/</id>
@@ -354,32 +379,6 @@ Good artists copy;Great artist steal From 毕加索</p>
 <li><a href="https://gitee.com/cyddgi/obsidian-chinese-help">gitee</a></li>
 <li>本人微信号（公众号：ruantongda）</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有限性和可知性影响笔记方法]]></title>
-        <id>https://cyddgh.github.io/post/202008242119/</id>
-        <link href="https://cyddgh.github.io/post/202008242119/">
-        </link>
-        <updated>2020-08-24T13:19:17.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="笔记是对事物的描述">笔记是对事物的描述</h1>
-<p>我认为笔记是用文字（还可能包括图表）去描述一个事物，而事物有以下2种特点：</p>
-<ol>
-<li>这个事物可能是有限的，也可能是无限的（或者说难以穷举的）。有限的事物可能是一本小说内的人物关系，或者是小学课本里的考点。无限的事物可能是全体人类的生老病死。</li>
-<li>这个事物可能是已知的，也可能是未知的。例如课本的考纲考点、水浒传中108将的关系和背景，在此刻是已知的。但也有一些人类未知（或者说超出你本人认知范畴）的知识，例如如何治愈或免疫艾滋病、全球气候变化会对地球造成怎样的影响。</li>
-</ol>
-<p>我的个人的体会是，已知且有限的知识（或者说是信息）是比较容易去记录的。例如水浒传中的108将，这是一个不再演变的知识点，不会在明天出现109将或者107将。这类知识处理起来是非常容易的，例如用thebrain来构建人物图谱。<br>
-但是如果是无限且未知的知识，以我个人的经验，使用thebrain构建的过程就常常出现挫折。这类知识也最难以进行归纳汇总，因为你不知道你要面对的整个知识体系，无从进行从上而下的设计。要解决这样的困境，一方面要多了解不同的笔记方法和理念，从中找到适合你的方法论，另一方面要多做一些笔记，从具体的实践中体会各个方法论。<br>
-目前，大家在使用各类软件中也遇到这样的问题，我建议在具体交流的时候应该提供更多的背景知识，因为你所要描述的知识可能会影响相应的笔记方法选择。</p>
-<h1 id="一些杂感">一些杂感</h1>
-<p>本文（以及我写的一些文章）都不属于严肃写作的范畴，更倾向是一些随笔，记录下我此刻的思考，分享给大家。这里的信息有正确也有错误，希望大家批判阅读，也欢迎大家在文末留言，指出文中的错误，我会将这些评论精选。<br>
-此外，我作为爱好者，而非此方向的研究者，我也无法保证文中所用的概念是准确无误。例如，知识、信息、情报、文件等等概念可能难以界定，因此可能有人会批判说这方法是信息的收集而不是知识的收集。但考虑到本文的受众和本文的性质，我们不应该陷入知识的诅咒中，局限于个别名词和理念之争。而我尽可能保证在我的论证体系中，保证这些概念的一致性。但可能随着时间的变化，我的认知都可能发生改变，这可能也会导致名词意义的变迁。<br>
-最后，我还想提及一点对于卢曼卡片或者说How to take smart notes此书的体会——多写。目前，我所见到的讨论大多是笔记软件的选择、功能的讨论（例如块引用）、笔记组织方式等等，但我感觉多写，多进行创造型的工作才是卢曼本人经历对我的启发。</p>
-<ol>
-<li>无论字数的多少，每天都写下自己的新认知。这些认知可能在未来被推翻，但都是你成长的基石。</li>
-<li>多进行创造性的写作，哪怕是转述，而不是简单的复制粘贴。知识卡片的珍贵在于信息是通过你的思考而沉淀下来的。</li>
-<li>不必正确。卡片上的信息不一定是准确无误，它是可以迭代的，最终形成永久笔记。当然永久笔记也不是永远正确，它只是你的暂时性总结。</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
