@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-10-12T13:55:30.186Z</updated>
+    <updated>2020-10-13T13:33:52.213Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[App Store应用查价]]></title>
+        <id>https://cyddgh.github.io/post/202010132133/</id>
+        <link href="https://cyddgh.github.io/post/202010132133/">
+        </link>
+        <updated>2020-10-13T13:32:49.000Z</updated>
+        <content type="html"><![CDATA[<p>Price Tag在我iphone不能使用了，我发现了一个新的替代品：https://appsliced.co/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[webdav网站]]></title>
+        <id>https://cyddgh.github.io/post/202010131753/</id>
+        <link href="https://cyddgh.github.io/post/202010131753/">
+        </link>
+        <updated>2020-10-13T09:52:40.000Z</updated>
+        <content type="html"><![CDATA[<p>坚果云非常棒，也很好，就是会收费，特别是在zotero存储中无法对zip格式变动的部分进行上传（这缺一个专业术语）。所以要找一些其他的webdav网站</p>
+<ol>
+<li>yandax</li>
+<li><a href="https://cncncloud.com/">小太阳</a> 国内的运营商，提供10G的空间。我感觉存文献应该不怎么需要担心隐私，特别是不那么具备应用前景的一些基础研究。</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ZK、ANKI和GTD]]></title>
         <id>https://cyddgh.github.io/post/202010092124/</id>
@@ -297,87 +319,6 @@ Good artists copy;Great artist steal From 毕加索</p>
 <li>当知识卡片达到一定数量级后，图谱有意义吗？图谱应该如何展示，更能提升效果？</li>
 <li>卢曼笔记法真的比以往的笔记法优秀吗？有什么适用范围？有什么局限性？</li>
 <li>卢曼本人的成功有多少来自于卢曼自身的天赋，有多少来自于卢曼笔记法的工作流？这种成功可复制吗？</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[将知识树状结构和网状结构融合的一种可能方式]]></title>
-        <id>https://cyddgh.github.io/post/202008291942/</id>
-        <link href="https://cyddgh.github.io/post/202008291942/">
-        </link>
-        <updated>2020-08-29T11:43:27.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="知识的组织结构">知识的组织结构</h1>
-<p>在卢曼笔记法的解读中，使用哪种组织结构来整理知识卡片一直备受讨论。一般而言，有两类组织方法：有层次（hierarchy）和无层次（heterarchy）。</p>
-<table>
-<thead>
-<tr>
-<th>组织形式</th>
-<th>层次化</th>
-<th>无层次</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>有无文件夹</td>
-<td>有</td>
-<td>无</td>
-</tr>
-<tr>
-<td>图谱性质</td>
-<td>树状</td>
-<td>网状</td>
-</tr>
-<tr>
-<td>输入时的难易</td>
-<td>难</td>
-<td>易</td>
-</tr>
-<tr>
-<td>整理时的难易</td>
-<td>易</td>
-<td>难</td>
-</tr>
-</tbody>
-</table>
-<p>有层次可以视为种结构化，大多使用文件夹来收纳卡片，弹性小而逻辑强。记录时，需要去考虑卡片的存放位置，需要耗费脑力，但后期具有比较强的逻辑学，方便加工。层次排列形成的是一种树状图谱（主要特征是树状，可能伴有网状特征）。<br>
-无层次又可称为扁平化，例如RoamResearch那样采用无文件夹的管理形式。记录时，无需考虑卡片的存放位置，卡片自然依据文件名的顺序随意排列，但后期加工时需要耗费脑力。无层次排列形成的是一种网状图谱。<br>
-有一派的观点认为，知识卡片应该是自由排布，当卡片数量到达一定量级时，卡片内部的脉络会随着双链自发的产生。<br>
-但另一派的观点认为，卡片的位置应该通过思考去确定，卡片的分类本身也是也是一种需要精心设计和思考的过程。</p>
-<h1 id="实践的原由">实践的原由</h1>
-<p>近期，我在整理obsidian群分享时，需要将原本的石墨文档转为obsidian的库文件。该石墨文档虽然是线性布置，但记录时是采用时间戳进行非线性的书写，所以很适合转换为双链形式。<br>
-因为教程的本身属性，以及考虑读者本身对于非线性概念理解不深，教程本身应该以传统的线性层次化结构（或者说是线性结构）来安排。但该库同时需要收录群友的精华发言，群友发言不是对于特定主题、每次发言具有随机性，因此无法给予特定的位置，使用时间戳的非线性结构更好处理这些发言。因此最好在该库同时兼容树状和网状的知识结构。</p>
-<h1 id="具体方法">具体方法</h1>
-<p>在实践的过程中，我发现可以通过下列形式来结合树状和网状结构。具体参考我的obsidian教程库（下载地址见下一章）。<br>
-教程分为多个小节，以文件夹区分。</p>
-<p>教程的主体部分采用树状结构，以卢曼序号作为标题进行收录，例如“00 新手入门”文件夹。</p>
-<p>群友交流的部分采用网状结构，以时间戳作为标题进行收录，该部分全部收集于“09 碎记”。</p>
-<p>教程主体部分可以通过引用碎记文件夹的内容来对文档进行佐证，从而结合树状和网状结构。例如“00.11.02 关于QQ群人满踢人的说明”一节引用了“202008271407用Quicker引用PDF”。</p>
-<h1 id="obsidian教程库下载地址">obsidian教程库下载地址</h1>
-<ul>
-<li><a href="https://github.com/cyddgh/obsidian-chinese-help">github</a></li>
-<li><a href="https://gitee.com/cyddgi/obsidian-chinese-help">gitee</a></li>
-</ul>
-<p>原<a href="https://shimo.im/docs/YCVvh9jrw6qGR38D">石墨文档</a></p>
-<h1 id="结语">结语</h1>
-<p>需要说明的2点：</p>
-<ol>
-<li>无论是使用卢曼序号（树状）还是使用时间戳（网状），都会使得目前双链软件中的上下文（Context）发现功能大大削弱。</li>
-<li>无论是使用卢曼序号（树状）还是使用时间戳（网状），都会使节点信息难以在图谱读取。</li>
-</ol>
-<p>此外，关于“卢曼当年使用卢曼序列是不是因为客观设备所限制？”、“卢曼如何活到现在，会使用哪种方法？”等假设性问题，一定是无解的。至于使用树状结构还是网状结构，最终需要使用者本人来决定。本文提供了一种结合树状结构和网状结构的可能性，希望对读者有所帮助。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian群资源分享渠道]]></title>
-        <id>https://cyddgh.github.io/post/202008272329/</id>
-        <link href="https://cyddgh.github.io/post/202008272329/">
-        </link>
-        <updated>2020-08-27T15:29:37.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li><a href="https://shimo.im/docs/YCVvh9jrw6qGR38D">石墨文档</a></li>
-<li><a href="https://github.com/cyddgh/obsidian-chinese-help">github</a></li>
-<li><a href="https://gitee.com/cyddgi/obsidian-chinese-help">gitee</a></li>
-<li>本人微信号（公众号：ruantongda）</li>
 </ul>
 ]]></content>
     </entry>
