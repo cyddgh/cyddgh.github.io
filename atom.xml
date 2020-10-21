@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-10-17T05:37:25.807Z</updated>
+    <updated>2020-10-21T02:25:36.192Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[Endnote-调整软件内的字体大小]]></title>
+        <id>https://cyddgh.github.io/post/202010211024/</id>
+        <link href="https://cyddgh.github.io/post/202010211024/">
+        </link>
+        <updated>2020-10-21T02:21:28.000Z</updated>
+        <content type="html"><![CDATA[<p>点击Edit-Endnote Preferences<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201021102335.png" alt="" loading="lazy"><br>
+在Endnote Preferences-Display Fonts-Library-Change Font选择字体字号<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201021102442.png" alt="" loading="lazy"></p>
+<p>参考了 https://m.sohu.com/a/236348343_632006</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我对All in one的思考]]></title>
         <id>https://cyddgh.github.io/post/202010151442/</id>
@@ -319,22 +332,6 @@ Good artists copy;Great artist steal From 毕加索</p>
 <p>因具体涉及的知识点较多且前人已有完备的论述，本文仅罗列一些关键的信息。<br>
 本人日常以Endnote为主，使用zotero较少，有不懂的地方可以查看文中所引用的专栏文章。<br>
 如果你有更好的方式请留言，随后我会精选方便其他读者查阅。未来本教程可能有所更改，请点击阅读原文，查看最新版本。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[软件总在变化]]></title>
-        <id>https://cyddgh.github.io/post/202009020940/</id>
-        <link href="https://cyddgh.github.io/post/202009020940/">
-        </link>
-        <updated>2020-09-02T01:40:23.000Z</updated>
-        <content type="html"><![CDATA[<p>软件是一直在变化的，有一些软件会兴起，有一些软件就消失在历史中。<br>
-我所了解到的软件变迁大大小小、模模糊糊有以下几个：</p>
-<ul>
-<li>Mac系统自macOS Catalina（10.15）不再支持32位软件，现在又要从inter转Arm</li>
-<li>Mendeley自从被Elsevier收购之后，软件也大为改变。</li>
-<li>R语言中ggplot的函数一直在变化。另外R语言升级到4.0时，第一版的数量生态学中的代码就无法直接运行了（可能涉及到包和函数的合并）。</li>
-<li>Python从2.7升级到了3.X，但相互不兼容</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
