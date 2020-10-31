@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-10-21T02:25:36.192Z</updated>
+    <updated>2020-10-31T10:07:10.558Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[关于群满员的尝试-知识星球]]></title>
+        <id>https://cyddgh.github.io/post/202010300944/</id>
+        <link href="https://cyddgh.github.io/post/202010300944/">
+        </link>
+        <updated>2020-10-31T10:06:14.000Z</updated>
+        <content type="html"><![CDATA[<p>从[[00.11.02 关于QQ群人满踢人的说明]]可以得知，受QQ群本身的人数限制，ob群无法满足所有obsidian爱好者加入，所以我们也在积极进行各种尝试。</p>
+<h1 id="不开二群的原因">不开二群的原因</h1>
+<p>为什么不开二群的原因可能有以下几个：</p>
+<ul>
+<li>目前活跃的主要是本群前约10%的群友，很多人只是加入了，但随后将群收进免打扰了。</li>
+<li>不开二群是为了让讨论更为集中</li>
+<li>群管理还要对群里的发言负责，精力也有限</li>
+</ul>
+<h1 id="已知的难点痛点">已知的难点痛点</h1>
+<p>在考虑社区时，我思考的一些痛点：</p>
+<ul>
+<li>免费提供服务，并且服务可靠，在行业内信誉好，技术简单（放弃使用vps自建社区）</li>
+<li>和微信或QQ的衔接性好，尽量减少迁移的成本</li>
+<li>提供类似于讨论社区的服务，能进行知识沉淀，能检索已有的知识，最好能导出</li>
+<li>不限制团队人数</li>
+</ul>
+<h1 id="选择知识星球的原因">选择知识星球的原因</h1>
+<p>我尝试用看看知识星球能不能承载一些QQ群的压力，这是免费星球（永久，而且我也不能将此星球修改成收费），看中它的原因：</p>
+<ul>
+<li>和微信衔接好，方便大家过渡</li>
+<li>有类似社区、论坛的效果</li>
+<li>可以进行检索</li>
+<li>免费</li>
+<li>加入的人数无上限</li>
+</ul>
+<h1 id="本星球的一些说明">本星球的一些说明</h1>
+<ul>
+<li>本星球是个人依据兴趣建立的爱好者平台，不是ob的官方平台，所发布内容不代表ob官方。</li>
+<li>本星球同QQ群（774176839）一样，欢迎各类笔记软件和笔记方法的讨论，不限于obsidian，我们对各类软件保持开放的态度。</li>
+<li>对于笔记之外的问题（例如系统问题、网络问题）我们不进行讨论。</li>
+<li>本星球是免费星球（根据知识星球的条款，不能再改为收费），是公益性质，本着“我为人人，人人为我”的理念，欢迎大家分享内容。</li>
+<li>请大家进行友善讨论，多进行客观性表述（例如，ob是基于markdown），减少主观评论（例如，软件A比软件B好）；多进行正面评论，少进行负面评论。</li>
+<li>本说明根据具体实践，还可能继续更新。</li>
+</ul>
+<h1 id="知识星球的二维码">知识星球的二维码</h1>
+<p>大家感兴趣可以用微信扫描下面的二维码尝试看看，但不保证本星球会持续运行下去，可能和其他的尝试一样，因为效果不显著而停止。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201031180656.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Endnote-调整软件内的字体大小]]></title>
         <id>https://cyddgh.github.io/post/202010211024/</id>
@@ -275,63 +320,6 @@ Good artists copy;Great artist steal From 毕加索</p>
 <li>不清楚是否存在一款软件能不依赖人的努力，自动能解决笔记系统走向混乱的问题</li>
 </ul>
 <p>大家对本文有不同的见解，也请欢迎留言，以让更多人了解到相关知识。本文也将在本人的Github博客上进行后续的更新。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[通过Quicker将zotero与obsidian连用（仅Win）]]></title>
-        <id>https://cyddgh.github.io/post/202009061612/</id>
-        <link href="https://cyddgh.github.io/post/202009061612/">
-        </link>
-        <updated>2020-09-06T09:24:00.000Z</updated>
-        <content type="html"><![CDATA[<p>通过Quicker将zotero与obsidian连用（仅Win）</p>
-<h4 id="本文所需要用到的工具">本文所需要用到的工具：</h4>
-<ol>
-<li>Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（90天）使用时长]</li>
-<li>Quicker动作: https://getquicker.net/sharedaction?code=f24587bd-3fce-4855-d22c-08d84927c51f</li>
-<li>zotero: https://www.zotero.org/</li>
-<li>PDF-Xchange Viewer：可能不兼容一些PDF软件，这软件我测试后可以</li>
-</ol>
-<h4 id="需要注意的事情">需要注意的事情</h4>
-<ol>
-<li>使用本方法时，zotero只能使用自身同步或webdav同步，不能使用zotfile+网盘的同步方法。这两类同步方式的不同请见RefTools专栏内的文章（ https://zhuanlan.zhihu.com/p/31453719 ），需要认识到文件型和文件链接型同步的不同。<strong>本教程使用的是同步文件型</strong>。</li>
-<li>zotero本身同步空间是300M，超出后需要付费。为了免费使用，建议借助其他软件来进行webdav同步。我建议可以使用其它的webdav软件，例如TeraCloud（邀请码3PYKL， https://teracloud.jp/en/ ） ，因为TeraCloud不限制上传和下载的流量，空间是15G，作为文献阅读足够了。</li>
-<li>使用坚果云的webdav同步的方法，已经有人论述了（见 http://help.jianguoyun.com/?p=4190 ）。但请注意，从我个人使用上使用webdav方式进行同步，坚果云无法对zip文件进行增量备份，会导致上传流量占用过多。</li>
-<li>Quicker如何使用请见Quicker的帮助文件。</li>
-<li>Quicker动作的使用请见动作页，Zplusless已有论述。</li>
-</ol>
-<h4 id="一些操作要点">一些操作要点</h4>
-<p>该动作要实现还有一些注意事项：</p>
-<ul>
-<li>
-<p>zotero首选项中的同步页面设置大致如下<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906170946.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>需要确认PDF所在的目录<br>
-鼠标移动到PDF-右键-打开文件位置<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171431.png" alt="" loading="lazy"><br>
-确定PDF所在位置类似于（~\Zotero\storage\MSUJ5A4S），PDF所在目录是8位字母和数字组成的文件夹，上级文件夹是storage，再上级文件夹是Zotero<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171626.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>简单解析复制后的md语句<br>
-如上PDF所产生的引用文字，如下</p>
-</li>
-</ul>
-<blockquote>
-<p>&quot;The root-knot nematode Meloidogyne chitwoodi is a pest that  affects potato production in the Pacific Northwest of the United  States.&quot;<a href="zotero://open-pdf/library/items/MSUJ5A4S?page=1">《Zhang-2020-Nature Plants》@page:1</a></p>
-</blockquote>
-<p>可以看到</p>
-<ol>
-<li>“&gt;”：代表markdown的引用开始</li>
-<li>双引号：PDF中的原文</li>
-<li>[《Zhang-2020-Nature Plants》@page:1]：Zhang-2020-Nature Plants为该pdf的文件名，@page:1代表第一页</li>
-<li>(zotero://open-pdf/library/items/MSUJ5A4S?page=1)：请注意，这里的MSUJ5A4S和PDF所在文件夹名称（MSUJ5A4S）相同。<strong>我认为这也是为什么必须使用内置同步或者webdav同步的原因</strong>。</li>
-</ol>
-<h4 id="后记">后记</h4>
-<p>因具体涉及的知识点较多且前人已有完备的论述，本文仅罗列一些关键的信息。<br>
-本人日常以Endnote为主，使用zotero较少，有不懂的地方可以查看文中所引用的专栏文章。<br>
-如果你有更好的方式请留言，随后我会精选方便其他读者查阅。未来本教程可能有所更改，请点击阅读原文，查看最新版本。</p>
 ]]></content>
     </entry>
 </feed>
