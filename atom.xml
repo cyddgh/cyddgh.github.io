@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-11-04T03:47:42.385Z</updated>
+    <updated>2020-11-04T03:48:47.114Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -52,7 +52,7 @@
 将下载后的插件放在库文件夹（下图的库文件夹是obsidian群分享）下的“.obsidian”文件夹，如下图<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104113556.png" alt="" loading="lazy"></p>
 <figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104113647.png" alt="" loading="lazy"></figure>
-<p>然后重启，其他请插件上一章节。</p>
+<p>然后重启，其他请参加上一章节。</p>
 <p>我自己打包了图中的3款插件，如果感兴趣可以下载（ https://cowtransfer.com/s/e734433bb5ac44 ，有效期7天，只能供100次下载）</p>
 <h1 id="插件使用警告">插件使用警告</h1>
 <ol>
