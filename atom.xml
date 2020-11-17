@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-11-04T03:54:09.195Z</updated>
+    <updated>2020-11-17T11:14:31.628Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[去线性化和线性化]]></title>
+        <id>https://cyddgh.github.io/post/202011171848/</id>
+        <link href="https://cyddgh.github.io/post/202011171848/">
+        </link>
+        <updated>2020-11-17T11:13:53.000Z</updated>
+        <content type="html"><![CDATA[<p>要论述“去线性化和线性化”这一概念，首先需要提及史蒂芬平克在《风格感觉》常常被人引用的句子——“The web, the tree, and the string”，翻译后的语言有“概念網．樹狀圖．詞序”、“思维网·句法树·词语串”，或者“写作之难，在于把网状的思考，用树状的语法结构，转换成线性字符串”。基于上述的概念，可以认为文本是线性的，而人的思考是非线性的。</p>
+<ul>
+<li>文本的概念可以包含大部分的读物，特别是科技论文、说明书、新闻等.这些文本都有非常清晰的结构，有些行文中还包含有主题句。</li>
+<li>人的思考是非线性的，是网状的，是易发散的，是能将多个问题联系起来的，这也是目前双链软件立足的理论之一。</li>
+</ul>
+<p>因此，本文的标题“去线性化和线性化”可理解为：</p>
+<ul>
+<li>去线性化：如何将线性的文本变成非线性的笔记。这是一个输入的过程.</li>
+<li>线性化：如何将非线性的笔记变成线性的文本。这是一个输出的过程。</li>
+</ul>
+<p>写到这里，笔者也觉得“去线性化和线性化”是故弄玄虚，卖弄概念，因为本质就是传统的输入和输出，为什么要重新给予定义？<br>
+我思考后给出以下几点原因：</p>
+<ol>
+<li>“去线性化和线性化”缩小了这“输入和输出”的范围，更加直接限定了这两个广义过程，是对“输入和输出”另一个角度的认知。</li>
+<li>去线性化能更好指代一些知识收集的过程，不仅仅是依靠双链软件进行笔记收集是去线性化，例如使用Liquidtext PDF阅读也是去线性化，而且使用该软件能更加直观。</li>
+<li>线性化的过程在目前被忽略，相较于去线性化的各类方法论，线性化的方法论和论述目前还是比较少的。在使用非线性方法收集材料之后，我们很倾向于直接展示笔记，而不是再加工展示给他人。这一个过程的忽略可能导致信息不能有效传递。</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian插件系统]]></title>
         <id>https://cyddgh.github.io/post/202011041115/</id>
@@ -278,42 +303,6 @@ https://publish.obsidian.md/help/Index 。</li>
 </ul>
 <p>最后放上一张官网的图谱动图<br>
 <img src="https://forum.obsidian.md/uploads/default/original/2X/e/e329874f5048af6fd9f343467147a7ecf0fcadd0.gif" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[推荐视频——构建第二大脑的十大原则]]></title>
-        <id>https://cyddgh.github.io/post/202009172156/</id>
-        <link href="https://cyddgh.github.io/post/202009172156/">
-        </link>
-        <updated>2020-09-17T13:32:26.000Z</updated>
-        <content type="html"><![CDATA[<p>国内播放地址：https://www.bilibili.com/video/BV1QD4y1d7At</p>
-<p>Ali Abdaal在今年的知识管理圈很火，分享了许多关于知识管理的心得，今天有群友特别推荐了这条视频，看后感觉不错，想推荐给大家​。我自己在看的过程中也对其提出的10点原则进行了摘录，并附上自己的一些想法​。本文是我个人笔记的分享，不对记录的准确性负责，大家有空还是去看看视频。<br>
-我个人也写几点想法，<br>
-最重要的一点是“我们更能记住我们参与的”，所以我们的笔记卡片应该由我们自己亲手写，最好还是不要进行剪藏。</p>
-<p>​对于“让想法流动起来”，更关注输出，这点也​非常重要。</p>
-<p>对于“给未来的自己减压”，我认为是对费曼技巧的一种阐述。在写笔记时，我们脑中会有许多的隐性知识，我们会下意识认为未来的自己或别人也拥有这些知识。然而，随着时间流逝，一些隐性知识可能就消失了，导致未来的自己可能就读不懂这些​信息。所以最好将笔记做成给别人的笔记，设想一个对本领域有所了解，但了解不深的人，可能​更好。<br>
-对于“借来的创造力”和“从一开始”，好像更多强调积累带来的长期的​收益。</p>
-<hr>
-<p>以下是一些摘录</p>
-<p>1.借来的创造力<br>
-创新的关键是对原有事物的融合，是将自己的理解融入所见、所闻之中。<br>
-Good artists copy;Great artist steal From 毕加索</p>
-<p>2.灵感捕获<br>
-时刻记录自己的灵感，甚至买一本防水笔记本，在洗澡时用</p>
-<p>3.想法回收<br>
-信息是可以复用的。</p>
-<p>4.重项目，轻分类</p>
-<p>5.耐力至上，而不是爆发力</p>
-<p>6.从一开始，而不是从零开始<br>
-不用面对一张白纸，用素材库里的材料入手</p>
-<p>7.分组<br>
-例如论文的每一段就是一个内容块</p>
-<p>8.我们更能记住我们参与的<br>
-着重内化，例如笔记、书摘</p>
-<p>9.给未来的自己减压<br>
-记笔记时要注意不要简写、缩写，一些现在懂的概念可能以后的自己就不懂了。其实就是费曼技巧的一个小方面。</p>
-<p>10.让想法流动起来，不要完美主义。<br>
-完美的笔记系统不重要，也不存在，重要的是让自己的想法在笔记系统中流动起来。</p>
 ]]></content>
     </entry>
 </feed>
