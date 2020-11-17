@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-11-17T11:14:31.628Z</updated>
+    <updated>2020-11-17T11:21:53.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -16,7 +16,9 @@
         <link href="https://cyddgh.github.io/post/202011171848/">
         </link>
         <updated>2020-11-17T11:13:53.000Z</updated>
-        <content type="html"><![CDATA[<p>要论述“去线性化和线性化”这一概念，首先需要提及史蒂芬平克在《风格感觉》常常被人引用的句子——“The web, the tree, and the string”，翻译后的语言有“概念網．樹狀圖．詞序”、“思维网·句法树·词语串”，或者“写作之难，在于把网状的思考，用树状的语法结构，转换成线性字符串”。基于上述的概念，可以认为文本是线性的，而人的思考是非线性的。</p>
+        <content type="html"><![CDATA[<p>从“去线性化和线性化”去认识“输入和输出”的过程。<br>
+随笔系列的文章类似于zk笔记中的临时卡片，只是我本人对某个问题一些想法的记录，不保证内容的准确性。欢迎大家在下方留言讨论。</p>
+<p>“去线性化和线性化”这一概念是受到史蒂芬平克在《风格感觉》的启发，即那常常被提及的句子——“The web, the tree, and the string”，翻译后的语言有“概念網．樹狀圖．詞序”、“思维网·句法树·词语串”，或者“写作之难，在于把网状的思考，用树状的语法结构，转换成线性字符串”。基于上述的概念，可以认为文本是线性的，而人的思考是非线性的。</p>
 <ul>
 <li>文本的概念可以包含大部分的读物，特别是科技论文、说明书、新闻等.这些文本都有非常清晰的结构，有些行文中还包含有主题句。</li>
 <li>人的思考是非线性的，是网状的，是易发散的，是能将多个问题联系起来的，这也是目前双链软件立足的理论之一。</li>
