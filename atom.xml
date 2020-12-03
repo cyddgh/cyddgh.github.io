@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-11-17T11:21:53.906Z</updated>
+    <updated>2020-12-03T11:33:17.683Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian中的别名（aliases）功能]]></title>
+        <id>https://cyddgh.github.io/post/202012031854/</id>
+        <link href="https://cyddgh.github.io/post/202012031854/">
+        </link>
+        <updated>2020-12-03T11:31:54.000Z</updated>
+        <content type="html"><![CDATA[<p>0.9.16版本obsidian之后就可以使用别名（aliases）功能，本文会先介绍我个人对此功能的理解，最后附上obsidian官方的部分介绍。</p>
+<h1 id="别名功能的介绍">别名功能的介绍</h1>
+<p>别名可以视为多词一义的现象，即多个不同的名词指向同一个含义。当你笔记标题可以用多个名词来命名时，你可能就需要用到别名这个功能。<br>
+例如，一般情况下英文、英语和English所指向的含义是相同的。你会讲英文/英语/English给人传达的意思是一样的。<br>
+又例如，卢曼卡片、知识卡片、卡片盒、zk笔记法、滑箱笔记法等等，也都可以视为多词一义。</p>
+<h1 id="我个人使用别名的场景">我个人使用别名的场景</h1>
+<p>我在使用ob软件中，比较喜欢以“中文名（英文名）”为标题给卡片明明，例如“生态学（ecology）”，但这样就可能导致ob中“提到当前标题”的功能失去作用，因为材料中很少会出现“生态学（ecology）”，一般中文材料只会出现“生态学”，英文材料只会出现“ecology”。而别名功能的出现，就可以很好解决这个问题。</p>
+<h1 id="如何在ob中使用别名">如何在ob中使用别名</h1>
+<p>我不了解是否有其他的方式，目前我就用了这最基本的方式，本文已经更新到ob教程“如何使用别名（aliases）”。<br>
+在笔记的开头输入以下格式</p>
+<pre><code>---
+aliases: [,]
+---
+</code></pre>
+<p>需要注意的一件事情是，</p>
+<ul>
+<li>别名前后都有符号（---），ob称其为FrontMatter，而在md中是一种YAML语法，大家感兴趣可以去菜鸟网学习（ https://www.runoob.com/w3cnote/yaml-intro.html ）。</li>
+<li>别名所用的符号都是英文，如果输成中文符号就无法启动别名功能。</li>
+</ul>
+<h1 id="范例">范例</h1>
+<p>在ob教程中“如何使用别名（aliases）”一节，一开始是没有任何一篇文档显示在“提到当前标题”一栏中。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201203191942.png" alt="" loading="lazy"></p>
+<p>但当输入别名后，在“提到当前标题”一栏就出现了有关别名（“双链”、“卢曼”）的内容了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201203192123.png" alt="" loading="lazy"></p>
+<h1 id="官网对别名的介绍">官网对别名的介绍</h1>
+<p>官网的原文（https://forum.obsidian.md/t/obsidian-release-v0-9-16/8795）：</p>
+<blockquote>
+<p>You can now specify aliases in front matter. These will then show up in the [[ link suggestion, and auto-complete to the correct file. They will also be picked up in unlinked mentions. For example: aliases: [AI, Artificial Intelligence]. Add double quotes around your alias if it contains special characters.</p>
+</blockquote>
+<p>官网的范例:</p>
+<pre><code>---
+aliases: [AI, Artificial Intelligence]
+---
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[去线性化和线性化]]></title>
         <id>https://cyddgh.github.io/post/202011171848/</id>
@@ -264,47 +306,6 @@ https://publish.obsidian.md/help/Index 。</li>
 <h1 id="结语">结语</h1>
 <p>群友jackiexiao之前也将ob教程进行了网页化，发布在了<a href="https://jackiexiao.github.io/obsidian-chinese-help/">Github</a>和<a href="http://jackiegeek.gitee.io/obsidian-chinese-help/">Gitee(国内访问较快)</a>，大家可以去对比两者发布服务的区别。<br>
 目前，ob的发布服务还不是很完善，例如缺少检索框、双链在网页上无法显示等等。这些缺点可能是因为ob目前生成的是静态页而不是动态页。期待有更多的技术大牛能制作相应发布的脚本，例如像jackiexiao将ob发布到github上。大家有什么好的建议可以去官方频道留言，助力ob的发展。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian版本前瞻——0.9版本]]></title>
-        <id>https://cyddgh.github.io/post/202009221134/</id>
-        <link href="https://cyddgh.github.io/post/202009221134/">
-        </link>
-        <updated>2020-09-22T03:55:16.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
-<p>今天obsidian内测版本更新到0.9，该版本增强了图谱功能。具体而言，实现了图谱筛选功能，筛选功能还能支持正则，此外图谱中出现了有方向的箭头标识。</p>
-<h1 id="具体实践">具体实践</h1>
-<p>群友Boninall认为可以在每个卡片中标记上时间戳，之后在图谱中检索这一时间段的新卡片。<br>
-他的卡片模板如下：<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922113704.png" alt="" loading="lazy"></p>
-<h2 id="使用正则检索式进行图谱检索">使用正则检索式进行图谱检索</h2>
-<p>图谱的检索式：<code>/2020091[1-9](.*)/</code><br>
-下图是检索2020年09月11-19日的笔记<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922113832.png" alt="" loading="lazy"></p>
-<h2 id="文件夹筛选">文件夹筛选</h2>
-<p>目前支持文件夹筛选，使用<code>path:文件夹名</code>就可以进行筛选<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922114129.png" alt="" loading="lazy"></p>
-<h2 id="多个图谱共存">多个图谱共存</h2>
-<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200922104600.png" alt="" loading="lazy"></figure>
-<h2 id="图谱的移动">图谱的移动</h2>
-<p>图谱界面中可以通过键盘上的上下左右键进行移动</p>
-<hr>
-<p>本节感谢Boninall的贡献。</p>
-<h1 id="关于内测版">关于内测版</h1>
-<h2 id="内测版的购买">内测版的购买</h2>
-<p>内测版版本是通过官网（https://obsidian.md/pricing）购买Catalyst（25美元），但本渠道需要万事达或visa的信用卡。如果想要以人民币付款，可以加obsidian群（QQ群：774176839），联系开发者Silver（也是群管理员之一）使用微信付款。</p>
-<h2 id="catalyst的服务">Catalyst的服务</h2>
-<p>依照官网，Catalyst（催化剂）的介绍包括4点，我个人简单翻译如下：</p>
-<ul>
-<li>Support development：支持软件的发展</li>
-<li>Early access to insider builds：更早接触到内测版本</li>
-<li>Special badges in our community：在官方社区的账号上有勋章</li>
-<li>Access to exclusive dev channel：可以加入一个开发频道<br>
-以上4点，最主要的就是能获得内测版本，能比普通用户更早接触到新功能。</li>
-</ul>
-<p>最后放上一张官网的图谱动图<br>
-<img src="https://forum.obsidian.md/uploads/default/original/2X/e/e329874f5048af6fd9f343467147a7ecf0fcadd0.gif" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
