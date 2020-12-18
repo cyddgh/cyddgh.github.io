@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-17T15:36:48.489Z</updated>
+    <updated>2020-12-18T14:14:32.650Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,76 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[解决obsidian插件与主题无法加载的问题]]></title>
+        <id>https://cyddgh.github.io/post/202012182133/</id>
+        <link href="https://cyddgh.github.io/post/202012182133/">
+        </link>
+        <updated>2020-12-18T14:13:46.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
+<p>本文的判断obsidian插件和主题无法加载的前提有以下3点</p>
+<ol>
+<li>obsidian插件和主题是位于raw.githubcontent.com</li>
+<li>因为种种问题可能无法访问Github</li>
+<li>我们可以通过修改hosts文件来解决第2点的问题</li>
+</ol>
+<p>基于以上3点，我撰写了本文。如果认识有误或未来以上3点有变，本文的解决方法可能失去效力。</p>
+<p>本文的解决方案是基于521xueweihan给出的方案（https://github.com/521xueweihan/GitHub520 ）。因为手头没有Mac电脑，本文仅针对windows，但道理互通。</p>
+<h1 id="修改hosts">修改Hosts</h1>
+<p>有多种方式能修改Hosts文件：</p>
+<ol>
+<li>
+<p>在windows系统中，按住键盘的“windows键+R键”，弹出运行框。在运行框内输入“notepad %SystemRoot%\system32\drivers\etc\hosts”（注意没有上下引号，下同）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201218215934.png" alt="" loading="lazy"><br>
+就直接回弹出一个记事本，如果完成可以跳转到下一标题。</p>
+</li>
+<li>
+<p>在windows界面左下角右键，点击“运行”，弹出运行框。在运行框内输入“notepad %SystemRoot%\system32\drivers\etc\hosts”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201218215531.png" alt="" loading="lazy"><br>
+就直接回弹出一个记事本，如果完成可以跳转到下一标题。</p>
+</li>
+<li>
+<p>进入资源管理器，在地址栏内输入“C:\Windows\System32\drivers\etc”，找到hosts文件，右键，点击打开方式<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201218220422.png" alt="" loading="lazy"><br>
+在列表中选择记事本，点击确认。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201218220539.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+<h1 id="在hosts中添加信息">在hosts中添加信息</h1>
+<p>在弹出的记事本末尾，将下列信息复制过去（以下信息来自于https://github.com/521xueweihan/GitHub520 ，有时效性，请及时确认更新），记事本中原有的文件不必改动，然后保存。</p>
+<pre><code># GitHub520 Host Start
+185.199.108.154               github.githubassets.com
+199.232.96.133                camo.githubusercontent.com
+199.232.96.133                github.map.fastly.net
+199.232.69.194                github.global.ssl.fastly.net
+140.82.114.3                  gist.github.com
+185.199.108.153               github.io
+140.82.113.4                  github.com
+140.82.114.5                  api.github.com
+199.232.96.133                raw.githubusercontent.com
+199.232.96.133                user-images.githubusercontent.com
+199.232.96.133                favicons.githubusercontent.com
+199.232.96.133                avatars5.githubusercontent.com
+199.232.96.133                avatars4.githubusercontent.com
+199.232.96.133                avatars3.githubusercontent.com
+199.232.96.133                avatars2.githubusercontent.com
+199.232.28.133                avatars1.githubusercontent.com
+199.232.96.133                avatars0.githubusercontent.com
+140.82.112.9                  codeload.github.com
+52.216.128.147                github-cloud.s3.amazonaws.com
+52.217.8.100                  github-com.s3.amazonaws.com
+52.216.107.188                github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.17.148                 github-production-user-asset-6210df.s3.amazonaws.com
+52.216.9.75                   github-production-repository-file-5c1aeb.s3.amazonaws.com
+# Star me GitHub url: https://github.com/521xueweihan/GitHub520
+# GitHub520 Host End
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201218220839.png" alt="" loading="lazy"></figure>
+<h1 id="刷新dns">刷新DNS</h1>
+<p>按步骤1的方法，在运行框中输入“ipconfig /flushdns”，点击确认，就完成了本教程。如果还无法访问obsidian插件和主题，可以重启一下电脑。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201218221037.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian和FileLocator连用（加强检索功能）]]></title>
         <id>https://cyddgh.github.io/post/202012172243/</id>
@@ -337,19 +407,6 @@ aliases: [AI, Artificial Intelligence]
         </link>
         <updated>2020-10-13T13:32:49.000Z</updated>
         <content type="html"><![CDATA[<p>Price Tag在我iphone不能使用了，我发现了一个新的替代品：https://appsliced.co/</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[webdav网站]]></title>
-        <id>https://cyddgh.github.io/post/202010131753/</id>
-        <link href="https://cyddgh.github.io/post/202010131753/">
-        </link>
-        <updated>2020-10-13T09:52:40.000Z</updated>
-        <content type="html"><![CDATA[<p>坚果云非常棒，也很好，就是会收费，特别是在zotero存储中无法对zip格式变动的部分进行上传（这缺一个专业术语）。所以要找一些其他的webdav网站</p>
-<ol>
-<li>yandax</li>
-<li><a href="https://cncncloud.com/">小太阳</a> 国内的运营商，提供10G的空间。我感觉存文献应该不怎么需要担心隐私，特别是不那么具备应用前景的一些基础研究。</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
