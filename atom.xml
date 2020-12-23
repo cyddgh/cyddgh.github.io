@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-19T12:34:32.590Z</updated>
+    <updated>2020-12-23T14:42:41.263Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,44 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[卢曼笔记（ZK笔记）的论述]]></title>
+        <id>https://cyddgh.github.io/post/202012232242/</id>
+        <link href="https://cyddgh.github.io/post/202012232242/">
+        </link>
+        <updated>2020-12-23T14:42:17.000Z</updated>
+        <content type="html"><![CDATA[<p>本文只是罗列一些关于卢曼笔记方法论的论述，没有细看，不对所罗列内容负责。本文主要是为了新手入门，不是进阶内容。我强烈推荐阅读英文版的《How to take smart note》，这是我唯一仔细阅读的材料。</p>
+<h1 id="相关网站">相关网站</h1>
+<ul>
+<li>https://zettelkasten.de/ 丰富的材料</li>
+<li>https://www.outlinersoftware.com/ 有所涉及</li>
+<li>https://forums.thebrain.com/ 触类旁通</li>
+</ul>
+<h1 id="相关材料">相关材料</h1>
+<p>Introduction to the Zettelkasten Method: https://zettelkasten.de/introduction/<br>
+这是一个对zk笔记的快速入门，非常适合于初学者<br>
+中文翻译</p>
+<ul>
+<li>卢曼笔记法详细介绍，蔡先生的文章， https://zhuanlan.zhihu.com/p/336706087</li>
+<li>Zettelkasten方法简介，辛海林 (@conanxin)，1. https://zhuanlan.zhihu.com/p/299377905 ，2.  https://matters.news/@conanxin/zettelkasten%E6%96%B9%E6%B3%95%E7%AE%80%E4%BB%8B-bafyreidloaakquoasde5h7v45x4iripi3mi44sr4jk53kfmh2f45ubuaza</li>
+</ul>
+<p>How to take smart note by Sönke Ahrens<br>
+这是一本很不错的书，虽然有许多人感觉内容有些琐碎，但个人觉得看完全文应该能对zk有比较全面的了解，并且能有自己的见解。</p>
+<p>中文翻译</p>
+<ul>
+<li>How to Take Smart Notes 中文版，学习骇客， https://mp.weixin.qq.com/s/gOxzalQjQJZYeX3Tfthmlg<br>
+比较忠于原文，是一项翻译工作。</li>
+<li>《会记笔记就会写作》， 何一叨叨， https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&amp;album_id=1464601583634939905&amp;__biz=MzI1NTA4Nzk5Mw==&amp;scene=21#wechat_redirect<br>
+主要讲译文和作者本人的心得交杂在一起。</li>
+<li>聪明人怎么做笔记，土嗨英语，https://zhuanlan.zhihu.com/p/136427760</li>
+<li></li>
+</ul>
+<p>卢曼：与卡片盒交流，雪小豹说， https://mp.weixin.qq.com/s/_aPS2ol1DxiCFX-xfl-8yg<br>
+短文，个人觉得“与卡片盒交流”真是zk笔记法很好的比喻。</p>
+<p>Zettelkasten — How One German Scholar Was So Freakishly Productive，David B. Clear， https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125</p>
+<p>卢曼卡片盒（3篇），葛仲然， https://zhuanlan.zhihu.com/p/258561003</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[解决obsidian插件与主题无法加载的问题]]></title>
         <id>https://cyddgh.github.io/post/202012182133/</id>
@@ -405,15 +443,6 @@ aliases: [AI, Artificial Intelligence]
 <p>这也是可取的，但可能比较粗糙。个人觉得：不同类的信息有不同的工作流是比较合理的。</p>
 <h1 id="总结">总结</h1>
 <p>综上可知，所有信息在同一个软件上进行处理是困难的，但我们可以对信息进行局限，或对软件的定义进行扩大。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[App Store应用查价]]></title>
-        <id>https://cyddgh.github.io/post/202010132133/</id>
-        <link href="https://cyddgh.github.io/post/202010132133/">
-        </link>
-        <updated>2020-10-13T13:32:49.000Z</updated>
-        <content type="html"><![CDATA[<p>Price Tag在我iphone不能使用了，我发现了一个新的替代品：https://appsliced.co/</p>
 ]]></content>
     </entry>
 </feed>
