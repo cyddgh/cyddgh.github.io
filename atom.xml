@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-23T14:45:03.026Z</updated>
+    <updated>2020-12-24T14:30:18.005Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[Gingko的新变化]]></title>
+        <id>https://cyddgh.github.io/post/202012242206/</id>
+        <link href="https://cyddgh.github.io/post/202012242206/">
+        </link>
+        <updated>2020-12-24T14:29:46.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="速览">速览</h1>
+<p>Gingko推出了新版的web端（gingkowriter.com），费用最低5美元一月，并在未来的莫一天会关闭旧的web版本（https://gingkoapp.com/app）。</p>
+<h1 id="正文">正文</h1>
+<p>今天突然收到来自Gingko的邮件，说有新版本发布，命名为Gingko Writer。我非常高兴。因为之前尝试了gingko 2.0版本感觉不错，增加了历史版本功能，现在终于正式推出了。但信件下面的信息就不是那么让人高兴，因为担心我翻译有误我也会将部分原文附上。</p>
+<blockquote>
+<p>We'll eventually be moving to that version, and shutting down the old one at gingkoapp.com, but not yet.</p>
+</blockquote>
+<p>最终我们会迁移至那个版本（指Gingko Writer），并会关闭旧的版本（gingkoapp.com），但不是现在。（注：这过渡时间长短不定，从信的文字来看可能会比较久）</p>
+<blockquote>
+<p>A customer paying less than 5$/month, you will eventually be asked to upgrade, or close your account. I can't continue to provide my time (in terms of customer support &amp; software development) at that low a rate.</p>
+</blockquote>
+<p>如果你月付低于5美元，你将选择升级账号，或关闭账号。我无法持续为旧版本提供我的时间。</p>
+<blockquote>
+<p>An existing free user, and happy with the service, you will eventually be asked to pay to continue using it.</p>
+</blockquote>
+<p>免费用户最终也将被要求付费。</p>
+<h1 id="我的感受">我的感受</h1>
+<p>目前Gingko有4个版本：</p>
+<ol>
+<li>web老版（最终会关闭）：gingkoapp.com</li>
+<li>web新版（最终定价不低于5美元每月）：gingkowriter.com</li>
+<li>桌面版（买断制，本地版）</li>
+<li>开源版本（我不太确定）： https://github.com/gingko/client</li>
+</ol>
+<p>基于网络的服务总会充满变化。从信件中我还得知gingko旧版已经运行了7年，但7年之后，每月最低消费还是从免费（使用100张卡），变成最低5美元。不胜唏嘘。</p>
+<p>目前越来越多的软件采用了订阅制，一个软件的价格可能不多，但几个、十几个软件的价格加起来也不便宜。</p>
+<p>为长期计，还是应该寻找一个较为稳妥的解决方案。但如何去评价一个方案是否稳妥呢？可能有几点：本地、买断、迁移性强、最快还是受众广。</p>
+<p>因为之前向大家推荐过gingko，所以特写此文告知大家软件和定价方式发生变动。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[卢曼笔记（ZK笔记）的论述罗列]]></title>
         <id>https://cyddgh.github.io/post/202012232242/</id>
@@ -413,36 +449,6 @@ aliases: [AI, Artificial Intelligence]
 在Endnote Preferences-Display Fonts-Library-Change Font选择字体字号<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201021102442.png" alt="" loading="lazy"></p>
 <p>参考了 https://m.sohu.com/a/236348343_632006</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我对All in one的思考]]></title>
-        <id>https://cyddgh.github.io/post/202010151442/</id>
-        <link href="https://cyddgh.github.io/post/202010151442/">
-        </link>
-        <updated>2020-10-17T05:33:16.000Z</updated>
-        <content type="html"><![CDATA[<p>这是一个个人随笔，目前还未完稿，未来的更新会在博客（点击阅读原文）中。如果大家有所思考，可以在下方留言。</p>
-<h1 id="all代表所有信息one代表一个软件">All代表所有信息，one代表一个软件</h1>
-<p>这是软件的理想形态，目前还没看到这样的软件。</p>
-<h1 id="all代表某一类信息one代表一个软件">All代表某一类信息，one代表一个软件</h1>
-<p>所有的同类信息在一个软件中，我感觉这是可行的。例如，所有的任务信息在滴答清单中，所有的文献信息在Endnote中。</p>
-<h1 id="all代表所有信息one代表一个系统">All代表所有信息，one代表一个系统</h1>
-<p>我们需要将所有的信息放在一个系统中，例如将所有的信息放在windows、macOS（可能还包括iOS，即iphone）或Linux（可能还包括安卓）。一般的使用者主要是在windows或macOS两者中抉择。我遇到的一些抉择有：</p>
-<ul>
-<li>在iPad上使用Marginnote阅读PDF，但在windows上无法编辑。</li>
-<li>在windows上使用的excel宏，在macOS上无法运行。</li>
-<li>在iPhone上使用omnifocus进行GTD，但windows上无该软件，需要购买昂贵月付费的web端。</li>
-<li>在windows或macOS上使用的obsidian或RoamResearch，目前在iPhone或安卓上没有客户端。</li>
-</ul>
-<p>常见的解决方法可能是：</p>
-<ul>
-<li>尽量使用有web端的软件，例如印象笔记、omnifocus都有web端，可能保证全平台访问。</li>
-<li>尽量使用跨平台软件，例如R、python、zotero。</li>
-</ul>
-<h1 id="all代表所有信息one代表一个工作流">All代表所有信息，one代表一个工作流</h1>
-<p>这也是可取的，但可能比较粗糙。个人觉得：不同类的信息有不同的工作流是比较合理的。</p>
-<h1 id="总结">总结</h1>
-<p>综上可知，所有信息在同一个软件上进行处理是困难的，但我们可以对信息进行局限，或对软件的定义进行扩大。</p>
 ]]></content>
     </entry>
 </feed>
