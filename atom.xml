@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-24T14:30:18.005Z</updated>
+    <updated>2020-12-25T14:33:15.158Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[RoamResearch是一个工作流记录工具]]></title>
+        <id>https://cyddgh.github.io/post/202012252120/</id>
+        <link href="https://cyddgh.github.io/post/202012252120/">
+        </link>
+        <updated>2020-12-25T14:32:48.000Z</updated>
+        <content type="html"><![CDATA[<p>RR一般被认为是知识管理，但是我更多用它来进行项目管理，推动任务的进行。因得益于RR的灵活性（块引用、大纲），RR可以做一个很好的工作流（workflow）记录。<br>
+以回复论文的修改意见为例，我可以一边阅读，一边使用块引用将信的内容复制到页面上方，并加以总结归纳，得出我要做什么。这样做的理由和成立的条件是，当我看完信后，我需要知道我要做些什么，但这些任务可能是散落在信件各个位置，我需要将零散的信息整合起来，就是需要一个总结（summary）。另一方面，总结是用中文转述的，所以可能出现对文本原有含义的曲解，需要附上原文，这时候块引用就体现出它的作用，能完整复制原文和原文的位置，这样就可以快速跳转，理解审稿专家的上下文的语境。之后，我还会要对总结的要点进行回复，也一并记录到页面中，形成最后的回复信（要点是在rr，成文在word）。这就形成了一次工作的流程。<br>
+但更重要的是，如果你记录得当，RR能记录下你如何处理这一问题的流程，也就是工作流。当你几个月之后收到另一封审稿意见时，你输入双链，就会让你联想到之前在RR中做的工作，进而看到之前你是如何回复审稿人的，此时的你就不会从0开始，而是已有了应对的指引了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gingko的新变化]]></title>
         <id>https://cyddgh.github.io/post/202012242206/</id>
@@ -436,19 +447,6 @@ aliases: [AI, Artificial Intelligence]
 <h1 id="知识星球的二维码">知识星球的二维码</h1>
 <p>大家感兴趣可以用微信扫描下面的二维码尝试看看，但不保证本星球会持续运行下去，可能和其他的尝试一样，因为效果不显著而停止。</p>
 <figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201031180656.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Endnote-调整软件内的字体大小]]></title>
-        <id>https://cyddgh.github.io/post/202010211024/</id>
-        <link href="https://cyddgh.github.io/post/202010211024/">
-        </link>
-        <updated>2020-10-21T02:21:28.000Z</updated>
-        <content type="html"><![CDATA[<p>点击Edit-Endnote Preferences<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201021102335.png" alt="" loading="lazy"><br>
-在Endnote Preferences-Display Fonts-Library-Change Font选择字体字号<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201021102442.png" alt="" loading="lazy"></p>
-<p>参考了 https://m.sohu.com/a/236348343_632006</p>
 ]]></content>
     </entry>
 </feed>
