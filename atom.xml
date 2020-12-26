@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-26T15:02:48.489Z</updated>
+    <updated>2020-12-26T15:13:15.780Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -17,7 +17,7 @@
         </link>
         <updated>2020-12-26T14:59:40.000Z</updated>
         <content type="html"><![CDATA[<h1 id="一句话总结">一句话总结</h1>
-<p>RemNote是RoamResearch和Anki的有力挑战者，本身免费，有块引用功能，并且在近期支持了本地程序和本地数据，拜托了网络问题，值得期待。</p>
+<p>RemNote是RoamResearch和Anki的有力挑战者，本身免费，有块引用功能，并且在近期支持了本地程序和本地数据，摆脱了网络问题，值得期待。</p>
 <h1 id="remnote">Remnote</h1>
 <p>Remnote的官网是https://www.remnote.io ，其主要特色是将Anki和RoamResearch结合产生的一款新软件。在2020年12月12日发布了1.0版本，UI界面大幅提升，而且推出了基于桌面的本地程序，运行数据也可以保存到本地。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201226225430.png" alt="" loading="lazy"></p>
@@ -32,7 +32,6 @@
 <ol>
 <li>软件还未汉化，有一定门槛。</li>
 <li>Remnote有自己的使用逻辑，需要去适应。</li>
-<li>无法插入本地图片（？），但可以用图床解决此问题。</li>
 </ol>
 <h2 id="具体教程">具体教程</h2>
 <p>因为Remnote上手有些困难，推荐大家可以去知乎上查找叶峻峣的“RemNote—笔记+复习，我都要！”专栏（https://www.zhihu.com/column/c_1285992721149685760 ），里面介绍得非常详细了。</p>
