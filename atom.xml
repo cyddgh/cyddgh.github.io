@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-26T14:05:05.348Z</updated>
+    <updated>2020-12-26T15:00:01.281Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[RemNote——RoamResearch和Anki的结合者]]></title>
+        <id>https://cyddgh.github.io/post/202012262231/</id>
+        <link href="https://cyddgh.github.io/post/202012262231/">
+        </link>
+        <updated>2020-12-26T14:59:40.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="一句话总结">一句话总结</h1>
+<p>RemNote是RoamResearch和Anki的有力挑战者，本身免费，有块引用功能，并且在近期支持了本地程序和本地数据，拜托了网络问题，值得期待。</p>
+<h1 id="remnote">Remnote</h1>
+<p>Remnote的官网是https://www.remnote.io ，其主要特色是将Anki和RoamResearch结合产生的一款新软件。在2020年12月12日发布了1.0版本，UI界面大幅提升，而且推出了基于桌面的本地程序，运行数据也可以保存到本地。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201226225430.png" alt="" loading="lazy"></p>
+<h2 id="优点">优点</h2>
+<ol>
+<li>和Anki结合紧密，非常适合备考</li>
+<li>有块引用（大家好像都很迫切需要这个软件）<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201226224850.png" alt="" loading="lazy"></li>
+<li>免费（目前还未听说收费计划，这软件好像是免费的）</li>
+</ol>
+<h2 id="缺点">缺点</h2>
+<ol>
+<li>软件还未汉化，有一定门槛。</li>
+<li>Remnote有自己的使用逻辑，需要去适应。</li>
+<li>无法插入本地图片（？），但可以用图床解决此问题。</li>
+</ol>
+<h2 id="具体教程">具体教程</h2>
+<p>因为Remnote上手有些困难，推荐大家可以去知乎上查找叶峻峣的“RemNote—笔记+复习，我都要！”专栏（https://www.zhihu.com/column/c_1285992721149685760 ），里面介绍得非常详细了。</p>
+<p>我本人并没有深度使用Remnote，本篇主要是介绍一下Remnote，希望大家可以去尝试看看。本文如有不妥之处，请大家留言指出，所有消息以Remnote官网为准。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RoamResearch是一个工作流记录工具]]></title>
         <id>https://cyddgh.github.io/post/202012252120/</id>
@@ -405,51 +434,6 @@ aliases: [AI, Artificial Intelligence]
 </ol>
 <h1 id="后序">后序</h1>
 <p>期待大家在文后分享一些有趣的插件（本人不对文中和后续插件的安全性负责），请使用者自行分辨。手动安装有一定技术门槛，如果操作不成功，可以等后续官方的支持。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于群满员的尝试-知识星球]]></title>
-        <id>https://cyddgh.github.io/post/202010300944/</id>
-        <link href="https://cyddgh.github.io/post/202010300944/">
-        </link>
-        <updated>2020-10-31T10:06:14.000Z</updated>
-        <content type="html"><![CDATA[<p>从[[00.11.02 关于QQ群人满踢人的说明]]可以得知，受QQ群本身的人数限制，ob群无法满足所有obsidian爱好者加入，所以我们也在积极进行各种尝试。</p>
-<h1 id="不开二群的原因">不开二群的原因</h1>
-<p>为什么不开二群的原因可能有以下几个：</p>
-<ul>
-<li>目前活跃的主要是本群前约10%的群友，很多人只是加入了，但随后将群收进免打扰了。</li>
-<li>不开二群是为了让讨论更为集中</li>
-<li>群管理还要对群里的发言负责，精力也有限</li>
-</ul>
-<h1 id="已知的难点痛点">已知的难点痛点</h1>
-<p>在考虑社区时，我思考的一些痛点：</p>
-<ul>
-<li>免费提供服务，并且服务可靠，在行业内信誉好，技术简单（放弃使用vps自建社区）</li>
-<li>和微信或QQ的衔接性好，尽量减少迁移的成本</li>
-<li>提供类似于讨论社区的服务，能进行知识沉淀，能检索已有的知识，最好能导出</li>
-<li>不限制团队人数</li>
-</ul>
-<h1 id="选择知识星球的原因">选择知识星球的原因</h1>
-<p>我尝试用看看知识星球能不能承载一些QQ群的压力，这是免费星球（永久，而且我也不能将此星球修改成收费），看中它的原因：</p>
-<ul>
-<li>和微信衔接好，方便大家过渡</li>
-<li>有类似社区、论坛的效果</li>
-<li>可以进行检索</li>
-<li>免费</li>
-<li>加入的人数无上限</li>
-</ul>
-<h1 id="本星球的一些说明">本星球的一些说明</h1>
-<ul>
-<li>本星球是个人依据兴趣建立的爱好者平台，不是ob的官方平台，所发布内容不代表ob官方。</li>
-<li>本星球同QQ群（774176839）一样，欢迎各类笔记软件和笔记方法的讨论，不限于obsidian，我们对各类软件保持开放的态度。</li>
-<li>对于笔记之外的问题（例如系统问题、网络问题）我们不进行讨论。</li>
-<li>本星球是免费星球（根据知识星球的条款，不能再改为收费），是公益性质，本着“我为人人，人人为我”的理念，欢迎大家分享内容。</li>
-<li>请大家进行友善讨论，多进行客观性表述（例如，ob是基于markdown），减少主观评论（例如，软件A比软件B好）；多进行正面评论，少进行负面评论。</li>
-<li>本说明根据具体实践，还可能继续更新。</li>
-</ul>
-<h1 id="知识星球的二维码">知识星球的二维码</h1>
-<p>大家感兴趣可以用微信扫描下面的二维码尝试看看，但不保证本星球会持续运行下去，可能和其他的尝试一样，因为效果不显著而停止。</p>
-<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201031180656.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
