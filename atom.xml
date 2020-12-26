@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-25T14:36:57.639Z</updated>
+    <updated>2020-12-26T14:05:05.348Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -55,6 +55,9 @@
 <p>目前越来越多的软件采用了订阅制，一个软件的价格可能不多，但几个、十几个软件的价格加起来也不便宜。</p>
 <p>为长期计，还是应该寻找一个较为稳妥的解决方案。但如何去评价一个方案是否稳妥呢？可能有几点：本地、买断、迁移性强、最快还是受众广。</p>
 <p>因为之前向大家推荐过gingko，所以特写此文告知大家软件和定价方式发生变动。</p>
+<h1 id="后续更新">后续更新</h1>
+<p>202012262204<br>
+善用佳软翻译了一下gingko的信，https://gingkoapp.com/gingko-writer</p>
 ]]></content>
     </entry>
     <entry>
