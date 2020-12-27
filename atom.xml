@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-26T15:13:15.780Z</updated>
+    <updated>2020-12-27T15:16:39.681Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian教程（2020年终汇总）]]></title>
+        <id>https://cyddgh.github.io/post/202012272242/</id>
+        <link href="https://cyddgh.github.io/post/202012272242/">
+        </link>
+        <updated>2020-12-27T15:14:50.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>2020年即将结束，我将所知的obsidian教程进行一下汇总。</p>
+<h1 id="快速入门">快速入门</h1>
+<p>玩转 Obsidian | 基础设置篇，王掌柜，https://sspai.com/post/63481 。<br>
+玩转 Obsidian | 打造知识循环利器，https://sspai.com/post/62414 。<br>
+玩转 Obsidian | 间歇式日记，王掌柜，https://sspai.com/post/63674 。</p>
+<p>王掌柜这3篇（特别是基础设置篇）对于obsidian入门应该是足够了。</p>
+<p>此外，蚕子在B站上也录制了一系列的obsidian视频，喜欢视频的读者也可以去B站观看（https://www.bilibili.com/video/BV1qD4y1m7nv ）。该系列主要介绍了ob助手，为obsidian增加了一些额外的功能。</p>
+<p>ob群和本人也在维护一个文档（https://publish.obsidian.md/chinesehelp ），在github（https://github.com/cyddgh/obsidian-chinese-help ）和gitee（https://gitee.com/cyddgi/obsidian-chinese-help ）上可以下载ob文档。</p>
+<h1 id="进阶提高">进阶提高</h1>
+<p>本人的微信公众号（软达通）在obsidian专辑中已经撰写了别名功能、发布功能、引用插件（Citation插件）的使用、如何访问ob主题和下载插件、和FileLocator连用（加强检索功能）等小技巧。<br>
+除此之外，还有一些活跃的贡献者</p>
+<ul>
+<li>Struggle_with_me：在b站上发布了Obsidian：目前我们眼中最美最好用的免费笔记/知识管理软件（https://www.bilibili.com/video/BV1SA411i7BG ），目前有10.4万的播放量。</li>
+<li>威廉（ABC）：在知乎上有一系列论述，他自己总结在了“威廉Obsidian使用心得系列文章总汇（干货满满）”（https://zhuanlan.zhihu.com/p/336860525 ），主要分享一些软件连用的技巧。</li>
+<li>Bon：在知乎上也有一个专栏“obsidian 软件技巧”（https://www.zhihu.com/column/c_1302994040707948544 ），主要分享一些插件和使用心得。</li>
+<li>Nick Milo：Linking Your Thinking（LYT）或说是IMF的提出者，其提出的LYT笔记模型值得一用（https://publish.obsidian.md/lyt-kit/_START+HERE ）。此外他也有许多归于obsidian使用的视频。</li>
+<li>简睿：推出了一系列的obsidian的使用文章（https://jdev.tw/blog ），从入门到提高都有。</li>
+<li>Keep Productive：也推出了一系列视频。</li>
+</ul>
+<h1 id="论坛资料">论坛资料</h1>
+<ul>
+<li>obsidian官网： https://obsidian.md/community 。主要是discord交流，也有论坛。</li>
+<li>爱好者QQ群：774176839</li>
+<li>Jackiexiao建立的github社区：https://github.com/obsidianzh/forum</li>
+</ul>
+<h1 id="结语">结语</h1>
+<p>本文档大概花了20分钟整理而成，难免有不足之处，之后会在本人博客继续更新（点击阅读原文可以跳转）。如何有优秀的信息源，也请大家留言，一起查缺补遗。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RemNote——RoamResearch和Anki的结合者]]></title>
         <id>https://cyddgh.github.io/post/202012262231/</id>
@@ -380,59 +416,6 @@ aliases: [AI, Artificial Intelligence]
 <li>去线性化能更好指代一些知识收集的过程，不仅仅是依靠双链软件进行笔记收集是去线性化，例如使用Liquidtext PDF阅读也是去线性化，而且使用该软件能更加直观。</li>
 <li>线性化的过程在目前被忽略，相较于去线性化的各类方法论，线性化的方法论和论述目前还是比较少的。在使用非线性方法收集材料之后，我们很倾向于直接展示笔记，而不是再加工展示给他人。这一个过程的忽略可能导致信息不能有效传递。</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian插件系统]]></title>
-        <id>https://cyddgh.github.io/post/202011041115/</id>
-        <link href="https://cyddgh.github.io/post/202011041115/">
-        </link>
-        <updated>2020-11-04T03:43:12.000Z</updated>
-        <content type="html"><![CDATA[<p>本文主要介绍了如何开启obsidian第三方插件、如何手动安装插件和插件使用的一些注意事项。目前还不完善，未来可能继续更新。<br>
-提醒：注意插件的安全性。ob的插件应该是使用JavaScript代码书写，有能力的使用者可以自行审视插件是否包含恶意代码，或者等待官方后续支持。</p>
-<h1 id="api插件的开启和安装">API插件的开启和安装</h1>
-<p>目前ob似乎还没通过插件审核，需要使用第三方插件。<br>
-将ob升级到0.9.10版本</p>
-<ul>
-<li>
-<p>前往Third-party plugin关闭safe mode（安全模式，请看下方的使用警告）。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104112034.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>关闭safe mode时会有弹窗，选择Turn off safe mode<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104112230.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>关闭安装模式后，就会出现Community plugins（社区插件）<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104112342.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>点击Browse（浏览），就可以开始浏览和安装相关插件。如果无法浏览，可能是网络问题，请见下一章节。</p>
-</li>
-<li>
-<p>点击图中的install，就可以安装改插件，有些插件安装完成后需要重启才能生效。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104112625.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>重启之后，前往Third-party plugin将要启动的插件勾选上<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104113326.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-<h1 id="手动安装插件">手动安装插件</h1>
-<p>如果大家遇到网络问题，无法从ob内置的商城下载，可以使用手动安装。<br>
-大家可以前往Github（如 https://github.com/search?q=obsidian+plugin ）。<br>
-将下载后的插件放在库文件夹（下图的库文件夹是obsidian群分享）下的“.obsidian”文件夹，如下图<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104113556.png" alt="" loading="lazy"></p>
-<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201104113647.png" alt="" loading="lazy"></figure>
-<p>然后重启，其他请参加上一章节。</p>
-<p>我自己打包了图中的3款插件，如果感兴趣可以下载（ https://cowtransfer.com/s/e734433bb5ac44 ，有效期7天，只能供100次下载）</p>
-<h1 id="插件使用警告">插件使用警告</h1>
-<ol>
-<li>注意一些插件可能导致文档丢失，特别是涉及文档读写。例如有群友反馈，安装完Reading Time后，文档丢失。请注意文档的版本保存。</li>
-<li>一些插件可能会有恶意代码，对于来历不明的插件请保持谨慎。</li>
-</ol>
-<h1 id="后序">后序</h1>
-<p>期待大家在文后分享一些有趣的插件（本人不对文中和后续插件的安全性负责），请使用者自行分辨。手动安装有一定技术门槛，如果操作不成功，可以等后续官方的支持。</p>
 ]]></content>
     </entry>
 </feed>
