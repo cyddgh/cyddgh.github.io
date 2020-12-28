@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-27T15:17:23.537Z</updated>
+    <updated>2020-12-28T13:30:25.009Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown的迁移性]]></title>
+        <id>https://cyddgh.github.io/post/202012282128/</id>
+        <link href="https://cyddgh.github.io/post/202012282128/">
+        </link>
+        <updated>2020-12-28T13:28:59.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>Markdown是一种迁移性很强的语言，但不同的软件对其的支持不同，在使用对应软件时应该注意。</p>
+<h1 id="markdown的迁移性">Markdown的迁移性</h1>
+<p>以一个具体例子来解释md的迁移性：我在gingko中撰写文章，然后放在Gridea中发布，直接复制到github的issue中也直接可以排版成功，在Chrome中借助markdownHere发布微信文章，在ob中存档。<br>
+上述是我的一个工作流，得益于md的兼容性，我能无缝衔接。</p>
+<h1 id="markdown的变异性">Markdown的变异性</h1>
+<p>同时，我们应该也要认识到markdown这门语言中存有不同的“方言”，即不同软件所认的语法不同。或者说，软件都承认md的基础语法，但对扩展语法的支持不一样。这就减弱了md的迁移性。例如，Typeora所插入的图片可能在ob中无法打开。</p>
+<p>这就要求你克制自己使用的语法，尽量使用基础语法。我目前使用的md语言有以下几项：</p>
+<ul>
+<li>标题（井号）</li>
+<li>代码和代码块</li>
+<li>引用</li>
+<li>在线图片的插入（<img src="" alt="" loading="lazy">）</li>
+<li>加粗</li>
+<li>斜体</li>
+</ul>
+<p>以上的语法我认为在不同的md软件中都能有相同的效果。</p>
+<h1 id="使用obsidian时应该注意一些什么">使用obsidian时应该注意一些什么</h1>
+<p>因为各个软件对markdown语句的支持不一样，所以在使用obsidian时，我们需要了解什么是ob独有但其他软件不支持的语法，尽量不去使用它们。例如块引用，无论是以#还是^的块引用在迁移中都存在许多问题。同样，在RoamResearch中块引用也是难以迁移的。</p>
+<h1 id="个人的想法">个人的想法</h1>
+<p>以下纯属个人主观看法<br>
+今年接触ob之后，才发现md没有被大多数人所接受，甚至是一些软件的高级使用者，感觉非常奇怪。<br>
+因为一直以来，我知道github中许多的readme文档是用md写的，所以感觉这么语言应该在程序员和使用github的人群中广为接受。<br>
+在评价md时，常常提到word的排版优秀，这也是我意外的一点。因为我认为word的排版只能说是简单但不应该是优秀。如果word的排版功能优秀，那就不会有许多人是使用latex来书写论文，如果要出版书籍好像还是adobe inDesign好用。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian教程（2020年终汇总）]]></title>
         <id>https://cyddgh.github.io/post/202012272242/</id>
@@ -389,33 +421,6 @@ aliases: [,]
 aliases: [AI, Artificial Intelligence]
 ---
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[去线性化和线性化]]></title>
-        <id>https://cyddgh.github.io/post/202011171848/</id>
-        <link href="https://cyddgh.github.io/post/202011171848/">
-        </link>
-        <updated>2020-11-17T11:13:53.000Z</updated>
-        <content type="html"><![CDATA[<p>从“去线性化和线性化”去认识“输入和输出”的过程。<br>
-随笔系列的文章类似于zk笔记中的临时卡片，只是我本人对某个问题一些想法的记录，不保证内容的准确性。欢迎大家在下方留言讨论。</p>
-<p>“去线性化和线性化”这一概念是受到史蒂芬平克在《风格感觉》的启发，即那常常被提及的句子——“The web, the tree, and the string”，翻译后的语言有“概念網．樹狀圖．詞序”、“思维网·句法树·词语串”，或者“写作之难，在于把网状的思考，用树状的语法结构，转换成线性字符串”。基于上述的概念，可以认为文本是线性的，而人的思考是非线性的。</p>
-<ul>
-<li>文本的概念可以包含大部分的读物，特别是科技论文、说明书、新闻等.这些文本都有非常清晰的结构，有些行文中还包含有主题句。</li>
-<li>人的思考是非线性的，是网状的，是易发散的，是能将多个问题联系起来的，这也是目前双链软件立足的理论之一。</li>
-</ul>
-<p>因此，本文的标题“去线性化和线性化”可理解为：</p>
-<ul>
-<li>去线性化：如何将线性的文本变成非线性的笔记。这是一个输入的过程.</li>
-<li>线性化：如何将非线性的笔记变成线性的文本。这是一个输出的过程。</li>
-</ul>
-<p>写到这里，笔者也觉得“去线性化和线性化”是故弄玄虚，卖弄概念，因为本质就是传统的输入和输出，为什么要重新给予定义？<br>
-我思考后给出以下几点原因：</p>
-<ol>
-<li>“去线性化和线性化”缩小了这“输入和输出”的范围，更加直接限定了这两个广义过程，是对“输入和输出”另一个角度的认知。</li>
-<li>去线性化能更好指代一些知识收集的过程，不仅仅是依靠双链软件进行笔记收集是去线性化，例如使用Liquidtext PDF阅读也是去线性化，而且使用该软件能更加直观。</li>
-<li>线性化的过程在目前被忽略，相较于去线性化的各类方法论，线性化的方法论和论述目前还是比较少的。在使用非线性方法收集材料之后，我们很倾向于直接展示笔记，而不是再加工展示给他人。这一个过程的忽略可能导致信息不能有效传递。</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
