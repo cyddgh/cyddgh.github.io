@@ -2,14 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2020-12-30T06:12:04.531Z</updated>
+    <updated>2021-01-01T06:35:45.054Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
     <subtitle>软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。</subtitle>
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 软达通</rights>
+    <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian的复制增强功能与网页剪藏]]></title>
+        <id>https://cyddgh.github.io/post/202101011406/</id>
+        <link href="https://cyddgh.github.io/post/202101011406/">
+        </link>
+        <updated>2021-01-01T06:34:05.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了obsidian复制增强功能（Auto convert HTML）的优点和缺点、如何关闭此功能以及可实现网页剪藏的第三方软件（如简悦）。</p>
+<h1 id="复制增强">复制增强</h1>
+<p>最新的obsidian版本增强了复制功能，ob官方好像将这功能称为Auto convert HTML。具体的例子是直接复制一段有格式的网页，粘贴看ob中，会直接出现对应的md代码信息，包括了图片、加粗、标题等。<br>
+例如，复制页面（https://obsidian.md/features ）中的信息到ob中，会直接出现如下的代码。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210101141736.png" alt="" loading="lazy"></p>
+<h1 id="复制增强的问题">复制增强的问题</h1>
+<p>但这功能也带来了一些弊端，例如复制latex时莫名多出来的转义符，大家还可以尝试从excel某一个单元格中复制信息到ob中会出现一堆无关的代码(如下图)。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210101141443.png" alt="" loading="lazy"></p>
+<h1 id="关闭复制增强">关闭复制增强</h1>
+<p>如果不想要复制增强功能，有2种解决方法。<br>
+方法1：在ob最新版（内测中）中：设置-编辑器-Auto convert HTML-关闭此项。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210101141934.png" alt="" loading="lazy"><br>
+方法2：使用纯文本粘贴，ctrl+shift+V，这是win平台通用的一种快捷键，不仅适用于ob还适用于其他的软件（例如word）。</p>
+<p>我个人还是比较喜欢ob像记事本一样，把所有复制进来的文字格式都去除，所有我关闭了Auto convert HTML这功能。</p>
+<h1 id="网页剪藏html转md">网页剪藏（html转md）</h1>
+<p>对于网页剪藏，有其他的软件，例如上篇文章的简悦可以实现。<br>
+当然这类软件还有很多（以下来自于ob教程“如何将网页web转md”一节）：</p>
+<ul>
+<li>使用简悦</li>
+<li>使用蚕子所设计的quicker脚本-https://getquicker.net/Sharedaction?code=72101143-4cc5-4dfe-2dda-08d80601d539&amp;tdsourcetag=s_pctim_aiomsg</li>
+<li>TabCopy – https://chrome.google.com/webstore/detail/tabcopy/micdllihgoppmejpecmkilggmaagfdmb?hl=zh-TW&amp;utm_source=chrome-ntp-launcher</li>
+<li>Roam-highlighter – https://chrome.google.com/webstore/detail/roam-highlighter/mcoimieglmhdjdoplhpcmifgplkbfibp?hl=zh-TW&amp;utm_source=chrome-ntp-launcher</li>
+<li>Joplin Web Clipper（chrome 扩展）：https://chrome.google.com/webstore/detail/joplin-web-clipper/alofnhikmmkdbbbgpnglcpdollgjjfek?utm_campaign=en&amp;utm_source=en-et-na-us-oc-webstrapp&amp;utm_medium=et</li>
+<li>MarkDownload - Markdown Web Clipper ：https://chrome.google.com/webstore/detail/markdownload-markdown-web/pcmpcfapbekmbjjkdalcgopdkipoggdi</li>
+<li>markdown-clipper</li>
+<li>拷贝猫</li>
+<li>Pandoc Online： https://foliovision.com/seo-tools/pandoc-onlineby 余小西</li>
+</ul>
+<h1 id="结语">结语</h1>
+<p>在文末，祝各位读者新年快乐！本公众号在去年年末达到了300人了，这个公众号主要还是分享一些我本人的心得体会，更新时间不定。期待在新的一年里和大家一起学习，一起成长。对我文中错误之处，大家可以留言予以纠正，如果有什么好玩的有趣的软件也请留言。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Markdown的迁移性]]></title>
         <id>https://cyddgh.github.io/post/202012282128/</id>
@@ -379,55 +418,6 @@
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214223112.png" alt="" loading="lazy"></p>
 <p>点击Restart，重启zotero，即可完成安装。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214223142.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian中的别名（aliases）功能]]></title>
-        <id>https://cyddgh.github.io/post/202012031854/</id>
-        <link href="https://cyddgh.github.io/post/202012031854/">
-        </link>
-        <updated>2020-12-03T11:31:54.000Z</updated>
-        <content type="html"><![CDATA[<p>0.9.16版本obsidian之后就可以使用别名（aliases）功能，本文会先介绍我个人对此功能的理解，最后附上obsidian官方的部分介绍。</p>
-<h1 id="别名功能的介绍">别名功能的介绍</h1>
-<p>别名可以视为多词一义的现象，即多个不同的名词指向同一个含义。当你笔记标题可以用多个名词来命名时，你可能就需要用到别名这个功能。<br>
-例如，一般情况下英文、英语和English所指向的含义是相同的。你会讲英文/英语/English给人传达的意思是一样的。<br>
-又例如，卢曼卡片、知识卡片、卡片盒、zk笔记法、滑箱笔记法等等，也都可以视为多词一义。</p>
-<h1 id="我个人使用别名的场景">我个人使用别名的场景</h1>
-<p>我在使用ob软件中，比较喜欢以“中文名（英文名）”为标题给卡片明明，例如“生态学（ecology）”，但这样就可能导致ob中“提到当前标题”的功能失去作用，因为材料中很少会出现“生态学（ecology）”，一般中文材料只会出现“生态学”，英文材料只会出现“ecology”。而别名功能的出现，就可以很好解决这个问题。</p>
-<h1 id="如何在ob中使用别名">如何在ob中使用别名</h1>
-<p>我不了解是否有其他的方式，目前我就用了这最基本的方式，本文已经更新到ob教程“如何使用别名（aliases）”。<br>
-在笔记的开头输入以下格式</p>
-<pre><code>---
-aliases: [,]
----
-</code></pre>
-<p>需要注意的一件事情是，</p>
-<ul>
-<li>别名前后都有符号（---），ob称其为FrontMatter，而在md中是一种YAML语法，大家感兴趣可以去菜鸟网学习（ https://www.runoob.com/w3cnote/yaml-intro.html ）。</li>
-<li>别名所用的符号都是英文，如果输成中文符号就无法启动别名功能。</li>
-</ul>
-<h1 id="范例">范例</h1>
-<p>在ob教程中“如何使用别名（aliases）”一节，一开始是没有任何一篇文档显示在“提到当前标题”一栏中。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201203191942.png" alt="" loading="lazy"></p>
-<p>但当输入别名后，在“提到当前标题”一栏就出现了有关别名（“双链”、“卢曼”）的内容了。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201203192123.png" alt="" loading="lazy"></p>
-<h1 id="官网对别名的介绍">官网对别名的介绍</h1>
-<p>官网的原文（https://forum.obsidian.md/t/obsidian-release-v0-9-16/8795）：</p>
-<blockquote>
-<p>You can now specify aliases in front matter. These will then show up in the [[ link suggestion, and auto-complete to the correct file. They will also be picked up in unlinked mentions. For example: aliases: [AI, Artificial Intelligence]. Add double quotes around your alias if it contains special characters.</p>
-</blockquote>
-<p>官网的范例:</p>
-<pre><code>---
-aliases: [AI, Artificial Intelligence]
----
-</code></pre>
-<h1 id="后续修改">后续修改</h1>
-<p>202012301409需要理解别名的真正含义<br>
-主名是生态学，别名是ecology，okios（各个语言中的生态学拼写）<br>
-而不是<br>
-主名是生态学，别名是学科<br>
-主名是地理学，别名是学科<br>
-但你可以在生态学和地理学的卡片中加一个[[学科]]，然后在“学科”中看双链</p>
 ]]></content>
     </entry>
 </feed>
