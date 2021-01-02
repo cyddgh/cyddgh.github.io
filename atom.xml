@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-01-01T06:35:45.054Z</updated>
+    <updated>2021-01-02T13:41:11.279Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[多词一义与一词多义]]></title>
+        <id>https://cyddgh.github.io/post/202101022015/</id>
+        <link href="https://cyddgh.github.io/post/202101022015/">
+        </link>
+        <updated>2021-01-02T13:40:36.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文解释了多词一义和一词多义两种现象，并认为解决这问题可以划分到“如何找到自己的笔记”这一大问题下。</p>
+<h1 id="多词一义">多词一义</h1>
+<p>多词一义是多个词语指向同一个含义。可能的情况有：</p>
+<ul>
+<li>中文和外文导致的：“生态”与“ecology”</li>
+<li>对外文的翻译不同：例如把最近上映的电影“Soul”翻译成“心灵奇旅”、“灵魂奇遇记”、“灵魂急转弯”</li>
+<li>不同地方对一个事物的称呼不同：“公交”、“巴士”、“公车”、“客运”</li>
+</ul>
+<p>多词一义的现象在现实生活中处处存在，在obsidian中可以使用别名功能来解决这一问题（请见前几日的推文）。</p>
+<h1 id="一词多义">一词多义</h1>
+<p>一词多义是指一个单词蕴含不同的含义。可能的情况有：</p>
+<ul>
+<li>英文缩写：MOC可能是知识管理中的Maps of content，也可能是乐高拼图中的My Own Creation.</li>
+<li>多个著名人物的名字相同：例如乔丹可能指美国的运动员，也可能是葡萄牙运动员，甚至是一家体育用品的企业。</li>
+</ul>
+<p>在传统的维基（wiki）系统中，会使用一个义项页面来解决这问题，但目前obsidian和RoamResearch好像都没有很好的解决方法。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210102212743.png" alt="" loading="lazy"></figure>
+<h1 id="个人的感想">个人的感想</h1>
+<p>无论是多词一义，还是一词多义，随着学习的深入总会遇到这样的现象。例如，我最近看统计中的韦恩图，但有人翻译成维恩图，幸好我了解这图我已经收录到ob目录中，否则我就重新建立一张卡片，重新进行论述。但如何时间延长，我就不清楚是否能重新找到原先记录的卡片。<br>
+所以今天所讨论的问题还可以归结于“如何找到自己的笔记”，而这是另一个大问题，等以后再进行论述。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian的复制增强功能与网页剪藏]]></title>
         <id>https://cyddgh.github.io/post/202101011406/</id>
@@ -354,70 +383,6 @@
 <li>obsidian程序就会被唤醒（需要升级0.9.22以上），并跳转到检索结果的卡片上<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201217232350.png" alt="" loading="lazy"></li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian和zotero连用（Citation插件介绍）]]></title>
-        <id>https://cyddgh.github.io/post/202012142307/</id>
-        <link href="https://cyddgh.github.io/post/202012142307/">
-        </link>
-        <updated>2020-12-14T15:08:22.000Z</updated>
-        <content type="html"><![CDATA[<p>obsidian可以和zotero连用了，进而可以使用bib引用。我们需要使用的第三方插件是citation（https://github.com/hans/obsidian-citation-plugin ）。本文成稿仓促,如有错误之处,请在下方留言。</p>
-<h1 id="安装插件">安装插件</h1>
-<p>方法1：在ob-设置-第三方插件-社区插件（浏览）-查询citation<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214221118.png" alt="" loading="lazy"><br>
-如果无法加载插件，可以参考521xueweihan（https://github.com/521xueweihan/GitHub520 ）的方法，修改host文件。</p>
-<p>方法2：我将下载好的插件已经上传到蓝奏云（https://wws.lanzous.com/iQkHdjdaone<br>
-），大家可以下载后，参照之前的文章，手动安装插件。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214221920.png" alt="" loading="lazy"></p>
-<h1 id="设置zotero">设置zotero</h1>
-<ul>
-<li>打开zotero，此时zotero必须要安装有Better BibTeX插件并已经启动该插件，安装步骤可以参考参考文末的​帮助文档。​</li>
-<li>点击文件，导出文献库<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214222110.png" alt="" loading="lazy"></li>
-<li>选择“Better CSL JSON”（该选项是安装Better BibTeX插件之后才有的），点击ok，导出一个json文件。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214223533.png" alt="" loading="lazy"></li>
-<li>文件名可以自行命名，我个人建议以英文命名，本例中命名为“My bib.json”。将文件保存到自己所有的ob库文件夹下。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214223816.png" alt="" loading="lazy"></li>
-</ul>
-<h1 id="设置ob中的citation插件">设置ob中的Citation插件</h1>
-<ul>
-<li>在ob中，点击设置，找到Citation。</li>
-<li>在path中输入刚导出的json文件绝对路径，例如“D:\OneDrive\Obsidian\Obsidian-Work\My bib.json”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214224103.png" alt="" loading="lazy"></li>
-<li>另外上图第三项（Literature note folder）还需要我们设置一个文件夹。我们就在ob库文件夹下新建一个名为“Reading notes”的文件夹。</li>
-<li>设置完成后（可能需要重启ob），在ob文档中按Ctrl+Shift+O，就可以开始浏览文献。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214225217.png" alt="" loading="lazy"></li>
-<li>按Ctrl+Shift+E，就可以插入文献引用。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214225244.png" alt="" loading="lazy"></li>
-<li>文献具体存放位置就是在上一步设置的文件夹中（本文中是“Reading notes”文件夹）。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214225308.png" alt="" loading="lazy"></li>
-</ul>
-<h2 id="可能出现的问题">可能出现的问题</h2>
-<p>如果能看到文献列表但无法插入文献引用，请检查以下几点：</p>
-<ol>
-<li>是否是按Ctrl+Shift+E</li>
-<li>库文件夹是否有所设定的“Literature note folder”</li>
-<li>所引用的bib文件条目是否齐全</li>
-</ol>
-<h1 id="bib有什么用">bib有什么用</h1>
-<p>bib可以快速完成论文的引用，具体可以去看看zettlr（https://www.zettlr.com ）的说明。目前我还没尝试使用pandoc来完成格式化。</p>
-<p>王树义老师在【roam面对面】第3期：Roam的未来—人机协作（https://www.bilibili.com/video/BV1gK411K7G2 ）25分钟左右开始也有相关演示。</p>
-<h1 id="帮助文件如何在zotero中安装better-bibtex">帮助文件：如何在zotero中安装Better BibTeX</h1>
-<p>Better BibTeX</p>
-<ul>
-<li>安装说明：https://retorque.re/zotero-better-bibtex/installation</li>
-<li>下载地址：https://github.com/retorquere/zotero-better-bibtex/releases/</li>
-<li>备用下载（下载后请解压缩）：https://wws.lanzous.com/iKkKnjdasbg</li>
-</ul>
-<p>打开zotero，点击工具-插件<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214222741.png" alt="" loading="lazy"></p>
-<p>在弹出的窗口的右上角找到齿轮标志-选择“Install Add-on From File”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214222841.png" alt="" loading="lazy"></p>
-<p>选择刚刚下载的文件，例如“zotero-better-bibtex-5.2.95.xpi”，点击install now<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214223112.png" alt="" loading="lazy"></p>
-<p>点击Restart，重启zotero，即可完成安装。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201214223142.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
