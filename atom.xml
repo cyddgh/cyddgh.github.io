@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-01-02T13:41:48.500Z</updated>
+    <updated>2021-01-03T15:13:35.226Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,55 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian检索功能]]></title>
+        <id>https://cyddgh.github.io/post/202101032235/</id>
+        <link href="https://cyddgh.github.io/post/202101032235/">
+        </link>
+        <updated>2021-01-03T15:12:57.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了obsidian自带的检索功能，分享了正则表达式的一些学习资源和一些在ob中的实际操作。</p>
+<h1 id="ob官方对检索功能的说明">ob官方对检索功能的说明</h1>
+<p>obsidian内置有检索功能，并适用正则表达式。具体的说明（英文）可见官方说明文档。在任何ob窗口，点击左下角的帮助按钮，在检索框内输入“search”，找到标题为“search”的卡片，就可以阅读官方对检索功能的解释了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103223714.png" alt="" loading="lazy"><br>
+如果英文阅读有困难，可以尝试翻译软件，例如deepl（https://www.deepl.com/translator ）。</p>
+<h1 id="正则表达式">正则表达式</h1>
+<p>ob检索可以使用正则表达式，我在此附上相关的学习资源，大家感兴趣可以自学：</p>
+<ul>
+<li>菜鸟教程：https://www.runoob.com/regexp/regexp-syntax.html</li>
+<li>正则表达式可视化：https://blog.robertelder.org/regular-expression-visualizer</li>
+<li>正则学习网站：https://regexr.com</li>
+<li>正则表达式30分钟入门教程（佛智提供的）：https://deerchao.cn/tutorials/regex/regex.htm</li>
+<li>正则表达式速查表（ABC提供的）：https://www.jb51.net/tools/regexsc.htm</li>
+</ul>
+<p>我个人没有学习正则表达式，都是使用其他软件完成高级检索，大家可以看之前所写的“obsidian和FileLocator连用（加强检索功能）”。</p>
+<h1 id="实际操作">实际操作</h1>
+<p>虽然没有系统学习正则，但是有几个常用的小技巧可以分享给大家。以下操作是以ob教程为案例，大家可以一起操作看看。请注意下面所有的符号一般都是英文符号，另外注意是否空格。</p>
+<h2 id="只检索文件名">只检索文件名</h2>
+<p>一般的检索会连同文件的内容一起检索，当我们想要检索文件名是可以使用<code>file:你要检索的内容</code>。大家可以对比一下效果</p>
+<ul>
+<li>
+<p>使用普通检索<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225215.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>使用了file语句后<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225137.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h2 id="限定检索的文件夹">限定检索的文件夹</h2>
+<p>可以使用<code>path:文件夹名称（可以只包含单个字）</code>来将检索限定在某个文件夹中，例如使用<code>正则表达 path:名词解释</code>后得到的效果如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225557.png" alt="" loading="lazy"></p>
+<h2 id="排除某个文件夹">排除某个文件夹</h2>
+<p>只需要使用<code>-</code>就可以起到排除的作用，接上方的例子，我们排除名词解释的文件夹<code>正则表达 -path:名词解释</code><br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225813.png" alt="" loading="lazy"></p>
+<p>许多群友会问要如何排除Daily Note，那只需要在关系图谱的筛选框中输入<code>-path:你daily note的文件夹</code>，然后点击检索，就可以实现。这也说明检索可以适用于图谱，对图谱功能进行优化。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225943.png" alt="" loading="lazy"></figure>
+<h2 id="检索未完成的工作todo">检索未完成的工作（TODO）</h2>
+<p>可以使用英文的上下引号来限定一个检索词，如果要检索未完成的任务可以使用语句<code>&quot;- [ ]&quot;</code> （注意这语句中的空格）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103230653.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[多词一义与一词多义]]></title>
         <id>https://cyddgh.github.io/post/202101022015/</id>
@@ -330,59 +379,6 @@
 <h1 id="刷新dns">刷新DNS</h1>
 <p>按步骤1的方法，在运行框中输入“ipconfig /flushdns”，点击确认，就完成了本教程。如果还无法访问obsidian插件和主题，可以重启一下电脑。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201218221037.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian和FileLocator连用（加强检索功能）]]></title>
-        <id>https://cyddgh.github.io/post/202012172243/</id>
-        <link href="https://cyddgh.github.io/post/202012172243/">
-        </link>
-        <updated>2020-12-17T15:26:01.000Z</updated>
-        <content type="html"><![CDATA[<p>本文受到Boninall撰写的“FileLocator （和 Listary）和 Obsidian 联用（需要 FileMenu Tools）”（https://github.com/obsidianzh/forum/discussions/29 ）启发，并根据本人的体验进行了一定程度的再加工和演绎。同时，本文的改进部分得到了蚕子所编写的quicker动作帮助，达到了简化相关步骤的目的。</p>
-<h1 id="连用的目的">连用的目的</h1>
-<p>使用FileLocator对ob文档库进行高效检索，FileLocator相比于正则表达式会更加友好。即使不使用本连用，也可以单独使用FileLocator提高检索效率。<br>
-使用Listary可以快速唤醒检索功能，形成流程的工作流。</p>
-<h1 id="实现所需要的软件">实现所需要的软件</h1>
-<ul>
-<li>FileLocator</li>
-<li>Listary</li>
-<li>obsidian（需要升级到0.9.22以上版本）</li>
-<li>Quicker（本人的推荐码555-6895，如购买注册后首次付费购买专业版可获赠3个月使用时长）</li>
-</ul>
-<p>注意以上3个软件，FileLocator是收费软件，obsidian、Listary和Quicker都可以使用免费版。另外，我认为可以使用wox替代Listary。</p>
-<h1 id="listary的配置">Listary的配置</h1>
-<ul>
-<li>进入Listary的选项页面<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201217225539.png" alt="" loading="lazy"></li>
-<li>进入关键字页面进行相关设置<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201217230307.png" alt="" loading="lazy"></li>
-<li>设置内容（上图红色框）如下，其中“本例：”代表本例子的设置情况，大家依照自己的情况修改</li>
-</ul>
-<ol>
-<li>关键字：这是在Listary引发该检索行为的词语，可随意设置。本例：fob</li>
-<li>显示名：随意。本例：Filelocator</li>
-<li>描述：随意。本例：用 Filelocator 搜索 OB 的 '{query}'</li>
-<li>路径：需要填写你FileLocator软件的路径。本例：C:\Program Files\FileLocator Pro\FileLocatorPro.exe<br>
-参数：这是最重要的参数。本例：-s -r -d &quot;D:\OneDrive\Obsidian\obsidian群分享;!D:\OneDrive\Obsidian\obsidian群分享.trash&quot; -f &quot;*.md&quot; -c &quot;{query}&quot;<br>
-其中“D:\OneDrive\Obsidian\obsidian群分享”为你ob库文件夹的决定路径。</li>
-</ol>
-<ul>
-<li>点击“应用”，点击“确定”。</li>
-</ul>
-<h1 id="quicker的配置">Quicker的配置</h1>
-<p>本节不同于Boninall所述，采用了蚕子的Quicker的动作脚本“当前MD”（https://getquicker.net/sharedaction?code=7d59873a-894d-4283-592d-08d8a0d98be2 ）。<br>
-需要将此动作安装到Quicker面板。</p>
-<h1 id="具体效果">具体效果</h1>
-<ul>
-<li>激活Listary检索框，输入上面设置的关键字，然后空格，然后输入要检索的内容。本例：fob 别名<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201217231814.png" alt="" loading="lazy"></li>
-<li>会弹出检索的结果框<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201217231837.png" alt="" loading="lazy"></li>
-<li>在检索结果中唤醒Quicker面板，点击刚刚添加的“当前MD”动作<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201217232028.png" alt="" loading="lazy"></li>
-<li>obsidian程序就会被唤醒（需要升级0.9.22以上），并跳转到检索结果的卡片上<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20201217232350.png" alt="" loading="lazy"></li>
-</ul>
 ]]></content>
     </entry>
 </feed>
