@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-01-09T11:12:57.690Z</updated>
+    <updated>2021-01-12T14:30:27.131Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,59 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian发布增强（设置密码访问）]]></title>
+        <id>https://cyddgh.github.io/post/202101122135/</id>
+        <link href="https://cyddgh.github.io/post/202101122135/">
+        </link>
+        <updated>2021-01-12T14:29:39.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
+<p>今天obsidian内测版为发布服务增加了密码访问的功能，可以甚至单个或多个密码，并且可以备注上不同的昵称。这功能的用处可能有2点：<br>
+①单一密码可保护好自己的笔记不被外人在发布页面中查看，保护隐私。<br>
+②多个密码可以进行付费授权，给不同人不同的密码和名称，对授权进行收费，相当于知识付费。</p>
+<h1 id="具体操作">具体操作</h1>
+<ul>
+<li>
+<p>在发布页面点击“更改站点选项”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214124.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>滚动到菜单的最下方，点击Password（密码）旁的Manage（管理）<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214353.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击New password（新密码）可以设置密码访问<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214541.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>在Add password（添加密码）页中第一栏Password（密码）是必填项，第二栏Nickname（昵称）是可选项。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214626.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>输入密码后效果如下，然后点击Add this password（添加此密码）<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214759.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>返回就能看到一个昵称已经出现了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214925.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>如果没有设置昵称，密码则会显示为“Untitled password”。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112215331.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>完成上述设置后，还需要点击“返回”，在站点选项页面点击“保存站点设置”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112215524.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h1 id="具体效果">具体效果</h1>
+<p>通过上述设置，ob教程已经需要密码访问了，大家可以点击链接查看效果（https://publish.obsidian.md/chinesehelp ）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112222418.png" alt="" loading="lazy"><br>
+输入密码“obsidian”或“20210112”之后即可访问，密码输入正确则会出现以下提示。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112222455.png" alt="" loading="lazy"><br>
+为了让大家体验一下密码访问的效果，本密码会维持一周左右，之后将恢复无密码访问。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何找到自己的笔记]]></title>
         <id>https://cyddgh.github.io/post/202101091737/</id>
@@ -367,17 +420,6 @@ A: An MOC is just a note where you collect a bunch of related notes, then you st
 <h2 id="具体教程">具体教程</h2>
 <p>因为Remnote上手有些困难，推荐大家可以去知乎上查找叶峻峣的“RemNote—笔记+复习，我都要！”专栏（https://www.zhihu.com/column/c_1285992721149685760 ），里面介绍得非常详细了。</p>
 <p>我本人并没有深度使用Remnote，本篇主要是介绍一下Remnote，希望大家可以去尝试看看。本文如有不妥之处，请大家留言指出，所有消息以Remnote官网为准。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RoamResearch是一个工作流记录工具]]></title>
-        <id>https://cyddgh.github.io/post/202012252120/</id>
-        <link href="https://cyddgh.github.io/post/202012252120/">
-        </link>
-        <updated>2020-12-25T14:32:48.000Z</updated>
-        <content type="html"><![CDATA[<p>RR一般被认为是知识管理，但是我更多用它来进行项目管理，推动任务的进行。因得益于RR的灵活性（块引用、大纲），RR可以做一个很好的工作流（workflow）记录工具。<br>
-以回复论文的修改意见为例，我可以一边阅读，一边使用块引用将信的内容复制到页面上方，并加以总结归纳，得出我要做什么。这样做的理由和成立的条件是，当我看完信后，我需要知道我要做些什么，但这些任务可能是散落在信件各个位置，我需要将零散的信息整合起来，就是需要一个总结（summary）。另一方面，总结是用中文转述的，所以可能出现对文本原有含义的曲解，需要附上原文，这时候块引用就体现出它的作用，能完整复制原文和原文的位置，这样就可以快速跳转，理解审稿专家的上下文的语境。之后，我还会要对总结的要点进行回复，也一并记录到页面中，形成最后的回复信（要点是在rr，成文在word）。这就形成了一次工作的流程。<br>
-但更重要的是，如果你记录得当，RR能记录下你如何处理这一问题的流程，也就是工作流。当你几个月之后收到另一封审稿意见时，你输入双链，就会让你联想到之前在RR中做的工作，进而看到之前你是如何回复审稿人的，此时的你就不会从0开始，而是已有了应对的指引了。</p>
 ]]></content>
     </entry>
 </feed>
