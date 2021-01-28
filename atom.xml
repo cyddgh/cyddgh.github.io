@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-01-22T02:07:19.651Z</updated>
+    <updated>2021-01-28T12:25:37.155Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[为什么我们需要引用]]></title>
+        <id>https://cyddgh.github.io/post/202101282024/</id>
+        <link href="https://cyddgh.github.io/post/202101282024/">
+        </link>
+        <updated>2021-01-28T12:25:10.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
+<p>“引用”行为在学术上是非常常见的，一般一篇研究性论文会有50篇左右的文献引用。本文想简单谈谈对引用初步的认识。更专业的具体的认识，请参考专业书籍。</p>
+<h1 id="为什么我们会去引用">为什么我们会去引用</h1>
+<p>表达敬意：<br>
+“如果说我比别人看得更远些,那是因为我站在了巨人的肩上”。我们目前的知识可能是因为前人的引领，引用表达了我们的敬意。<br>
+​<br>
+“推卸”责任：<br>
+有时候我们无法去确认一件事情，但众人都说这事情为真，我们去引用一篇一锤定音的文献，作为立论的依据，可以增强说服力。引用就能帮我们摆脱求证的责任。</p>
+<p>不重复“造轮子”：<br>
+如果前人已经将某个问题论述清楚，那我们可以直接引用（给出相关的地址），而不必自己再进行重复论述。例如之前的文章中，关于markdown语法的部分，我就直接贴出菜鸟网的地址，因为菜鸟网已经将md的语法讲解得很详细了，我无需重复论述。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>当我看到zk笔记的wiki链接符号（[[]]），我首先想到的就是学术领域中的引用。这种想法也延伸到后来的双链软件。<br>
+当我每次输入wiki链接符号时，我大脑中有时在回忆和思索，我的笔记库中有什么卡片能对当前论断进行支撑的信息；有时则是在思考目前的笔记归属于那个分类下（wiki符号替代标签符号情况）。<br>
+因为要思考链接的意义，我对在ob中进行链接是非常谨慎的，而且都是手动输入，不使用批量双链的功能（此功能在一些用途下是必须的，但我不涉及该类用途）。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian同步服务（体验篇）]]></title>
         <id>https://cyddgh.github.io/post/202101220901/</id>
@@ -413,38 +435,6 @@ A: An MOC is just a note where you collect a bunch of related notes, then you st
 </ul>
 <h1 id="结语">结语</h1>
 <p>在文末，祝各位读者新年快乐！本公众号在去年年末达到了300人了，这个公众号主要还是分享一些我本人的心得体会，更新时间不定。期待在新的一年里和大家一起学习，一起成长。对我文中错误之处，大家可以留言予以纠正，如果有什么好玩的有趣的软件也请留言。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown的迁移性]]></title>
-        <id>https://cyddgh.github.io/post/202012282128/</id>
-        <link href="https://cyddgh.github.io/post/202012282128/">
-        </link>
-        <updated>2020-12-28T13:28:59.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>Markdown是一种迁移性很强的语言，但不同的软件对其的支持不同，在使用对应软件时应该注意。</p>
-<h1 id="markdown的迁移性">Markdown的迁移性</h1>
-<p>以一个具体例子来解释md的迁移性：我在gingko中撰写文章，然后放在Gridea中发布，直接复制到github的issue中也直接可以排版成功，在Chrome中借助markdownHere发布微信文章，在ob中存档。<br>
-上述是我的一个工作流，得益于md的兼容性，我能无缝衔接。</p>
-<h1 id="markdown的变异性">Markdown的变异性</h1>
-<p>同时，我们应该也要认识到markdown这门语言中存有不同的“方言”，即不同软件所认的语法不同。或者说，软件都承认md的基础语法，但对扩展语法的支持不一样。这就减弱了md的迁移性。例如，Typeora所插入的图片可能在ob中无法打开。</p>
-<p>这就要求你克制自己使用的语法，尽量使用基础语法。我目前使用的md语言有以下几项：</p>
-<ul>
-<li>标题（井号）</li>
-<li>代码和代码块</li>
-<li>引用</li>
-<li>在线图片的插入（<img src="" alt="" loading="lazy">）</li>
-<li>加粗</li>
-<li>斜体</li>
-</ul>
-<p>以上的语法我认为在不同的md软件中都能有相同的效果。</p>
-<h1 id="使用obsidian时应该注意一些什么">使用obsidian时应该注意一些什么</h1>
-<p>因为各个软件对markdown语句的支持不一样，所以在使用obsidian时，我们需要了解什么是ob独有但其他软件不支持的语法，尽量不去使用它们。例如块引用，无论是以#还是^的块引用在迁移中都存在许多问题。同样，在RoamResearch中块引用也是难以迁移的。</p>
-<h1 id="个人的想法">个人的想法</h1>
-<p>以下纯属个人主观看法<br>
-今年接触ob之后，才发现md没有被大多数人所接受，甚至是一些软件的高级使用者，感觉非常奇怪。<br>
-因为一直以来，我知道github中许多的readme文档是用md写的，所以感觉这么语言应该在程序员和使用github的人群中广为接受。<br>
-在评价md时，常常提到word的排版优秀，这也是我意外的一点。因为我认为word的排版只能说是简单但不应该是优秀。如果word的排版功能优秀，那就不会有许多人是使用latex来书写论文，如果要出版书籍好像还是adobe inDesign好用。</p>
 ]]></content>
     </entry>
 </feed>
