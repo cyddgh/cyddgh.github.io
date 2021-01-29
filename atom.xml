@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-01-28T12:28:13.651Z</updated>
+    <updated>2021-01-29T13:58:47.351Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[浅谈知识图谱]]></title>
+        <id>https://cyddgh.github.io/post/202101292155/</id>
+        <link href="https://cyddgh.github.io/post/202101292155/">
+        </link>
+        <updated>2021-01-29T13:58:18.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文推荐了一个知识图谱的实例，希望能引起大家对双链软件图谱的思考。</p>
+<h1 id="引言">引言</h1>
+<p>知识图谱（mapping knowledge domain）在本文中主要是指学术领域内对科学知识进行可视化后的图形。我本人并非是该领域乃至该学科的研究人员，只是想借由介绍此概念，重新思考双链笔记中的图谱功能。对于文中的专业表述如有兴趣，请自行到知网查阅相关信息。</p>
+<h1 id="知识图谱的实例">知识图谱的实例</h1>
+<p>首先，推荐大家前往B站观看“科学互联网络：150年的《自然》论文”（ https://www.bilibili.com/video/BV12J411Y7EY ）。下图截取自上述影片。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210129213529.png" alt="" loading="lazy"></figure>
+<h1 id="知识图谱如何构建">知识图谱如何构建</h1>
+<p>上图是如此炫丽，让也想尝试知识图谱的构建。<br>
+正如视频中所说：通过文献的引用，我们可以一步步构建出文献的网络，最终形成知识图谱。<br>
+但具体如何去构建知识图谱是非常复杂的，大家可以参考一些文献计量学的资料，例如罗绍峰的文献管理与信息分析课程（https://www.bilibili.com/video/BV1gg4y1z7J6?p=75 ）或者书籍《CiteSpace：科技文本挖掘及可视化》。<br>
+当然上述都是基于学术论文的知识图谱构建，对于普通用户的知识可视化借鉴的意义更大。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>对知识进行可视化，将原本抽象的事物展现到我们面前，是非常令人心动的。但具体的现实可能是残酷的，例如其实用一些软件做出的图（如下）并不能如Nature所演示的那样绚丽多彩。这说明我们没有意识到可视化背后诸多的努力，将这个过程想得过于简单了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210129214656.png" alt="" loading="lazy"><br>
+在双链笔记中，我认为一张卡片（例如obsidian中的一个md）就是一篇论文，一次的双链就是一次的引用，如果从这视角出发，我们的笔记库也能构建相应的可视化（例如obsidian中的查看相关图谱）。但这些双链软件所构建的可视化结果都差强人意，以至于许多人认为可视化图谱在双链笔记中毫无作用，这是我们需要去思考和解决的问题。例如obsidian提出了多级视图和视图筛选功能，能解决在局部视图中的可视化无效化的弊端，但对于总体的关系图谱的解决目前还没看到曙光。<br>
+当然，对于知识图谱也不应该过分的迷信。在学术研究中，我也使用了相关的技术对我的研究领域进行了可视化。我个人认为，可视化的结果对于我的研究帮助不大，这也是非常让我困惑的。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[为什么我们需要引用]]></title>
         <id>https://cyddgh.github.io/post/202101282024/</id>
@@ -397,45 +422,6 @@ A: An MOC is just a note where you collect a bunch of related notes, then you st
 <h1 id="个人的感想">个人的感想</h1>
 <p>无论是多词一义，还是一词多义，随着学习的深入总会遇到这样的现象。例如，我最近看统计中的韦恩图，但有人翻译成维恩图，幸好我了解这图我已经收录到ob目录中，否则我就重新建立一张卡片，重新进行论述。但如何时间延长，我就不清楚是否能重新找到原先记录的卡片。<br>
 所以今天所讨论的问题还可以归结于“如何找到自己的笔记”，而这是另一个大问题，等以后再进行论述。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian的复制增强功能与网页剪藏]]></title>
-        <id>https://cyddgh.github.io/post/202101011406/</id>
-        <link href="https://cyddgh.github.io/post/202101011406/">
-        </link>
-        <updated>2021-01-01T06:34:05.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文介绍了obsidian复制增强功能（Auto convert HTML）的优点和缺点、如何关闭此功能以及可实现网页剪藏的第三方软件（如简悦）。</p>
-<h1 id="复制增强">复制增强</h1>
-<p>最新的obsidian版本增强了复制功能，ob官方好像将这功能称为Auto convert HTML。具体的例子是直接复制一段有格式的网页，粘贴看ob中，会直接出现对应的md代码信息，包括了图片、加粗、标题等。<br>
-例如，复制页面（https://obsidian.md/features ）中的信息到ob中，会直接出现如下的代码。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210101141736.png" alt="" loading="lazy"></p>
-<h1 id="复制增强的问题">复制增强的问题</h1>
-<p>但这功能也带来了一些弊端，例如复制latex时莫名多出来的转义符，大家还可以尝试从excel某一个单元格中复制信息到ob中会出现一堆无关的代码(如下图)。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210101141443.png" alt="" loading="lazy"></p>
-<h1 id="关闭复制增强">关闭复制增强</h1>
-<p>如果不想要复制增强功能，有2种解决方法。<br>
-方法1：在ob最新版（内测中）中：设置-编辑器-Auto convert HTML-关闭此项。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210101141934.png" alt="" loading="lazy"><br>
-方法2：使用纯文本粘贴，ctrl+shift+V，这是win平台通用的一种快捷键，不仅适用于ob还适用于其他的软件（例如word）。</p>
-<p>我个人还是比较喜欢ob像记事本一样，把所有复制进来的文字格式都去除，所有我关闭了Auto convert HTML这功能。</p>
-<h1 id="网页剪藏html转md">网页剪藏（html转md）</h1>
-<p>对于网页剪藏，有其他的软件，例如上篇文章的简悦可以实现。<br>
-当然这类软件还有很多（以下来自于ob教程“如何将网页web转md”一节）：</p>
-<ul>
-<li>使用简悦</li>
-<li>使用蚕子所设计的quicker脚本-https://getquicker.net/Sharedaction?code=72101143-4cc5-4dfe-2dda-08d80601d539&amp;tdsourcetag=s_pctim_aiomsg</li>
-<li>TabCopy – https://chrome.google.com/webstore/detail/tabcopy/micdllihgoppmejpecmkilggmaagfdmb?hl=zh-TW&amp;utm_source=chrome-ntp-launcher</li>
-<li>Roam-highlighter – https://chrome.google.com/webstore/detail/roam-highlighter/mcoimieglmhdjdoplhpcmifgplkbfibp?hl=zh-TW&amp;utm_source=chrome-ntp-launcher</li>
-<li>Joplin Web Clipper（chrome 扩展）：https://chrome.google.com/webstore/detail/joplin-web-clipper/alofnhikmmkdbbbgpnglcpdollgjjfek?utm_campaign=en&amp;utm_source=en-et-na-us-oc-webstrapp&amp;utm_medium=et</li>
-<li>MarkDownload - Markdown Web Clipper ：https://chrome.google.com/webstore/detail/markdownload-markdown-web/pcmpcfapbekmbjjkdalcgopdkipoggdi</li>
-<li>markdown-clipper</li>
-<li>拷贝猫</li>
-<li>Pandoc Online： https://foliovision.com/seo-tools/pandoc-onlineby 余小西</li>
-</ul>
-<h1 id="结语">结语</h1>
-<p>在文末，祝各位读者新年快乐！本公众号在去年年末达到了300人了，这个公众号主要还是分享一些我本人的心得体会，更新时间不定。期待在新的一年里和大家一起学习，一起成长。对我文中错误之处，大家可以留言予以纠正，如果有什么好玩的有趣的软件也请留言。</p>
 ]]></content>
     </entry>
 </feed>
