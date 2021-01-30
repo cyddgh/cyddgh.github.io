@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-01-29T13:59:21.841Z</updated>
+    <updated>2021-01-30T02:48:37.475Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[浅谈知识图谱（二）-元数据的重要性]]></title>
+        <id>https://cyddgh.github.io/post/202101300931/</id>
+        <link href="https://cyddgh.github.io/post/202101300931/">
+        </link>
+        <updated>2021-01-30T02:48:14.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文强调了元数据对知识图谱构建的重要性，希望读者认识到元数据对个人知识管理中的可视化也是同样重要的，并在文末提出了一个构建obsidian有效全局图谱的方法。</p>
+<h1 id="引言">引言</h1>
+<p>之前介绍了通过文献之间的引用，我们可以追踪科学研究的动向，并且进行可视化，展示有效的信息。但同时也提到，知识图谱并非容易之事，背后还有诸多努力可能被使用者忽视。本文主要介绍元数据对知识图谱构建的重要性。</p>
+<h1 id="元数据">元数据</h1>
+<p>首先，本文的元数据（Metadata）是指从Web of Science、Scopus、知网等学术检索引擎上对学术论文的描述信息。<br>
+以Scopus为例，其提供的元数据如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130102119.png" alt="" loading="lazy"><br>
+当我们下载了相关的引用文件（例如bib、ris），使用记事本打开，就会发现许多的元数据信息。因为全部信息太多，我只截取部分信息展示如下。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130095731.png" alt="" loading="lazy"></p>
+<p>这些元数据信息非常丰富，例如上图的CR字段对应的就是本文献中引用的文献。一些常见且有用的信息大致有：作者、单位、发表期刊、发表年、被引文献（这篇文献引用了哪些文献）、施引文献（哪些文献引用了这篇文献）等等。</p>
+<p>只有获取了上述的元信息，才能对文献之间的关系进行分析和数据挖掘，最终可视化得到有用的图谱。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>通过上文可知，要进行可视化之后必须获得丰富的元数据。在个人知识管理中，如果将一篇文档视为一篇论文，双链视为引用，那我们看一下这篇文档中的原信息有多少呢？<br>
+以我个人的模板为例，元数据一般都放在了yaml中，我的yaml如下</p>
+<pre><code>---
+title: （标题）
+uid: 202101282344（创建时间）
+aliases: [（别名）]
+tags:  （标签）
+from: （来源）
+---
+</code></pre>
+<p>我认为勉强可以算是元数据的可能就是创建时间和标签。标签我一般写在正文中，且是以双链形式存在，例如[[tag-标签1]]。而目前图谱功能好像还不能根据创建时间的先后来构建关系，因为是去中心化，是无方向的。所以这两个数据似乎也不能参与到知识图谱的构建中。<br>
+在文章的最后，我也给出一个粗略的想法，即使用一个双链写入特殊字段，在图谱中进行筛选，从而能获得全局视角的有效图谱。例如，在obsidian中，我在所有有关于R语言的知识卡片中，都输入了[[tag-R语言]]，然后我在图谱中检索<code>tag-R语言</code>（或者进入相关的），从而能获得一张较为有效的全局图谱。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130104153.png" alt="" loading="lazy"><br>
+如果感觉“tag-R语言”的节点太大，且无意义，可以将该md文件删除，然后在图谱检索中勾选“仅显示已创建的笔记”，这样各个节点之间的关系可能更为自然。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130104301.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[浅谈知识图谱]]></title>
         <id>https://cyddgh.github.io/post/202101292155/</id>
@@ -393,35 +429,6 @@ A: An MOC is just a note where you collect a bunch of related notes, then you st
 <h2 id="检索未完成的工作todo">检索未完成的工作（TODO）</h2>
 <p>可以使用英文的上下引号来限定一个检索词，如果要检索未完成的任务可以使用语句<code>&quot;- [ ]&quot;</code> （注意这语句中的空格）。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103230653.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[多词一义与一词多义]]></title>
-        <id>https://cyddgh.github.io/post/202101022015/</id>
-        <link href="https://cyddgh.github.io/post/202101022015/">
-        </link>
-        <updated>2021-01-02T13:40:36.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文解释了多词一义和一词多义两种现象，并认为解决这问题可以划分到“如何找到自己的笔记”这一大问题下。</p>
-<h1 id="多词一义">多词一义</h1>
-<p>多词一义是多个词语指向同一个含义。可能的情况有：</p>
-<ul>
-<li>中文和外文导致的：“生态”与“ecology”</li>
-<li>对外文的翻译不同：例如把最近上映的电影“Soul”翻译成“心灵奇旅”、“灵魂奇遇记”、“灵魂急转弯”</li>
-<li>不同地方对一个事物的称呼不同：“公交”、“巴士”、“公车”、“客运”</li>
-</ul>
-<p>多词一义的现象在现实生活中处处存在，在obsidian中可以使用别名功能来解决这一问题（请见前几日的推文）。</p>
-<h1 id="一词多义">一词多义</h1>
-<p>一词多义是指一个单词蕴含不同的含义。可能的情况有：</p>
-<ul>
-<li>英文缩写：MOC可能是知识管理中的Maps of content，也可能是乐高拼图中的My Own Creation.</li>
-<li>多个著名人物的名字相同：例如乔丹可能指美国的运动员，也可能是葡萄牙运动员，甚至是一家体育用品的企业。</li>
-</ul>
-<p>在传统的维基（wiki）系统中，会使用一个义项页面来解决这问题，但目前obsidian和RoamResearch好像都没有很好的解决方法。</p>
-<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210102212743.png" alt="" loading="lazy"></figure>
-<h1 id="个人的感想">个人的感想</h1>
-<p>无论是多词一义，还是一词多义，随着学习的深入总会遇到这样的现象。例如，我最近看统计中的韦恩图，但有人翻译成维恩图，幸好我了解这图我已经收录到ob目录中，否则我就重新建立一张卡片，重新进行论述。但如何时间延长，我就不清楚是否能重新找到原先记录的卡片。<br>
-所以今天所讨论的问题还可以归结于“如何找到自己的笔记”，而这是另一个大问题，等以后再进行论述。</p>
 ]]></content>
     </entry>
 </feed>
