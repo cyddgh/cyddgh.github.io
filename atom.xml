@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-02-02T15:40:54.368Z</updated>
+    <updated>2021-02-03T05:58:34.373Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,71 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[在obsidian中拆书（Note refactor插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202102031355/</id>
+        <link href="https://cyddgh.github.io/post/202102031355/">
+        </link>
+        <updated>2021-02-03T05:58:08.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了Note refactor插件，能快速拆分md文档。我个人认为有点像Supermeno中的split操作，可能能用于拆书、增量学习。</p>
+<h1 id="插件介绍">插件介绍</h1>
+<p>Note refactor插件是由lynchjames编写的，其Github地址： https://github.com/lynchjames/note-refactor-obsidian 。目前版本为1.6.1。</p>
+<h2 id="具体操作">具体操作</h2>
+<p>启动插件之后，在md中，进行命令模式（默认为<code>ctrl+P</code>)，在弹出的命令中可以找到Note refactor相关的命令。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203115735.png" alt="" loading="lazy"></p>
+<ul>
+<li>Note Refactor: Extract selection to new note-first line as file name：划分文档，第一行作为文件名</li>
+<li>Note Refactor: Extract selection to new note-content only</li>
+<li>Note Refactor: Split note here- first line as file name</li>
+<li>Note Refactor: Split note here-content only</li>
+<li>Note Refactor: Split note by headings-h1：按H1的标题（<code>#</code>）来分割文档</li>
+<li>Note Refactor: Split note by headings-h2：按H2的标题（<code>##</code>）来分割文档</li>
+<li>Note Refactor: Split note by headings-h3：按H3的标题（<code>###</code>）来分割文档</li>
+</ul>
+<h3 id="按标题来分割文档">按标题来分割文档</h3>
+<p>例如我有一个文档为</p>
+<pre><code># 第1章 A
+第1章内容
+# 第2章 B
+第2章内容
+# 第3章 C
+第3章内容
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120540.png" alt="" loading="lazy"></figure>
+<p>运行<code>Note Refactor: Split note by headings-h1</code>命令后原文档就变成</p>
+<pre><code>[[第1章 A]]
+[[第2章 B]]
+[[第3章 C]]
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120558.png" alt="" loading="lazy"></figure>
+<p>在ob的库中则会生成对应的3张新卡片，以卡片“第1章 A”为例，其内部内容为：</p>
+<pre><code># 第1章 A
+第1章内容
+</code></pre>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120615.png" alt="" loading="lazy"></figure>
+<h3 id="划词分割">划词分割</h3>
+<p>划选相关的段落，如下图，选中了</p>
+<pre><code>第1行：划词分割
+可以使用Note Refactor: Extract selection to new note-first line as file name命令进行操作
+</code></pre>
+<p><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203121542.png" alt="" loading="lazy"><br>
+进行命令模式，执行<code>Note Refactor: Extract selection to new note-first line as file name</code>命令，则会将这文档做如下分割。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134120.png" alt="" loading="lazy"><br>
+如果要自选标题，可以可以使用<code>Note Refactor: Extract selection to new note-content only</code>，但会出现一个对话框，提醒你将所划选的内容添加到已有卡片或新建一张卡片。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134329.png" alt="" loading="lazy"><br>
+如果我输入一个新的标题，如“自选标题”，那效果如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134413.png" alt="" loading="lazy"></p>
+<h1 id="插件设置">插件设置</h1>
+<p>我没有太细究具体的插件设置，唯一我感觉需要设置的是Default location for new notes（新卡片默认位置），我习惯设为<code>Same folder as current file</code>(与当前卡片在同一目录下)。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134602.png" alt="" loading="lazy"><br>
+这个插件的其他设置还是很丰富的，大家感兴趣可以去看看。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>这一系列的插件介绍文章，可能只是为大家推介一些obsidian的插件，如果需要完全掌握还需去看具体github上的介绍。<br>
+我在文中所介绍的用法也多是个人习惯，不代表唯一的方法，也非全面的介绍。<br>
+这个插件给我的感觉，有点像Supermeno中的split，在文中我翻译为“分割”。这个插件可能可以用于拆书和增量学习中。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Git回滚操作]]></title>
         <id>https://cyddgh.github.io/post/202102022300/</id>
@@ -336,65 +401,6 @@ from: （来源）
 输入密码“obsidian”或“20210112”之后即可访问，密码输入正确则会出现以下提示。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112222455.png" alt="" loading="lazy"><br>
 为了让大家体验一下密码访问的效果，本密码会维持一周左右，之后将恢复无密码访问。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何找到自己的笔记]]></title>
-        <id>https://cyddgh.github.io/post/202101091737/</id>
-        <link href="https://cyddgh.github.io/post/202101091737/">
-        </link>
-        <updated>2021-01-09T11:11:42.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>如何找到自己的笔记是知识管理中的热点问题，本文列举了一些方法，包括检索、文件夹、标签、编码系统、时间戳、Map of Content、PARA、Daily Note方法，期望能帮助大家构建好自己的笔记系统。</p>
-<h1 id="引言">引言</h1>
-<p>在知识管理领域中，有一个广为讨论、且仍然没有结论的问题：如何找到我们所记录的笔记。<br>
-正如我们在日常中要称呼某人，但突然记不起对方的名字，大脑中飞速运转，想要从记忆中提取到关键信息。我们可能从不同维度去检索信息，例如何时认识（小学同学、高中同学、大学同学）、什么单位（xx大学、xx研究所、xx机构）、共同参加过什么活动（一起去旅游、一起做过社团）等等。<br>
-笔记系统也会遇到记不起你的笔记记在何处，大脑中有印象我见过这文献、做了笔记，但突然想不起来了。同时，知识管理领域也从不同的纬度提出了不同知识组织和检索的方法。<br>
-我目前在使用的方法主要有：全文检索+时间戳+MOC（目录法）。对于其他的方法的概述可能不够准确，如有错误请大家在留言中指出。</p>
-<h1 id="文件名和文档内检索">文件名和文档内检索</h1>
-<p>最简单的方法就是使用搜索软件对文件名检索（例如everything）或者对文档内的全文检索（例如FileLocator）。印象笔记的检索系统可以很好完成检索功能。</p>
-<h1 id="层级文件夹管理法">层级文件夹管理法</h1>
-<p>层级文件夹管理法是最能让人理解的一种管理。如同在windows系统中，你目前有照片、录音、视频，那就建立3个文件夹分别存储。照片下你还能用分2019年的照片，2020年的照片，2021年的照片等等。如果你有3个课程，就可以直接将3个课程的笔记分别存入3个不同的文件夹中。<br>
-但可能出现的问题有：</p>
-<ul>
-<li>有些软件不支持无限文件夹，例如印象笔记只能有2层文件夹。</li>
-<li>有些软件不支持同一文件在不同文件夹中，例如印象笔记一条笔记只能隶属于一个文件夹，windows系统的一个文件也只能隶属于一个文件夹中。</li>
-</ul>
-<h1 id="标签管理法">标签管理法</h1>
-<p>因为印象笔记有一些的问题，一些印象笔记的培训师就提倡标签管理。标签具有更强的灵活性，例如你给课程1所拍的照片，可以加上“课程1”和“照片”，文件存放在哪个位置不重要，重要的是描述文件的标签。使用标签的另一个好处是聚合信息，点击“照片”的标签可能就出现课程1、课程2等的照片。<br>
-一些文件管理软件例如taglyst、Eagle都支持标签管理。另外在群中，我看到有群友也使用在大纲类软件中使用标签来进行管理，且形成了一套高效的体系。</p>
-<h1 id="杜威编码系统">杜威编码系统</h1>
-<p>杜威编码系统，或者可能是图书分类法，是指通过数字编码来实现笔记的层次编码。例如：</p>
-<pre><code>001 知识管理
-001.01 知识管理软件
-001.01.01 obsidian
-001.01.02 Roam Research
-002 时间管理
-003 项目管理
-</code></pre>
-<p>需要更多的理论可以阅读“中国图书馆分类法”（https://book.douban.com/subject/4932564 ）</p>
-<p>但我个人遇到的问题是：该方法在分大类时是合适的，但在研究生科研中，研究的课题过于前沿、微小 、学科交叉强，无法编码分类来实现知识的构建。</p>
-<h1 id="时间戳管理法">时间戳管理法</h1>
-<p>时间戳就是赋予文件一个当前的时间作为独一无二的识别码，时间戳可以写在文件名或文件内（之前我有撰文介绍）。时间戳管理可以算是序号管理的一种，此外还有一种是卢曼序号（见之前的文章）。通过检索独一无二的序号，就能定位好文件。</p>
-<h1 id="map-of-contentmoc">Map of Content(MOC)</h1>
-<p>MOC虽然是我目前在使用的方法，但我了解的不多。我个人认为，它是对目前一些笔记的概括。附上一个我笔记的案例。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210109182733.png" alt="" loading="lazy"><br>
-我认为这就是对我笔记系统中的一部分笔记进行切片，主动筛选出一些笔记。</p>
-<p>更多的信息可以阅读Nick Milo的Linking Your Thinking文档(https://publish.obsidian.md/lyt-kit/_START+HERE )。该文档中有一个关于MOC的问答</p>
-<blockquote>
-<p>Q: How would you describe Maps of Content?*<br>
-A: An MOC is just a note where you collect a bunch of related notes, then you stare at it, and think.</p>
-</blockquote>
-<h1 id="para分类法">PARA分类法</h1>
-<p>PARA是指项目-领域-资源-归档（Projects — Areas — Resources — Archives），更多的信息可以见“P.A.R.A. 是什么及在 Notion 中的应用”（https://sspai.com/post/61459 ） 。</p>
-<h1 id="daily-note">Daily note</h1>
-<p>我对Daily note的思考主要是由Roam Research引起的，之后发现《如何有效整理信息》中就提出了基于每日时间进行笔记的笔记方法了。具体可能如下：</p>
-<pre><code>2021-01-09
-0800:参加课程1
-0900:运动
-1000:参加课程2
-</code></pre>
-<p>这类笔记方法推荐使用双链或其他链接的方法，进行笔记之间的聚合，具体可以看一下Roam Research的演示。</p>
 ]]></content>
     </entry>
 </feed>
