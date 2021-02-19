@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-02-19T02:54:53.025Z</updated>
+    <updated>2021-02-19T03:02:10.707Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -26,7 +26,7 @@
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104143.png" alt="" loading="lazy"></p>
 <p>在Group中点击“New group”<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104259.png" alt="" loading="lazy"></p>
-<p>在输入栏中输入筛选的标准，语句同“筛选”功能，可以用正则等方式进行筛选。例如下图就是设置了2个组：一个是“群友”显示为红色，一个是“obsidian”显示为棕色。<br>
+<p>在输入栏中输入筛选的标准，语句同“筛选”功能，可以用正则等方式进行筛选。例如下图就是设置了2个组：一个是“群友”显示为红色，另一个是“obsidian”显示为棕色。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104512.png" alt="" loading="lazy"></p>
 <h2 id="修改颜色">修改颜色</h2>
 <p>大家可以点击Group中的颜色，然后点击下方的RGB进行颜色数值的切换。obsidian目前支持RGB、HSL、HEX三种颜色输入，这贴心的设计真的不错。<br>
@@ -38,6 +38,9 @@ https://flatuicolors.com/<br>
 http://zhongguose.com/<br>
 https://color.uisdc.com/jp.html<br>
 https://flatuicolors.com/</p>
+<h1 id="个人的话">个人的话</h1>
+<p>本次图谱筛选可以更好去分析我们所构建的知识图谱，但同时也需要注意在构建图谱（创建卡片）时输入的源数据（metadata），尽量赋予更多的信息（例如标签、日期、作者）。<br>
+另外本次的增强也进一步增强了图谱可玩性，在玩中学、在学中玩。</p>
 ]]></content>
     </entry>
     <entry>
