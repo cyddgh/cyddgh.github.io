@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-02-03T05:59:07.408Z</updated>
+    <updated>2021-02-19T02:54:53.025Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian图谱增强-多重筛选]]></title>
+        <id>https://cyddgh.github.io/post/202102191053/</id>
+        <link href="https://cyddgh.github.io/post/202102191053/">
+        </link>
+        <updated>2021-02-19T02:54:26.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了0.11.0版本中新增的图谱筛选功能，并介绍了颜色搭配网站。</p>
+<h1 id="正文">正文</h1>
+<p>近期obsidian升级到0.11.0版本后，图谱功能进一步得到增强，可以在图谱中进行多重筛选，并为筛选的结果标记上不同的颜色。</p>
+<h1 id="实际操作">实际操作</h1>
+<h2 id="多组筛选">多组筛选</h2>
+<p>点击“查看关系图谱”-“打开图谱设置”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104143.png" alt="" loading="lazy"></p>
+<p>在Group中点击“New group”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104259.png" alt="" loading="lazy"></p>
+<p>在输入栏中输入筛选的标准，语句同“筛选”功能，可以用正则等方式进行筛选。例如下图就是设置了2个组：一个是“群友”显示为红色，一个是“obsidian”显示为棕色。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104512.png" alt="" loading="lazy"></p>
+<h2 id="修改颜色">修改颜色</h2>
+<p>大家可以点击Group中的颜色，然后点击下方的RGB进行颜色数值的切换。obsidian目前支持RGB、HSL、HEX三种颜色输入，这贴心的设计真的不错。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104918.png" alt="" loading="lazy"></p>
+<h1 id="配色推荐">配色推荐</h1>
+<p>因为可以设置多重颜色，大家也会为配色困扰，我在此推荐一些配色网站：<br>
+https://colordrop.io/<br>
+https://flatuicolors.com/<br>
+http://zhongguose.com/<br>
+https://color.uisdc.com/jp.html<br>
+https://flatuicolors.com/</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[在obsidian中拆书（Note refactor插件介绍）]]></title>
         <id>https://cyddgh.github.io/post/202102031355/</id>
@@ -348,59 +378,6 @@ from: （来源）
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121144659.png" alt="" loading="lazy"></p>
 <h1 id="未完待续">未完待续</h1>
 <p>因为篇幅原因，还有一些对同步的体验和看法留在下一篇中讲述。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian发布增强（设置密码访问）]]></title>
-        <id>https://cyddgh.github.io/post/202101122135/</id>
-        <link href="https://cyddgh.github.io/post/202101122135/">
-        </link>
-        <updated>2021-01-12T14:29:39.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
-<p>今天obsidian内测版为发布服务增加了密码访问的功能，可以甚至单个或多个密码，并且可以备注上不同的昵称。这功能的用处可能有2点：<br>
-①单一密码可保护好自己的笔记不被外人在发布页面中查看，保护隐私。<br>
-②多个密码可以进行付费授权，给不同人不同的密码和名称，对授权进行收费，相当于知识付费。</p>
-<h1 id="具体操作">具体操作</h1>
-<ul>
-<li>
-<p>在发布页面点击“更改站点选项”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214124.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>滚动到菜单的最下方，点击Password（密码）旁的Manage（管理）<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214353.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>点击New password（新密码）可以设置密码访问<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214541.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>在Add password（添加密码）页中第一栏Password（密码）是必填项，第二栏Nickname（昵称）是可选项。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214626.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>输入密码后效果如下，然后点击Add this password（添加此密码）<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214759.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>返回就能看到一个昵称已经出现了。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112214925.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>如果没有设置昵称，密码则会显示为“Untitled password”。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112215331.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>完成上述设置后，还需要点击“返回”，在站点选项页面点击“保存站点设置”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112215524.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-<h1 id="具体效果">具体效果</h1>
-<p>通过上述设置，ob教程已经需要密码访问了，大家可以点击链接查看效果（https://publish.obsidian.md/chinesehelp ）。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112222418.png" alt="" loading="lazy"><br>
-输入密码“obsidian”或“20210112”之后即可访问，密码输入正确则会出现以下提示。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210112222455.png" alt="" loading="lazy"><br>
-为了让大家体验一下密码访问的效果，本密码会维持一周左右，之后将恢复无密码访问。</p>
 ]]></content>
     </entry>
 </feed>
