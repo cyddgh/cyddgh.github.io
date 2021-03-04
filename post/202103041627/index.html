@@ -2,20 +2,20 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>为什么我们需要引用 | 软达通</title>
+<title>在obsidian中玩国际象棋（Chesser插件介绍） | 软达通</title>
 <link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1614847820723">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="为什么我们需要引用 | 软达通 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="在obsidian中玩国际象棋（Chesser插件介绍） | 软达通 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="引言
-“引用”行为在学术上是非常常见的，一般一篇研究性论文会有50篇左右的文献引用。本文想简单谈谈对引用初步的认识。更专业的具体的认识，请参考专业书籍。
-为什么我们会去引用
-表达敬意：
-“如果说我比别人看得更远些,那是因为我站在了巨人的肩上..." />
+    <meta name="description" content="摘要
+本文介绍Chesser插件，该插件能在obsidian进行国际象棋对弈。
+插件介绍
+Chesser是由SilentVoid13编写的，群友flying fly flies推荐。
+Github页面：https://github.com/..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -78,11 +78,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              为什么我们需要引用
+              在obsidian中玩国际象棋（Chesser插件介绍）
             </h2>
             <div class="post-info">
               <span>
-                2021-01-28
+                2021-03-04
               </span>
               <span>
                 2 min read
@@ -92,27 +92,94 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="引言">引言</h1>
-<p>“引用”行为在学术上是非常常见的，一般一篇研究性论文会有50篇左右的文献引用。本文想简单谈谈对引用初步的认识。更专业的具体的认识，请参考专业书籍。</p>
-<h1 id="为什么我们会去引用">为什么我们会去引用</h1>
-<p>表达敬意：<br>
-“如果说我比别人看得更远些,那是因为我站在了巨人的肩上”。我们目前的知识可能是因为前人的引领，引用表达了我们的敬意。<br>
-​<br>
-“推卸”责任：<br>
-有时候我们无法去确认一件事情，但众人都说这事情为真，我们去引用一篇一锤定音的文献，作为立论的依据，可以增强说服力。引用就能帮我们摆脱求证的责任。</p>
-<p>不重复“造轮子”：<br>
-如果前人已经将某个问题论述清楚，那我们可以直接引用（给出相关的地址），而不必自己再进行重复论述。例如之前的文章中，关于markdown语法的部分，我就直接贴出菜鸟网的地址，因为菜鸟网已经将md的语法讲解得很详细了，我无需重复论述。</p>
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍Chesser插件，该插件能在obsidian进行国际象棋对弈。</p>
+<h1 id="插件介绍">插件介绍</h1>
+<p>Chesser是由SilentVoid13编写的，群友flying fly flies推荐。<br>
+Github页面：https://github.com/SilentVoid13/Chesser<br>
+目前插件是0.1.5版本。<br>
+（可能有些读者访问github不方便，我将代码打包发到了蓝奏云上，链接： https://wws.lanzous.com/iaOwGmhcl2j<br>
+）</p>
+<h1 id="实际操作">实际操作</h1>
+<p>新建一个ob文档，在文档中输入</p>
+<pre><code>```chesser
+
+` ``
+</code></pre>
+<p>请删除如下图<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304163626.png" alt="" loading="lazy"><br>
+然后进入浏览模式，就可以开始玩国际象棋了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304163841.png" alt="" loading="lazy"></p>
+<h1 id="软件设置">软件设置</h1>
+<p>该软件的设置是直接在代码框内输入相关命令（如下图）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304164212.png" alt="" loading="lazy"></p>
+<p>相关命令的含义可以见下表或github页面说明。</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Possible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fen</td>
+<td>A valid FEN string</td>
+<td>Starts the chess board with a particular position.</td>
+</tr>
+<tr>
+<td>orientation</td>
+<td>white/black</td>
+<td>Orientation of the board.</td>
+</tr>
+<tr>
+<td>pieceStyle</td>
+<td>A valid piece style name.</td>
+<td>Style of the pieces on the board.</td>
+</tr>
+<tr>
+<td></td>
+<td>Check this to view available styles.</td>
+<td></td>
+</tr>
+<tr>
+<td>boardStyle</td>
+<td>A valid board style name.</td>
+<td>Style of the chess board.</td>
+</tr>
+<tr>
+<td></td>
+<td>Check this to view available styles.</td>
+<td></td>
+</tr>
+<tr>
+<td>drawable</td>
+<td>true/false</td>
+<td>Controls the ability to draw annotations (arrows, circles) on the board.</td>
+</tr>
+<tr>
+<td>viewOnly</td>
+<td>true/false</td>
+<td>If enabled, displays a static chess board (no moves, annotations, ...).</td>
+</tr>
+<tr>
+<td>free</td>
+<td>true/false</td>
+<td>If enabled, disables the chess logic, all moves are valid.</td>
+</tr>
+</tbody>
+</table>
 <h1 id="个人的话">个人的话</h1>
-<p>当我看到zk笔记的wiki链接符号（[[]]），我首先想到的就是学术领域中的引用。这种想法也延伸到后来的双链软件。<br>
-当我每次输入wiki链接符号时，我大脑中有时在回忆和思索，我的笔记库中有什么卡片能对当前论断进行支撑的信息；有时则是在思考目前的笔记归属于那个分类下（wiki符号替代标签符号情况）。<br>
-因为要思考链接的意义，我对在ob中进行链接是非常谨慎的，而且都是手动输入，不使用批量双链的功能（此功能在一些用途下是必须的，但我不涉及该类用途）。<br>
-当然除了双链类的引用，有时我们在收集材料时也要标注上材料的来源，我一般是在yaml中添加了一行From: 的字段，将来源填写​在里面。​</p>
+<p>今天介绍的插件偏娱乐性质​。我看到这插件的时候想起了​excel版的三国杀。在obsidian插件越来丰富的背景下，希望未来​会有更多有趣的插件出现在我们的视野中。</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
-<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%BC%9A%E5%8E%BB%E5%BC%95%E7%94%A8">为什么我们会去引用</a></li>
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D">插件介绍</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E8%AE%BE%E7%BD%AE">软件设置</a></li>
 <li><a href="#%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%AF%9D">个人的话</a></li>
 </ul>
 
@@ -124,9 +191,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://cyddgh.github.io/post/202101220901/">
+            <a href="https://cyddgh.github.io/post/202103021626/">
               <h3 class="post-title">
-                obsidian同步服务（体验篇）
+                obsidian插入脚注（footnotes插件介绍）
               </h3>
             </a>
           </div>

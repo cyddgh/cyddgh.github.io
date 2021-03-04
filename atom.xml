@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-03-02T09:42:30.353Z</updated>
+    <updated>2021-03-04T08:50:22.699Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,94 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[在obsidian中玩国际象棋（Chesser插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202103041627/</id>
+        <link href="https://cyddgh.github.io/post/202103041627/">
+        </link>
+        <updated>2021-03-04T08:43:59.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍Chesser插件，该插件能在obsidian进行国际象棋对弈。</p>
+<h1 id="插件介绍">插件介绍</h1>
+<p>Chesser是由SilentVoid13编写的，群友flying fly flies推荐。<br>
+Github页面：https://github.com/SilentVoid13/Chesser<br>
+目前插件是0.1.5版本。<br>
+（可能有些读者访问github不方便，我将代码打包发到了蓝奏云上，链接： https://wws.lanzous.com/iaOwGmhcl2j<br>
+）</p>
+<h1 id="实际操作">实际操作</h1>
+<p>新建一个ob文档，在文档中输入</p>
+<pre><code>```chesser
+
+` ``
+</code></pre>
+<p>请删除如下图<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304163626.png" alt="" loading="lazy"><br>
+然后进入浏览模式，就可以开始玩国际象棋了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304163841.png" alt="" loading="lazy"></p>
+<h1 id="软件设置">软件设置</h1>
+<p>该软件的设置是直接在代码框内输入相关命令（如下图）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304164212.png" alt="" loading="lazy"></p>
+<p>相关命令的含义可以见下表或github页面说明。</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Possible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fen</td>
+<td>A valid FEN string</td>
+<td>Starts the chess board with a particular position.</td>
+</tr>
+<tr>
+<td>orientation</td>
+<td>white/black</td>
+<td>Orientation of the board.</td>
+</tr>
+<tr>
+<td>pieceStyle</td>
+<td>A valid piece style name.</td>
+<td>Style of the pieces on the board.</td>
+</tr>
+<tr>
+<td></td>
+<td>Check this to view available styles.</td>
+<td></td>
+</tr>
+<tr>
+<td>boardStyle</td>
+<td>A valid board style name.</td>
+<td>Style of the chess board.</td>
+</tr>
+<tr>
+<td></td>
+<td>Check this to view available styles.</td>
+<td></td>
+</tr>
+<tr>
+<td>drawable</td>
+<td>true/false</td>
+<td>Controls the ability to draw annotations (arrows, circles) on the board.</td>
+</tr>
+<tr>
+<td>viewOnly</td>
+<td>true/false</td>
+<td>If enabled, displays a static chess board (no moves, annotations, ...).</td>
+</tr>
+<tr>
+<td>free</td>
+<td>true/false</td>
+<td>If enabled, disables the chess logic, all moves are valid.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="个人的话">个人的话</h1>
+<p>今天介绍的插件偏娱乐性质​。我看到这插件的时候想起了​excel版的三国杀。在obsidian插件越来丰富的背景下，希望未来​会有更多有趣的插件出现在我们的视野中。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian插入脚注（footnotes插件介绍）]]></title>
         <id>https://cyddgh.github.io/post/202103021626/</id>
@@ -333,47 +421,6 @@ from: （来源）
 当我每次输入wiki链接符号时，我大脑中有时在回忆和思索，我的笔记库中有什么卡片能对当前论断进行支撑的信息；有时则是在思考目前的笔记归属于那个分类下（wiki符号替代标签符号情况）。<br>
 因为要思考链接的意义，我对在ob中进行链接是非常谨慎的，而且都是手动输入，不使用批量双链的功能（此功能在一些用途下是必须的，但我不涉及该类用途）。<br>
 当然除了双链类的引用，有时我们在收集材料时也要标注上材料的来源，我一般是在yaml中添加了一行From: 的字段，将来源填写​在里面。​</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian同步服务（体验篇）]]></title>
-        <id>https://cyddgh.github.io/post/202101220901/</id>
-        <link href="https://cyddgh.github.io/post/202101220901/">
-        </link>
-        <updated>2021-01-22T02:06:50.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文主要介绍obsidian同步服务在日常使用提升（端到端加密、历史版本和多设备同步）以及我个人的体验。</p>
-<h1 id="引言">引言</h1>
-<p>昨天已经介绍了如何设置obsidian同步服务，今天这篇文章主要介绍obsidian同步服务对日常使用有何帮助。对于ob同步服务带来的功能提升，是否值得每月4美元（早鸟价），就看大家自己的判断了。<br>
-在阅读本文前，可能需要提前阅读昨天的推文。</p>
-<h1 id="obsidian同步服务带来的功能提升">obsidian同步服务带来的功能提升</h1>
-<h2 id="端到端加密">端到端加密</h2>
-<p>如果设置了端到端加密，当你之后点击Connect（连接）后，ob需要你输入密码才能访问远端库。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121111555.png" alt="" loading="lazy"><br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121111659.png" alt="" loading="lazy"><br>
-输入密码后，就可以开始同步<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121111735.png" alt="" loading="lazy"><br>
-目前正在同步的库，会显示Connect<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121111824.png" alt="" loading="lazy"><br>
-同时，如上图所示，ob同步服务可以支持多个库的同步，如“ChenNote”是私人笔记的笔记库，而“ObHelpDocument”是ob教程的笔记库。据说，ob同步服务最多可以支持5个不同库的同步（未测试）。</p>
-<h2 id="历史版本">历史版本</h2>
-<p>当你启动了同步服务后，可以点击笔记右上角的更多设置-View version history（查阅历史版本），查阅该笔记的历史版本。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210122092521.png" alt="" loading="lazy"><br>
-目前的历史版本记录很快，大纲输入一行文字就可能被记录一次历史版本，这样可以防止文档输入到一半丢失的情况。如下图所示，从35分到36分ob就为我的笔记构建了5个历史版本。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210122092834.png" alt="" loading="lazy"></p>
-<h1 id="同步小标签">同步小标签</h1>
-<p>当你使用了ob同步服务后，在ob的右下角会一个绿色打勾符号，这个符号代表同步完成。<br>
-如果出现问题，可以前往Sync activity查看具体出现了什么问题。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210122092013.png" alt="" loading="lazy"></p>
-<h2 id="多设备同步">多设备同步</h2>
-<p>多设备同步目前只支持不同电脑（PC或Mac）之间进行ob库的同步，但我更期待使用ob同步服务进行电脑和手机之间的同步。因为手机app还未面世，具体的使用等以后再撰文。但可以进行合理的推测，使用官方的同步服务，我们能最好地完成设备之间的同步。</p>
-<h1 id="个人感想">个人感想</h1>
-<p>obsidian所提供的同步服务能解决以下几个免费版的痛点：</p>
-<ul>
-<li>没有同步服务，只能单机使用。</li>
-<li>没有版本控制，无法进行文件追溯。</li>
-</ul>
-<p>但上述痛点，目前已经可以通过坚果云、git、OneDrive等同步服务来解决。但第三方的同步服务在使用中还是有所不足，例如ob文件可能被莫名锁定。同时，ob同步服务更重要的功能可能是对未来的ob手机app的支持。</p>
 ]]></content>
     </entry>
 </feed>
