@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-03-13T11:51:34.739Z</updated>
+    <updated>2021-03-14T14:44:09.385Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,101 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[时间线（timelines插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202103141918/</id>
+        <link href="https://cyddgh.github.io/post/202103141918/">
+        </link>
+        <updated>2021-03-14T14:43:36.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍timelines插件，该插件能在obsidian中形成时间线。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>今天介绍的插件是一个偏美化的插件，功能性较弱，大家如果不想折腾，可以略过。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>timelines插件是由Darakah开发的。<br>
+Github地址：https://github.com/Darakah/obsidian-timelines<br>
+蓝奏云地址：https://wws.lanzous.com/igcYbmxnxcd</p>
+<h2 id="插件设置">插件设置</h2>
+<p>Timelines插件的非常简单：</p>
+<ul>
+<li>第1行是默认标签，建议不要修改。你需要在yaml的tag一栏中输入这个标签才能被该插件所识别。</li>
+<li>第2行是修改时间线的顺序（从新到旧还是从旧到新），建议不用修改。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210314194821.png" alt="" loading="lazy"></li>
+</ul>
+<h1 id="实际操作">实际操作</h1>
+<p>要使用该插件需要先了解yaml是什么（可以百度，可以看早期的文章）。更快速的方法是直接拷贝下面我给的代码，在下面代码基础上进行个人修改。</p>
+<h2 id="官方示例">官方示例</h2>
+<p>首先给出Github页面作者的示例</p>
+<pre><code>---
+tags: [timeline, test, me, now]
+---
+&lt;span class='ob-timelines' data-date='1444-10-00-00' data-title='TITLE' data-img = 'URL' data-class = &quot;customCardCSS&quot;&gt; D E S C R I P T I O N &lt;/span&gt; 
+</code></pre>
+<h3 id="第1步在yaml中写明标签">第1步：在yaml中写明标签</h3>
+<p>最开始的三行就是YAML，需要在里面的标签一栏输入一个识别标签，如果你没有修改插件配件，默认是<code>timeline</code>。</p>
+<pre><code>---
+tags: [timeline, test, me, now]
+---
+</code></pre>
+<p>标签一栏，你还要赋予其他的值，用于后续筛选。</p>
+<h3 id="第2步在yaml后的正文部分输入一段html代码">第2步：在yaml后的正文部分输入一段html代码</h3>
+<p>之后的语句可以修改的内容有data-date、data-title、data-img、DESCRIPTION。</p>
+<pre><code>&lt;span class='ob-timelines' data-date='1444-10-00-00' data-title='TITLE' data-img = 'URL' data-class = &quot;customCardCSS&quot;&gt; DESCRIPTION &lt;/span&gt; 
+</code></pre>
+<ul>
+<li>data-date：决定了在时间线上显示的时间，采用的是年-月-日-小时，如案例中的<code>1444-10-00-00</code>。</li>
+<li>data-title：决定了在时间线上显示的标题。</li>
+<li>data-img：决定了在时间线上显示的图片。</li>
+<li>DESCRIPTION：决定了在时间线上显示的更多信息。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210314200250.png" alt="" loading="lazy"></figure>
+<h1 id="个人示例">个人示例</h1>
+<p>提醒大家注意语法中使用英文符号，注意空格等语法要求。</p>
+<h3 id="第3步新建卡片运行timeline语句">第3步：新建卡片，运行timeline语句</h3>
+<p>然后新建一张卡片，在卡片中输入下面的语句，且切换到浏览视图即可。</p>
+<pre><code>```timeline
+test,me
+```
+</code></pre>
+<p>上面的语句代表在ob库中检索yaml标签中包含有timeline、test和me三个标签的卡片，显示在时间线上。</p>
+<h2 id="个人实例的效果">个人实例的效果</h2>
+<p>具体效果如下：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210314222828.png" alt="" loading="lazy"></p>
+<h2 id="个人卡片模板">个人卡片模板</h2>
+<p>安装并启动好插件后，直接复制下面代码到4张新的ob卡片中，在卡片4中切换成浏览状态就能显示上面的效果图。</p>
+<h3 id="卡片1">卡片1</h3>
+<pre><code>---
+tags: [timeline, 美图]
+---
+
+&lt;span class='ob-timelines' data-date='2021-03-14' data-title='花朵' data-img = 'https://gitee.com/cyddgi/picture-store/raw/master/img/20210314193052.png' data-class = &quot;customCardCSS&quot;&gt;插入描述的区域&lt;/span&gt; 
+本图来自：https://www.pexels.com/zh-cn/photo/5706559/
+
+</code></pre>
+<h3 id="卡片2">卡片2</h3>
+<pre><code>---
+tags:  [timeline, 美图]
+---
+
+&lt;span class='ob-timelines' data-date='2021-03-10-08' data-title='相框' data-img = 'https://gitee.com/cyddgi/picture-store/raw/master/img/20210314193230.png' data-class = &quot;customCardCSS&quot;&gt; 本图来自：https://www.pexels.com/zh-cn/photo/5797991/ &lt;/span&gt; 
+
+正文开始~~~
+</code></pre>
+<h3 id="卡片3">卡片3</h3>
+<pre><code>---
+tags: [timeline, 美图]
+---
+
+&lt;span class='ob-timelines' data-date='2021-03-10-13' data-title='树叶' data-img = 'https://gitee.com/cyddgi/picture-store/raw/master/img/20210314193609.png' data-class = &quot;customCardCSS&quot;&gt; 本图来自：https://www.pexels.com/zh-cn/photo/6805871/&lt;/span&gt; 
+正文开始~~~
+</code></pre>
+<h3 id="卡片4">卡片4</h3>
+<pre><code>```timeline
+美图
+```
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Picgo+阿里云搭建图床（优化obsidian图片插入）]]></title>
         <id>https://cyddgh.github.io/post/202103131833/</id>
@@ -471,33 +566,6 @@ https://flatuicolors.com/</p>
 <p>这个插件所做的工作很像在浏览器中划词检索的操作，下图是在Edge浏览器中的类似操作。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210201103052.png" alt="" loading="lazy"></p>
 <p>本插件是Bon推荐给我的，他认为可以将此插件和obsidian结合，组成一个增量阅读的平台。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在obsidian中快速输入markdown格式（Markdown Formatting Assistant插件介绍）]]></title>
-        <id>https://cyddgh.github.io/post/202101311038/</id>
-        <link href="https://cyddgh.github.io/post/202101311038/">
-        </link>
-        <updated>2021-01-31T02:39:12.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
-<p>今天开始会尝试将介绍一些obsidian的插件，并将之前的介绍也一起归类到“obsidian插件介绍”这一栏目。今天要介绍的是一款可以快速输入markdown格式的插件Markdown Formatting Assistant，具体的效果如下，可能类似于一些md软件的状态栏。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210131102128.png" alt="" loading="lazy"></p>
-<h1 id="插件介绍">插件介绍</h1>
-<p>Markdown Formatting Assistant是由Reocin编写的，具体的Github地址： https://github.com/Reocin/obsidian-markdown-formatting-assistant-plugin ，此时的版本是0.1.2。</p>
-<h2 id="具体操作">具体操作</h2>
-<p>开启插件后，在软件右侧的side pane（显示双链、标签、大纲的地方）会出现新的一栏，显示了许多md的格式，直接点击就能快速输入到md中。<br>
-目前包含的md格式包括了：1-6级标题、粗体、斜体、划线、代码块、引用、插入图片、有序列表、无序列表等等，对于新手非常友好。</p>
-<p>此外更为惊艳的一个设计是，在md中输入<code>\</code>就能弹出一个下拉选框，有一点notion的感觉。感觉插件的开发者们可以利用好这一设计，使得用户能快速输入一些代码。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210131102940.png" alt="" loading="lazy"></p>
-<h2 id="插件设置">插件设置</h2>
-<p>插件的设置非常简单：<br>
-第一行是设置触发下拉选单的命令，默认是<code>\</code>，如果与你的习惯不符，可以进行修改。<br>
-第二行是设置md的面板显示在何处（？）。<br>
-我个人没有去修改以上的选项，都采用了默认的设置。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210131103237.png" alt="" loading="lazy"></p>
-<h1 id="个人的话">个人的话</h1>
-<p>这软件对于md新手可能是有帮助的，可以免去学习md语法的过程。当然一些已经熟知md语法的用户就无需此插件了。对于md软件是否需要一个快速输入的md格式命令的状态栏，大家也多有争议，我个人目前在用的其他md软件，如Gingko、Gridea都是没有像Typora有一个状态栏。</p>
-<p>此外，对于插件的安装，我个人建议还是通过ob软件安装（设置内的第三方插件-社区插件-浏览），具体的安装步骤和无法加载社区的解决方法都已成文大家可以翻阅之前的文章。</p>
 ]]></content>
     </entry>
 </feed>
