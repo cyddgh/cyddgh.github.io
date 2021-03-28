@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-03-24T10:51:49.248Z</updated>
+    <updated>2021-03-28T10:59:27.055Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,86 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[在obsidian实现大纲效果（obsidian-outliner插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202103281817/</id>
+        <link href="https://cyddgh.github.io/post/202103281817/">
+        </link>
+        <updated>2021-03-28T10:58:32.000Z</updated>
+        <content type="html"><![CDATA[<hr>
+<h2 id="titleuid-202103281817aliases-tagsfrom">title:<br>
+uid: 202103281817<br>
+aliases: []<br>
+tags:<br>
+from:</h2>
+<h1 id="摘要">摘要</h1>
+<p>本文介绍obsidian-outliner插件，可以在ob中实现大纲效果。</p>
+<h1 id="引言">引言</h1>
+<p>obsidian-outliner插件能在ob中实现大纲效果，指的是实现大纲的样式和一些操作（例如Zoom in）。这不意味ob成为一款大纲软件，并且该插件目前还在持续优化中。</p>
+<h1 id="插件介绍">插件介绍</h1>
+<p>obsidian-outliner是由vslinko编写，目前版本1.0.8。<br>
+Github页面： https://github.com/vslinko/obsidian-outliner<br>
+蓝奏云页面： https://wws.lanzous.com/iWf3fnetxhg</p>
+<h1 id="实际操作">实际操作</h1>
+<p>实际操作部分感谢Bon的投稿，大家可以见今天另一篇稿件。下面我摘录一些重要内容，以及补充一些我的心得。</p>
+<h2 id="具体操作">具体操作</h2>
+<p>本节全来自Bon文章的翻译</p>
+<ul>
+<li>键盘上的↑ ↓ ← → 来快速在节点上下移动，Cmd/Ctrl + ← 或 → 快速在节点的左右移动</li>
+<li>Tab 以及 Shift + Tab ——更改大纲节点的缩进
+<ul>
+<li>例如 Tab 是缩进一级，Shift-Tab 是提高一级</li>
+</ul>
+</li>
+<li>Cmd/Ctrl + ↑ 以及 Cmd/Ctrl + ↓ ——展开节点,收起节点</li>
+<li>Cmd/Ctrl + Shift + ↑ 以及 Cmd/Ctrl + Shift + ↓ ——移动整个树节点</li>
+<li>Cmd/Ctrl + 退格键——快速删除节点的内容
+<ul>
+<li>光标移动到节点符后用退格键删除节点（但不删除内容）</li>
+</ul>
+</li>
+<li>Enter 键——新建节点（光标在节点上的情况下）；Shift + Enter 键——新建空行（不新建节点）</li>
+<li>Cmd/Ctrl + A ——点击一次选中当前节点，点击两次选中整个大纲，点击三次选中整个文档</li>
+<li>Cmd/Ctrl + . ——进入节点（即专注当前节点，完全以大纲模式进行编辑）；Cmd/Ctrl + Shift + . ——退出节点（即回到源文档）</li>
+</ul>
+<h2 id="个人使用心得">个人使用心得</h2>
+<p>目前该插件可能存在快捷键冲突：请到ob设置中进行快捷键的修改，默认的<code>Cmd/Ctrl + .</code>可能和搜狗输入法有冲突。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210328185316.png" alt="" loading="lazy"></p>
+<p>另外就如同Advanced Tables插件起作用的位置必须要有列表一样，obsidian-outliner插件起作用的位置（光标位置）必须在一个有序列表中（以<code>-</code>开头）。例如</p>
+<pre><code>- 笔记软件
+	- obsiidan
+	- RoamResearch
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RoamResearch备份方式-Roam2Github]]></title>
+        <id>https://cyddgh.github.io/post/202103241834/</id>
+        <link href="https://cyddgh.github.io/post/202103241834/">
+        </link>
+        <updated>2021-03-24T11:00:56.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了一种新的备份RoamResearch的方式：Roam2Github，可以实现对RR进行markdown、json和edn的备份。</p>
+<h1 id="前情提要">前情提要</h1>
+<p>关于用Github来给RoamResearch做备份，我之前有推荐过roam-to-git。但不知道为什么，在2020年年末时，这个代码运行就不是很流畅，每天我都能收到Github给我发来的备份失败通知。我也尝试进行了维护，但还是无济于事，因为我对github也不是很了解，所以就一直没有折腾了。直到前天看到王树义老师的视频，发现原来大家都遇到了的问题，看来是roam-to-git已经更不上时代了，并且现在有一个新的备份代码可以完美解决RoamResearch的备份问题。</p>
+<h1 id="roam2github">Roam2Github</h1>
+<p>Roam2Github是由everruler12编写的。<br>
+Github地址： https://github.com/everruler12/roam2github<br>
+使用说明：</p>
+<ul>
+<li>Github版： https://github.com/everruler12/roam2github/blob/main/documentation/Full%20Guide%20with%20Step-by-Step%20Screenshots.md</li>
+<li>Notion版： https://www.notion.so/Roam2Github-Backup-Guide-650925859a4a42cf940e3fb74f5189f9</li>
+</ul>
+<p>推荐大家看Github版，因为有图文。我是直接看Notion版（因为Notion版最先出现），全部都是英文，还没图文。</p>
+<p>简单说一下Roam2Github相比roam-to-git的优点：</p>
+<ul>
+<li>roam-to-git后期似乎只备份json（至少我的库文件是这样的），但Roam2Github可以备份markdown、json和edn（RoamResearch最新的备份格式）。</li>
+<li>roam-to-git是基于私有库，Actions的时长有限制。Roam2Github运行是在公有库，保存数据是私有库，在保护隐私的同时，又不受免费账号Actions的时长限制。</li>
+</ul>
+<p>最后，再说明一个操作。在设置Actions时，有一步是<code>Delete the code, and replace with the code here https://raw.githubusercontent.com/everruler12/roam2github-actions/main/.github/workflows/main.yml</code>。这是让你将默认的代码都删除了，然后前往<code>https://raw.githubusercontent.com/everruler12/roam2github-actions/main/.github/workflows/main.yml</code>这个网站，将上面的代码复制到栏中，而不是直接复制这个网址。</p>
+<p>目前，这个备份方式已经运行了2天了，能实现每小时进行一次备份，没有报错。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian增强展示（dataview插件介绍）]]></title>
         <id>https://cyddgh.github.io/post/202103152106/</id>
@@ -555,105 +635,6 @@ https://flatuicolors.com/</p>
 <h1 id="个人的话">个人的话</h1>
 <p>本次图谱筛选可以更好去分析我们所构建的知识图谱，但同时也需要注意在构建图谱（创建卡片）时输入的源数据（metadata），尽量赋予更多的信息（例如标签、日期、作者）。<br>
 另外本次的增强也进一步增强了图谱可玩性，在玩中学、在学中玩。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在obsidian中拆书（Note refactor插件介绍）]]></title>
-        <id>https://cyddgh.github.io/post/202102031355/</id>
-        <link href="https://cyddgh.github.io/post/202102031355/">
-        </link>
-        <updated>2021-02-03T05:58:08.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文介绍了Note refactor插件，能快速拆分md文档。我个人认为有点像Supermeno中的split操作，可能能用于拆书、增量学习。</p>
-<h1 id="插件介绍">插件介绍</h1>
-<p>Note refactor插件是由lynchjames编写的，其Github地址： https://github.com/lynchjames/note-refactor-obsidian 。目前版本为1.6.1。</p>
-<h2 id="具体操作">具体操作</h2>
-<p>启动插件之后，在md中，进行命令模式（默认为<code>ctrl+P</code>)，在弹出的命令中可以找到Note refactor相关的命令。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203115735.png" alt="" loading="lazy"></p>
-<ul>
-<li>Note Refactor: Extract selection to new note-first line as file name：划分文档，第一行作为文件名</li>
-<li>Note Refactor: Extract selection to new note-content only</li>
-<li>Note Refactor: Split note here- first line as file name</li>
-<li>Note Refactor: Split note here-content only</li>
-<li>Note Refactor: Split note by headings-h1：按H1的标题（<code>#</code>）来分割文档</li>
-<li>Note Refactor: Split note by headings-h2：按H2的标题（<code>##</code>）来分割文档</li>
-<li>Note Refactor: Split note by headings-h3：按H3的标题（<code>###</code>）来分割文档</li>
-</ul>
-<h3 id="按标题来分割文档">按标题来分割文档</h3>
-<p>例如我有一个文档为</p>
-<pre><code># 第1章 A
-第1章内容
-# 第2章 B
-第2章内容
-# 第3章 C
-第3章内容
-</code></pre>
-<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120540.png" alt="" loading="lazy"></figure>
-<p>运行<code>Note Refactor: Split note by headings-h1</code>命令后原文档就变成</p>
-<pre><code>[[第1章 A]]
-[[第2章 B]]
-[[第3章 C]]
-</code></pre>
-<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120558.png" alt="" loading="lazy"></figure>
-<p>在ob的库中则会生成对应的3张新卡片，以卡片“第1章 A”为例，其内部内容为：</p>
-<pre><code># 第1章 A
-第1章内容
-</code></pre>
-<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120615.png" alt="" loading="lazy"></figure>
-<h3 id="划词分割">划词分割</h3>
-<p>划选相关的段落，如下图，选中了</p>
-<pre><code>第1行：划词分割
-可以使用Note Refactor: Extract selection to new note-first line as file name命令进行操作
-</code></pre>
-<p><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203121542.png" alt="" loading="lazy"><br>
-进行命令模式，执行<code>Note Refactor: Extract selection to new note-first line as file name</code>命令，则会将这文档做如下分割。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134120.png" alt="" loading="lazy"><br>
-如果要自选标题，可以可以使用<code>Note Refactor: Extract selection to new note-content only</code>，但会出现一个对话框，提醒你将所划选的内容添加到已有卡片或新建一张卡片。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134329.png" alt="" loading="lazy"><br>
-如果我输入一个新的标题，如“自选标题”，那效果如下<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134413.png" alt="" loading="lazy"></p>
-<h1 id="插件设置">插件设置</h1>
-<p>我没有太细究具体的插件设置，唯一我感觉需要设置的是Default location for new notes（新卡片默认位置），我习惯设为<code>Same folder as current file</code>(与当前卡片在同一目录下)。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134602.png" alt="" loading="lazy"><br>
-这个插件的其他设置还是很丰富的，大家感兴趣可以去看看。</p>
-<h1 id="个人的话">个人的话</h1>
-<p>这一系列的插件介绍文章，可能只是为大家推介一些obsidian的插件，如果需要完全掌握还需去看具体github上的介绍。<br>
-我在文中所介绍的用法也多是个人习惯，不代表唯一的方法，也非全面的介绍。<br>
-这个插件给我的感觉，有点像Supermeno中的split，在文中我翻译为“分割”。这个插件可能可以用于拆书和增量学习中。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Git回滚操作]]></title>
-        <id>https://cyddgh.github.io/post/202102022300/</id>
-        <link href="https://cyddgh.github.io/post/202102022300/">
-        </link>
-        <updated>2021-02-02T15:40:32.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>使用<code>git reset --hard {version}</code>可以将git库中的数据恢复到某一次提交时的状态。另外，建议不要随意复制名为<code>.obsidian</code>的文件夹。</p>
-<h1 id="删库的过程">删库的过程</h1>
-<p>今天为了节省安装插件的过程，于是就将我工作ob库中的<code>.obsidian</code>的文件夹直接复制到一个新建的空的ob库中。但因为我目前开启了ob官方的同步服务，（下面的过程我也不太清楚）所以导致新库自动上传，覆盖了远程的库，所以造成了删库。</p>
-<h1 id="恢复的尝试">恢复的尝试</h1>
-<p>我目前有三种同步方式共存，分布是坚果云同步、git同步、ob官方同步。<br>
-发生删库之后，我首先尝试坚果云进行恢复，进入了web端进行了回撤操作，但是效果不好，可能的原因是文件数太多。<br>
-其次，我尝试使用ob的同步服务，但是ob的同步服务没有批量回滚的选项，而我发生更改的文件应该有2000多个，无法一一点击。<br>
-最后我尝试使用git服务。在Jackiexiao的帮助下，我使用了<code>git reset --hard {version}</code>成功进行了恢复。</p>
-<h1 id="git恢复的操作">Git恢复的操作</h1>
-<p>本操作的前提是在发生误删操作前已经开启git服务，相关操作之前已经有介绍了。因为我是每10分钟自动进行一次git的备份操作，所以能轻松定位到删除前的状态。<br>
-首先，获得你的版本。可以在你的github网址上，点击commits。（当然也有其他方式，可以在git软件中查询到。）<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210202232725.png" alt="" loading="lazy"><br>
-然后，在新界面中点击复制按钮，就可以获得版本号。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210202232858.png" alt="" loading="lazy"><br>
-其次，在你的库文件夹在，右键-选择Git bash here。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210202232446.png" alt="" loading="lazy"><br>
-在命令行中输入<br>
-<code>git reset --hard {version}</code><br>
-其中{version}为刚才得到的版本号。如下图<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210202233414.png" alt="" loading="lazy"><br>
-如此就可完成回滚操作。</p>
-<h1 id="个人的话">个人的话</h1>
-<p>今天的删库操作是因为我自己没有认识到复制<code>.obsidian</code>的文件夹是一个敏感的操作行为，所以将我删库的过程写出来，以作警醒。<br>
-此外，可能多种同步方式并存不一定是好事，因为同步方式之间可能相互干扰。<br>
-好的文件备份习惯至关重要，选择对的同步软件也很关键。今天群友还推荐了seafile、NAS等同步方式。我个人打算先使用Goodsync来对关键数据进行增量备份，并以不同形式上传到网络，并区分热数据和冷数据分开保存。</p>
 ]]></content>
     </entry>
 </feed>
