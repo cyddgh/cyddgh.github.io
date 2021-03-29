@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-03-28T11:50:55.890Z</updated>
+    <updated>2021-03-29T12:32:45.857Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian内置文件恢复（File Recovery功能介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202103291957/</id>
+        <link href="https://cyddgh.github.io/post/202103291957/">
+        </link>
+        <updated>2021-03-29T12:32:25.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>obsidian升级到0.11.09后增加了文件恢复功能，这是一个弱化版的版本历史功能，但可以免费使用。</p>
+<h1 id="引言">引言</h1>
+<p>obsidian升级到0.11.09后，内置了文件恢复功能（File Recovery）。值得一提的是，文档恢复本来应该是购买同步服务（Sync）后才能享受的，现在却惠及大众，开发者确实良心。</p>
+<h1 id="文件恢复与版本历史的区别">文件恢复与版本历史的区别</h1>
+<p>所有ob使用者都可以的文件恢复功能英文名是File Recovery（文件恢复），而购买同步服务能享受的恢复功能英文名是version history（版本历史）。英文名不同也意味两者是不一样的，大家要注意两者的一些区别，其中最重要的一点就是：File Recovery只能单机使用，而version history依靠同步服务可以联机使用。<br>
+本节的信息目前还不确定，只是我个人见解。因为我办公室电脑中的文件恢复数据和寝室电脑的不一致（在使用坚果同步文件夹的情况下）。</p>
+<h1 id="文件恢复介绍">文件恢复介绍</h1>
+<p>点击设置-File Recovery（后期该名称会被汉化）就能进行选项<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210329200939.png" alt="" loading="lazy"></p>
+<ul>
+<li>Snapshot interval：快照间隔，图中的5代表5分钟进行 一次快照。</li>
+<li>History Length：快照保存时间，图中的7代表快照只保留7天，当第8天就会删除第1天的快照，就无法恢复到第一天时的状态了。</li>
+<li>Snapshots：查看快照。</li>
+<li>Clear history：清理快照历史记录</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[在obsidian实现大纲效果（obsidian-outliner插件介绍）]]></title>
         <id>https://cyddgh.github.io/post/202103281817/</id>
@@ -602,39 +626,6 @@ Github页面：https://github.com/SilentVoid13/Chesser<br>
 <h2 id="修改快捷键">修改快捷键</h2>
 <p>如果想要修改<code>Ctrl+Shift+6</code>这个快捷键，可以在设置-快捷键-“Footnote Shortcut: Insert Footnote”-修改快捷键。<br>
 <img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210302173012.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian图谱增强-多重筛选]]></title>
-        <id>https://cyddgh.github.io/post/202102191053/</id>
-        <link href="https://cyddgh.github.io/post/202102191053/">
-        </link>
-        <updated>2021-02-19T02:54:26.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文介绍了0.11.0版本中新增的图谱筛选功能，并介绍了颜色搭配网站。</p>
-<h1 id="正文">正文</h1>
-<p>近期obsidian升级到0.11.0版本后，图谱功能进一步得到增强，可以在图谱中进行多重筛选，并为筛选的结果标记上不同的颜色。</p>
-<h1 id="实际操作">实际操作</h1>
-<h2 id="多组筛选">多组筛选</h2>
-<p>点击“查看关系图谱”-“打开图谱设置”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104143.png" alt="" loading="lazy"></p>
-<p>在Group中点击“New group”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104259.png" alt="" loading="lazy"></p>
-<p>在输入栏中输入筛选的标准，语句同“筛选”功能，可以用正则等方式进行筛选。例如下图就是设置了2个组：一个是“群友”显示为红色，另一个是“obsidian”显示为棕色。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104512.png" alt="" loading="lazy"></p>
-<h2 id="修改颜色">修改颜色</h2>
-<p>大家可以点击Group中的颜色，然后点击下方的RGB进行颜色数值的切换。obsidian目前支持RGB、HSL、HEX三种颜色输入，这贴心的设计真的不错。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210219104918.png" alt="" loading="lazy"></p>
-<h1 id="配色推荐">配色推荐</h1>
-<p>因为可以设置多重颜色，大家也会为配色困扰，我在此推荐一些配色网站：<br>
-https://colordrop.io/<br>
-https://flatuicolors.com/<br>
-http://zhongguose.com/<br>
-https://color.uisdc.com/jp.html<br>
-https://flatuicolors.com/</p>
-<h1 id="个人的话">个人的话</h1>
-<p>本次图谱筛选可以更好去分析我们所构建的知识图谱，但同时也需要注意在构建图谱（创建卡片）时输入的源数据（metadata），尽量赋予更多的信息（例如标签、日期、作者）。<br>
-另外本次的增强也进一步增强了图谱可玩性，在玩中学、在学中玩。</p>
 ]]></content>
     </entry>
 </feed>
