@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-03-29T12:32:45.857Z</updated>
+    <updated>2021-04-01T12:27:25.610Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[增强编辑（ZH插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202104011945/</id>
+        <link href="https://cyddgh.github.io/post/202104011945/">
+        </link>
+        <updated>2021-04-01T12:27:06.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>ZH插件能解决excel转md、链接转换、去除md格式等obsidian的编辑问题，还可以控制视频播放来做笔记。</p>
+<h1 id="引言">引言</h1>
+<p>今天的插件可能有一点点不一样的地方。</p>
+<h1 id="zh插件">ZH插件</h1>
+<p>ZH插件是由obsidian爱好者Q群（群号：774176839）的群主蚕子编写的一套ob插件，目前版本0.0.9。除了ob，蚕子在quicker、thebrain等软件的推广中都做出了贡献。</p>
+<p>ZH插件和以往介绍的插件不同之处在于：</p>
+<ol>
+<li>ZH插件像多功能的瑞士军刀，主要是增强ob的编辑功能，而非专一性的能力。</li>
+<li>ZH插件目前还在持续更新中，并且根据大家的反馈增加新的功能。</li>
+<li>ZH插件没有在github或官方商城中上架，目前只有加群后，在群文件夹-D2 ZH系列插件中进行下载。</li>
+<li>ZH插件的界面是全中文的。</li>
+</ol>
+<h1 id="实际操作">实际操作</h1>
+<p>因为ZH插件是全中文界面，并且每一栏都有中文说明，操作也简单，我也无需过多篇幅讲解。如果有不懂的问题或对插件的建议也可以直接加群和大家一起交流。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210401200038.png" alt="" loading="lazy"></p>
+<p>我就讲一个ZH插件解决的ob使用痛点——excel转md。以往的操作，我都是将excel表格的内容输入到tableconvert.com 进行转换，但现在使用了ZH插件，就可以直接将excel中复制的数据，通过 Ctrl+Alt+V 直接复制到ob中，一步到位。</p>
+<p>另外最近蚕子还增加了视频页面的跳转，主要是通过时间戳，一边看视频，一边记笔记，目前支持B站的视频，相关演示可以在群文件中检索“控制页面播放”。</p>
+<p>最后，还有一个提醒：如果出现快捷键冲突，ZH插件的快捷键可以在ob的快捷键中进行更改。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210401200843.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[obsidian内置文件恢复（File Recovery功能介绍）]]></title>
         <id>https://cyddgh.github.io/post/202103291957/</id>
@@ -585,47 +613,6 @@ Github页面：https://github.com/SilentVoid13/Chesser<br>
 </table>
 <h1 id="个人的话">个人的话</h1>
 <p>今天介绍的插件偏娱乐性质​。我看到这插件的时候想起了​excel版的三国杀。在obsidian插件越来丰富的背景下，希望未来​会有更多有趣的插件出现在我们的视野中。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[obsidian插入脚注（footnotes插件介绍）]]></title>
-        <id>https://cyddgh.github.io/post/202103021626/</id>
-        <link href="https://cyddgh.github.io/post/202103021626/">
-        </link>
-        <updated>2021-03-02T09:41:45.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文介绍了两种obsidian的脚注样式，以及obsidian-footnotes插件。该插件方便了ob中的脚注插入。</p>
-<h1 id="如何在ob中插入脚注">如何在ob中插入脚注</h1>
-<p>如何在ob中插入脚注（footnote），可以等价于“如何在markdown中插入脚注”。我所了解的有2种。</p>
-<h2 id="脚注样式1">脚注样式1</h2>
-<pre><code>这是一个脚注 [^1]。之后继续写正文。
-第二段开始，一直写到文末[^2]。
-但需要注意，正文和文末的脚注直接要有一个空行，并且脚注所用的符号都是英文符号。
-
-[^1]: 参考文献1
-[^2]: 参考文献2
-</code></pre>
-<p>样式1需要注意的内容：</p>
-<ul>
-<li>正文和文末的脚注直接要有一个空行。</li>
-<li>脚注所用的符号都是英文符号。</li>
-</ul>
-<p>在ob中的效果，具体效果可能因主题样式有所变化。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210302171957.png" alt="" loading="lazy"></p>
-<h2 id="脚注样式2">脚注样式2</h2>
-<pre><code>这是一个脚注^[参考文献1]。之后继续写正文。
-第二段开始，一直写到文末^[参考文献2]。
-</code></pre>
-<p>在ob中的效果，具体效果可能因主题样式有所变化。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210302171854.png" alt="" loading="lazy"></p>
-<h1 id="插件介绍">插件介绍</h1>
-<p>obsidian-footnotes是由akaalias编写，Github页面： https://github.com/akaalias/obsidian-footnotes 。2021年3月2日时，该插件版本号为0.0.4，还未在ob内置的应用商城上架。根据github页面的描述，还有许多不足和后续功能将要增加，但我认为目前该插件已经可以满足ob中插入脚注的日常需求。</p>
-<h1 id="实际操作">实际操作</h1>
-<p>obsidian-footnotes插件的使用非常简单，在win系统中默认情况下按住<code>Ctrl+Shift+6</code>就可以快速脚注的加入。再次按住此快捷键，就可以返回正文中脚注所在的位置。<br>
-目前的该插件还存在一些不足，例如不能自动排序，已经在github页面讨论了。</p>
-<h2 id="修改快捷键">修改快捷键</h2>
-<p>如果想要修改<code>Ctrl+Shift+6</code>这个快捷键，可以在设置-快捷键-“Footnote Shortcut: Insert Footnote”-修改快捷键。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210302173012.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
