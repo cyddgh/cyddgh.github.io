@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-04-01T12:27:25.610Z</updated>
+    <updated>2021-04-04T12:02:35.293Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian的命令面板]]></title>
+        <id>https://cyddgh.github.io/post/202104041936/</id>
+        <link href="https://cyddgh.github.io/post/202104041936/">
+        </link>
+        <updated>2021-04-04T12:02:14.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了obsidian的命令面板，并演示如何观看图谱生长动画。</p>
+<h1 id="引言">引言</h1>
+<p>在obsidian中，我们可能经常会使用<code>Ctrl+O</code>这个快捷键来查询和创建卡片。与字母O相邻的P，其实也在ob中承担重要作用——命令面板，但常常被大家所忽视。<br>
+本文基于windows系统，所以使用了Ctrl键，Mac对应的快捷键应该是Cmd。</p>
+<h1 id="命令面板">命令面板</h1>
+<p>默认情况下，按住快捷键<code>Ctrl+P</code>可以打开ob的命令面板（如下图），其实我更喜欢称其为命令模式。在这里你可以找到许多关于ob中的命令。特别是安装插件后（例如ob的思维导图插件），你不知道如何激活，那就应该先来命令模式中查询一下。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210404194101.png" alt="" loading="lazy"></figure>
+<p>在上图中可以看到许多关于ZH插件的命令，点击后就能直接运行。</p>
+<h1 id="播放图谱生长视频">播放图谱生长视频</h1>
+<p>在目前的ob版本中增加了一项新的命令：播放关系图谱生长动画。具体步骤如下：</p>
+<ul>
+<li>进入命令面板，Ctrl+P</li>
+<li>输入“播放关系图谱生长动画”（因为命令模式也支持模糊检索，所以也可以输入“图谱”两个字然后选中就行）。</li>
+<li>回车</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210404195314.png" alt="" loading="lazy"></figure>
+<p>然后就可以静静欣赏关系图谱的生长过程了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[增强编辑（ZH插件介绍）]]></title>
         <id>https://cyddgh.github.io/post/202104011945/</id>
@@ -525,94 +551,6 @@ anki应该使用的是html的语法，如<code>&lt;img src=&quot;https://gitee.c
 <li>如何利用图床在Anki 卡片中加入图片，https://www.jianshu.com/p/5fa37faabb32</li>
 <li>3/4 如何在Mac平台使用图床为Anki添加图片素材？ | 学习骇客，https://mp.weixin.qq.com/s/-EFS6tJcbWR4uTlmCUoZlQ</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在obsidian中玩国际象棋（Chesser插件介绍）]]></title>
-        <id>https://cyddgh.github.io/post/202103041627/</id>
-        <link href="https://cyddgh.github.io/post/202103041627/">
-        </link>
-        <updated>2021-03-04T08:43:59.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文介绍Chesser插件，该插件能在obsidian进行国际象棋对弈。</p>
-<h1 id="插件介绍">插件介绍</h1>
-<p>Chesser是由SilentVoid13编写的，群友flying fly flies推荐。<br>
-Github页面：https://github.com/SilentVoid13/Chesser<br>
-目前插件是0.1.5版本。<br>
-（可能有些读者访问github不方便，我将代码打包发到了蓝奏云上，链接： https://wws.lanzous.com/iaOwGmhcl2j<br>
-）</p>
-<h1 id="实际操作">实际操作</h1>
-<p>新建一个ob文档，在文档中输入</p>
-<pre><code>```chesser
-
-` ``
-</code></pre>
-<p>如下图<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304163626.png" alt="" loading="lazy"><br>
-然后进入浏览模式，就可以开始玩国际象棋了。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304163841.png" alt="" loading="lazy"></p>
-<h1 id="软件设置">软件设置</h1>
-<p>该软件的设置是直接在代码框内输入相关命令（如下图）。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210304164212.png" alt="" loading="lazy"></p>
-<p>相关命令的含义可以见下表或github页面说明。</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Possible Values</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fen</td>
-<td>A valid FEN string</td>
-<td>Starts the chess board with a particular position.</td>
-</tr>
-<tr>
-<td>orientation</td>
-<td>white/black</td>
-<td>Orientation of the board.</td>
-</tr>
-<tr>
-<td>pieceStyle</td>
-<td>A valid piece style name.</td>
-<td>Style of the pieces on the board.</td>
-</tr>
-<tr>
-<td></td>
-<td>Check this to view available styles.</td>
-<td></td>
-</tr>
-<tr>
-<td>boardStyle</td>
-<td>A valid board style name.</td>
-<td>Style of the chess board.</td>
-</tr>
-<tr>
-<td></td>
-<td>Check this to view available styles.</td>
-<td></td>
-</tr>
-<tr>
-<td>drawable</td>
-<td>true/false</td>
-<td>Controls the ability to draw annotations (arrows, circles) on the board.</td>
-</tr>
-<tr>
-<td>viewOnly</td>
-<td>true/false</td>
-<td>If enabled, displays a static chess board (no moves, annotations, ...).</td>
-</tr>
-<tr>
-<td>free</td>
-<td>true/false</td>
-<td>If enabled, disables the chess logic, all moves are valid.</td>
-</tr>
-</tbody>
-</table>
-<h1 id="个人的话">个人的话</h1>
-<p>今天介绍的插件偏娱乐性质​。我看到这插件的时候想起了​excel版的三国杀。在obsidian插件越来丰富的背景下，希望未来​会有更多有趣的插件出现在我们的视野中。</p>
 ]]></content>
     </entry>
 </feed>
