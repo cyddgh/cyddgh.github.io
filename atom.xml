@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyddgh.github.io</id>
     <title>软达通</title>
-    <updated>2021-04-22T15:41:21.974Z</updated>
+    <updated>2021-04-25T14:56:27.036Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyddgh.github.io"/>
     <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
@@ -10,6 +10,121 @@
     <logo>https://cyddgh.github.io/images/avatar.png</logo>
     <icon>https://cyddgh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 软达通</rights>
+    <entry>
+        <title type="html"><![CDATA[obsidian主题设置]]></title>
+        <id>https://cyddgh.github.io/post/obsidian-zhu-ti-she-zhi/</id>
+        <link href="https://cyddgh.github.io/post/obsidian-zhu-ti-she-zhi/">
+        </link>
+        <updated>2021-04-25T14:56:08.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了obsidian的主题设置，推荐了相关的CSS资源和一些网页设计的教程。本人还是建议不要过多追求笔记样式，应该多做笔记。</p>
+<h1 id="引言">引言</h1>
+<p>obsidian是基于Electron（软件架构）搭建的一款笔记软件，markdown可以视为一种简单的html网页语言（例如md中的<code>#</code>相当于html<code>&lt;h1&gt;&lt;/h1&gt;</code>），而css是常用于修饰html样式的语言，理论上软件各处的样式可以通过css来进行调节。更多关于html和css的专业论述，可以参见以下几个信息源：</p>
+<ul>
+<li>菜鸟网： https://www.runoob.com/html/html-tutorial.html</li>
+<li>w3cSchool: https://www.w3school.com.cn/html/index.asp</li>
+<li>其他相关专业的书籍，在京东上已有很多。</li>
+</ul>
+<p>然而系统学习html和css对于大部分人是有难度和门槛的，而且我也不建议普通的笔记使用者深入了解，我们可以直接通过使用他人调试好的css，例如由whyt-byte（FFF大佬）编写的Blue-Topaz（蓝色托帕石）就是不错的选择。该CSS的Github下载地址： https://github.com/whyt-byte/Blue-Topaz_Obsidian-css ，蓝奏云地址： https://wws.lanzous.com/imLARohvvjc 。蓝色托帕石CSS中的备注详实，也方便了使用者进一步进行个性化修改。</p>
+<h1 id="obsidian外观系统介绍">obsidian外观系统介绍</h1>
+<h2 id="主题明亮和字体大小调整">主题明亮和字体大小调整</h2>
+<p>点击左下设置-点击外观，就可以进入obsidian的外观设置系统，在这里可以修改调用的css文件。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210425222031.png" alt="" loading="lazy"></p>
+<ul>
+<li>基础颜色：如果css有明、暗两种配色，可以通过这里进行修改。明亮效果如下：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210425222213.png" alt="" loading="lazy"></li>
+<li>使用“obsidian.css”主题文件：请关闭此选项。这好像是旧版本遗留下来的选项，目前新版本已无效且可能会有干扰。</li>
+<li>半透明效果：建议关闭。开启后可能会耗费资源。</li>
+<li>Font size：调整字体大小。</li>
+<li>Quick font size adjustment：开启后可以通过Ctrl键+鼠标滚轮/触控板快速调整字体大小。</li>
+</ul>
+<h2 id="调用css">调用CSS</h2>
+<p>之后的选项就是调用CSS的区块，可以分为主题和代码段两部分：</p>
+<ul>
+<li>主题CSS一般规定的内容比较多，代码大，有上百行。</li>
+<li>代码段则是为了某个需求而定制的，例如下中的代码段就是为了去除一级标题，代码段一般在10行以内。代码段的优先级会高于主题CSS，即当两者冲突时以代码段的设置为准。可以理解为代码段是来修饰主题CSS。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210425222703.png" alt="" loading="lazy"></figure>
+<p>点击上图中的①和③箭头所指的文件夹，就能打开相应的文件夹，将下载好的css放入文件夹后，点击旁边的刷新按钮就可以读取到。</p>
+<p>对于主题CSS，可以点击②箭头所指的下拉菜单，进行选择，其中“无”代表的是obsidian的原生css。<br>
+对于代码段，可以点击旁边的按钮启用或关闭。</p>
+<h2 id="下载css">下载CSS</h2>
+<p>主题CSS的下载可以通过官方的社区主题，但大家可能会遇到网络问题无法访问，建议还是直接前往github检索<code>obsidian css</code>或者在QQ群的群文件中下载CSS文件。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210425223844.png" alt="" loading="lazy"></p>
+<p>片段CSS的资源也能在github下载得到，例如 https://github.com/deathau/obsidian-snippets 。</p>
+<h2 id="通过minimal-theme-settings插件修改">通过Minimal Theme Settings插件修改</h2>
+<p>obsidian的Minimal Theme Settings插件可以对CSS进行一些简单的操作，该插件的Github地址为 https://github.com/kepano/obsidian-minimal-settings 。<br>
+但Minimal Theme Settings插件正如其名，主要是为Minimal Theme主题服务，对于其他主题的css支持如何，大家请自行体验。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210425224842.png" alt="" loading="lazy"></p>
+<h2 id="通过控制台进行调整">通过控制台进行调整</h2>
+<p>在win下通过<code>Ctrl+Shift+I</code>可以打开控制台（一种调试网页html的工具），然后可以通过控制台来对相关的元素进行修改（懂的人都懂，不懂的人就不要尝试了，或者先自学Html和CSS）。<br>
+以下图为例，可以看出<code>obsidian主题设置</code>所在元素在html中的位置。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210425225156.png" alt="" loading="lazy"></p>
+<h1 id="相关视频资源推荐">相关视频资源推荐</h1>
+<p>目前B站上已经有很多obsidian的视频，大家可以去检索，我检索到以下2个视频推荐给大家</p>
+<ul>
+<li>给笔记的列表加上漂亮的层级线条 | 笔记神器 Obsidian 完全指南，胸毛齐腰， https://www.bilibili.com/video/BV1a5411w7DF</li>
+<li>如何给obsidian换主题｜最美主题都在这里｜小白新手入门obsiidian，aliya成长记， https://www.bilibili.com/video/BV1354y1a75d</li>
+</ul>
+<p>另外QQ群中也在征集相关的CSS片段，以丰富和简化个性化的设置。大家有好的资源欢迎上传。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[看板插件（Kanba插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202104222356/</id>
+        <link href="https://cyddgh.github.io/post/202104222356/">
+        </link>
+        <updated>2021-04-24T14:39:34.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了看板插件，能在obsidian中提供独立的看板服务。</p>
+<h1 id="引言">引言</h1>
+<p>看板（kanban）一词来源于日本，经常被用于表示项目进展、GTD甚至是卡片写作。例如obsidian的开发路线图（链接： https://trello.com/b/Psqfqp7I/obsidian-roadmap ）就是放在trello这个主流的看板网站上。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210423001822.png" alt="" loading="lazy"><br>
+除了trello外，notion、滴答等软件也有相应的看板视图。<br>
+最近，看板插件的问世，让ob完善了看板功能。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>kanban插件是由mgmeyers开发的一款插件，目前已上架官方商城，版本0.0.6。<br>
+Github地址： https://github.com/mgmeyers/obsidian-kanban<br>
+蓝奏云地址： https://wws.lanzous.com/iUwesogm88d<br>
+此外，QQ群文件中有蚕子汉化的0.0.5版本。</p>
+<h1 id="实际操作">实际操作</h1>
+<h2 id="yaml中的激活字段">yaml中的激活字段</h2>
+<p>开启看板插件后，在yaml（md文档最开头）中输入以下字段，就能将此卡片变成看板。</p>
+<pre><code>---
+kanban-plugin: basic
+---
+</code></pre>
+<h2 id="在md和kanban模式间切换">在md和kanban模式间切换</h2>
+<p>点击卡片右上角的菜单按钮，点击open as kanban board（以看板形式打开）也能将卡片变成看板。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210423001400.png" alt="" loading="lazy"></p>
+<p>如果想从看板界面变成markdown形式，则点击右上角的菜单按钮，点击open as markdown（以md形式打开）<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210423001531.png" alt="" loading="lazy"></p>
+<p>至此，可以归纳一下目前ob有3个浏览模式：</p>
+<ol>
+<li>基于markdown的浏览模式</li>
+<li>基于markdown的编辑模式</li>
+<li>基于kanban的看板模式</li>
+</ol>
+<h2 id="看板模式下的设置">看板模式下的设置</h2>
+<p>点击左上角的list setting按钮，可以对列表进行设置。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210424221950.png" alt="" loading="lazy"></p>
+<p>具体设置如下：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210424222049.png" alt="" loading="lazy"></p>
+<ul>
+<li>Mark items in this list as complete：将移入此列表的选项设置为完成。我个人可以在Done一列中勾选此项。</li>
+<li>Delete List：删除此列表。此列表下的其他选项也会一并删除。</li>
+<li>Archive List：归档此列表。此列举将不在看板模式下显示，但任然被记录（不同于删除）。</li>
+</ul>
+<p>其他的操作就比较简单，Add a card就是在此列表下添加卡片，Add a List则是新建列表。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210424222340.png" alt="" loading="lazy"></p>
+<h2 id="md模式">md模式</h2>
+<p>既然obsidian是以markdown为基础，看板插件的数据也是以md存储。点击右上角的菜单-open as markdown就可以看到md模式的文件。<br>
+例如，<code>**Complete**</code>就是上面提及的自动完成，<code>## Archive</code>则是刚说的归档，二级标题就是每一个列表。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210424222701.png" alt="" loading="lazy"></p>
+<h1 id="个人的话">个人的话</h1>
+<p>需要提醒的一点是该插件目前还是迅速迭代，这几天就从0.0.1升级到0.0.6，里面的一些配置也随之更改（例如yaml中的激活字段从kanban变成kanban-plugin），我不得不重改此文。所以本文介绍的插件设置可能在之后无效，如何遇到这样的问题，可以去github地址看官方的readme文件。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[自动上传图片到图床（image auto upload插件介绍）]]></title>
         <id>https://cyddgh.github.io/post/202104222308/</id>
@@ -420,141 +535,6 @@ tags: [timeline, 美图]
 美图
 ```
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Picgo+阿里云搭建图床（优化obsidian图片插入）]]></title>
-        <id>https://cyddgh.github.io/post/202103131833/</id>
-        <link href="https://cyddgh.github.io/post/202103131833/">
-        </link>
-        <updated>2021-03-13T11:50:31.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
-<p>obsidian的日常使用中，群友常常会问及图片插入的问题。今天我想介绍使用Picgo+阿里云搭建图床的方法，希望能有所帮助。</p>
-<h2 id="为什么选择这套工具">为什么选择这套工具</h2>
-<p>因为目前互联网上已经有许多这样的资料，说明这种方法被认为是可行的且广泛适用的。如果我写得不好，大家还可以去看其他人的解决方案。</p>
-<h2 id="为什么使用picgo">为什么使用Picgo</h2>
-<p>Picgo免费，跨平台，用户多，可以百度得到很多答案。</p>
-<h2 id="为什么使用picgo-2">为什么使用Picgo</h2>
-<p>Picgo免费，跨平台，用户多，可以百度得到很多答案。<br>
-另外，Picgo已经具备了一定的生态，有许多插件。</p>
-<h2 id="为什么使用阿里云">为什么使用阿里云</h2>
-<p>因为Picgo里内置了阿里云的上传模块，即安即用。Github可以做免费图床，但网速不好；国内的Gitee也可以做免费图床，但需要额外安装gitee-uploader的插件，安装过程中需要一定的计算机技术，目前遇到很多安装不成功的案例。另外，Github和Gitee的免费图床可能在未来被限制或禁用，所以还是倾向付费的图床服务。</p>
-<p>我本人使用的就是阿里云，用了半年了，感觉可以。阿里云是付费项目，轻度使用一般一年不到20元。</p>
-<p>其他的图床大家也可以自行百度相关教程。</p>
-<h1 id="picgo">Picgo</h1>
-<p>Picgo的Github地址：https://github.com/Molunerfinn/PicGo</p>
-<p>如果网速不好，可以前往蓝奏云下载：</p>
-<ul>
-<li>Win版：https://wws.lanzous.com/iVDR2mw5dda</li>
-<li>Mac版：https://wws.lanzous.com/iZ1pnmw5g3i</li>
-</ul>
-<h1 id="阿里云的设置">阿里云的设置</h1>
-<h2 id="阿里云的资费说明">阿里云的资费说明</h2>
-<p>阿里云的图床是付费服务，关于付费的信息请咨询阿里云客服，下面只是我个人理解。<br>
-图床的付费分2部分，一部分是你为储存空间付费（储存包），一部分是你为下载的流量付费（加载图片所产生的流量费）。</p>
-<p>我在2020年9月先购买了一个9元的资费包（空间付费部分），到目前流量费用是0.01元（因为日常使用量太小了，好像会抹零）。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313190646.png" alt="" loading="lazy"></p>
-<p>这费用是个人使用，如果你将笔记分享出去，让很多人下载，流量费估计会增加。所以要谨慎将带有自己图床的md文档分享给他人。</p>
-<h2 id="购买阿里云oss服务">购买阿里云OSS服务</h2>
-<ul>
-<li>
-<p>登陆阿里云的网站（ https://www.aliyun.com ），点击右上角的登陆，可以使用支付宝登陆，这样就不用再新建账号了。</p>
-</li>
-<li>
-<p>点击产品-对象储存OSS<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313185244.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>点击折扣套餐<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313185640.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>在“对象存储OSS资源包(包月)”页面中选择“标准（LRS）存储包”、“中国大陆通用”、“40GB”、“标准存储包（中国大陆）”、“1年”（注：这是我购买的类型，我也不不清楚是不是最优解，你可以自由选择，或询问客服人员）。目前价格是9元。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313185723.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-<h1 id="picgo的配置">Picgo的配置</h1>
-<p>官方说明： https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A</p>
-<h2 id="启动阿里云图床">启动阿里云图床</h2>
-<p>在Picgo-插件设置-“选择显示的图床”中选中“阿里云OSS”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313190832.png" alt="" loading="lazy"></p>
-<h2 id="阿里云图床的配置">阿里云图床的配置</h2>
-<p>点击“图床设置”，会发现我们有4个信息必须提供。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313190958.png" alt="" loading="lazy"></p>
-<h3 id="picgo的1-2行">PicGo的1、2行</h3>
-<ul>
-<li>
-<p>前往阿里云控制台（ https://usercenter.console.aliyun.com/#/manage/ak )。 遇到以下弹窗，忽视<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313191513.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>点击创建AccessKey<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313192555.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>将创建后的AccessKey信息输入picgo。<br>
-AccessKey ID对应“设定KeyId”，AccessKey Secret对应“设定KeySecret”。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313192840.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-<h3 id="picgo的3-4行">PicGo的3、4行</h3>
-<ul>
-<li>
-<p>在阿里云页面（ https://www.aliyun.com ）右上角点击“控制台”<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313191157.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>点击左上角的菜单键，选择OSS服务（或直接访问此页面 https://oss.console.aliyun.com/overview  ）。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313191312.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>点击“Bucket 列表”-复制“Bucket名称”，填入Picgo设置的第三行“设定存储空间名”。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313193204.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>点击“Bucket名称”-点击概览-复制“地域节点”的信息，注意这里不要全部复制，只需复制前半部分，如<code>oss-cn-beijing</code>,填入Picgo设置的第四行“设定存储区域”。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313193455.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-<h2 id="picgo第5行">Picgo第5行</h2>
-<p>该设定决定图床上传后的位置。可以填写<code>img/</code>，依据个人的喜好。</p>
-<h2 id="其他设置">其他设置</h2>
-<p>在Picgo设置中可以打开“开机自启”、“时间戳重命名”、“上传后自动复制URL”。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313193908.png" alt="" loading="lazy"></p>
-<h1 id="上传">上传</h1>
-<p>完成上述配置后，就可以上传图片。点击“上传区”，选择“阿里云”，点击“剪贴板图片”，就可以把复制的图片上传到阿里云了。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313194137.png" alt="" loading="lazy"><br>
-此时在obsidian中复制就能出现一段代码，如<code>![](https://gitee.com/cyddgi/picture-store/raw/master/img/20210313194137.png)</code>。<br>
-此外也可以前往“相册”中，点击复制，获取之前上传的图片代码。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313194406.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在obsidian中显示标题和空格]]></title>
-        <id>https://cyddgh.github.io/post/202103091035/</id>
-        <link href="https://cyddgh.github.io/post/202103091035/">
-        </link>
-        <updated>2021-03-09T02:35:54.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
-<p>本文介绍了两个obsidian的小插件：open-note-to-window-title和cm-show-whitespace-obsidian，前者能在状态栏显示标题，后者能在卡片中显示空格和换行。</p>
-<h1 id="open-note-to-window-title显示标题插件">open-note-to-window-title显示标题插件</h1>
-<p>open-note-to-window-title插件是由jplattel开发。<br>
-Github地址： https://github.com/jplattel/open-note-to-window-title<br>
-蓝奏云：https://wws.lanzous.com/izjhpmpotte</p>
-<p>开启此插件前，标题栏只显示目前使用的ob库和ob版本。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210309102041.png" alt="" loading="lazy"><br>
-开启此插件后，标题栏还显示了当前笔记的名称，信息更丰富了<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210309102010.png" alt="" loading="lazy"></p>
-<p>如果你有在使用ManicTime，这样能帮你获取更多信息。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210309102430.png" alt="" loading="lazy"></p>
-<h1 id="cm-show-whitespace-obsidian显示空格">cm-show-whitespace-obsidian显示空格</h1>
-<p>cm-show-whitespace-obsidian插件是由deathau开发。<br>
-Github地址：https://github.com/deathau/cm-show-whitespace-obsidian<br>
-蓝奏云： https://wws.lanzous.com/idSrcmpp7sh</p>
-<p>开启插件前<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210309103157.png" alt="" loading="lazy"><br>
-开启插件后，可以看到空格和换行。<br>
-<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210309103133.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
