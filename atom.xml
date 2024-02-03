@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cyddgh.github.io</id>
+    <title>软通达</title>
+    <updated>2024-02-03T04:59:46.758Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cyddgh.github.io"/>
+    <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
+    <subtitle>软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。</subtitle>
+    <logo>https://cyddgh.github.io/images/avatar.png</logo>
+    <icon>https://cyddgh.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, 软通达</rights>
+    <entry>
+        <title type="html"><![CDATA[使用PicList和EasyWebSvr搭建本地图床]]></title>
+        <id>https://cyddgh.github.io/post/202402021728/</id>
+        <link href="https://cyddgh.github.io/post/202402021728/">
+        </link>
+        <updated>2024-02-03T04:59:24.000Z</updated>
+        <content type="html"><![CDATA[<p>今天看到群友的讨论本地图床，我突然思考PicList有没有插件能用上。PicList是图床管理软件[[PicGo]]的增强版，改善了很多PicGo没有的功能，我已经使用了一段时间，替代了原有的PicGo。下载链接： https://github.com/Kuingsmile/PicList 。</p>
+<p>如果对本地图床还不了解，可以看之前的文章：[[使用本地图床优化obsidian的文件管理]]。</p>
+<p>首先，我的PicList是比较早的版本（1.x），在插件商城中用“local”检索，看到了一个本地图床插件。</p>
+<p>之后，我将PicList升级到2.x版本后，发现软件已经内置了本地图床功能。</p>
+<p>上述两者都可以实现本地图床。</p>
+<h1 id="实际操作">实际操作</h1>
+<p>更多基础操作请见之前的文章。EasyWebSvr设置如下：</p>
+<ul>
+<li>主目录（本地图床位置）：<code>D:\Attachment</code></li>
+<li>端口：1993<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/02/202402021738890.png" alt="" loading="lazy"></li>
+</ul>
+<p>依据上面的设置，PicList中的设置如下</p>
+<ul>
+<li>设置路径（按上面本地图床位置）：<code>D:\Attachment</code></li>
+<li>设定自定义域名：<code>http://127.0.0.1:1993</code> （注：<code>http://127.0.0.1</code>为本地图床，<code>1993</code>是上面的端口号）</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/02/202402021743510.png" alt="" loading="lazy"></figure>
+<p>设置完毕后，在上传中选择本地上传即可。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/02/202402021748135.png" alt="" loading="lazy"></figure>
+<h1 id="按日期归档">按日期归档</h1>
+<p>之前设置图床时，图片直接放在一个文件夹中，没有按日期归档，现在感觉不是很妥当。目前使用了PicList中<code>设置-上传设置-高级重命名</code>，重命名格式设为<code>{Y}/{Y}{m}/{filename}</code>，这样就能按<code>年/年和月/文件名</code>储存到图床中，如<code>2024/202402/202402021752837.png</code>。</p>
+<p>目前的问题：本地图床和阿里云OSS，可以实现。而Gitee虽然在云端上实现了按文件夹分类，但返回的URL却不包含年、月的目录信息。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023年底obsidian同步政策变动]]></title>
+        <id>https://cyddgh.github.io/post/202311301023/</id>
+        <link href="https://cyddgh.github.io/post/202311301023/">
+        </link>
+        <updated>2023-11-30T03:02:56.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="提醒">提醒</h1>
+<ul>
+<li>本文是本人对相关文章的主观理解，不对可能造成的经济损失负责。更确切消息请直接联系obsidian官方。</li>
+<li>本文、本人和ob群不对任何ob同步的拼车提供担保，仅陈述相关情况。</li>
+<li>本文如有错误之处，欢迎留言指出。</li>
+</ul>
+<h1 id="更正">更正</h1>
+<p>旧文（ 2023-11-30发布）中“旧政策8美元档位总空间10G空间”是错误的，应为“旧政策8美元档位总空间50G空间，有5个库，每个库的空间上限10G”。因此，旧文中提及obsidian的同步改革是“增量改革”的论断更正为“减量改革”。</p>
+<h1 id="摘要">摘要</h1>
+<p>obsidian的同步服务正在进行一次减量改革，2024年后新订阅的用户，最低档位（8美元）所获得的总空间大小将从50G变为10G，有需要同步的ob用户建议在24年前订阅（并要持续 订阅）。另外，同步服务的变革还包括每个用户库的数量从5个变为10个、每个库的大小从固定10G变为自由利用、新增3个区的数据中心（包括亚洲）、单个文件大小上升至200MB。</p>
+<h1 id="引言">引言</h1>
+<p>2023年11月21日，obsidian开发团队的kepano，在obsidian blog中发表了“New Obsidian Sync plans: bigger, better, faster, smoother”（中文：新的obisidian同步计划: 更大，更好，更快，更平滑；链接： https://obsidian.md/blog/new-sync-plans/ ）的文章。目前，Obsidian的同步已经发生了一些变动，本文尝试总结变动，并对购买同步的用户提供一些建议。</p>
+<h1 id="政策变动">政策变动</h1>
+<table>
+<thead>
+<tr>
+<th>服务开始时间</th>
+<th>旧政策（对比 ）</th>
+<th>2024年前</th>
+<th>2024年后（8美元）</th>
+<th>2024年后（16美元 ）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总存储空间</td>
+<td>50G</td>
+<td>50G</td>
+<td>10G</td>
+<td>100G</td>
+</tr>
+<tr>
+<td>库的数量</td>
+<td>5个</td>
+<td>10个</td>
+<td>10个</td>
+<td>10个</td>
+</tr>
+<tr>
+<td>最大单个文件大小</td>
+<td>100MB</td>
+<td>200MB</td>
+<td>200MB</td>
+<td>200MB</td>
+</tr>
+<tr>
+<td>同步服务器位置</td>
+<td>1个(?)</td>
+<td>4个</td>
+<td>4个</td>
+<td>4个</td>
+</tr>
+<tr>
+<td>月均费用（年付，可加折扣 ）</td>
+<td>8$</td>
+<td>8$</td>
+<td>8$</td>
+<td>16$</td>
+</tr>
+</tbody>
+</table>
+<p>上述是我整理的表格，下面有一张来自Kiven的整理的思维导图，可能更加直观。</p>
+<p><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202311301319673.png" alt="" loading="lazy"><br>
+来自B站Kiven大汉堡的归纳图 https://www.bilibili.com/video/BV1qG411i7TT</p>
+<p>下面是关于我表格的解释：</p>
+<p>“服务开始时间”是指你本次的同步服务何时开始购买的。“旧政策”是过去的政策，仅供对照。实际上的时间节点就是2024年前付费和2024年后付费。</p>
+<p>注意，如果2024年前付费的用户 ，如果中间中断付费，之后也不能享受2024年前的8美元50G的套餐，而是变为8美元10G。</p>
+<blockquote>
+<p>Q: If I cancel my 50 GB plan can I sign up for it again?<br>
+A: No. If you cancel your 50 GB plan, it will no longer be available to you. Starting in January 2024, you will only have access to the new 10 GB and 100 GB storage options.<br>
+问: 如果我取消了我的50GB 计划，我可以重新注册吗?<br>
+答: 不可以。如果你取消了你的50GB 计划，它将不再对你开放。从2024年1月开始，您将只能访问新的10GB 和100GB 存储选项。<br>
+From kepano 的文章，中文为机翻</p>
+</blockquote>
+<p>注意，这是一次减量改革。旧政策中8美元档，有5个库，每个库的空间大小有10G的固定配额，理论上每个用户最大的空间有50G（尽管大多数人用不到）。而在2024年后新订阅用户，同样8美元档，只能有10G的总空间，由10个库自由分配。如果要维持8美元50G的空间，需要在2024年前订阅同步，并持续订阅同步。</p>
+<p>比较有利的变动包括：一个账号内库的数量从5变成10个（同步拼车更省钱），可以选择位于亚太的服务器（同步更快），单文件大小从100MB升至200MB。</p>
+<p>有一个不利于同步拼车的变动是灵活的存储空间。过去，每个库的大小上限固定是10G，互不干扰。但新政策下，10个库是共用总体空间容量，需要拼车的队友更加自觉。</p>
+<blockquote>
+<p>Flexible storage. Per-vault storage limits have changed to a single account-wide storage limit. This means you can allocate your storage any way you want across all your vaults.<br>
+灵活储存。每个保险库的存储限制已更改为单个帐户范围的存储限制。这意味着您可以按照任何方式分配您的存储空间。<br>
+From kepano 的文章，中文为机翻</p>
+</blockquote>
+<p>另外，上述的费用都可以叠加旧的折扣（早鸟、教育等）。</p>
+<blockquote>
+<p>Q: How do these new plans affect early bird pricing, non-profit, or educational discounts?<br>
+A: Any discounts on your account are still applied to the new plans. Your existing pricing will remain unchanged. If you upgrade to 100 GB of storage you will still benefit from the discounts on your account.<br>
+问: 这些新计划如何影响早鸟价格、非营利或教育折扣?<br>
+答: 你的账户上的任何折扣仍然适用于新计划。您现有的价格将保持不变。如果你升级到100GB 的存储空间，你仍然可以从你账户的折扣中获益。<br>
+From kepano 的文章，中文为机翻</p>
+</blockquote>
+<h1 id="个人的话">个人的话</h1>
+<p>如果是有obsidian同步拼车需求的读者，最好是在年底前上车，并以教育优惠40%，美元：人民币汇率为7计算，8美元档位，约付34元，有10个库，50G。每人可花3.4元/月，获得5G的同步空间。</p>
+<p>另外，国外软件的同步都很贵，以thebrain为例，单人同步需要15美元/月。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[推荐一款书摘软件——纸间书摘]]></title>
+        <id>https://cyddgh.github.io/post/20231101095150/</id>
+        <link href="https://cyddgh.github.io/post/20231101095150/">
+        </link>
+        <updated>2023-11-01T01:51:09.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="引言">引言</h1>
+<p>书摘软件将阅读书籍过程中，摘录的书籍原文和个人笔记汇聚在一起的软件（个人定义）。</p>
+<p>早年kindle盛行时，因为kindle的划线高亮通常储存在的<code>My Clippings.txt</code>中，对于使用者查看不是很方便，于是就有一些软件开始解决这一问题，例如书伴网（https://bookfere.com/ ，早年应该叫“kindle伴侣”吧？）。</p>
+<p>而后，有一些软件是针对纸质图书阅读中的书籍摘录，将OCR软件结合进来，方便用户不用输入书籍原文，减少了一些使用成本。本文推荐的纸间书摘（原书伴app）就属于后者。</p>
+<h1 id="软件相关信息">软件相关信息</h1>
+<p>软件的使用说明： https://docs.xmnote.com/ （从软件中“使用手册”中获取的）。</p>
+<p>目前主要渠道有Q群、微博和酷安，在说明书中的“关注我们”一节有提及。</p>
+<h1 id="推荐理由">推荐理由</h1>
+<p>目前使用了它看完了一本书，对于软件的使用和设计我都很喜欢，因此才撰文推荐。我的推荐理由有以下几点：</p>
+<ul>
+<li>免费版本够用。免费版本不卡同步备份，支持坚果云webdav；不卡导出，可以导出Markdown纯文本；不卡OCR使用次数。目前，看上去免费版本就足够我使用了。</li>
+<li>完全本地。软件开发者自述“你在使用时产生的数据全都存储在设备本地，完全由你自己掌控。”。</li>
+<li>支持多个来源导入。不仅是纸质书，微信读书、kindle、阅读（安卓app）、京东读书、掌阅等软件的书摘也能导入。支持这么多软件是让我有些惊讶的。</li>
+<li>收费版本不贵。目前（2023年11月1日）价格是56元购买永久使用权，只限一台设备，但可以更换设备。</li>
+<li>功能多样。尽管我没用到，但看说明书，软件的功能很多：支持多样化导出（到obsidian、语雀等）、有API、可以自定义对象存储。另外，该有的常见功能：热力图、时间记录、白噪音也有。</li>
+</ul>
+<p>期待改善的地方，目前就在于平台：当前仅有安卓，还没有iOS和web端。</p>
+<p>之前，同类产品涂书笔记已经被百度放弃而停止运行，希望这软件能长久运行下去。目前了解的同类产品还有“众山小笔记”，大家如果有类似的软件也可以在推文下留言。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在谷歌检索时，检索ob内的文件（MarkSearch插件）]]></title>
+        <id>https://cyddgh.github.io/post/202309241837/</id>
+        <link href="https://cyddgh.github.io/post/202309241837/">
+        </link>
+        <updated>2023-09-24T10:44:27.000Z</updated>
+        <content type="html"><![CDATA[<p>印象笔记软件内的文件，可以在进行谷歌检索时，展示已剪藏的笔记。</p>
+<p>MarkSearch插件则是obsidian实现上述功能的一个插件，实际效果如下：</p>
+<p><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309241840167.png" alt="" loading="lazy"><br>
+作者展示的效果图（来自下方的飞书链接）</p>
+<p>作者自述</p>
+<p>飞书链接： https://n0pw46fau7.feishu.cn/mindnotes/URmLbpzFqm0hqsnViu7chbvnnfe</p>
+<p>B站视频： https://www.bilibili.com/video/BV18C4y1Z7HF</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[利用Tiddlywiki发布Obsidian库（tidgi-obsidian-manager插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/20230904213104/</id>
+        <link href="https://cyddgh.github.io/post/20230904213104/">
+        </link>
+        <updated>2023-09-04T14:01:12.000Z</updated>
+        <content type="html"><![CDATA[<p>Tiddlywiki是一个历史悠久的笔记平台，至今依然有很强的生命力，许多开发者活跃在这个领域中。例如国内的开发者在近年推出的衍生版本TidGi（太记） 。</p>
+<p>Tiddlywiki支持md语法，并且以HTML网页形式保存，只需要用到静态语言，因此能部署在一些免费的发布平台，例如Github（见 https://kookma.github.io/Tiddlywiki-and-GitHub-Pages ）。因此我很早就设想用Tiddlywiki来免费发布ob库，而今天刚好看到了tiddly-gittly的tidgi-obsidian-manager插件，解决了这个问题。下图是我用该方案做的ob中文教程发布：</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042138464.png" alt="" loading="lazy"></figure>
+<p>tidgi-obsidian-manager插件页面和教程： https://github.com/tiddly-gittly/tidgi-obsidian-manager</p>
+<p>因为上述页面中的信息不是很丰富，我简单介绍一些操作。</p>
+<h1 id="实际操作">实际操作</h1>
+<h4 id="下载太记">下载太记</h4>
+<p>下载最新版本的TidGi（太记）： https://github.com/tiddly-gittly/TidGi-Desktop/releases</p>
+<p>选择太记主要是因为不想再重头折腾Tiddlywiki了，太记相当于一个开箱即用库。</p>
+<h4 id="添加工作区">添加工作区</h4>
+<p>点击左侧加号，<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042142326.png" alt="image.png" loading="lazy"><br>
+添加一个工作区<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042143432.png" alt="image.png" loading="lazy"></p>
+<h4 id="配置工作区">配置工作区</h4>
+<p>因为该插件提到</p>
+<blockquote>
+<p>TidGi v0.8.0 需要在工作区设置 博客和服务器设置中 启用 HTTP API 并 关闭 凭证鉴权选项。</p>
+</blockquote>
+<p>所以右键工作区，配置工作区，<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042146597.png" alt="image.png" loading="lazy"></p>
+<p>点击<code>博客和服务器设置</code>右边的箭头（仔细看一下这箭头，我一开始就没看到，以为全部展开），然后开启HTTP API，关闭凭证鉴权。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042148810.png" alt="image.png" loading="lazy"></p>
+<h4 id="安装插件">安装插件</h4>
+<p>进入控制台（齿轮状按钮）-插件-获取更多插件<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042150815.png" alt="image.png" loading="lazy"></p>
+<p>选择<code>太微中文社区插件源(大陆加速版)</code>，在插件库中检索Obsidian，找到发布工具插件，安装后关闭。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042152455.png" alt="image.png" loading="lazy"></figure>
+<p>然后右键工作区，重启服务，</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042153703.png" alt="image.png" loading="lazy"></figure>
+<h4 id="导入ob库">导入ob库</h4>
+<p>重启后，进入控制台，插件，找到Obsidian插件，可用Ctrl+F进行检索。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042155630.png" alt="image.png" loading="lazy"></figure>
+<p>点击下拉按钮，输入ob库所在的文件夹路径，例如<code>D:\tiddlywiki\obsidian</code>。点击Add按钮，等待一会，就完成导入。</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042157458.png" alt="image.png" loading="lazy"></figure>
+<p>完成导入后，在你太记文件夹中的tiddlers文件夹就有相关的ob文件。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042158258.png" alt="image.png" loading="lazy"></p>
+<h1 id="有待改进的地方">有待改进的地方</h1>
+<p>因为Tiddlywiki的Markdown语法比较严格，也有ob语法不一致，导入后的显示存在不匹配，需要进一步加强。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Obsidian新增属性（Properties）功能]]></title>
+        <id>https://cyddgh.github.io/post/20230730153411/</id>
+        <link href="https://cyddgh.github.io/post/20230730153411/">
+        </link>
+        <updated>2023-09-01T15:09:39.000Z</updated>
+        <content type="html"><![CDATA[<p>今天，Obsidian正式推出1.4.5版本，新增了一个重要概念和功能：属性（Properties）。</p>
+<p>这个功能会进一步增强ob文件的管理，也会影响yaml区的字段，例如aliases。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309012252257.png" alt="" loading="lazy"></figure>
+<p>在官方的开发路线图（ https://obsidian.md/roadmap ）中还增加基于属性的数据库（Databases）开发计划，值得期待。</p>
+<blockquote>
+<p>Databases<br>
+Create dynamic tables using data stored in note properties<br>
+数据库<br>
+使用注释属性中存储的数据创建动态表</p>
+</blockquote>
+<p>悄悄的问一声，有人还记得原定于年初发布的datacore这个插件吗？地址： https://github.com/blacksmithgu/datacore 。期待它能早日发布。</p>
+<p>因为此次内测很久了，关于属性（Properties）功能的推文和视频已经很多，大家可以去检索了解。例如以下信息：</p>
+<p>【Obsidian 内部更新】1.4.0——File Properties: https://www.bilibili.com/read/cv25314701</p>
+<p>【速报】Obsidian Insider 带来了新属性功能，为「元数据」处理带来了类似 Notion 的体验， https://mp.weixin.qq.com/s/UeowjNrL4yGKOTsB-hTzLg</p>
+<p>Obs133 | Properties (Obsidian v1.4)! 视觉化YAML编辑，让Frontmatter可用性又向上一阶: https://www.bilibili.com/video/BV1Xz4y1x76Q</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用Kodi播放Plex服务器上的视频]]></title>
+        <id>https://cyddgh.github.io/post/20230724133730/</id>
+        <link href="https://cyddgh.github.io/post/20230724133730/">
+        </link>
+        <updated>2023-07-24T06:34:10.000Z</updated>
+        <content type="html"><![CDATA[<p>最新的kodi，只有19版本才能运行相关的plex插件。</p>
+<p>旧版的kodi下载地址： http://mirrors.kodi.tv/releases/android/arm64-v8a/?C=N&amp;O=D</p>
+<p>Plex插件官网公告： https://forums.plex.tv/t/installation-instructions/168854</p>
+<p>如果无法通过kodi内置的商城下载插件，国内有一个kodi社区有安装包：</p>
+<ul>
+<li>Plex插件 by Kodi社区： http://www.kodiplayer.cn/plugins/2918.html</li>
+<li>下载地址（我没尝试）： https://url88.ctfile.com/f/15911488-754602217-8b6f9a?p=1234</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从Evernote导入到obsidian（Importer插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/20230713224907/</id>
+        <link href="https://cyddgh.github.io/post/20230713224907/">
+        </link>
+        <updated>2023-07-13T14:48:19.000Z</updated>
+        <content type="html"><![CDATA[<p>ob官方推出了[[Importer(导入插件)]]，可以帮助导入Evernote的<code>.enex</code>文件，并且在未来还计划支持Notion、Apple Notes、HTML和文件夹等 。</p>
+<p>插件已经上架社区插件市场，或者也可以前往 https://github.com/obsidianmd/obsidian-importer 。</p>
+<p>据我回忆，这可能是ob官方开发的第一个社区插件，而不包含在核心插件中。</p>
+<p>官方自述：让你的笔记随心所欲，  https://www.bilibili.com/read/cv24983183</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202307132253053.png" alt="" loading="lazy"></figure>
+<p>背景：</p>
+<p>近期，Evernote（请与印象笔记区分，见下方辨析）在被收购后，新公司遣散了大部分（甚至有说“所有”）老员工，并且提高了订阅费用。</p>
+<p>不严谨辨析（不保证准确）：在早期，印象笔记和Evernote是同一家公司的同一个APP的不同名称。之后，国内某公司收购了Evernote国内的部分，包括了印象笔记和相关代码，现在印象笔记和Evernote是不同公司的不同APP。</p>
+<p>目前，印象笔记目前的保存格式已经不是<code>.enex</code>，并增加了许多Evernote不具有的功能，不知道此ob插件是否也能较好支持印象笔记的导入？对于印象笔记改变文件保存方式，我担心会使得印象笔记的生态系统从开发转为保守，甚至背离了Evernote建立之初的相关精神。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Win7用户不能使用最新ob安装包，只能安装1.1.16版本]]></title>
+        <id>https://cyddgh.github.io/post/20230515101553/</id>
+        <link href="https://cyddgh.github.io/post/20230515101553/">
+        </link>
+        <updated>2023-05-15T02:31:26.000Z</updated>
+        <content type="html"><![CDATA[<p>摘要：因为最新版本的Electron不支持Windows7，所以win7上的ob用户不能使用1.2.7的obsidian安装包，只能安装1.1.16安装包，然后通过接受内部更新升级ob版本。</p>
+<p>首先要明确一个概念，obsidian版本在“关于”中有两个，一个是当前版本，一个是安装程序版本。“安装程序版本”是指当前ob安装包的版本，“当前版本”是最新的ob版本，因为ob的升级不一定要通过重新安装安装包，可通过内部接受推送完成升级（所以不用每次ob升级，都在群里求安装包）。但当ob更新其底层框架[[Electron]]时，如果为了新功能或者功能优化，需要从官网下载ob安装包，进行安装。</p>
+<p>最近obsidian版本从1.1.16升级到了1.2.7，这次升级同时升级了Electron版本。</p>
+<p>然而，新版本的Electron框架停止了对Windows7的支持，导致1.2.7以后的ob安装包，将无法在windows7系统上成功安装，会弹出报错“无法定位程序输入点DiscardVirtualMemory于动态链接库KERNEL32.dll上。” （来自群友的反馈 ）</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202305151039870.png" alt="" loading="lazy"></figure>
+<p>类似的报错反馈已经出现在其他软件上，例如 CSDN这则帖子： https://blog.csdn.net/weixin_41913973/article/details/129624908</p>
+<p>根据ob英文论坛的帖子“Windows 7 support silently dropped?”（ https://forum.obsidian.md/t/windows-7-support-silently-dropped/59341 ），WhiteNoise（OBSIDIAN TEAM）给出的一种解决方式如下：</p>
+<ul>
+<li>从Github上下载1.1.16的安装包： https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.1.16</li>
+<li>之后仅更新ob核心，而不更新electron版本。这应该是指在设置-关于-检测更新。</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202305151024333.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>You can download and reinstall Obsidian 1.1.6 from https://github.com/obsidianmd/obsidian-releases/releases 7 and rely on the internal update method (it does not update electron but just the core app).<br>
+As long as it works, fine, but we are not going it accept bug reports against this version and at some point something will break. When that day comes, please don’t post another rant here. We got the memo already.<br>
+你可以从 https://github.com/obsidianmd/Obsidian-releases/releases 6下载并重新安装黑曜石1.1.6，并依靠内部更新方法(它不更新电子版，只更新核心应用程序)。只要它工作，好，但我们不打算它接受错误报告对这个版本，并在某一点上会打破。当那一天到来的时候，请不要再在这里发表任何言论。我们已经收到备忘录了。<br>
+英文来自WhiteNoise，中文为机器翻译。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[推荐写作软件：写拉松（Writeathon）]]></title>
+        <id>https://cyddgh.github.io/post/202305102104/</id>
+        <link href="https://cyddgh.github.io/post/202305102104/">
+        </link>
+        <updated>2023-05-10T13:04:47.000Z</updated>
+        <content type="html"><![CDATA[<p>推荐一个Markdown写作软件：写拉松（Writeathon）</p>
+<p>链接： https://www.writeathon.cn/register?i=NDBOKI</p>
+<p>邀请码： NDBOKI</p>
+<p>受邀好友注册后其将获得5墨点。</p>
+<p>写拉松我很早就关注到，最近又重新登陆，使用上感觉不错，有几点原因：</p>
+<ul>
+<li>价格便宜，免费版0元（付费也才一个月9.9）</li>
+<li>提供多端同步，可以快速记录，并且符合md格式，这可以作为obsidian的手机端快速记录。</li>
+<li>是一款少见的写作软件，有快照、热力图、字数统计，还增加了一些卡片盒功能。</li>
+</ul>
+<p>最后一点也是写拉松的优点，它的看板有许多关于激励写作的设计，这也是写作软件的特点。值得推荐另一款经典的写作软件是Scrivener，目前该软件的视图也还是独一无二，而且Scrivener还是买断的。</p>
+<p>期待有人可以专门建立一个类似的obsidian开箱即用库，毕竟热力图、dataview等插件可以解决大部分的功能实现，有困难的可能是精细化的字数计算。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202305102103197.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+</feed>
