@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>在obsidian实现实时浏览 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="在obsidian实现实时浏览 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了如何在obsidian实现实时浏览。
+引言
+最近几天，我在折腾LaTeX（一种排版语言），重新用上了Overleaf，忽然发现它的文档呈现方式（见下图，左边为代码，右边为）很有意思。这不是obsidian中常用的一种布局方式..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              在obsidian实现实时浏览
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-07-03
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了如何在obsidian实现实时浏览。</p>
+<h1 id="引言">引言</h1>
+<p>最近几天，我在折腾LaTeX（一种排版语言），重新用上了Overleaf，忽然发现它的文档呈现方式（见下图，左边为代码，右边为）很有意思。这不是obsidian中常用的一种布局方式吗？</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210703210240.png" alt="" loading="lazy"></figure>
+<p>Overleaf将这种布局方式（其实也是Overleaf这软件的一个特色）称为Automatic real-time preview，我称其为实时浏览。下面将介绍在obsidian中如何实现这样的操作。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210703205454.png" alt="" loading="lazy"></figure>
+<h1 id="实际操作">实际操作</h1>
+<ol>
+<li>点击卡片右上角的“更多设置”，然后点击“左右划分”。</li>
+</ol>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210703210701.png" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>点击“预览”按钮，就可以实时查看markdown的实际效果。</li>
+</ol>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210703210741.png" alt="" loading="lazy"></figure>
+<ol start="3">
+<li>点击卡片右上角的“更多设置”，然后点击“与其他面板同步”。</li>
+</ol>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210703211019.png" alt="" loading="lazy"></figure>
+<p>再点选左边的栏目，就可以实现左右连动。</p>
+<figure data-type="image" tabindex="6"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210703211128.png" alt="" loading="lazy"></figure>
+<h1 id="个人的话">个人的话</h1>
+<p>许多ob的用户一直期待ob能尽快实现所见即所得。虽然ob开发者已经将该功能移至短期（见 https://trello.com/b/Psqfqp7I/obsidian-roadmap ），但个人觉得要实现还需要一些时间，特别考虑移动端目前还没公测。<br>
+然而，ob的开发者在软件设计之初，其实也给予了一个替代的解决方案，就是今天所讲的“实时浏览”。这功能作为overleaf主打的一项软件功能，一定也被许多长文作者所接受。在所见即所得还未推出之时，何不尝试使用一下“实时浏览”呢？<br>
+最后，也期待所见即所得早日推出。虽然我可能不习惯所见即所得，但今天使用zettrl时发现，zettrl居然已经支持该功能了。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%AF%9D">个人的话</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202106272314/">
+              <h3 class="post-title">
+                obsidian电脑端和手机端的同步介绍
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

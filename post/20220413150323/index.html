@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>用ob学英语基于Templater和Spaced repetition | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="用ob学英语基于Templater和Spaced repetition | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="引言
+本工作流主要基于[[Templater（模板增强插件）]]和[[Spaced repetition（间隔复习插件）]]。其在算法上可能不是很先进，但方便之处在于可以快速制卡，全程在obsdiain中完成，操作简单。发音是依靠有道的在线..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              用ob学英语基于Templater和Spaced repetition
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-04-13
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="引言">引言</h1>
+<p>本工作流主要基于[[Templater（模板增强插件）]]和[[Spaced repetition（间隔复习插件）]]。其在算法上可能不是很先进，但方便之处在于可以快速制卡，全程在obsdiain中完成，操作简单。发音是依靠有道的在线发音，减少了库的大小。</p>
+<h1 id="实际操作">实际操作</h1>
+<h2 id="templater模板构建">Templater模板构建</h2>
+<p>需要先设置一个Templater的模板，设置的模板名称为“FlashCard复习模板”（你可以自选名称），并放置在库目录中的Template文件夹中，内容如下：</p>
+<pre><code>---
+uid: &lt;% tp.date.now(&quot;YYYYMMDDHHmmss&quot;) %&gt;
+aliases: []
+---
+#flashcards 
+
+&lt;% tp.file.title %&gt;
+&lt;audio  
+src=&quot;http://dict.youdao.com/dictvoice?audio=&lt;% tp.file.title %&gt;&quot; controls=&quot;controls&quot;&gt; 
+&lt;/audio&gt; 
+?
+&lt;% tp.file.cursor() %&gt;
+</code></pre>
+<h2 id="在库中应用templater模板">在库中应用Templater模板</h2>
+<p>在Templater插件中Folder Templates中设置新的Folder template，让新建卡片都自动套用这模板，即生效目录设为<code>/</code>。</p>
+<h2 id="阅读步骤简述">阅读步骤简述</h2>
+<p>然后导入一段你要学习的英语文本，对不懂的词语进行打上双链，然后点击双链，就会自动创建一个新卡片。以单词“algorithm”为例，我创建的卡片如下：</p>
+<pre><code>---
+uid: 20220413142051
+aliases: []
+---
+#flashcards 
+
+algorithm
+&lt;audio  
+src=&quot;http://dict.youdao.com/dictvoice?audio=algorithm&quot; controls=&quot;controls&quot;&gt; 
+&lt;/audio&gt; 
+?
+算法
+</code></pre>
+<p>“算法”，两个字是我自己打的。</p>
+<h1 id="待改进的点">待改进的点</h1>
+<p>我目前思考有以下几个方面，如果有高手可以解决，请留言：</p>
+<ul>
+<li>如何用Templater来获取音标</li>
+<li>关于发音有没有更好的方法，更方便好用的音源</li>
+<li>能不能内嵌视频进行学习，例如[[基于ELL扩展获得YouTube双语字幕时间戳并在Obsidian中复用 by 彭文波]]所演示的那样。</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#templater%E6%A8%A1%E6%9D%BF%E6%9E%84%E5%BB%BA">Templater模板构建</a></li>
+<li><a href="#%E5%9C%A8%E5%BA%93%E4%B8%AD%E5%BA%94%E7%94%A8templater%E6%A8%A1%E6%9D%BF">在库中应用Templater模板</a></li>
+<li><a href="#%E9%98%85%E8%AF%BB%E6%AD%A5%E9%AA%A4%E7%AE%80%E8%BF%B0">阅读步骤简述</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BE%85%E6%94%B9%E8%BF%9B%E7%9A%84%E7%82%B9">待改进的点</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/20220402132138/">
+              <h3 class="post-title">
+                自下而上(bottom-up)应该是观念而不是技术
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

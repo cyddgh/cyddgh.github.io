@@ -1,0 +1,331 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Picgo+阿里云搭建图床（优化obsidian图片插入） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Picgo+阿里云搭建图床（优化obsidian图片插入） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="引言
+obsidian的日常使用中，群友常常会问及图片插入的问题。今天我想介绍使用Picgo+阿里云搭建图床的方法，希望能有所帮助。
+为什么选择这套工具
+因为目前互联网上已经有许多这样的资料，说明这种方法被认为是可行的且广泛适用的。如果我写..." />
+    <meta name="keywords" content="图床,obsidian" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Picgo+阿里云搭建图床（优化obsidian图片插入）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-13
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="https://cyddgh.github.io/tag/XJ8nEaqBB/" class="post-tag">
+                  # 图床
+                </a>
+              
+                <a href="https://cyddgh.github.io/tag/8bxuJqsEC/" class="post-tag">
+                  # obsidian
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="引言">引言</h1>
+<p>obsidian的日常使用中，群友常常会问及图片插入的问题。今天我想介绍使用Picgo+阿里云搭建图床的方法，希望能有所帮助。</p>
+<h2 id="为什么选择这套工具">为什么选择这套工具</h2>
+<p>因为目前互联网上已经有许多这样的资料，说明这种方法被认为是可行的且广泛适用的。如果我写得不好，大家还可以去看其他人的解决方案。</p>
+<h2 id="为什么使用picgo">为什么使用Picgo</h2>
+<p>Picgo免费，跨平台，用户多，可以百度得到很多答案。</p>
+<h2 id="为什么使用picgo-2">为什么使用Picgo</h2>
+<p>Picgo免费，跨平台，用户多，可以百度得到很多答案。<br>
+另外，Picgo已经具备了一定的生态，有许多插件。</p>
+<h2 id="为什么使用阿里云">为什么使用阿里云</h2>
+<p>因为Picgo里内置了阿里云的上传模块，即安即用。Github可以做免费图床，但网速不好；国内的Gitee也可以做免费图床，但需要额外安装gitee-uploader的插件，安装过程中需要一定的计算机技术，目前遇到很多安装不成功的案例。另外，Github和Gitee的免费图床可能在未来被限制或禁用，所以还是倾向付费的图床服务。</p>
+<p>我本人使用的就是阿里云，用了半年了，感觉可以。阿里云是付费项目，轻度使用一般一年不到20元。</p>
+<p>其他的图床大家也可以自行百度相关教程。</p>
+<h1 id="picgo">Picgo</h1>
+<p>Picgo的Github地址：https://github.com/Molunerfinn/PicGo</p>
+<p>如果网速不好，可以前往蓝奏云下载：</p>
+<ul>
+<li>Win版：https://wws.lanzous.com/iVDR2mw5dda</li>
+<li>Mac版：https://wws.lanzous.com/iZ1pnmw5g3i</li>
+</ul>
+<h1 id="阿里云的设置">阿里云的设置</h1>
+<h2 id="阿里云的资费说明">阿里云的资费说明</h2>
+<p>阿里云的图床是付费服务，关于付费的信息请咨询阿里云客服，下面只是我个人理解。<br>
+图床的付费分2部分，一部分是你为储存空间付费（储存包），一部分是你为下载的流量付费（加载图片所产生的流量费）。</p>
+<p>我在2020年9月先购买了一个9元的资费包（空间付费部分），到目前流量费用是0.01元（因为日常使用量太小了，好像会抹零）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313190646.png" alt="" loading="lazy"></p>
+<p>这费用是个人使用，如果你将笔记分享出去，让很多人下载，流量费估计会增加。所以要谨慎将带有自己图床的md文档分享给他人。</p>
+<h2 id="购买阿里云oss服务">购买阿里云OSS服务</h2>
+<ul>
+<li>
+<p>登陆阿里云的网站（ https://www.aliyun.com ），点击右上角的登陆，可以使用支付宝登陆，这样就不用再新建账号了。</p>
+</li>
+<li>
+<p>点击产品-对象储存OSS<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313185244.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击折扣套餐<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313185640.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>在“对象存储OSS资源包(包月)”页面中选择“标准（LRS）存储包”、“中国大陆通用”、“40GB”、“标准存储包（中国大陆）”、“1年”（注：这是我购买的类型，我也不不清楚是不是最优解，你可以自由选择，或询问客服人员）。目前价格是9元。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313185723.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h1 id="picgo的配置">Picgo的配置</h1>
+<p>官方说明： https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A</p>
+<h2 id="启动阿里云图床">启动阿里云图床</h2>
+<p>在Picgo-插件设置-“选择显示的图床”中选中“阿里云OSS”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313190832.png" alt="" loading="lazy"></p>
+<h2 id="阿里云图床的配置">阿里云图床的配置</h2>
+<p>点击“图床设置”，会发现我们有4个信息必须提供。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313190958.png" alt="" loading="lazy"></p>
+<h3 id="picgo的1-2行">PicGo的1、2行</h3>
+<ul>
+<li>
+<p>前往阿里云控制台（ https://usercenter.console.aliyun.com/#/manage/ak )。 遇到以下弹窗，忽视<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313191513.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击创建AccessKey<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313192555.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>将创建后的AccessKey信息输入picgo。<br>
+AccessKey ID对应“设定KeyId”，AccessKey Secret对应“设定KeySecret”。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313192840.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h3 id="picgo的3-4行">PicGo的3、4行</h3>
+<ul>
+<li>
+<p>在阿里云页面（ https://www.aliyun.com ）右上角点击“控制台”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313191157.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击左上角的菜单键，选择OSS服务（或直接访问此页面 https://oss.console.aliyun.com/overview  ）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313191312.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击“Bucket 列表”-复制“Bucket名称”，填入Picgo设置的第三行“设定存储空间名”。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313193204.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击“Bucket名称”-点击概览-复制“地域节点”的信息，注意这里不要全部复制，只需复制前半部分，如<code>oss-cn-beijing</code>,填入Picgo设置的第四行“设定存储区域”。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313193455.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h2 id="picgo第5行">Picgo第5行</h2>
+<p>该设定决定图床上传后的位置。可以填写<code>img/</code>，依据个人的喜好。</p>
+<h2 id="其他设置">其他设置</h2>
+<p>在Picgo设置中可以打开“开机自启”、“时间戳重命名”、“上传后自动复制URL”。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313193908.png" alt="" loading="lazy"></p>
+<h1 id="上传">上传</h1>
+<p>完成上述配置后，就可以上传图片。点击“上传区”，选择“阿里云”，点击“剪贴板图片”，就可以把复制的图片上传到阿里云了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313194137.png" alt="" loading="lazy"><br>
+此时在obsidian中复制就能出现一段代码，如<code>![](https://gitee.com/cyddgi/picture-store/raw/master/img/20210313194137.png)</code>。<br>
+此外也可以前往“相册”中，点击复制，获取之前上传的图片代码。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210313194406.png" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a>
+<ul>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9%E8%BF%99%E5%A5%97%E5%B7%A5%E5%85%B7">为什么选择这套工具</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8picgo">为什么使用Picgo</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8picgo-2">为什么使用Picgo</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91">为什么使用阿里云</a></li>
+</ul>
+</li>
+<li><a href="#picgo">Picgo</a></li>
+<li><a href="#%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E8%AE%BE%E7%BD%AE">阿里云的设置</a>
+<ul>
+<li><a href="#%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E8%B5%84%E8%B4%B9%E8%AF%B4%E6%98%8E">阿里云的资费说明</a></li>
+<li><a href="#%E8%B4%AD%E4%B9%B0%E9%98%BF%E9%87%8C%E4%BA%91oss%E6%9C%8D%E5%8A%A1">购买阿里云OSS服务</a></li>
+</ul>
+</li>
+<li><a href="#picgo%E7%9A%84%E9%85%8D%E7%BD%AE">Picgo的配置</a>
+<ul>
+<li><a href="#%E5%90%AF%E5%8A%A8%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A">启动阿里云图床</a></li>
+<li><a href="#%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A%E7%9A%84%E9%85%8D%E7%BD%AE">阿里云图床的配置</a>
+<ul>
+<li><a href="#picgo%E7%9A%841-2%E8%A1%8C">PicGo的1、2行</a></li>
+<li><a href="#picgo%E7%9A%843-4%E8%A1%8C">PicGo的3、4行</a></li>
+</ul>
+</li>
+<li><a href="#picgo%E7%AC%AC5%E8%A1%8C">Picgo第5行</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E8%AE%BE%E7%BD%AE">其他设置</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%8A%E4%BC%A0">上传</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202103091035/">
+              <h3 class="post-title">
+                在obsidian中显示标题和空格
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

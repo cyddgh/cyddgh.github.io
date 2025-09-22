@@ -1,0 +1,220 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>把ob当做一个浏览器（Another Web browser插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="把ob当做一个浏览器（Another Web browser插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="obsdiain本身是基于Electron框架开发的，本身对网页的兼容性就不错。Web browser插件利用了这一特性，才能以不足100kb的代码让ob成为一个网页的浏览器。
+插件名片
+本文所介绍的Web browser插件，是由Bon接..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              把ob当做一个浏览器（Another Web browser插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-11-20
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>obsdiain本身是基于Electron框架开发的，本身对网页的兼容性就不错。Web browser插件利用了这一特性，才能以不足100kb的代码让ob成为一个网页的浏览器。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>本文所介绍的Web browser插件，是由Bon接手后开发的分支，其项目地址为： https://github.com/Quorafind/another-web-browser/ 。该项目的原作者是Trikzon，初始项目地址为 https://github.com/Trikzon/obsidian-web-browser 。</p>
+<p>需要注意，目前的插件还处于开发的初期，一些设置后期可能有所变化。目前，启动插件后，没有任何设置界面，也不在命令模式中。</p>
+<h1 id="实际操作">实际操作</h1>
+<h2 id="基础功能">基础功能</h2>
+<p>目前插件的使用非常简单，点击标签栏最右边的New tab，开始新的标签页。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202211201706960.png" alt="" loading="lazy"></p>
+<p>注意多了一个地址栏，可以在这里输入网址。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202211201707314.png" alt="" loading="lazy"></p>
+<p>最后的效果<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202211201708186.png" alt="" loading="lazy"></p>
+<p>并且，在安装插件后，在ob中新点击网页链接，也将在ob的新标签页访问该地址，而不是使用系统的浏览器打开。</p>
+<h2 id="可能的功能">可能的功能</h2>
+<p>该插件为ob的使用提供了更大的可能，有许多值得探索的空间。例如，我最近使用了简悦进行网页剪藏，将网页变成了本地的html，该插件可以使得ob可以去访问这些html。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202211201723052.png" alt="" loading="lazy"></figure>
+<p>而且，在本插件中可以实现目前浏览器中常见的“复制跳转高亮功能”（我真不知道该功能的术语，就是在网页中划选一段文件，右键后有一复制功能），在目前ob浏览器插件中为“Copy Hightlight link”，在Edge中为“复制指向突出显示的链接”。这样就对网页上的内容在字句层面进行引用，对于文献阅读等，应该是有帮助的。该功能曾经也被一个双链软件（目前已停运了？）认为是独有的功能。</p>
+<p>例如，点击<code>http://127.0.0.1:4000/#:~:text=%E8%BD%AF%E4%BB%B6%E6%94%B9%E5%96%84%E7%94%9F%E6%B4%BB</code> （仅在我的电脑上），能出现以下效果。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202211201725193.png" alt="" loading="lazy"></figure>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%90%8D%E7%89%87">插件名片</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD">基础功能</a></li>
+<li><a href="#%E5%8F%AF%E8%83%BD%E7%9A%84%E5%8A%9F%E8%83%BD">可能的功能</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202211172321/">
+              <h3 class="post-title">
+                图片压缩软件
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

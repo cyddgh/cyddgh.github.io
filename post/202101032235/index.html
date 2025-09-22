@@ -1,0 +1,251 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>obsidian检索功能 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="obsidian检索功能 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了obsidian自带的检索功能，分享了正则表达式的一些学习资源和一些在ob中的实际操作。
+ob官方对检索功能的说明
+obsidian内置有检索功能，并适用正则表达式。具体的说明（英文）可见官方说明文档。在任何ob窗口，点击左..." />
+    <meta name="keywords" content="obsidian" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              obsidian检索功能
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-01-03
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://cyddgh.github.io/tag/8bxuJqsEC/" class="post-tag">
+                  # obsidian
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了obsidian自带的检索功能，分享了正则表达式的一些学习资源和一些在ob中的实际操作。</p>
+<h1 id="ob官方对检索功能的说明">ob官方对检索功能的说明</h1>
+<p>obsidian内置有检索功能，并适用正则表达式。具体的说明（英文）可见官方说明文档。在任何ob窗口，点击左下角的帮助按钮，在检索框内输入“search”，找到标题为“search”的卡片，就可以阅读官方对检索功能的解释了。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103223714.png" alt="" loading="lazy"><br>
+如果英文阅读有困难，可以尝试翻译软件，例如deepl（https://www.deepl.com/translator ）。</p>
+<h1 id="正则表达式">正则表达式</h1>
+<p>ob检索可以使用正则表达式，我在此附上相关的学习资源，大家感兴趣可以自学：</p>
+<ul>
+<li>菜鸟教程：https://www.runoob.com/regexp/regexp-syntax.html</li>
+<li>正则表达式可视化：https://blog.robertelder.org/regular-expression-visualizer</li>
+<li>正则学习网站：https://regexr.com</li>
+<li>正则表达式30分钟入门教程（佛智提供的）：https://deerchao.cn/tutorials/regex/regex.htm</li>
+<li>正则表达式速查表（ABC提供的）：https://www.jb51.net/tools/regexsc.htm</li>
+</ul>
+<p>我个人没有学习正则表达式，都是使用其他软件完成高级检索，大家可以看之前所写的“obsidian和FileLocator连用（加强检索功能）”。</p>
+<h1 id="实际操作">实际操作</h1>
+<p>虽然没有系统学习正则，但是有几个常用的小技巧可以分享给大家。以下操作是以ob教程为案例，大家可以一起操作看看。请注意下面所有的符号一般都是英文符号，另外注意是否空格。</p>
+<h2 id="只检索文件名">只检索文件名</h2>
+<p>一般的检索会连同文件的内容一起检索，当我们想要检索文件名是可以使用<code>file:你要检索的内容</code>。大家可以对比一下效果</p>
+<ul>
+<li>
+<p>使用普通检索<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225215.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>使用了file语句后<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225137.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h2 id="限定检索的文件夹">限定检索的文件夹</h2>
+<p>可以使用<code>path:文件夹名称（可以只包含单个字）</code>来将检索限定在某个文件夹中，例如使用<code>正则表达 path:名词解释</code>后得到的效果如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225557.png" alt="" loading="lazy"></p>
+<h2 id="排除某个文件夹">排除某个文件夹</h2>
+<p>只需要使用<code>-</code>就可以起到排除的作用，接上方的例子，我们排除名词解释的文件夹<code>正则表达 -path:名词解释</code><br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225813.png" alt="" loading="lazy"></p>
+<p>许多群友会问要如何排除Daily Note，那只需要在关系图谱的筛选框中输入<code>-path:你daily note的文件夹</code>，然后点击检索，就可以实现。这也说明检索可以适用于图谱，对图谱功能进行优化。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103225943.png" alt="" loading="lazy"></figure>
+<h2 id="检索未完成的工作todo">检索未完成的工作（TODO）</h2>
+<p>可以使用英文的上下引号来限定一个检索词，如果要检索未完成的任务可以使用语句<code>&quot;- [ ]&quot;</code> （注意这语句中的空格）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210103230653.png" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#ob%E5%AE%98%E6%96%B9%E5%AF%B9%E6%A3%80%E7%B4%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E8%AF%B4%E6%98%8E">ob官方对检索功能的说明</a></li>
+<li><a href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F">正则表达式</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#%E5%8F%AA%E6%A3%80%E7%B4%A2%E6%96%87%E4%BB%B6%E5%90%8D">只检索文件名</a></li>
+<li><a href="#%E9%99%90%E5%AE%9A%E6%A3%80%E7%B4%A2%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9">限定检索的文件夹</a></li>
+<li><a href="#%E6%8E%92%E9%99%A4%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9">排除某个文件夹</a></li>
+<li><a href="#%E6%A3%80%E7%B4%A2%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E5%B7%A5%E4%BD%9Ctodo">检索未完成的工作（TODO）</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202101022015/">
+              <h3 class="post-title">
+                多词一义与一词多义
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

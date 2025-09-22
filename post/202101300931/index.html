@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>浅谈知识图谱（二）-元数据的重要性 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="浅谈知识图谱（二）-元数据的重要性 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文强调了元数据对知识图谱构建的重要性，希望读者认识到元数据对个人知识管理中的可视化也是同样重要的，并在文末提出了一个构建obsidian有效全局图谱的方法。
+引言
+之前介绍了通过文献之间的引用，我们可以追踪科学研究的动向，并且进行可..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              浅谈知识图谱（二）-元数据的重要性
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-01-30
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文强调了元数据对知识图谱构建的重要性，希望读者认识到元数据对个人知识管理中的可视化也是同样重要的，并在文末提出了一个构建obsidian有效全局图谱的方法。</p>
+<h1 id="引言">引言</h1>
+<p>之前介绍了通过文献之间的引用，我们可以追踪科学研究的动向，并且进行可视化，展示有效的信息。但同时也提到，知识图谱并非容易之事，背后还有诸多努力可能被使用者忽视。本文主要介绍元数据对知识图谱构建的重要性。</p>
+<h1 id="元数据">元数据</h1>
+<p>首先，本文的元数据（Metadata）是指从Web of Science、Scopus、知网等学术检索引擎上对学术论文的描述信息。<br>
+以Scopus为例，其提供的元数据如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130102119.png" alt="" loading="lazy"><br>
+当我们下载了相关的引用文件（例如bib、ris），使用记事本打开，就会发现许多的元数据信息。因为全部信息太多，我只截取部分信息展示如下。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130095731.png" alt="" loading="lazy"></p>
+<p>这些元数据信息非常丰富，例如上图的CR字段对应的就是本文献中引用的文献。一些常见且有用的信息大致有：作者、单位、发表期刊、发表年、被引文献（这篇文献引用了哪些文献）、施引文献（哪些文献引用了这篇文献）等等。</p>
+<p>只有获取了上述的元信息，才能对文献之间的关系进行分析和数据挖掘，最终可视化得到有用的图谱。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>通过上文可知，要进行可视化之后必须获得丰富的元数据。在个人知识管理中，如果将一篇文档视为一篇论文，双链视为引用，那我们看一下这篇文档中的原信息有多少呢？<br>
+以我个人的模板为例，元数据一般都放在了yaml中，我的yaml如下</p>
+<pre><code>---
+title: （标题）
+uid: 202101282344（创建时间）
+aliases: [（别名）]
+tags:  （标签）
+from: （来源）
+---
+</code></pre>
+<p>我认为勉强可以算是元数据的可能就是创建时间和标签。标签我一般写在正文中，且是以双链形式存在，例如[[tag-标签1]]。而目前图谱功能好像还不能根据创建时间的先后来构建关系，因为是去中心化，是无方向的。所以这两个数据似乎也不能参与到知识图谱的构建中。<br>
+在文章的最后，我也给出一个粗略的想法，即使用一个双链写入特殊字段，在图谱中进行筛选，从而能获得全局视角的有效图谱。例如，在obsidian中，我在所有有关于R语言的知识卡片中，都输入了[[tag-R语言]]，然后我在图谱中检索<code>tag-R语言</code>（或者进入相关的），从而能获得一张较为有效的全局图谱。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130104153.png" alt="" loading="lazy"><br>
+如果感觉“tag-R语言”的节点太大，且无意义，可以将该md文件删除，然后在图谱检索中勾选“仅显示已创建的笔记”，这样各个节点之间的关系可能更为自然。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210130104301.png" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E5%85%83%E6%95%B0%E6%8D%AE">元数据</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%AF%9D">个人的话</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202101292155/">
+              <h3 class="post-title">
+                浅谈知识图谱（一）-引用构建网络
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>使用obsidian模拟thebrain知识网络的一种可能性 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="使用obsidian模拟thebrain知识网络的一种可能性 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="背景
+我个人认为：obsidian是去中心化、无节点等级的知识图谱；thebrain是去中心化、有节点等级的知识图谱。其中两者很大的差异在于知识图谱中每个节点是否平等，在thebrain中是有父节点、子节点和兄弟节点的区分，存在一定的结构关..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              使用obsidian模拟thebrain知识网络的一种可能性
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-08-22
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="背景">背景</h1>
+<p>我个人认为：obsidian是去中心化、无节点等级的知识图谱；thebrain是去中心化、有节点等级的知识图谱。其中两者很大的差异在于知识图谱中每个节点是否平等，在thebrain中是有父节点、子节点和兄弟节点的区分，存在一定的结构关系，而obsidian中各个卡片都是平等的。目前，双链软件用户普遍反映知识图谱没有发挥预期的作用，这可能是因为双链软件的设计问题导致。节点之间是否有等级差异似乎能一定程度上解决双链软件中知识图谱不可读的问题，增加图谱的意义。</p>
+<h1 id="具体方法">具体方法</h1>
+<p>下文所介绍的方法非常简单，只是作为一种实现的可能性，希望能引起更多人的讨论。<br>
+我的灵感是来自于RoamResearch中单个页面的知识图谱视图，发现其节点之间联系也存在有方向性，这取决于文内双链所处的位置。我将这种思路迁移至obsidian中，设想以下实现方法：</p>
+<ol>
+<li>父节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称A为B的父节点。</li>
+<li>子节点：存在有卡片A、B，在卡片A中存在有[[B]]，而卡片B中无[[A]]，则称B为A的子节点。</li>
+<li>兄弟节点：存在有卡片A、B，在卡片A中存在有[[B]]，且卡片B中有[[A]]，则称A和B为兄弟节点。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>卡片</th>
+<th>A为B的父节点，B为A的子节点</th>
+<th>A、B是兄弟节点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>[[B]]</td>
+<td>[[B]]</td>
+</tr>
+<tr>
+<td>B</td>
+<td></td>
+<td>[[A]]</td>
+</tr>
+</tbody>
+</table>
+<h1 id="结语">结语</h1>
+<p>本文希望能扩展obsidian的应用形式。但上述设想的实现可能还需要obsidian软件本身的支持，或者待API功能开发后，由第三方开发者支持。</p>
+<p>另外，最近obsidian已经升级至0.8.4，软件已经内置汉化界面，按Setting-about-Language-简体中文，然后重启就可以发现汉化成功。注意：目前帮助文档（Help）还未汉化，但群文件有群友汉化版。欢迎有志于汉化相关文档的群友报名参与后续帮助文档的汉化。obsidian爱好者群：774176839。</p>
+<p>注：本文中的兄弟节点应该对应thebrain中Jump Thoughts，为方便非thebrain用户理解，翻译为兄弟节点。需要注意：1.thebrain中还有一类sibling Thoughts（即团子大圆帅所说的）。2.经群友D的提醒，兄弟节点在数据结构中有特定含义，本文所指的兄弟节点不是指数据结构上“树的节点有兄弟关系”。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E8%83%8C%E6%99%AF">背景</a></li>
+<li><a href="#%E5%85%B7%E4%BD%93%E6%96%B9%E6%B3%95">具体方法</a></li>
+<li><a href="#%E7%BB%93%E8%AF%AD">结语</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202008162211/">
+              <h3 class="post-title">
+                和obsidian开发者的交流
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

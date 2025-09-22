@@ -1,0 +1,321 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>时间线（timelines插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="时间线（timelines插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍timelines插件，该插件能在obsidian中形成时间线。
+个人的话
+今天介绍的插件是一个偏美化的插件，功能性较弱，大家如果不想折腾，可以略过。
+插件名片
+timelines插件是由Darakah开发的。
+Github地..." />
+    <meta name="keywords" content="obsidian" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              时间线（timelines插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-14
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://cyddgh.github.io/tag/8bxuJqsEC/" class="post-tag">
+                  # obsidian
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍timelines插件，该插件能在obsidian中形成时间线。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>今天介绍的插件是一个偏美化的插件，功能性较弱，大家如果不想折腾，可以略过。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>timelines插件是由Darakah开发的。<br>
+Github地址：https://github.com/Darakah/obsidian-timelines<br>
+蓝奏云地址：https://wws.lanzous.com/igcYbmxnxcd</p>
+<h2 id="插件设置">插件设置</h2>
+<p>Timelines插件的非常简单：</p>
+<ul>
+<li>第1行是默认标签，建议不要修改。你需要在yaml的tag一栏中输入这个标签才能被该插件所识别。</li>
+<li>第2行是修改时间线的顺序（从新到旧还是从旧到新），建议不用修改。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210314194821.png" alt="" loading="lazy"></li>
+</ul>
+<h1 id="实际操作">实际操作</h1>
+<p>要使用该插件需要先了解yaml是什么（可以百度，可以看早期的文章）。更快速的方法是直接拷贝下面我给的代码，在下面代码基础上进行个人修改。</p>
+<h2 id="官方示例">官方示例</h2>
+<p>首先给出Github页面作者的示例</p>
+<pre><code>---
+tags: [timeline, test, me, now]
+---
+&lt;span class='ob-timelines' data-date='1444-10-00-00' data-title='TITLE' data-img = 'URL' data-class = &quot;customCardCSS&quot;&gt; D E S C R I P T I O N &lt;/span&gt; 
+</code></pre>
+<h3 id="第1步在yaml中写明标签">第1步：在yaml中写明标签</h3>
+<p>最开始的三行就是YAML，需要在里面的标签一栏输入一个识别标签，如果你没有修改插件配件，默认是<code>timeline</code>。</p>
+<pre><code>---
+tags: [timeline, test, me, now]
+---
+</code></pre>
+<p>标签一栏，你还要赋予其他的值，用于后续筛选。</p>
+<h3 id="第2步在yaml后的正文部分输入一段html代码">第2步：在yaml后的正文部分输入一段html代码</h3>
+<p>之后的语句可以修改的内容有data-date、data-title、data-img、DESCRIPTION。</p>
+<pre><code>&lt;span class='ob-timelines' data-date='1444-10-00-00' data-title='TITLE' data-img = 'URL' data-class = &quot;customCardCSS&quot;&gt; DESCRIPTION &lt;/span&gt; 
+</code></pre>
+<ul>
+<li>data-date：决定了在时间线上显示的时间，采用的是年-月-日-小时，如案例中的<code>1444-10-00-00</code>。</li>
+<li>data-title：决定了在时间线上显示的标题。</li>
+<li>data-img：决定了在时间线上显示的图片。</li>
+<li>DESCRIPTION：决定了在时间线上显示的更多信息。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210314200250.png" alt="" loading="lazy"></figure>
+<h1 id="个人示例">个人示例</h1>
+<p>提醒大家注意语法中使用英文符号，注意空格等语法要求。</p>
+<h3 id="第3步新建卡片运行timeline语句">第3步：新建卡片，运行timeline语句</h3>
+<p>然后新建一张卡片，在卡片中输入下面的语句，且切换到浏览视图即可。</p>
+<pre><code>```timeline
+test,me
+```
+</code></pre>
+<p>上面的语句代表在ob库中检索yaml标签中包含有timeline、test和me三个标签的卡片，显示在时间线上。</p>
+<h2 id="个人实例的效果">个人实例的效果</h2>
+<p>具体效果如下：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210314222828.png" alt="" loading="lazy"></p>
+<h2 id="个人卡片模板">个人卡片模板</h2>
+<p>安装并启动好插件后，直接复制下面代码到4张新的ob卡片中，在卡片4中切换成浏览状态就能显示上面的效果图。</p>
+<h3 id="卡片1">卡片1</h3>
+<pre><code>---
+tags: [timeline, 美图]
+---
+
+&lt;span class='ob-timelines' data-date='2021-03-14' data-title='花朵' data-img = 'https://gitee.com/cyddgi/picture-store/raw/master/img/20210314193052.png' data-class = &quot;customCardCSS&quot;&gt;插入描述的区域&lt;/span&gt; 
+本图来自：https://www.pexels.com/zh-cn/photo/5706559/
+
+</code></pre>
+<h3 id="卡片2">卡片2</h3>
+<pre><code>---
+tags:  [timeline, 美图]
+---
+
+&lt;span class='ob-timelines' data-date='2021-03-10-08' data-title='相框' data-img = 'https://gitee.com/cyddgi/picture-store/raw/master/img/20210314193230.png' data-class = &quot;customCardCSS&quot;&gt; 本图来自：https://www.pexels.com/zh-cn/photo/5797991/ &lt;/span&gt; 
+
+正文开始~~~
+</code></pre>
+<h3 id="卡片3">卡片3</h3>
+<pre><code>---
+tags: [timeline, 美图]
+---
+
+&lt;span class='ob-timelines' data-date='2021-03-10-13' data-title='树叶' data-img = 'https://gitee.com/cyddgi/picture-store/raw/master/img/20210314193609.png' data-class = &quot;customCardCSS&quot;&gt; 本图来自：https://www.pexels.com/zh-cn/photo/6805871/&lt;/span&gt; 
+正文开始~~~
+</code></pre>
+<h3 id="卡片4">卡片4</h3>
+<pre><code>```timeline
+美图
+```
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%AF%9D">个人的话</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%90%8D%E7%89%87">插件名片</a>
+<ul>
+<li><a href="#%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE">插件设置</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#%E5%AE%98%E6%96%B9%E7%A4%BA%E4%BE%8B">官方示例</a>
+<ul>
+<li><a href="#%E7%AC%AC1%E6%AD%A5%E5%9C%A8yaml%E4%B8%AD%E5%86%99%E6%98%8E%E6%A0%87%E7%AD%BE">第1步：在yaml中写明标签</a></li>
+<li><a href="#%E7%AC%AC2%E6%AD%A5%E5%9C%A8yaml%E5%90%8E%E7%9A%84%E6%AD%A3%E6%96%87%E9%83%A8%E5%88%86%E8%BE%93%E5%85%A5%E4%B8%80%E6%AE%B5html%E4%BB%A3%E7%A0%81">第2步：在yaml后的正文部分输入一段html代码</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E7%A4%BA%E4%BE%8B">个人示例</a><br>
+*
+<ul>
+<li><a href="#%E7%AC%AC3%E6%AD%A5%E6%96%B0%E5%BB%BA%E5%8D%A1%E7%89%87%E8%BF%90%E8%A1%8Ctimeline%E8%AF%AD%E5%8F%A5">第3步：新建卡片，运行timeline语句</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%95%88%E6%9E%9C">个人实例的效果</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E5%8D%A1%E7%89%87%E6%A8%A1%E6%9D%BF">个人卡片模板</a>
+<ul>
+<li><a href="#%E5%8D%A1%E7%89%871">卡片1</a></li>
+<li><a href="#%E5%8D%A1%E7%89%872">卡片2</a></li>
+<li><a href="#%E5%8D%A1%E7%89%873">卡片3</a></li>
+<li><a href="#%E5%8D%A1%E7%89%874">卡片4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202103131833/">
+              <h3 class="post-title">
+                Picgo+阿里云搭建图床（优化obsidian图片插入）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

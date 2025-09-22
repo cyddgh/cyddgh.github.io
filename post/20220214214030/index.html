@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>自动移动文件位置（Auto note mover插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="自动移动文件位置（Auto note mover插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="引言
+Auto note mover插件可以根据所设定的条件，自动移动文件到相关文件夹中。
+插件名片
+Auto note mover插件是由farux开发，目前版本是1.0.7。
+Github地址： https://github.com/f..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              自动移动文件位置（Auto note mover插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-02-14
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="引言">引言</h1>
+<p>Auto note mover插件可以根据所设定的条件，自动移动文件到相关文件夹中。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>Auto note mover插件是由farux开发，目前版本是1.0.7。</p>
+<p>Github地址： https://github.com/farux/obsidian-auto-note-mover</p>
+<h1 id="实际操作">实际操作</h1>
+<p>在插件设置页面中</p>
+<p>Trigger：可以设置是手动触发（Manual），还是自动触动（Automatic），我选择Automatic。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20220214214544.png" alt="" loading="lazy"></p>
+<p>Add new rule：可以设置触发的条件</p>
+<ul>
+<li>Folder：如果触发了，将此文件移动到哪个文件夹。</li>
+<li>Tag：如果文档有此标签，则触发移动。</li>
+<li>Title by regex：如果文档标题符合此正则表达式，则触发移动。例如填入“Tag-”，</li>
+<li>这里扩展一下正则的表达内容</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20220214214614.png" alt="" loading="lazy"></figure>
+<p>针对“Title by regex”这里展示2个例子。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20220214214920.png" alt="" loading="lazy"></figure>
+<p>第1行的设置表示，如果文章标题有&quot;Tag-&quot;，则移动到我的标签文件夹中。这种设置大家比较容易理解，好上手。</p>
+<p>第3行则是应用了正则表达式（Regex），<code>.*?\-\d\d\d\d\-</code>表示只要文中有四位数字，且数字前后有<code>-</code>，则移动到“00 文献文件夹”中。</p>
+<p>关于正则的部分，我个人也不是很懂，推荐可以阅读一下材料：</p>
+<ul>
+<li>正则表达式30分钟入门教程 by deerchao，  https://deerchao.cn/tutorials/regex/regex.htm</li>
+<li>https://regex101.com/</li>
+</ul>
+<p>正则表达式也是一个高效的工具，但易学难精，大家可以先入门一下，用到时再查手册，或者向懂正则的高手求助。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%90%8D%E7%89%87">插件名片</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202202050647/">
+              <h3 class="post-title">
+                在ob中通过Templater为新建页添加模板信息
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

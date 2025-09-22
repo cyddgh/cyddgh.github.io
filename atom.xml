@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cyddgh.github.io</id>
+    <title>软通达</title>
+    <updated>2025-09-22T00:07:20.816Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cyddgh.github.io"/>
+    <link rel="self" href="https://cyddgh.github.io/atom.xml"/>
+    <subtitle>软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。</subtitle>
+    <logo>https://cyddgh.github.io/images/avatar.png</logo>
+    <icon>https://cyddgh.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, 软通达</rights>
+    <entry>
+        <title type="html"><![CDATA[《Obsidian中文教程》发布服务即将关闭]]></title>
+        <id>https://cyddgh.github.io/post/202509220753/</id>
+        <link href="https://cyddgh.github.io/post/202509220753/">
+        </link>
+        <updated>2025-09-22T00:03:48.000Z</updated>
+        <content type="html"><![CDATA[<p>各位读者好，</p>
+<p>由于近期工作繁忙，《Obsidian中文教程》的更新有所延迟。考虑到这一情况，我也不便再向 Obsidian 开发者申请发布服务费用的豁免（感谢 Ob开发团队一直以来的支持）。因此，ob中文教程发布站的域名（ https://publish.obsidian.md/chinesehelp )将在2025年9月26日费用到期之后释放，供他人注册使用。</p>
+<p>《Obsidian中文教程》的内容仍会在 GitHub 和 Gitee 平台持续开放，最新更新也会通过微信公众号“软通达”以及我的个人页面（ https://cyddgh.github.io/ ）发布，欢迎大家继续关注。</p>
+<p>感谢大家一直以来的支持与理解。祝愿各位身体健康、学习进步、工作顺利！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关闭节点小宝的驿站服务]]></title>
+        <id>https://cyddgh.github.io/post/20250712224224/</id>
+        <link href="https://cyddgh.github.io/post/20250712224224/">
+        </link>
+        <updated>2025-07-12T15:04:04.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="摘要">摘要</h4>
+<p>节点小宝有疑似PCDN行为，具体为“小宝驿站”服务，占用了大量的空间，本文建议关闭此服务。</p>
+<h4 id="起因">起因</h4>
+<p>最近，发现我的NAS固态硬盘空间不足，所以在今天进行了空间检测，发现节点小宝开启了驿站服务（官方客服说非默认开启，但我并没有记得开启这功能）。节点小宝在威联通的Public中的OWSpeedup文件（全路径为&quot;\Public\OWSpeedup\owjdxb.owjkwl\insta\ipes\store\ecache0\happ\happ.0\hdata\cache&quot;），生成了大量的无意义文件，占用了130G。这应该是一种PCDN。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202507/20250712225710355.png" alt="image.png" loading="lazy"></figure>
+<p>我在互联网上检索，看到了之前也有人发帖（2021年，wandersky0822在CSDN博客就发帖：玩物下载被发现利用群晖NAS占用大量带宽和硬盘帮助爱奇艺做缓存加速, 这年头流氓真多，防不胜防！！！ https://blog.csdn.net/wandersky0822/article/details/112605164 ）。</p>
+<p>事实上，这类服务会占用用户的上传流量，甚至导致被运营商限速拉速。作为一家负责任的网络服务提供商应该知道这类行为的危害性，不应有类似的行为。</p>
+<p>因为，在相关网络上的信息较少，特写此文，以帮助来者。</p>
+<h4 id="关闭此服务的方法">关闭此服务的方法</h4>
+<p>1.在微信搜“节点小宝”的小程序，</p>
+<p>2.点击右上角的标志</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202507/20250712225400867.png" alt="" loading="lazy"></figure>
+<p>3.选择“小宝驿站”</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202507/20250712225603575.png" alt="a53778458e4bca5836dc7f1fb89b54c.jpg" loading="lazy"></figure>
+<p>4.选中你的NAS设备，将此服务关闭。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202507/20250712225911809.png" alt="image.png" loading="lazy"></figure>
+<h4 id="结尾">结尾</h4>
+<p>这种偷跑行为好让人气愤😡，是不是应该买台软路由来监控一下设备的流量。听说一些智能家电也有类似的行为。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用Doc2x将PDF转为Markdown放入obsidian中]]></title>
+        <id>https://cyddgh.github.io/post/202506222139/</id>
+        <link href="https://cyddgh.github.io/post/202506222139/">
+        </link>
+        <updated>2025-06-22T14:08:53.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>本文介绍了如何用Doc2x将PDF格式的文件转换为Markdown格式，放入obsidian中，并介绍了Linter插件进行格式优化。如果有隐私考虑，也可以用文末所提及的其他软件，进行本地化的转化和翻译。</p>
+<h1 id="引言">引言</h1>
+<p>在日常的学习和工作中，我常常要阅读PDF格式的学术论文。进入25年，知识库的出现，让更多的AI软件可以阅读本地的知识库来回答问题。因此，我就尝试将论文从PDF格式转为Markdown格式放入obsidian中进行阅读，并以此构建本地的知识库，增强AI的专业能力。本文主要介绍相关的工作流程。</p>
+<h1 id="工作流程">工作流程</h1>
+<p>首先，我用的PDF转Markdown软件是Doc2x（链接： https://doc2x.noedgeai.com?inviteCode=DN9S5V ，邀请码：DN9S5V）。目前我已经付费了3个月。免费版，每天签到可以转换10页PDF；最基础的付费版本，8.9元，可以转换600页，并有翻译功能，大概处理1页PDF是0.015元。</p>
+<p>将下载好的PDF拖入下方页面，或者上传相关文件。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622214657972.png" alt="" loading="lazy"></figure>
+<p>一般而言，为了省钱，我的页码不包括参考文献部分，另外开启翻译，但不翻译代码、表格、图片和参考文献。翻译功能还是有一定必要，特别是对于一些刚入门的科研新生可以让他们快速阅读SCI文献。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622214826808.png" alt="image.png" loading="lazy"></figure>
+<p>点击处理后，等待完成，在页面的左边，选择翻译后的文件，导出，格式中的公式符我一般使用<code>$</code>，图片务必选择本地图片，如果是在线图片大概1个月后就失效了。</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215054415.png" alt="image.png" loading="lazy"></figure>
+<p>下载得到的是一个zip压缩文件，将压缩文件放入你的obsidian库中。我这里专门为文献阅读设置了一个库，附件专门放在<code>Attachment</code>文件夹中（注意按下图设置好相关的目录），翻译后的Markdown文件放在你想要的文件夹中。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215417075.png" alt="image.png" loading="lazy"></figure>
+<p>因为Doc2x的md文件中的图片引用格式与ob不同，需要再用[[Linter（格式刷插件）]]进行一下正则替换，在Linter的设置页中，找到“自定义”页面，然后，增加一个正则表达，分别输入<code>\[([^\]]+)\]\(images\/[^\)]+\)</code>、<code>gm</code>、<code>[[$1]] </code>（如下图，正则表达我也不懂，感谢热心群友提供的帮助，如果你有更好的代码可以自行替换）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215557957.png" alt="image.png" loading="lazy"></p>
+<p>然后Crtl+P进行命令模式，运行<code>Linter：格式化当前文件</code>，即可修复图片引用</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215846203.png" alt="image.png" loading="lazy"></figure>
+<p>最终的效果图如下</p>
+<figure data-type="image" tabindex="6"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622220020522.png" alt="image.png" loading="lazy"></figure>
+<h1 id="其他值得讨论的问题">其他值得讨论的问题</h1>
+<p>本文还有许多值得讨论和优化的地方，大家可在公众号内留言讨论。</p>
+<h2 id="pdf转化为markdown格式的方法">PDF转化为Markdown格式的方法</h2>
+<p>除了Doc2x外，目前的还有许多的软件，例如minerU、markitdown、，但我尝试后效果不如Doc2x，而且Doc2x还包括了翻译的费用。</p>
+<h2 id="markdown的双语翻译方法">Markdown的双语翻译方法</h2>
+<p>我目前也在关注md格式的双语翻译。沉浸式翻译确实好用，但对于md文件来说还缺乏优化。目前关注的一些软件有DocTranslator（早期用过，很难受）、AiNiee（近期刚关注的）。</p>
+<p>上述的软件搭配上本地的大语言模型，可以使得本文的流程完全本地化。</p>
+<h2 id="如何在ob中对md文件进行批注">如何在ob中对md文件进行批注</h2>
+<p>目前，我是使用了HiNote插件（ https://github.com/CatMuse/HiNote ），只能进行了很简单的批注，目前没看到相关的插件。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[类似omnifocus的任务管理插件（Task Genius插件）]]></title>
+        <id>https://cyddgh.github.io/post/202505301328/</id>
+        <link href="https://cyddgh.github.io/post/202505301328/">
+        </link>
+        <updated>2025-05-30T05:28:02.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="摘要">摘要</h1>
+<p>Task Genius是Bon开发的一款任务管理（GTD）obsidian插件，流程类似omnifocus，非常值得尝试。</p>
+<h1 id="正文">正文</h1>
+<p>上回的随笔写到，这一年没怎么折腾obsidian插件，但遗漏了一款近期我非常看好的任务管理查看Task Genius。它是由Bon开发，Github页面： https://github.com/Quorafind/Obsidian-Task-Genius/ ；说明文档： https://taskgenius.md/docs/getting-started 。</p>
+<p>页面效果如下：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202505/202505301332601.png" alt="" loading="lazy"></p>
+<p>页面设置页（功能页）如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202505/202505301322167.png" alt="" loading="lazy"></p>
+<p>为什么我上次会忘记这插件呢？是因为功能确实太多，我也确实还没折腾清楚，大家感兴趣就去看看插件说明 https://taskgenius.md/docs/getting-started  目前好像只有英文，期待bon能主动介绍一下功能。</p>
+<p>这插件的界面布局和相应的功能，很类似于omnifocus，例如有预测、回顾、计划日期（区别于开始、结束日期）等等。我也是一直在Windows系统中寻找它的平替，尝试过MyLife Organized（MLO）但它的操作不是很好，Doit.im、ToDolist都好像没omnifocus那么多功能，很高兴看到Bon开发了这个插件。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[obsidian推出Bases功能与我近期关注的插件]]></title>
+        <id>https://cyddgh.github.io/post/202505251419/</id>
+        <link href="https://cyddgh.github.io/post/202505251419/">
+        </link>
+        <updated>2025-05-25T06:39:24.000Z</updated>
+        <content type="html"><![CDATA[<p>本周，obsidian推出了1.9.0的内测版本，增加了Bases功能，即开发路线图（Roadmap）中所说的Dynamic tables功能。有两点需要注意：</p>
+<ol>
+<li>这不同于SQL数据库，依然是以md为核心，没有数据库功能，尽管早期路线图是出现了Database（有印象，但不确定）。</li>
+<li>这功能目前还在内测和完善，不知道最后的效果如何。但按目前的功能，Bases多了嵌入功能，更依靠Yaml区域的属性值，并且更改了一些属性的写法，这可能影响到Dataview和其他插件。但这种更改应该是必须要面对的。</li>
+</ol>
+<p>目前，Bon开发了一个简易的转化小工具 Base Toolbox - 数据表工具箱，教程可见B站 https://www.bilibili.com/video/BV1Y4JxzbEfW  ，工具地址： https://bases-toolbox.vercel.app 。</p>
+<p>另外，最近还有两个插件我最近有关注：</p>
+<ol>
+<li>坚果云推出了obsidian的同步插件。早期我尝试过，但还是会触发坚果云的webdav的限制，体验不好就没有写文。</li>
+<li>Cubox推出了obsidian的剪藏插件，可以将Cubox上的内容同步到ob中来。这是付费功能，我也体验了一下，我只做到了同步高亮的文本，而非同步全文，可能是我没弄懂。近期，知名的稍后阅读软件Pocket宣布要关停了，感觉Read it later的时代是不是要过去了？</li>
+</ol>
+<p>工作后，我空闲的时间少了，也没太多时间去折腾软件，渐渐地，obsidian的教程也无更新，可能这期免费续费结束后，就不找官方再申请免费的发布服务，但后期仍然继续在网上发布文章。</p>
+<p>近期我感兴趣的更多是如何优雅的将一些网页保存到ob中，目前所知的方法都不是很喜欢，包括上面的Cubox，还有简悦等之前分享过的方法。今年AI的大爆发，出现了许多知识库软件是使用Markdown格式给AI喂数据，这么看来md还是富有生命力的一种格式。</p>
+<p>好久没写文章了，趁周末，休息一下，大家也可以留言近期的ob好用法、好插件，或者618的IT好物。下次见！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求一个团队学习的软件推荐]]></title>
+        <id>https://cyddgh.github.io/post/20241123230201/</id>
+        <link href="https://cyddgh.github.io/post/20241123230201/">
+        </link>
+        <updated>2024-11-23T15:18:55.000Z</updated>
+        <content type="html"><![CDATA[<p>目前要带一个10人左右的学生团队，并且预计后续还陆续有学生要加入。日常会有一些问答，希望进行相应的知识沉淀。目前遇到的问题是：如果用传统的软件（例如微信、QQ），我已经讲过的知识点，后续加入的学生看不到之前的交流信息，我又要重复讲一遍，不利于学生的自主学习。</p>
+<p>也有看到相关的学者使用飞书软件进行实验室的管理（可见 从本科生、硕士生、博士生、教授到课题组负责人-飞书使用交流 https://www.bilibili.com/video/BV1wN4y1P7Hp/ )。但飞书的费用目前过高，付费起步就要50元/人/月，对于非营利性的初级科学研究团队负担过重。且近期飞书的免费权益大量缩水，免费用户的保存期限也从永久变成了18个月，担心未来进一步缩水，于是放弃。其他类似的服务，例如井盖Chat、开黑啦等，则担心运营不佳导致不可持续。</p>
+<p>我个人也考虑过自建服务，例如Zulip（ https://zulip.com/ ），但担心有被黑的风险，需要一定的维护成本。</p>
+<p>不知道大家有什么推荐的方案，请在下方留言告知，谢谢。</p>
+<p>写到最后想到：在知识管理和团队管理上，学习型组织的概念在1990年已经存在（见《第五项修炼：学习型组织的艺术实践》），但目前服务和支持这概念的软件好像并不是非常丰富啊。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[剪藏插件（Web Clipper，官方核心插件）]]></title>
+        <id>https://cyddgh.github.io/post/202410181402/</id>
+        <link href="https://cyddgh.github.io/post/202410181402/">
+        </link>
+        <updated>2024-10-18T06:07:08.000Z</updated>
+        <content type="html"><![CDATA[<p>近期，obsidian官方推出了一个新的核心插件——Web Clipper，主要用于网页剪藏，具体可见： https://obsidian.md/clipper 。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/202410/202410181406757.png" alt="" loading="lazy"></figure>
+<p>相关模板： https://github.com/obsidian-community/web-clipper-templates 。期待有更多的模板和相关技巧分享。</p>
+<p>具体效果如下图</p>
+<p><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/202410/202410181404209.png" alt="" loading="lazy"><br>
+图片来源：一位不愿署名的匿名微信群友</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[打印机购买的思考和犹豫]]></title>
+        <id>https://cyddgh.github.io/post/202409282143/</id>
+        <link href="https://cyddgh.github.io/post/202409282143/">
+        </link>
+        <updated>2024-09-28T14:51:16.000Z</updated>
+        <content type="html"><![CDATA[<p>最近因为工作的需求，需要购买一台打印机，记录下选择过程的思考，目前还没下单，大家有什么建议或使用心得，可以下方留言。</p>
+<p>我的需求：</p>
+<ul>
+<li>必须配备：<strong>自动双面、扫描、复印</strong>，且后两者还不能用输稿器，因为可能要扫描身份证一类的材料，虽然输稿器能更快更好。</li>
+<li>最好加上：<strong>局域网中联网打印</strong>，目前打印机可以放在身边，但以防未来放在远处，无法通过连线打印。</li>
+<li>可加可不加：<strong>彩色打印</strong>，目前没有孩子要打印作业或手工的需要，日常文件常用黑白，但彩色打印似乎很吸引人。</li>
+<li>打印量：目前月打印量不超过300，且不是每周都会打印。</li>
+<li>价格：2000元以内，1500以内最好</li>
+</ul>
+<p>根据前期在B站和知乎上的信息收集，特别是参考了知乎用户粉墨人生（ https://www.zhihu.com/people/m1005.com ）的回答，我考虑了以下类型的打印机和品牌：</p>
+<ul>
+<li>激光黑白：兄弟、惠普</li>
+<li>喷墨彩色：兄弟、爱普生</li>
+</ul>
+<p>我之前主要使用的是激光黑白打印，机型是惠普1020（经典神机），但听说惠普的新机更不耐用，没有以前好了。而兄弟打印机，有同事买了，已经用了1-2年，体验还不错。所以我目前看中了以下几款：</p>
+<ul>
+<li>兄弟（brother）DCP-B7520DW（ https://u.jd.com/L6IjJnU ）：价格1299。原装的粉盒TN-B020价格99元打2600张，成本约0.038/张；第三方的彩格粉盒22元打3000张，成本约0.008/张。这款是新模具，据说换粉盒比较好，加粉效果不好，优点是原装的耗材比较便宜，B系列好像还是按需供粉。</li>
+<li>兄弟（brother）DCP-7080D（ https://u.jd.com/LOI4T6I ）：价格1349。原装的粉盒TN-2325价格199元打2600张，成本约0.076/张；第三方的彩格碳粉（手动加粉）约13元打2600张，成本约0.005/张。这是旧模具，口碑不错，但缺少了无线连接等新机器的功能，好在有自动双面，加粉的价格便宜，但可能脏手。</li>
+<li>兄弟（brother）DCP-T725DW（ https://u.jd.com/LgIFzqc ）：价格1499。原装的墨水应该是BTD60BK吧，79元打7500张，成本约0.011/张；第三方的绘威BTD60BK/5009墨水10元打6500张，成本约0.002/张。彩色打印，担心长期不用堵住碰头，兄弟宣传说有不断电能自动清洗喷头所以选它，爱普生没有这功能，佳能和惠普喷墨方式是热发泡听说更容易堵（爱普生和兄弟用的是微压电喷墨技）。</li>
+</ul>
+<p>不知道大家在用的、好用的家用打印机是什么型号？第三方耗材选择有什么推荐的品牌吗？收集了一圈信息后，感觉打印机领域的信息还是不太透明，比较少人关注。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Zotero消息两则（2024-09-07）]]></title>
+        <id>https://cyddgh.github.io/post/202409071441/</id>
+        <link href="https://cyddgh.github.io/post/202409071441/">
+        </link>
+        <updated>2024-09-07T06:51:22.000Z</updated>
+        <content type="html"><![CDATA[<p>消息一：Zotero的安卓端终于实现了WebDav的功能了，现在只要在应用商城里更新，就可以使用该功能。今后在安卓手机上也能很好的阅读文献了。</p>
+<p>消息二：推荐大家一款Zotero引用工具。可以访问quicker动作： https://getquicker.net/Sharedaction?code=e90100f6-7713-4241-ba6e-08db0423d7d9 【如果你感觉Quicker好用想要付费，可以用我的推荐码：555-6895 ，被推荐人在注册后首次付费购买专业版可获赠3个月（90天）使用时长】</p>
+<p>这个工具是因为我本人一个引用上的需求。</p>
+<blockquote>
+<p>我的需求：如果在word中使用zotero的工具插入引用，如何能插入Ma et al. (2021)这样的引用，还是只能通过忽略作者，插入年份后，再手动输入作者名吗？</p>
+</blockquote>
+<p>然后有群友推荐了上述的软件，具体的说明可见语雀上的文档 ZoteroToolbar++， https://www.yuque.com/chentaotao-cf9fr/gthfy4/zvnmiodzvab15lwf</p>
+<p>这个工具支持了(Author, Year)与Author (Year)样式的切换。另外，还说了（我没测试）可以支持WPS上的引用，摆脱了对VBA的依赖。软件开发者说是用C#对官方插件进行了重写，即有Quicker版本，也有独立可运行的软件。</p>
+<p>感谢这位开发者还有群友，世上还是好人多。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[提示潜在的双链（Virtual linker插件介绍）]]></title>
+        <id>https://cyddgh.github.io/post/202408181309/</id>
+        <link href="https://cyddgh.github.io/post/202408181309/">
+        </link>
+        <updated>2024-08-18T05:34:50.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="摘要">摘要</h4>
+<p>本文介绍了Mefo白板软件中部分的编辑功能，obsidian中的Virtual linker插件能复刻该功能。个人认为大大优化了双链的使用和编辑体验，推荐大家安装使用。</p>
+<h4 id="正文">正文</h4>
+<p>最近，看到一款的白板软件Mefo（ https://mefo.cc/ ，注册时邀请码： lQCbwK ，有送30天的会员）。它的一些白板编辑上的体验很不错，有看到设计上的思考。最令我眼馋的效果是：在页面上的文字如果有这软件中匹配到相应标题的卡片，就能有一个下划线提示，让你可以跳转，具体如下图：</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/202408/202408181317763.png" alt="" loading="lazy"></figure>
+<p>可以看到这“双链软件”这卡片内容中，当我提到了obsidian时出现了下划线，这是因为软件中存在另一张名为“obsidian”的卡片。这就方便了不同卡片之间的链接。</p>
+<p>然后过几天，就看到了PKmer的推文，介绍了一款ob的插件[[ Virtual Linker Plugin (Glossary Plugin)]]，也能实现类似的效果，于是撰写了本文。（上篇文章还说，好久没看到让我心动的插件，没想到更过一周就看到了。）</p>
+<h4 id="插件信息">插件信息</h4>
+<p>插件名称：Virtual Linker Plugin (Glossary Plugin)<br>
+插件作者：vschroeter<br>
+插件地址：https://github.com/vschroeter/obsidian-virtual-linker</p>
+<h4 id="实际操作">实际操作</h4>
+<p>插件的操作很简单，安装后就可以使用了。但在一开始我和一些人有遇到安装后无效果的问题，我个人是升级了ob的程序后解决，不清楚具体的细节。</p>
+<p>启用插件后，进入文档，如果卡片内容中的文字与ob库中的某张卡片标题同名，自动会出现一个链接🔗的标志，如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/202408/202408181324548.png" alt="image.png" loading="lazy"></p>
+<p>在出现链接的相关字段，按住Ctrl，就能出现相应的卡片信息，这是最近ob的编辑器升级（吸收了[[Hover editor（悬浮编辑插件）]]），如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/202408/202408181327112.png" alt="image.png" loading="lazy"></p>
+<p>并且这种效果在白板中也能实现，如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/202408/202408181330323.png" alt="image.png" loading="lazy"></p>
+<h4 id="结语">结语</h4>
+<p>这个插件大大方便了双链的阅读和编辑操作，提升了ob使用的幸福感。</p>
+<p>另外，Mefo软件的一些设计，我认为也提升了白板软件的一些体验，除上面的功能外，像这不同画板中的提示功能也不不错。如下图显示，卡片“全球变化问题”不仅仅在当下“生态学”的白板中存在，在“省基金”的白板中也存在，同理“城市化”卡片也在“省基金”和“苔藓学”两个白板中存在。是否有哪位ob插件的开发者也能出一款类似的插件呢？或者已有类似的插件，也请读者留言。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2024/202408/202408181331051.png" alt="image.png" loading="lazy"></figure>
+]]></content>
+    </entry>
+</feed>

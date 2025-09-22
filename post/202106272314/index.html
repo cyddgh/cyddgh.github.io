@@ -1,0 +1,229 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>obsidian电脑端和手机端的同步介绍 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="obsidian电脑端和手机端的同步介绍 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本文介绍obsidian的同步方式，主要考虑电脑端和移动端之间的同步。本文成文于2021年6月27日，此后相关服务可能有所变化，请自行甄别。所有涉及收费内容，请自行联系各家公司进行咨询。本文是我个人的主观体验，并不成熟。如果有不同意见请在下..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              obsidian电脑端和手机端的同步介绍
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-06-27
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>本文介绍obsidian的同步方式，主要考虑电脑端和移动端之间的同步。本文成文于2021年6月27日，此后相关服务可能有所变化，请自行甄别。所有涉及收费内容，请自行联系各家公司进行咨询。本文是我个人的主观体验，并不成熟。如果有不同意见请在下方留言，我会将有用的评论标星，以供其他读者参考。</p>
+<h4 id="有没有官方对ob同步的指南">有没有官方对ob同步的指南？</h4>
+<p>有。在ob帮助文件中，目前只有英文版，中文版已经翻译了。可以点击 https://help.obsidian.md/Obsidian/Obsidian+Mobile 进行查看。</p>
+<h4 id="有没有全平台-省心的同步方式">有没有全平台、省心的同步方式？</h4>
+<p>有！且只有obsidian自己的官方同步。ob的官方同步可以实现windows、Mac、iPhone、iPad、Linux、安卓全平台的同步。<br>
+缺点：</p>
+<ol>
+<li>官方同步的费用对我来说有点贵。目前的早鸟价格月付是5美元/月，年付是48美元/年。早鸟价便宜了50%。</li>
+<li>官方同步虽然有版本控制功能，但相比专业的git、坚果云还是不足。</li>
+</ol>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210627222131.png" alt="" loading="lazy"></figure>
+<h4 id="windows和ios系统如何相互同步">windows和ios系统如何相互同步？</h4>
+<p>如果你的电脑是windows系统，但移动端是iPhone或iPad，除了官方同步，目前只有iCloud同步可以实现。请注意：iCloud是有windows版本的，详见 https://support.apple.com/zh-cn/HT201391 。更多的iCloud问题，可以联系Apple 支持。至于mac和ios的同步使用iCloud就更容易了。ios</p>
+<h4 id="安卓系统和电脑端如何同步">安卓系统和电脑端如何同步？</h4>
+<p>答：安卓手机的同步方式比较多样。主要有以下几种：</p>
+<ol>
+<li>FolderSync：FolderSync（ https://www.tacit.dk/foldersync ）可以搭配各种云盘，例如坚果云、onedrive。但我使用FolderSync和坚果云时，因为文件过多且坚果云对第三方的API调用时长有限制，导致同步失败。</li>
+<li>Syncthing：Syncthing（ https://syncthing.net ）是一个免费的、开源软件，群友淳帅二代推荐了一个介绍视频： https://www.bilibili.com/video/BV1mz4y1R7fD 。但因为采用点对点，网络发现如有问题，就无法同步。我个人使用时，手机发热较为严重，且我在校内网使用时，无法连接。这可能是我对这软件了解不多导致。</li>
+<li>微力同步：微力同步（ http://www.verysync.com )是一款类似Syncthing软件，大部分软件功能是免费的，只有少部分功能是收费，我认为是可以接受的。</li>
+</ol>
+<p>以上三种方法在QQ群中都有人使用，并且使用得不错，我个人使用的是微力同步。以上的优缺点有我个人主观因素，并不成熟，关于同步软件的问题可以在群内交流或者和相应开发者联系。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%9C%89%E6%B2%A1%E6%9C%89%E5%AE%98%E6%96%B9%E5%AF%B9ob%E5%90%8C%E6%AD%A5%E7%9A%84%E6%8C%87%E5%8D%97">有没有官方对ob同步的指南？</a></li>
+<li><a href="#%E6%9C%89%E6%B2%A1%E6%9C%89%E5%85%A8%E5%B9%B3%E5%8F%B0-%E7%9C%81%E5%BF%83%E7%9A%84%E5%90%8C%E6%AD%A5%E6%96%B9%E5%BC%8F">有没有全平台、省心的同步方式？</a></li>
+<li><a href="#windows%E5%92%8Cios%E7%B3%BB%E7%BB%9F%E5%A6%82%E4%BD%95%E7%9B%B8%E4%BA%92%E5%90%8C%E6%AD%A5">windows和ios系统如何相互同步？</a></li>
+<li><a href="#%E5%AE%89%E5%8D%93%E7%B3%BB%E7%BB%9F%E5%92%8C%E7%94%B5%E8%84%91%E7%AB%AF%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5">安卓系统和电脑端如何同步？</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202105012136/">
+              <h3 class="post-title">
+                如何安装obsdiain插件
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

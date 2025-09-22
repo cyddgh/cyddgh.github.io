@@ -1,0 +1,265 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>QuickAdd插件介绍2（Template Choice） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="QuickAdd插件介绍2（Template Choice） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了QuickAdd插件的剪藏选项（Capture Choice），可以通过一个输入框进行快速输入。
+引言
+之前已经介绍了QuickAdd插件的模板选项（Template Choice），本文将继续介绍第2种模式剪藏选项（Cap..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              QuickAdd插件介绍2（Template Choice）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-07-11
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了QuickAdd插件的剪藏选项（Capture Choice），可以通过一个输入框进行快速输入。</p>
+<h1 id="引言">引言</h1>
+<p>之前已经介绍了QuickAdd插件的模板选项（Template Choice），本文将继续介绍第2种模式剪藏选项（Capture Choice）。作者是如此介绍这功能的“Quick capture anything, anywhere.”。</p>
+<p>另外，近期Bon在知乎专栏中也介绍了他使用QuickAdd的心得，可见 https://zhuanlan.zhihu.com/p/386885976 。他在文中将Capture翻译为“剪藏”，我个人的理解更偏向“捕获”（捕获输入框中的信息，做成卡片）。</p>
+<p>相比于Bon撰写的心得文章，本文会更像是对插件开发者给出范例的中文说明（ https://github.com/chhoumann/quickadd/blob/master/docs/Choices/CaptureChoice.md ）。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>QuickAdd插件是由chhoumann开发，目前版本是0.3.4。但我个人使用非常不顺，这教程写得我崩溃，怀疑有很多bug，或者和我其他插件冲突了。下面演示的版本是0.2.16。</p>
+<p>Github地址： https://github.com/chhoumann/quickadd<br>
+蓝奏云地址： https://wws.lanzoui.com/i8Hfqr0b18h</p>
+<h1 id="实际操作">实际操作</h1>
+<h2 id="案例来源">案例来源</h2>
+<p>本案例来自插件开发者的给出的范例： https://github.com/chhoumann/quickadd/blob/master/docs/Choices/CaptureChoice.md 。但可能有所改变。<br>
+该案例是演示通过剪藏选项，快速在日记卡片中输入今日的日程信息。</p>
+<h2 id="建立日记">建立日记</h2>
+<p>在设置-核心插件中打开日记插件。做以下设置（可以和我不同，我只是用于演示）</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711201853.png" alt="" loading="lazy"></figure>
+<p>具体的日记模板如下</p>
+<pre><code># 今日要做的三件事
+1. 
+
+# 今天活动
+
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711202015.png" alt="" loading="lazy"></figure>
+<h2 id="设置quickadd插件的剪藏选项capture-choice">设置Quickadd插件的剪藏选项（Capture Choice）</h2>
+<p>添加一项Capture动作</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711202122.png" alt="" loading="lazy"></figure>
+<p>点击齿轮按钮，进入配置。如果常用，建议也点亮闪电按钮。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711202229.png" alt="" loading="lazy"></p>
+<p>具体的设置选项，Bon已经在讲述很清楚了，我就不再赘述。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210706213423.png" alt="" loading="lazy"></figure>
+<p>（上图来自于Bon的文章：https://zhuanlan.zhihu.com/p/386885976  ）</p>
+<p>因为我的日记文件位于根目录下的“日记&quot;文件夹中，每日日记的文件名显示是”2021-07-11“。</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711202654.png" alt="" loading="lazy"></figure>
+<p>因此我在File Name一栏输入<code>日记/{{DATE:gggg-MM-DD}}.md</code>。我没有选<code>Create file if it doesn't exist</code>，相当于默认，每天开打ob后我都会先生成日记文件。</p>
+<figure data-type="image" tabindex="6"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711203405.png" alt="" loading="lazy"></figure>
+<p>在<code>Insert after</code>（在某些之后插入）一栏，我输入<code># 今天活动</code>。并开打<code>Insert at end of section</code>（插入在此节的最后），因为时间任务是依次往下的。</p>
+<p>最后打开<code>Capture format</code>，并在下方输入<code>- {{DATE:HH:mm}} {{VALUE}}</code>。其中<code>{{DATE:HH:mm}}</code>是时间，<code>{{VALUE}}</code>是你输入框内的值（文字信息）。</p>
+<figure data-type="image" tabindex="7"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711203908.png" alt="" loading="lazy"></figure>
+<h2 id="从命令模式运行剪藏选项capture-choice">从命令模式运行剪藏选项（Capture Choice）</h2>
+<p>按Ctrl+P进入命令模式，检索quickadd，如果刚刚有将这选项的闪电标志点亮，该命令就会直接出现在命令模式中。</p>
+<figure data-type="image" tabindex="8"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711205312.png" alt="" loading="lazy"></figure>
+<p>如果没有，则需要点击<code>Quickadd: Run Quickadd</code>，在所有的Quickadd命令中寻找改命令，找到后点击。</p>
+<figure data-type="image" tabindex="9"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711205443.png" alt="" loading="lazy"></figure>
+<p>然后会弹出一个输入框，我输入“写Quickadd的文章”，按回车完成输入。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711205531.png" alt="" loading="lazy"></p>
+<p>最后在日记文档中，就会出现如下结果</p>
+<pre><code># 今日要做的三件事
+1. 
+
+# 今天活动
+
+- 20:51 测试
+- 20:55 写Quickadd的文章
+</code></pre>
+<figure data-type="image" tabindex="10"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711205639.png" alt="" loading="lazy"></figure>
+<p>其中<code>- 20:51 测试</code>是我之前测试的结果，<code>- 20:55 写Quickadd的文章</code>是我刚刚输入的结果。本文到此也就要结束了，最后我们再输入“结束Quickadd文章的写作”，就会出现下图。</p>
+<figure data-type="image" tabindex="11"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210711205812.png" alt="" loading="lazy"></figure>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%90%8D%E7%89%87">插件名片</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#%E6%A1%88%E4%BE%8B%E6%9D%A5%E6%BA%90">案例来源</a></li>
+<li><a href="#%E5%BB%BA%E7%AB%8B%E6%97%A5%E8%AE%B0">建立日记</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AEquickadd%E6%8F%92%E4%BB%B6%E7%9A%84%E5%89%AA%E8%97%8F%E9%80%89%E9%A1%B9capture-choice">设置Quickadd插件的剪藏选项（Capture Choice）</a></li>
+<li><a href="#%E4%BB%8E%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E8%BF%90%E8%A1%8C%E5%89%AA%E8%97%8F%E9%80%89%E9%A1%B9capture-choice">从命令模式运行剪藏选项（Capture Choice）</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202107072124/">
+              <h3 class="post-title">
+                note uid插件介绍（强化url打开能力）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

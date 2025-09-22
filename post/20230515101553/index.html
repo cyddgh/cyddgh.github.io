@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Win7用户不能使用最新ob安装包，只能安装1.1.16版本 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Win7用户不能使用最新ob安装包，只能安装1.1.16版本 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要：因为最新版本的Electron不支持Windows7，所以win7上的ob用户不能使用1.2.7的obsidian安装包，只能安装1.1.16安装包，然后通过接受内部更新升级ob版本。
+首先要明确一个概念，obsidian版本在“关于..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Win7用户不能使用最新ob安装包，只能安装1.1.16版本
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-15
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>摘要：因为最新版本的Electron不支持Windows7，所以win7上的ob用户不能使用1.2.7的obsidian安装包，只能安装1.1.16安装包，然后通过接受内部更新升级ob版本。</p>
+<p>首先要明确一个概念，obsidian版本在“关于”中有两个，一个是当前版本，一个是安装程序版本。“安装程序版本”是指当前ob安装包的版本，“当前版本”是最新的ob版本，因为ob的升级不一定要通过重新安装安装包，可通过内部接受推送完成升级（所以不用每次ob升级，都在群里求安装包）。但当ob更新其底层框架[[Electron]]时，如果为了新功能或者功能优化，需要从官网下载ob安装包，进行安装。</p>
+<p>最近obsidian版本从1.1.16升级到了1.2.7，这次升级同时升级了Electron版本。</p>
+<p>然而，新版本的Electron框架停止了对Windows7的支持，导致1.2.7以后的ob安装包，将无法在windows7系统上成功安装，会弹出报错“无法定位程序输入点DiscardVirtualMemory于动态链接库KERNEL32.dll上。” （来自群友的反馈 ）</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202305151039870.png" alt="" loading="lazy"></figure>
+<p>类似的报错反馈已经出现在其他软件上，例如 CSDN这则帖子： https://blog.csdn.net/weixin_41913973/article/details/129624908</p>
+<p>根据ob英文论坛的帖子“Windows 7 support silently dropped?”（ https://forum.obsidian.md/t/windows-7-support-silently-dropped/59341 ），WhiteNoise（OBSIDIAN TEAM）给出的一种解决方式如下：</p>
+<ul>
+<li>从Github上下载1.1.16的安装包： https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.1.16</li>
+<li>之后仅更新ob核心，而不更新electron版本。这应该是指在设置-关于-检测更新。</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202305151024333.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>You can download and reinstall Obsidian 1.1.6 from https://github.com/obsidianmd/obsidian-releases/releases 7 and rely on the internal update method (it does not update electron but just the core app).<br>
+As long as it works, fine, but we are not going it accept bug reports against this version and at some point something will break. When that day comes, please don’t post another rant here. We got the memo already.<br>
+你可以从 https://github.com/obsidianmd/Obsidian-releases/releases 6下载并重新安装黑曜石1.1.6，并依靠内部更新方法(它不更新电子版，只更新核心应用程序)。只要它工作，好，但我们不打算它接受错误报告对这个版本，并在某一点上会打破。当那一天到来的时候，请不要再在这里发表任何言论。我们已经收到备忘录了。<br>
+英文来自WhiteNoise，中文为机器翻译。</p>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202305102104/">
+              <h3 class="post-title">
+                推荐写作软件：写拉松（Writeathon）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

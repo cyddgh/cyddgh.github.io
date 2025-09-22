@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>通过Quicker将zotero与obsidian连用（仅Win） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="通过Quicker将zotero与obsidian连用（仅Win） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="通过Quicker将zotero与obsidian连用（仅Win）
+本文所需要用到的工具：
+
+Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              通过Quicker将zotero与obsidian连用（仅Win）
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-09-06
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>通过Quicker将zotero与obsidian连用（仅Win）</p>
+<h4 id="本文所需要用到的工具">本文所需要用到的工具：</h4>
+<ol>
+<li>Quicker: https://getquicker.net/ [我的推荐码：555-6895，被推荐人在注册后30天内购买专业版可获赠3个月（90天）使用时长]</li>
+<li>Quicker动作: https://getquicker.net/sharedaction?code=f24587bd-3fce-4855-d22c-08d84927c51f</li>
+<li>zotero: https://www.zotero.org/</li>
+<li>PDF-Xchange Viewer：可能不兼容一些PDF软件，这软件我测试后可以</li>
+</ol>
+<h4 id="需要注意的事情">需要注意的事情</h4>
+<ol>
+<li>使用本方法时，zotero只能使用自身同步或webdav同步，不能使用zotfile+网盘的同步方法。这两类同步方式的不同请见RefTools专栏内的文章（ https://zhuanlan.zhihu.com/p/31453719 ），需要认识到文件型和文件链接型同步的不同。<strong>本教程使用的是同步文件型</strong>。</li>
+<li>zotero本身同步空间是300M，超出后需要付费。为了免费使用，建议借助其他软件来进行webdav同步。我建议可以使用其它的webdav软件，例如TeraCloud（邀请码3PYKL， https://teracloud.jp/en/ ） ，因为TeraCloud不限制上传和下载的流量，空间是15G，作为文献阅读足够了。</li>
+<li>使用坚果云的webdav同步的方法，已经有人论述了（见 http://help.jianguoyun.com/?p=4190 ）。但请注意，从我个人使用上使用webdav方式进行同步，坚果云无法对zip文件进行增量备份，会导致上传流量占用过多。</li>
+<li>Quicker如何使用请见Quicker的帮助文件。</li>
+<li>Quicker动作的使用请见动作页，Zplusless已有论述。</li>
+</ol>
+<h4 id="一些操作要点">一些操作要点</h4>
+<p>该动作要实现还有一些注意事项：</p>
+<ul>
+<li>
+<p>zotero首选项中的同步页面设置大致如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906170946.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>需要确认PDF所在的目录<br>
+鼠标移动到PDF-右键-打开文件位置<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171431.png" alt="" loading="lazy"><br>
+确定PDF所在位置类似于（~\Zotero\storage\MSUJ5A4S），PDF所在目录是8位字母和数字组成的文件夹，上级文件夹是storage，再上级文件夹是Zotero<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20200906171626.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>简单解析复制后的md语句<br>
+如上PDF所产生的引用文字，如下</p>
+</li>
+</ul>
+<blockquote>
+<p>&quot;The root-knot nematode Meloidogyne chitwoodi is a pest that  affects potato production in the Pacific Northwest of the United  States.&quot;<a href="zotero://open-pdf/library/items/MSUJ5A4S?page=1">《Zhang-2020-Nature Plants》@page:1</a></p>
+</blockquote>
+<p>可以看到</p>
+<ol>
+<li>“&gt;”：代表markdown的引用开始</li>
+<li>双引号：PDF中的原文</li>
+<li>[《Zhang-2020-Nature Plants》@page:1]：Zhang-2020-Nature Plants为该pdf的文件名，@page:1代表第一页</li>
+<li>(zotero://open-pdf/library/items/MSUJ5A4S?page=1)：请注意，这里的MSUJ5A4S和PDF所在文件夹名称（MSUJ5A4S）相同。<strong>我认为这也是为什么必须使用内置同步或者webdav同步的原因</strong>。</li>
+</ol>
+<h4 id="后记">后记</h4>
+<p>因具体涉及的知识点较多且前人已有完备的论述，本文仅罗列一些关键的信息。<br>
+本人日常以Endnote为主，使用zotero较少，有不懂的地方可以查看文中所引用的专栏文章。<br>
+如果你有更好的方式请留言，随后我会精选方便其他读者查阅。未来本教程可能有所更改，请点击阅读原文，查看最新版本。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%9C%AC%E6%96%87%E6%89%80%E9%9C%80%E8%A6%81%E7%94%A8%E5%88%B0%E7%9A%84%E5%B7%A5%E5%85%B7">本文所需要用到的工具：</a></li>
+<li><a href="#%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E4%BA%8B%E6%83%85">需要注意的事情</a></li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E8%A6%81%E7%82%B9">一些操作要点</a></li>
+<li><a href="#%E5%90%8E%E8%AE%B0">后记</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202009020940/">
+              <h3 class="post-title">
+                软件总在变化
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

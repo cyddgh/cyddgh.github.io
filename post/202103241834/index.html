@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RoamResearch备份方式-Roam2Github | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="RoamResearch备份方式-Roam2Github | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了一种新的备份RoamResearch的方式：Roam2Github，可以实现对RR进行markdown、json和edn的备份。
+前情提要
+关于用Github来给RoamResearch做备份，我之前有推荐过roam-to-..." />
+    <meta name="keywords" content="RoamResearch" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              RoamResearch备份方式-Roam2Github
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-24
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://cyddgh.github.io/tag/UZnMN-P5o/" class="post-tag">
+                  # RoamResearch
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了一种新的备份RoamResearch的方式：Roam2Github，可以实现对RR进行markdown、json和edn的备份。</p>
+<h1 id="前情提要">前情提要</h1>
+<p>关于用Github来给RoamResearch做备份，我之前有推荐过roam-to-git。但不知道为什么，在2020年年末时，这个代码运行就不是很流畅，每天我都能收到Github给我发来的备份失败通知。我也尝试进行了维护，但还是无济于事，因为我对github也不是很了解，所以就一直没有折腾了。直到前天看到王树义老师的视频，发现原来大家都遇到了的问题，看来是roam-to-git已经更不上时代了，并且现在有一个新的备份代码可以完美解决RoamResearch的备份问题。</p>
+<h1 id="roam2github">Roam2Github</h1>
+<p>Roam2Github是由everruler12编写的。<br>
+Github地址： https://github.com/everruler12/roam2github<br>
+使用说明：</p>
+<ul>
+<li>Github版： https://github.com/everruler12/roam2github/blob/main/documentation/Full%20Guide%20with%20Step-by-Step%20Screenshots.md</li>
+<li>Notion版： https://www.notion.so/Roam2Github-Backup-Guide-650925859a4a42cf940e3fb74f5189f9</li>
+</ul>
+<p>推荐大家看Github版，因为有图文。我是直接看Notion版（因为Notion版最先出现），全部都是英文，还没图文。</p>
+<p>简单说一下Roam2Github相比roam-to-git的优点：</p>
+<ul>
+<li>roam-to-git后期似乎只备份json（至少我的库文件是这样的），但Roam2Github可以备份markdown、json和edn（RoamResearch最新的备份格式）。</li>
+<li>roam-to-git是基于私有库，Actions的时长有限制。Roam2Github运行是在公有库，保存数据是私有库，在保护隐私的同时，又不受免费账号Actions的时长限制。</li>
+</ul>
+<p>最后，再说明一个操作。在设置Actions时，有一步是<code>Delete the code, and replace with the code here https://raw.githubusercontent.com/everruler12/roam2github-actions/main/.github/workflows/main.yml</code>。这是让你将默认的代码都删除了，然后前往<code>https://raw.githubusercontent.com/everruler12/roam2github-actions/main/.github/workflows/main.yml</code>这个网站，将上面的代码复制到栏中，而不是直接复制这个网址。</p>
+<p>目前，这个备份方式已经运行了2天了，能实现每小时进行一次备份，没有报错。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81">前情提要</a></li>
+<li><a href="#roam2github">Roam2Github</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202103152106/">
+              <h3 class="post-title">
+                obsidian增强展示（dataview插件介绍）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

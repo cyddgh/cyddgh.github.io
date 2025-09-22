@@ -1,0 +1,256 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>obsidian同步服务（设置篇） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="obsidian同步服务（设置篇） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了obsidian官方的同步服务（Sync），早鸟价为4美元一个月，能提供同步、历史版本等功能。
+引言
+obsidian是一款基于本地的笔记软件，但不意味其不提供互联网服务，除了之前已经介绍的发布服务外，ob还有同步服务，早鸟..." />
+    <meta name="keywords" content="obsidian" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              obsidian同步服务（设置篇）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-01-21
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://cyddgh.github.io/tag/8bxuJqsEC/" class="post-tag">
+                  # obsidian
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了obsidian官方的同步服务（Sync），早鸟价为4美元一个月，能提供同步、历史版本等功能。</p>
+<h1 id="引言">引言</h1>
+<p>obsidian是一款基于本地的笔记软件，但不意味其不提供互联网服务，除了之前已经介绍的发布服务外，ob还有同步服务，早鸟价为4美元一个月（按年付），按月付的早鸟价是5美元一个月（以上价格请见官网说明，本文不予保证）。官网地址：https://obsidian.md/pricing</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121145440.png" alt="" loading="lazy"></figure>
+<h1 id="实际操作">实际操作</h1>
+<p>在进行下列操作前，你需要先注册一个ob的账号，然后使用该账号购买同步服务，之后才能享受ob的同步服务。</p>
+<h2 id="开启sync同步服务">开启Sync（同步）服务</h2>
+<p>点击设置-核心插件-Sync<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121110438.png" alt="" loading="lazy"></p>
+<h2 id="设置同步服务">设置同步服务</h2>
+<p>在插件选项-Sync中进行同步服务的设置<br>
+因为目前还未汉化，我对相关服务进行一些说明：<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121110550.png" alt="" loading="lazy"></p>
+<h3 id="pick-remote-vault">Pick Remote Vault</h3>
+<p>点击Choose（选择）后，会弹出以下对话框，显示目前连接的是哪个笔记。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121110848.png" alt="" loading="lazy"><br>
+点击Create remote vault（创建远端库），进入以下界面<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121111045.png" alt="" loading="lazy"></p>
+<ul>
+<li>Vault name：设置库的文件名，随意</li>
+<li>Customize end-to-end encryption password：设置端到端加密，增强笔记的安全性。我的理解是，设置了端到端加密，这样ob官方就无法查看你的笔记，笔记将以密文形式保存在云端。</li>
+<li>Encryption password：如果你选择了端到端加密，则需要在这里输入你要设置的密码。如果你不选择端到端加密，就无需输入密码。</li>
+</ul>
+<h2 id="sync-status同步状态">Sync status（同步状态）</h2>
+<p>如果显示“Obsidian Sync is currently running”（ob同步服务正在运行），就说明同步服务正常。点击Pause（暂停）可以暂停同步的服务，暂停后显示如下。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121112534.png" alt="" loading="lazy"></p>
+<h2 id="deleted-files恢复已删除文件">Deleted files（恢复已删除文件）</h2>
+<p>这一栏是用于恢复已删除的文件，并能回滚到相关文件的历史版本。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121143802.png" alt="" loading="lazy"><br>
+点击<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121143915.png" alt="" loading="lazy"></p>
+<h2 id="sync-activity同步状态">Sync activity（同步状态）</h2>
+<p>这一栏能看到目前ob的同步状态，哪些文件同步上云端，哪些文件同步出错。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121144256.png" alt="" loading="lazy"></p>
+<h2 id="selective-sync选择性同步">Selective sync（选择性同步）</h2>
+<p>obsidian可以支持部分同步，可以排除某个文件夹使之不能上传，也选择某一类型的附件进行上传。如下图所示，可以对图片、声音、视频和PDF进行选择性上传。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210121144659.png" alt="" loading="lazy"></p>
+<h1 id="未完待续">未完待续</h1>
+<p>因为篇幅原因，还有一些对同步的体验和看法留在下一篇中讲述。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#%E5%BC%80%E5%90%AFsync%E5%90%8C%E6%AD%A5%E6%9C%8D%E5%8A%A1">开启Sync（同步）服务</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%AD%A5%E6%9C%8D%E5%8A%A1">设置同步服务</a>
+<ul>
+<li><a href="#pick-remote-vault">Pick Remote Vault</a></li>
+</ul>
+</li>
+<li><a href="#sync-status%E5%90%8C%E6%AD%A5%E7%8A%B6%E6%80%81">Sync status（同步状态）</a></li>
+<li><a href="#deleted-files%E6%81%A2%E5%A4%8D%E5%B7%B2%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6">Deleted files（恢复已删除文件）</a></li>
+<li><a href="#sync-activity%E5%90%8C%E6%AD%A5%E7%8A%B6%E6%80%81">Sync activity（同步状态）</a></li>
+<li><a href="#selective-sync%E9%80%89%E6%8B%A9%E6%80%A7%E5%90%8C%E6%AD%A5">Selective sync（选择性同步）</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD">未完待续</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202101122135/">
+              <h3 class="post-title">
+                obsidian发布增强（设置密码访问）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

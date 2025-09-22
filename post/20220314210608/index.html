@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>对比不同版本文本差异（Sync version history插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="对比不同版本文本差异（Sync version history插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="引言
+对比不同版本间文本的差异是一项急需且常用的功能。一般纯文本的比较工具是git，除了git外，Beyond Compare等工具也能提供更为高级的对比。
+Sync version history则可以较好实现git中的对比功能（diff..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              对比不同版本文本差异（Sync version history插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-03-14
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="引言">引言</h1>
+<p>对比不同版本间文本的差异是一项急需且常用的功能。一般纯文本的比较工具是git，除了git外，Beyond Compare等工具也能提供更为高级的对比。<br>
+Sync version history则可以较好实现git中的对比功能（diff），对obsidian库中的文本进行对比。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>Sync version history插件是由kometenstaub开发，目前版本1.2.0。</p>
+<p>Github地址： https://github.com/kometenstaub/obsidian-sync-version-history</p>
+<h1 id="实际操作">实际操作</h1>
+<p>需要先了解的信息：</p>
+<ol>
+<li>Sync version history插件需要搭配ob核心插件中的[[同步（sync核心插件）]]或者[[文件恢复（File Recovery，核心插件）]]。</li>
+<li>[[文件恢复（File Recovery，核心插件）]]可以参考往期推文[[obsidian内置文件恢复（File Recovery功能介绍） by 软通达]]。</li>
+<li>[[文件恢复（File Recovery，核心插件）]]所备份的镜像仅限本机，且有一定时效性（以你设置为主）。[[同步（sync核心插件）]]的数据则可以联机。</li>
+</ol>
+<p>安装并启动插件。因为我没有同步服务，所以只演示文件恢复的模式。</p>
+<p>进入Crtl+P进入命令模式，进入“Version history diff:Show File Recovery diff view for active file”（注意不要进入sync的选项，如果没有同步如何就会是一个空白弹窗）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20220314211549.png" alt="" loading="lazy"></p>
+<p>然后就会弹出类似git的窗口<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20220314211742.png" alt="" loading="lazy"></p>
+<p>建议可以在文件恢复中，将快照的保存时长设置长一些，例如30天。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20220314211831.png" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%90%8D%E7%89%87">插件名片</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/20220311154810/">
+              <h3 class="post-title">
+                英语学习软件推荐——Learning with text (LWT)
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

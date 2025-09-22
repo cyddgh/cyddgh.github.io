@@ -1,0 +1,279 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>QuickAdd插件介绍1（Template Choice） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="QuickAdd插件介绍1（Template Choice） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了QuickAdd插件的模板选项（Template Choice），可以快速制作一些卡片。
+引言
+obsidian本身有模板功能（核心插件），也有一个第三方插件（Templater）提供模板插入，今天介绍的Quickadd也有..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              QuickAdd插件介绍1（Template Choice）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-07-04
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了QuickAdd插件的模板选项（Template Choice），可以快速制作一些卡片。</p>
+<h1 id="引言">引言</h1>
+<p>obsidian本身有模板功能（核心插件），也有一个第三方插件（Templater）提供模板插入，今天介绍的Quickadd也有相同的功能。它们三者互相有所区别，大家在使用中可以体会看看。正如这开发者说的：模板选项不意味取代Templater插件或核心插件，而是对它们的加强。</p>
+<blockquote>
+<p>The template choice type is not meant to be a replacement for Templater or core Templates. It's meant to augment them. From https://github.com/chhoumann/quickadd/blob/master/docs/Choices/TemplateChoice.md</p>
+</blockquote>
+<h1 id="插件名片">插件名片</h1>
+<p>QuickAdd插件是由chhoumann开发，目前版本是0.3.4。但我个人使用非常不顺，这教程写得我崩溃，怀疑有很多bug，或者和我其他插件冲突了。下面演示的版本是0.2.16。</p>
+<p>Github地址： https://github.com/chhoumann/quickadd<br>
+蓝奏云地址： https://wws.lanzoui.com/i8Hfqr0b18h</p>
+<p>该插件有4种模式：</p>
+<ul>
+<li>Template Choice - A powerful way to insert templates into your vault.</li>
+<li>Capture Choice - Quick capture anything, anywhere.</li>
+<li>Macro Choice - Macros to augment your workflow. Do more, faster.</li>
+<li>Multi Choice - Organize your choices in folders.</li>
+</ul>
+<p>本文主要介绍第一种模式：模板选项（Template Choice），提供一种有力的方式将模板插入到你的文档中。</p>
+<h1 id="实际操作">实际操作</h1>
+<h2 id="开发者说明">开发者说明</h2>
+<p>开发者给出了Template Choice具体的说明，位置在 https://github.com/chhoumann/quickadd/blob/master/docs/Choices/TemplateChoice.md</p>
+<h2 id="创建一个template-choice">创建一个Template Choice</h2>
+<p>先在第三方插件中，启动Quickad插件。<br>
+进入Quickadd设置页，Name一栏输入“测试Template Choice”（名字任取），下拉栏选“Template Choice”，然后点击“Add Choice”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704210359.png" alt="" loading="lazy"></p>
+<p>点亮闪电按钮，可以让我们更好在命令模式下找到它。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704214345.png" alt="" loading="lazy"></p>
+<p>点击小齿轮按钮，开始进行配置。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704210751.png" alt="" loading="lazy"></p>
+<h2 id="配置template-choice">配置Template Choice</h2>
+<p>先上一副总图<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704211843.png" alt="" loading="lazy"></p>
+<p>以下操作如果太难，可以只看Template Path和Create in folder就行。下面标注“没弄懂”的部分可能是因为插件版本的原因，现在这版插件的bug还是太多了，我主库和演示库的效果都还存在不同，我也不清楚是为什么。</p>
+<ol>
+<li>
+<p>Template Path：输入你模板的位置，注意以.md结尾，这是唯一的必填项。我讲模板放在库目录下的模板文件夹，文件名是英语学习，所以输入“模板/英语学习.md”。注：在我的演示库，模板是手动输入，但在我的主库，模板是下拉选择，不清楚为什么会有这样的差异。</p>
+</li>
+<li>
+<p>File Name Format：卡片名称格式。如果不开启，就是当时会弹出输入框。如果开启，可以在下方的File name中输入一些预定设置，例如输入<code>{{DATE}}</code>，则显示今天的日期（2021-07-04）；输入<code>{{NAME}}</code>，则弹出输入框，让你添加信息，并作为卡片名称。注意如果开启后，在File name没有<code>{{NAME}}</code>字段，则自动创建卡片，不需要人为输入。</p>
+</li>
+<li>
+<p>Create in folder：卡片是否创建在特定的文件夹（可以有多个，也可以不开启）。我选择在“quickadd添加”文件夹，如下图。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704212851.png" alt="" loading="lazy"><br>
+注意选择后需要点击Add按钮，才能添加成功。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704213419.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>Append link：没弄懂。我理解的是，在当前页面中留下新卡片的双链。</p>
+</li>
+<li>
+<p>Increment file name：没弄懂。我理解的是，如果存在一张卡片名为“obsidian”，当再次新建一张“obsidian”卡片时，会自动命名为“obsidian1”。</p>
+</li>
+<li>
+<p>Open：没弄懂。我理解是会自动打开新的卡片。</p>
+</li>
+</ol>
+<h2 id="运行template-choice">运行Template Choice</h2>
+<p>在obsidian，进入命令模式（Ctrl+P），选择Quickadd。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704214453.png" alt="" loading="lazy"></p>
+<p>进入Quickadd页面，这里会显示所有的quickadd命令，我们接着点击“测试Template Choice”<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704214557.png" alt="" loading="lazy"></p>
+<p>然后会弹出一个界面，让我们输入这新卡的名称，然后按回车确认。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704214700.png" alt="" loading="lazy"></p>
+<p>然后就会创建一张根据模板而来的卡片。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210704214736.png" alt="" loading="lazy"></p>
+<h1 id="个人的话">个人的话</h1>
+<p>上面的演示可能很枯燥，和其他实现模板的功能很类似。这可能是因为是介绍基本功能。下面列举一些我认为好玩的地方：</p>
+<ol>
+<li>可以自定义多个文件夹：这样就可以快速建立卡片到不同的文件夹中。例如词组到一个文件夹，单词到一个文件夹，前后缀到一个文件夹。</li>
+<li>卡片名可以自定义。自定义这块应该还很多可以设置，但我没有细看。可以去作者说明中看看。</li>
+</ol>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%90%8D%E7%89%87">插件名片</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#%E5%BC%80%E5%8F%91%E8%80%85%E8%AF%B4%E6%98%8E">开发者说明</a></li>
+<li><a href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAtemplate-choice">创建一个Template Choice</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AEtemplate-choice">配置Template Choice</a></li>
+<li><a href="#%E8%BF%90%E8%A1%8Ctemplate-choice">运行Template Choice</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%AF%9D">个人的话</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202107032051/">
+              <h3 class="post-title">
+                在obsidian实现实时浏览
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

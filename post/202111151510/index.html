@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iOS端obsidian同步的方案 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="iOS端obsidian同步的方案 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="引言
+因为有许多人还在问坚果云如何在iOS上同步（答案是不能），所以撰写本尝试列举所有能在iOS设备上同步ob文件方法，并且该方法能让ob移动端读取到相关文件。另外，因为软件始终在发展，本文仅能代表当下（2021年11月15日）的情况，也因..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              iOS端obsidian同步的方案
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-11-15
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="引言">引言</h1>
+<p>因为有许多人还在问坚果云如何在iOS上同步（答案是不能），所以撰写本尝试列举所有能在iOS设备上同步ob文件方法，并且该方法能让ob移动端读取到相关文件。另外，因为软件始终在发展，本文仅能代表当下（2021年11月15日）的情况，也因为我能力有限，可能不能全部囊括，希望大家在下面留言补充。我会定时更新到ob中文教程中（uid号是202111151510）。</p>
+<p>本文中的iOS包括了iPhone和iPad。</p>
+<p>不在本文中的同步方法就等同于&quot;无法用于ob的iOS同步&quot;，大家就不必一一询问。</p>
+<h1 id="ob官方服务核心插件">ob官方服务（核心插件）</h1>
+<p>最简单和方便的方法，ob官方的同步服务，缺点：贵。</p>
+<h1 id="ob第三方插件">ob第三方插件</h1>
+<p>最近，一些开发者也为ob开发了同步插件，例如[[Livesync（同步插件）]]（这一点感谢群友和光同尘的补充）。因为需要配置服务器（需要钱、技术和时间），我也没有尝试。大家可前往</p>
+<ul>
+<li>github地址： https://github.com/vrtmrz/obsidian-livesync</li>
+<li>Self-hosted LiveSync (ex:Obsidian-livesync) released： https://forum.obsidian.md/t/self-hosted-livesync-ex-obsidian-livesync-released/26673</li>
+</ul>
+<h1 id="第3方同步软件">第3方同步软件</h1>
+<h2 id="苹果自家的icloud服务">苹果自家的iCloud服务</h2>
+<p>win上也有iCloud，下载地址： https://support.apple.com/zh-cn/HT201391 。免费，但小/大问题很多。遇到问题请联系苹果客服人员和工程师，我不认为其他人比他们更了解iCloud，咨询页面： https://support.apple.com/zh-cn/icloud 。</p>
+<h2 id="working-copy">[[Working copy]]</h2>
+<p>Working copy是一款iOS的软件，门槛很高，我没用。具体可见文章Setting up iOS git-based syncing with mobile app (using Working Copy) by rsteele： https://forum.obsidian.md/t/mobile-setting-up-ios-git-based-syncing-with-mobile-app-using-working-copy/16499/1</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#ob%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E6%A0%B8%E5%BF%83%E6%8F%92%E4%BB%B6">ob官方服务（核心插件）</a></li>
+<li><a href="#ob%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8F%92%E4%BB%B6">ob第三方插件</a></li>
+<li><a href="#%E7%AC%AC3%E6%96%B9%E5%90%8C%E6%AD%A5%E8%BD%AF%E4%BB%B6">第3方同步软件</a>
+<ul>
+<li><a href="#%E8%8B%B9%E6%9E%9C%E8%87%AA%E5%AE%B6%E7%9A%84icloud%E6%9C%8D%E5%8A%A1">苹果自家的iCloud服务</a></li>
+<li><a href="#working-copy">[[Working copy]]</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202111132004/">
+              <h3 class="post-title">
+                使用腾讯云搭建Syncthing来同步obsidian
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

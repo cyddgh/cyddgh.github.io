@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>自定义Callouts样式 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="自定义Callouts样式 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本文主要介绍如何自定义Callouts的样式。成文过程中得到了群友Eleven的帮助，在此表示感谢。
+官方案例
+想要修改Callouts样式，可以参考obsidian官方帮助文档中Use callouts一节下的Customizations..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              自定义Callouts样式
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-05-01
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>本文主要介绍如何自定义Callouts的样式。成文过程中得到了群友Eleven的帮助，在此表示感谢。</p>
+<h1 id="官方案例">官方案例</h1>
+<p>想要修改Callouts样式，可以参考obsidian官方帮助文档中Use callouts一节下的Customizations： https://help.obsidian.md/How+to/Use+callouts#Customizations 以下为我在上述网站上的截图。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202205011949434.png" alt="" loading="lazy"></figure>
+<p>官方给出的实例代码为：</p>
+<pre><code class="language-css">.callout[data-callout=&quot;my-callout-type&quot;] {
+    --callout-color: 0, 0, 0;
+    --callout-icon: icon-id;
+    --callout-icon: '&lt;svg&gt;...custom svg...&lt;/svg&gt;';
+}
+</code></pre>
+<h1 id="个人操作">个人操作</h1>
+<p>对于CSS修改，我理解不多，以下只给出我自己的方案。</p>
+<ul>
+<li>在Lucide（ https://lucide.dev ）上寻找相关的Callouts图标的文件名，例如下图中红框圈中的“airplay”。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202205011952659.png" alt="" loading="lazy"></li>
+<li>建立一个CSS片段，保存到ob的CSS片段文件夹，该文件夹在库文件下的<code>.obsidian\snippets</code>。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202205011954004.png" alt="" loading="lazy"><br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202205012004782.png" alt="" loading="lazy"></li>
+<li>CSS片段如下</li>
+</ul>
+<pre><code class="language-CSS">.callout[data-callout=&quot;democallouts&quot;] {
+    --callout-color: 195, 0, 47;
+    --callout-icon: airplay
+}
+</code></pre>
+<p>代码中各片段解释如下：</p>
+<ul>
+<li>democallouts：自定义，你可以自选一个英文或中文词，英文要全部小写。</li>
+<li>195, 0, 47：自定义，请输入一个RGB的色号</li>
+<li>airplay：Lucide（ https://lucide.dev ）上找到的图标名</li>
+</ul>
+<p>然后在ob中输入的字符为</p>
+<pre><code>&gt; [!democallouts]
+&gt; 假设1：
+&gt; 
+</code></pre>
+<p>显示的效果为<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202205012005175.png" alt="" loading="lazy"></p>
+<p>目前的不足：我对于官网帮助中的自定义片段（<code>--callout-icon: '&lt;svg&gt;...custom svg...&lt;/svg&gt;';</code>）不是很了解，这可能是可以自定义一个本地的或其他地址的图标，但我没有进一步学习了。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%AE%98%E6%96%B9%E6%A1%88%E4%BE%8B">官方案例</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E6%93%8D%E4%BD%9C">个人操作</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/20220429154246/">
+              <h3 class="post-title">
+                查看本页的参考文献（Pandoc reference list插件介绍）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>用Doc2x将PDF转为Markdown放入obsidian中 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="用Doc2x将PDF转为Markdown放入obsidian中 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了如何用Doc2x将PDF格式的文件转换为Markdown格式，放入obsidian中，并介绍了Linter插件进行格式优化。如果有隐私考虑，也可以用文末所提及的其他软件，进行本地化的转化和翻译。
+引言
+在日常的学习和工作中，..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              用Doc2x将PDF转为Markdown放入obsidian中
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-06-22
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了如何用Doc2x将PDF格式的文件转换为Markdown格式，放入obsidian中，并介绍了Linter插件进行格式优化。如果有隐私考虑，也可以用文末所提及的其他软件，进行本地化的转化和翻译。</p>
+<h1 id="引言">引言</h1>
+<p>在日常的学习和工作中，我常常要阅读PDF格式的学术论文。进入25年，知识库的出现，让更多的AI软件可以阅读本地的知识库来回答问题。因此，我就尝试将论文从PDF格式转为Markdown格式放入obsidian中进行阅读，并以此构建本地的知识库，增强AI的专业能力。本文主要介绍相关的工作流程。</p>
+<h1 id="工作流程">工作流程</h1>
+<p>首先，我用的PDF转Markdown软件是Doc2x（链接： https://doc2x.noedgeai.com?inviteCode=DN9S5V ，邀请码：DN9S5V）。目前我已经付费了3个月。免费版，每天签到可以转换10页PDF；最基础的付费版本，8.9元，可以转换600页，并有翻译功能，大概处理1页PDF是0.015元。</p>
+<p>将下载好的PDF拖入下方页面，或者上传相关文件。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622214657972.png" alt="" loading="lazy"></figure>
+<p>一般而言，为了省钱，我的页码不包括参考文献部分，另外开启翻译，但不翻译代码、表格、图片和参考文献。翻译功能还是有一定必要，特别是对于一些刚入门的科研新生可以让他们快速阅读SCI文献。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622214826808.png" alt="image.png" loading="lazy"></figure>
+<p>点击处理后，等待完成，在页面的左边，选择翻译后的文件，导出，格式中的公式符我一般使用<code>$</code>，图片务必选择本地图片，如果是在线图片大概1个月后就失效了。</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215054415.png" alt="image.png" loading="lazy"></figure>
+<p>下载得到的是一个zip压缩文件，将压缩文件放入你的obsidian库中。我这里专门为文献阅读设置了一个库，附件专门放在<code>Attachment</code>文件夹中（注意按下图设置好相关的目录），翻译后的Markdown文件放在你想要的文件夹中。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215417075.png" alt="image.png" loading="lazy"></figure>
+<p>因为Doc2x的md文件中的图片引用格式与ob不同，需要再用[[Linter（格式刷插件）]]进行一下正则替换，在Linter的设置页中，找到“自定义”页面，然后，增加一个正则表达，分别输入<code>\[([^\]]+)\]\(images\/[^\)]+\)</code>、<code>gm</code>、<code>[[$1]] </code>（如下图，正则表达我也不懂，感谢热心群友提供的帮助，如果你有更好的代码可以自行替换）。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215557957.png" alt="image.png" loading="lazy"></p>
+<p>然后Crtl+P进行命令模式，运行<code>Linter：格式化当前文件</code>，即可修复图片引用</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622215846203.png" alt="image.png" loading="lazy"></figure>
+<p>最终的效果图如下</p>
+<figure data-type="image" tabindex="6"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/2025/202506/20250622220020522.png" alt="image.png" loading="lazy"></figure>
+<h1 id="其他值得讨论的问题">其他值得讨论的问题</h1>
+<p>本文还有许多值得讨论和优化的地方，大家可在公众号内留言讨论。</p>
+<h2 id="pdf转化为markdown格式的方法">PDF转化为Markdown格式的方法</h2>
+<p>除了Doc2x外，目前的还有许多的软件，例如minerU、markitdown、，但我尝试后效果不如Doc2x，而且Doc2x还包括了翻译的费用。</p>
+<h2 id="markdown的双语翻译方法">Markdown的双语翻译方法</h2>
+<p>我目前也在关注md格式的双语翻译。沉浸式翻译确实好用，但对于md文件来说还缺乏优化。目前关注的一些软件有DocTranslator（早期用过，很难受）、AiNiee（近期刚关注的）。</p>
+<p>上述的软件搭配上本地的大语言模型，可以使得本文的流程完全本地化。</p>
+<h2 id="如何在ob中对md文件进行批注">如何在ob中对md文件进行批注</h2>
+<p>目前，我是使用了HiNote插件（ https://github.com/CatMuse/HiNote ），只能进行了很简单的批注，目前没看到相关的插件。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">工作流程</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E5%80%BC%E5%BE%97%E8%AE%A8%E8%AE%BA%E7%9A%84%E9%97%AE%E9%A2%98">其他值得讨论的问题</a>
+<ul>
+<li><a href="#pdf%E8%BD%AC%E5%8C%96%E4%B8%BAmarkdown%E6%A0%BC%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">PDF转化为Markdown格式的方法</a></li>
+<li><a href="#markdown%E7%9A%84%E5%8F%8C%E8%AF%AD%E7%BF%BB%E8%AF%91%E6%96%B9%E6%B3%95">Markdown的双语翻译方法</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E5%9C%A8ob%E4%B8%AD%E5%AF%B9md%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E6%89%B9%E6%B3%A8">如何在ob中对md文件进行批注</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202505301328/">
+              <h3 class="post-title">
+                类似omnifocus的任务管理插件（Task Genius插件）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

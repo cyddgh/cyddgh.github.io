@@ -1,0 +1,241 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>利用Tiddlywiki发布Obsidian库（tidgi-obsidian-manager插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="利用Tiddlywiki发布Obsidian库（tidgi-obsidian-manager插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Tiddlywiki是一个历史悠久的笔记平台，至今依然有很强的生命力，许多开发者活跃在这个领域中。例如国内的开发者在近年推出的衍生版本TidGi（太记） 。
+Tiddlywiki支持md语法，并且以HTML网页形式保存，只需要用到静态语言，..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              利用Tiddlywiki发布Obsidian库（tidgi-obsidian-manager插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-09-04
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>Tiddlywiki是一个历史悠久的笔记平台，至今依然有很强的生命力，许多开发者活跃在这个领域中。例如国内的开发者在近年推出的衍生版本TidGi（太记） 。</p>
+<p>Tiddlywiki支持md语法，并且以HTML网页形式保存，只需要用到静态语言，因此能部署在一些免费的发布平台，例如Github（见 https://kookma.github.io/Tiddlywiki-and-GitHub-Pages ）。因此我很早就设想用Tiddlywiki来免费发布ob库，而今天刚好看到了tiddly-gittly的tidgi-obsidian-manager插件，解决了这个问题。下图是我用该方案做的ob中文教程发布：</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042138464.png" alt="" loading="lazy"></figure>
+<p>tidgi-obsidian-manager插件页面和教程： https://github.com/tiddly-gittly/tidgi-obsidian-manager</p>
+<p>因为上述页面中的信息不是很丰富，我简单介绍一些操作。</p>
+<h1 id="实际操作">实际操作</h1>
+<h4 id="下载太记">下载太记</h4>
+<p>下载最新版本的TidGi（太记）： https://github.com/tiddly-gittly/TidGi-Desktop/releases</p>
+<p>选择太记主要是因为不想再重头折腾Tiddlywiki了，太记相当于一个开箱即用库。</p>
+<h4 id="添加工作区">添加工作区</h4>
+<p>点击左侧加号，<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042142326.png" alt="image.png" loading="lazy"><br>
+添加一个工作区<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042143432.png" alt="image.png" loading="lazy"></p>
+<h4 id="配置工作区">配置工作区</h4>
+<p>因为该插件提到</p>
+<blockquote>
+<p>TidGi v0.8.0 需要在工作区设置 博客和服务器设置中 启用 HTTP API 并 关闭 凭证鉴权选项。</p>
+</blockquote>
+<p>所以右键工作区，配置工作区，<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042146597.png" alt="image.png" loading="lazy"></p>
+<p>点击<code>博客和服务器设置</code>右边的箭头（仔细看一下这箭头，我一开始就没看到，以为全部展开），然后开启HTTP API，关闭凭证鉴权。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042148810.png" alt="image.png" loading="lazy"></p>
+<h4 id="安装插件">安装插件</h4>
+<p>进入控制台（齿轮状按钮）-插件-获取更多插件<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042150815.png" alt="image.png" loading="lazy"></p>
+<p>选择<code>太微中文社区插件源(大陆加速版)</code>，在插件库中检索Obsidian，找到发布工具插件，安装后关闭。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042152455.png" alt="image.png" loading="lazy"></figure>
+<p>然后右键工作区，重启服务，</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042153703.png" alt="image.png" loading="lazy"></figure>
+<h4 id="导入ob库">导入ob库</h4>
+<p>重启后，进入控制台，插件，找到Obsidian插件，可用Ctrl+F进行检索。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042155630.png" alt="image.png" loading="lazy"></figure>
+<p>点击下拉按钮，输入ob库所在的文件夹路径，例如<code>D:\tiddlywiki\obsidian</code>。点击Add按钮，等待一会，就完成导入。</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042157458.png" alt="image.png" loading="lazy"></figure>
+<p>完成导入后，在你太记文件夹中的tiddlers文件夹就有相关的ob文件。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/202309042158258.png" alt="image.png" loading="lazy"></p>
+<h1 id="有待改进的地方">有待改进的地方</h1>
+<p>因为Tiddlywiki的Markdown语法比较严格，也有ob语法不一致，导入后的显示存在不匹配，需要进一步加强。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a><br>
+*<br>
+*<br>
+* <a href="#%E4%B8%8B%E8%BD%BD%E5%A4%AA%E8%AE%B0">下载太记</a><br>
+* <a href="#%E6%B7%BB%E5%8A%A0%E5%B7%A5%E4%BD%9C%E5%8C%BA">添加工作区</a><br>
+* <a href="#%E9%85%8D%E7%BD%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA">配置工作区</a><br>
+* <a href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">安装插件</a><br>
+* <a href="#%E5%AF%BC%E5%85%A5ob%E5%BA%93">导入ob库</a></li>
+<li><a href="#%E6%9C%89%E5%BE%85%E6%94%B9%E8%BF%9B%E7%9A%84%E5%9C%B0%E6%96%B9">有待改进的地方</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/20230730153411/">
+              <h3 class="post-title">
+                Obsidian新增属性（Properties）功能
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

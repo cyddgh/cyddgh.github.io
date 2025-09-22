@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>obsidian插入脚注（footnotes插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="obsidian插入脚注（footnotes插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了两种obsidian的脚注样式，以及obsidian-footnotes插件。该插件方便了ob中的脚注插入。
+如何在ob中插入脚注
+如何在ob中插入脚注（footnote），可以等价于“如何在markdown中插入脚注”。我..." />
+    <meta name="keywords" content="obsidian" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              obsidian插入脚注（footnotes插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-02
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://cyddgh.github.io/tag/8bxuJqsEC/" class="post-tag">
+                  # obsidian
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了两种obsidian的脚注样式，以及obsidian-footnotes插件。该插件方便了ob中的脚注插入。</p>
+<h1 id="如何在ob中插入脚注">如何在ob中插入脚注</h1>
+<p>如何在ob中插入脚注（footnote），可以等价于“如何在markdown中插入脚注”。我所了解的有2种。</p>
+<h2 id="脚注样式1">脚注样式1</h2>
+<pre><code>这是一个脚注 [^1]。之后继续写正文。
+第二段开始，一直写到文末[^2]。
+但需要注意，正文和文末的脚注直接要有一个空行，并且脚注所用的符号都是英文符号。
+
+[^1]: 参考文献1
+[^2]: 参考文献2
+</code></pre>
+<p>样式1需要注意的内容：</p>
+<ul>
+<li>正文和文末的脚注直接要有一个空行。</li>
+<li>脚注所用的符号都是英文符号。</li>
+</ul>
+<p>在ob中的效果，具体效果可能因主题样式有所变化。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210302171957.png" alt="" loading="lazy"></p>
+<h2 id="脚注样式2">脚注样式2</h2>
+<pre><code>这是一个脚注^[参考文献1]。之后继续写正文。
+第二段开始，一直写到文末^[参考文献2]。
+</code></pre>
+<p>在ob中的效果，具体效果可能因主题样式有所变化。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210302171854.png" alt="" loading="lazy"></p>
+<h1 id="插件介绍">插件介绍</h1>
+<p>obsidian-footnotes是由akaalias编写，Github页面： https://github.com/akaalias/obsidian-footnotes 。2021年3月2日时，该插件版本号为0.0.4，还未在ob内置的应用商城上架。根据github页面的描述，还有许多不足和后续功能将要增加，但我认为目前该插件已经可以满足ob中插入脚注的日常需求。</p>
+<h1 id="实际操作">实际操作</h1>
+<p>obsidian-footnotes插件的使用非常简单，在win系统中默认情况下按住<code>Ctrl+Shift+6</code>就可以快速脚注的加入。再次按住此快捷键，就可以返回正文中脚注所在的位置。<br>
+目前的该插件还存在一些不足，例如不能自动排序，已经在github页面讨论了。</p>
+<h2 id="修改快捷键">修改快捷键</h2>
+<p>如果想要修改<code>Ctrl+Shift+6</code>这个快捷键，可以在设置-快捷键-“Footnote Shortcut: Insert Footnote”-修改快捷键。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210302173012.png" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E5%9C%A8ob%E4%B8%AD%E6%8F%92%E5%85%A5%E8%84%9A%E6%B3%A8">如何在ob中插入脚注</a>
+<ul>
+<li><a href="#%E8%84%9A%E6%B3%A8%E6%A0%B7%E5%BC%8F1">脚注样式1</a></li>
+<li><a href="#%E8%84%9A%E6%B3%A8%E6%A0%B7%E5%BC%8F2">脚注样式2</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D">插件介绍</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a>
+<ul>
+<li><a href="#%E4%BF%AE%E6%94%B9%E5%BF%AB%E6%8D%B7%E9%94%AE">修改快捷键</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202102191053/">
+              <h3 class="post-title">
+                obsidian图谱增强-多重筛选
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

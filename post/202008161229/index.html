@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Markdown浅析 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Markdown浅析 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本文重点
+
+Markdown是一种语法。
+Markdown的优点是简单、可迁移、不过时。
+Markdown的缺点是排版能力差，块引用实现复杂。
+介绍了在obsidian中如何使用Markdown的个人心得。
+
+缩写：md=Markdown，..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Markdown浅析
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-08-16
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="本文重点">本文重点</h1>
+<ol>
+<li>Markdown是一种语法。</li>
+<li>Markdown的优点是简单、可迁移、不过时。</li>
+<li>Markdown的缺点是排版能力差，块引用实现复杂。</li>
+<li>介绍了在obsidian中如何使用Markdown的个人心得。</li>
+</ol>
+<p>缩写：md=Markdown，ob=obsidian</p>
+<h1 id="markdown是一种语法而不是文件格式">Markdown是一种语法而不是文件格式</h1>
+<p>obsidian所用的Markdown其实是一种语法而不是文件格式。不是所有的文件后缀都代表着一种新的文件格式。</p>
+<p>Markdown是一种纯文本格式，即txt，其他的一些.org、.csv其实也是纯文本，不是一种文件格式。一种新文件格式通常要用一种新的软件去打开。例如，你无法用记事本去正常打开word、ppt、excel、jpeg、png、rar。相对于纯文本格式而言，这些格式就属于一种新的文件格式。</p>
+<p>Markdown作为纯文本格式，同样具有很好的兼容性，可以用几乎所有的文本工具打开，例如系统自带的记事本、Word、vim等等。Markdown的应用非常广泛，在日常的软件（例如简书）到专业软件（Rstudio、GitHub）都有使用。最为重要的一点，md的文件迁移性特别好，几乎不受编写软件的限制，这是一款可以在各个操作系统中使用的文件格式。</p>
+<h1 id="markdown的优点">Markdown的优点</h1>
+<ol>
+<li>简单。一个#就可以体现一级标题，##就是二级标题。</li>
+<li>可迁移性强。win、mac、linux、ios、安卓都 可以轻松打开。</li>
+<li>不过时。因为纯文本是非常基础的文件格式，只要有操作系统在都会支持（想想这几年从32位转64位，和苹果马上要从intel转arm，软件变化太快）。</li>
+</ol>
+<h1 id="markdown的缺点">Markdown的缺点</h1>
+<ol>
+<li>
+<p>排版能力差。因为是纯文本的原因，大部分的排版功能在md上都是失效的。Word中常见的行间距、段间距、首行缩进在md上很难实现（如果你要实现可能需要学习html和css，不推荐）。</p>
+</li>
+<li>
+<p>md语法在不同的软件中存在一些差异。根据群友的反馈，ob和Typora在图片插入和超链接的语句存在差异。其实这很容易理解，假想md是一种语言，不同的软件就像不同的方言区，都存在一些变体。当然，我目前见过最强的变体还是tiddlywiki自身的格式，大家有兴趣可以去尝试看看。</p>
+</li>
+<li>
+<p>基于md的obsidian目前难以实现块引用。我理解块引用还是基于数据库层面的应用，md是纯文本而非数据库，以为的编程认识，似乎在ob上实现块引用是很难的。</p>
+</li>
+</ol>
+<p>值得高兴的是对于纯文本上的块引用问题，有2个国产软件做出了创造性的解决方法：</p>
+<ol>
+<li>logseq（http://logseq.com/）使用了纯文本上的另一种语法（org-mode）使得在纯文本上也能实现块引用。</li>
+<li>链滴笔记（内测QQ群：724713327）似乎是基于md上实现了块引用的问题，软件开发者还专门撰文论述了这个问题（https://hacpai.com/article/1597226949061?tdsourcetag=s_pctim_aiomsg）。</li>
+</ol>
+<h1 id="在obsidian中如何去使用markdown">在obsidian中如何去使用Markdown</h1>
+<p>ob中的md使用有两大类方法：</p>
+<ol>
+<li>把md当成纯文本的txt文件，不掺杂任何的md语法。这不会减少ob作为思考工具的属性。</li>
+<li>有限度使用md语法。如果你选择这条就继续往下看。</li>
+</ol>
+<p>如果你选择使用md语法，首先，你应该先去了解md的相关语句，可以自行查询相关的参考资料，例如菜鸟教程（https://www.runoob.com/markdown/md-tutorial.html）。</p>
+<p>其次，考虑到md软件之间的迁移性，减少使用一些带有歧义的语法。我经常使用的语法主要：</p>
+<ol>
+<li>#：体现不同级别的标题</li>
+<li><a href=""></a>:超链接，链接到一个特定的网页。</li>
+<li>有序和无序列表（这可能是有歧义的）</li>
+</ol>
+<p>其他可能无误的语法：</p>
+<ol>
+<li>斜体</li>
+<li>加粗</li>
+</ol>
+<p>md中高级语法（不必要就不用，掌握难度高）</p>
+<ol>
+<li>latex：数学公式</li>
+<li>yaml：具体参见https://www.runoob.com/w3cnote/yaml-intro.html</li>
+<li>mermaid：流程图</li>
+</ol>
+<p>图片的插入是目前讨论比较多的问题，因为涉及到不同软件中md语法差异、文件相对位置和绝对位置的概念，我建议使用图床来解决（但这会丧失ob的本地化特性）。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%9C%AC%E6%96%87%E9%87%8D%E7%82%B9">本文重点</a></li>
+<li><a href="#markdown%E6%98%AF%E4%B8%80%E7%A7%8D%E8%AF%AD%E6%B3%95%E8%80%8C%E4%B8%8D%E6%98%AF%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F">Markdown是一种语法而不是文件格式</a></li>
+<li><a href="#markdown%E7%9A%84%E4%BC%98%E7%82%B9">Markdown的优点</a></li>
+<li><a href="#markdown%E7%9A%84%E7%BC%BA%E7%82%B9">Markdown的缺点</a></li>
+<li><a href="#%E5%9C%A8obsidian%E4%B8%AD%E5%A6%82%E4%BD%95%E5%8E%BB%E4%BD%BF%E7%94%A8markdown">在obsidian中如何去使用Markdown</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202008120748/">
+              <h3 class="post-title">
+                我谈论的ZK软件是什么，对我们有何启示
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

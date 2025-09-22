@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>寻找孤立文件（Find unlinked files插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="寻找孤立文件（Find unlinked files插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了Find unlinked files插件，该插件能删除孤立文件，特别适合清理无关图片。
+引用
+Find unlinked files插件已经问世很久了，因为太简单所以一直没有介绍，但一直有ob新用户在问。而常常又记不住名称..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              寻找孤立文件（Find unlinked files插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-07-27
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了Find unlinked files插件，该插件能删除孤立文件，特别适合清理无关图片。</p>
+<h1 id="引用">引用</h1>
+<p>Find unlinked files插件已经问世很久了，因为太简单所以一直没有介绍，但一直有ob新用户在问。而常常又记不住名称，所以写下本文方便后来人。<br>
+如果你是经常插入本地图片，担心一些文档删除后导致图片冗余，就可以用到本软件。</p>
+<h1 id="插件名片">插件名片</h1>
+<p>Find unlinked files插件是由Vinzent03开发，目前版本是1.2.1。</p>
+<p>Github地址： https://github.com/Vinzent03/find-unlinked-files</p>
+<p>蓝奏云地址： https://wws.lanzoui.com/iswOPrxf2pc</p>
+<h1 id="实际操作">实际操作</h1>
+<p>本插件会查找整个库中没有和其他文件产生链接的文件，然后创建一个列表让你可以删除或移动。<br>
+仅适用于ob 0.9.7以上版本。<br>
+按Ctrl+P进入命令模式，找到<code>Find unlinked files</code><br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210727220727.png" alt="" loading="lazy"><br>
+有3种模式：</p>
+<ol>
+<li>Find unlinked files：找到没有产生链接的文件，运行之后会生成一个.md文档。</li>
+</ol>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210727221103.png" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>Find unresolved links：找到那些在文库中出现但没有创建文件的双链。</li>
+</ol>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210727221235.png" alt="" loading="lazy"></figure>
+<p>例如，上图中显示的<code>[[Advanced Tables（表格输入插件）]] in [[02 名词解释/Obsidian插件列表与教程（MOC）]], [[02 名词解释/ob中提升编辑体验的插件]]</code>，就是说在<code>[[02 名词解释/Obsidian插件列表与教程（MOC）]], [[02 名词解释/ob中提升编辑体验的插件]]</code>中存在的双链文件<code>[[Advanced Tables（表格输入插件）]]</code>并没有被创建。</p>
+<ol start="3">
+<li>Delete unlinked files with certain extension. See README. 删除无链接的指定类型文件。具体在插件设置面板指定文件类型，例如，在红框中输入<code>jpg,png</code>两种格式。请注意虽然默认设置看上去里面有填写文字，但实际为空，只是为了告诉你这里该填写什么。</li>
+</ol>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210727221747.png" alt="" loading="lazy"></figure>
+<p>要运行此命令，还需要提前运行<code>Find unlinked files</code>命令，否则会出现如下报错。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210727221808.png" alt="" loading="lazy"></figure>
+<p>如果运行成功，则会弹出信息框让你进行确认（Confirm），将文件删除。</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210727222243.png" alt="" loading="lazy"></figure>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8">引用</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%90%8D%E7%89%87">插件名片</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C">实际操作</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202107260936/">
+              <h3 class="post-title">
+                图片所见即所得（oz&#39;s image in editor插件介绍）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PDF转Markdown和个人的碎碎念 | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="PDF转Markdown和个人的碎碎念 | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本文是我个人的碎碎念，记录一下最近的软件折腾。
+这一年，我更新的频率降低了，主要是因为工作后比较少折腾了，另外就是Obsidian的工作流已经固定，基本就是ob和zotero的配合，使用A佬的插件Zotlit。但Zotlit插件目前还没适配..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              PDF转Markdown和个人的碎碎念
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-08-05
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>本文是我个人的碎碎念，记录一下最近的软件折腾。</p>
+<p>这一年，我更新的频率降低了，主要是因为工作后比较少折腾了，另外就是Obsidian的工作流已经固定，基本就是ob和zotero的配合，使用A佬的插件Zotlit。但Zotlit插件目前还没适配最新的Electron平台，没跟上最新的ob更新，所以我的ob安装程序版本还在1.6.3上。这种不适配也让我有点焦虑，也在考虑寻找其他合适的插件。</p>
+<p>这几天折腾了PDF转Markdown的方案，主要是最近看到有用AI去辅助读取PDF形成md格式，尝试了gptpdf，但部署没有成功。今天找到了doc2x（ https://doc2x.noedgeai.com/?inviteCode=1UNNQ0 ）体验后感觉不错。可以考虑的一个英文文献工作流是：下载PDF，用doc2x转为md，然后用沉浸式翻译（ https://app.immersivetranslate.com/markdown/ ）翻译成双语md，然后放入ob中，或者用于后续AI学习和挖掘。</p>
+<p>最近，也终于上手折腾了一次本地的AI大模型，使用的是[[Ollama]]来运行Gemma2的9b模型，配置过程还算顺利，但因为我笔记本的配置原因，运行起来太卡了。我的笔记本的CPU是R7-8845H，只有核显R-780M，一旦运行，直接跑满我的32G内存，CPU的占用也飙高。这电脑是我今年刚换的，当时以为32G内存已经足够（上一台是16G），但现在日常开启软件后内存的占用已经有19G了。目前来看本地运行大模型的成本还是很高，对于普通的用户还不是很推荐（怀疑现在大火的AI PC真的能优化那么多吗），尽量还是云计算吧。</p>
+<p>618买了两件电子产品，一件是上面说的Windows笔记本，用来一个月还是挺满意的，续航勉强能达到我的要求吧，在极其省电的情况下（省电模型，屏幕刷新率调成48hz，亮度降低中下），只看文献和写稿能达到6-7小时。另一件是威联通的NAS，解决了我的存储焦虑，但硬盘最近又涨价了，买不起。此外，学习了Docker，这对想折腾IT的普通用户是一项不错的技能。要学的网络知识也莫名增加，内网穿透折腾了[[Tailscale]]、[[节点小宝]]，最后还是部署了[[ZeroTier]]。这里也点名批评绿联，辜负了我的期盼，618推出的NAS DXP4800还没达到用户的预期，在京东上第一次看到一个新品的好评率居然只有40%，幸好最后退货和补偿还是满意的。然后24年7月绿联上市了。</p>
+<p>最后，祝我自己生日快乐，愿在新的一年继续折腾，不断探索。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202407230908/">
+              <h3 class="post-title">
+                outliner.md（编辑增强插件）
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

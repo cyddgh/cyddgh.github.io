@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>如何备份ob文件（版本控制） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="如何备份ob文件（版本控制） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="引言
+obsidian作为一款笔记软件，里面汇聚了我们的心血，数据不易，注意备份。本文从4个方面介绍了如何回复ob的数据，或者说得专业一些是版本控制，大家如果有更好的点子，请留言。
+本文的双链版本发布在ob中文教程中，uid号是202107..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              如何备份ob文件（版本控制）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-07-28
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="引言">引言</h1>
+<p>obsidian作为一款笔记软件，里面汇聚了我们的心血，数据不易，注意备份。本文从4个方面介绍了如何回复ob的数据，或者说得专业一些是版本控制，大家如果有更好的点子，请留言。<br>
+本文的双链版本发布在ob中文教程中，uid号是202107282159。如果你在微信公众号内阅读，可能会无法点击双链，请访问ob教程。</p>
+<h1 id="ob软件本体">ob软件本体</h1>
+<p>最简单的方式是使用ob软件自带的“文件恢复”插件，具体可见obsidian内置文件恢复（File Recovery功能介绍） by 软通达。但快照存在有时间限制（可以自己设置，例如7天），并且仅能恢复本节的修改。<br>
+如果你购买了官方同步服务（见obsidian同步服务（设置篇） by 软通达、obsidian同步服务（体验篇） by 软通达），则可以使用同步服务内的“已删除文件”来恢复。此功能相比“文件恢复”，可以多端进行恢复，并且快照存在时间更长。</p>
+<h1 id="ob第三方插件">ob第三方插件</h1>
+<p>强烈推荐使用git来进行版本控制，但有一定的技术门槛。还可以搭配Obsidian Git （版本控制插件），见obsidian和Git连用实现版本控制（obsidian Git插件介绍） by 软通达。</p>
+<h1 id="同步软件">同步软件</h1>
+<p>许多用户会使用第三方的同步软件（如何同步obsidian文件（MOC）），例如</p>
+<ul>
+<li>坚果云</li>
+<li>OneDrive</li>
+<li>seafile</li>
+<li>Syncthing（同步软件）</li>
+</ul>
+<p>这些软件都有版本控制功能，如有不懂请查看这些软件的帮助文档，向社区询问，向开发者或客服寻求帮助。</p>
+<h1 id="本地备份软件">本地备份软件</h1>
+<p>用户也可以使用本地的备份软件对数据进行备份，例如拷贝一份数据到其他存储介质上（例如U盘）。这类软件也很多，例如Goodsync、Acronis True Image、Iperius Backup等等，如有不懂也请查看这些软件的帮助文档，向社区询问，向开发者或客服寻求帮助。<br>
+可能还需要考虑是双向备份、镜像备份、增量备份等备份策略，推荐使用增量备份。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%BC%95%E8%A8%80">引言</a></li>
+<li><a href="#ob%E8%BD%AF%E4%BB%B6%E6%9C%AC%E4%BD%93">ob软件本体</a></li>
+<li><a href="#ob%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8F%92%E4%BB%B6">ob第三方插件</a></li>
+<li><a href="#%E5%90%8C%E6%AD%A5%E8%BD%AF%E4%BB%B6">同步软件</a></li>
+<li><a href="#%E6%9C%AC%E5%9C%B0%E5%A4%87%E4%BB%BD%E8%BD%AF%E4%BB%B6">本地备份软件</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202107272243/">
+              <h3 class="post-title">
+                清除不使用的图片（Clear unused images插件介绍） by 软达通
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

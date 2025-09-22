@@ -1,0 +1,269 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>在obsidian中拆书（Note refactor插件介绍） | 软通达</title>
+<link rel="shortcut icon" href="https://cyddgh.github.io/favicon.ico?v=1758499638087">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cyddgh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="在obsidian中拆书（Note refactor插件介绍） | 软通达 - Atom Feed" href="https://cyddgh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要
+本文介绍了Note refactor插件，能快速拆分md文档。我个人认为有点像Supermeno中的split操作，可能能用于拆书、增量学习。
+插件介绍
+Note refactor插件是由lynchjames编写的，其Github地址..." />
+    <meta name="keywords" content="obsidian" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cyddgh.github.io">
+  <img class="avatar" src="https://cyddgh.github.io/images/avatar.png?v=1758499638087" alt="">
+  </a>
+  <h1 class="site-title">
+    软通达
+  </h1>
+  <p class="site-description">
+    软件改善生活。本网站会讨论知识管理、时间管理、知识卡片、卡片写作等主题，软件包括thebrain、tiddlywiki、RoamResearch、Obsidian等等。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              在obsidian中拆书（Note refactor插件介绍）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-02-03
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://cyddgh.github.io/tag/8bxuJqsEC/" class="post-tag">
+                  # obsidian
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="摘要">摘要</h1>
+<p>本文介绍了Note refactor插件，能快速拆分md文档。我个人认为有点像Supermeno中的split操作，可能能用于拆书、增量学习。</p>
+<h1 id="插件介绍">插件介绍</h1>
+<p>Note refactor插件是由lynchjames编写的，其Github地址： https://github.com/lynchjames/note-refactor-obsidian 。目前版本为1.6.1。</p>
+<h2 id="具体操作">具体操作</h2>
+<p>启动插件之后，在md中，进行命令模式（默认为<code>ctrl+P</code>)，在弹出的命令中可以找到Note refactor相关的命令。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203115735.png" alt="" loading="lazy"></p>
+<ul>
+<li>Note Refactor: Extract selection to new note-first line as file name：划分文档，第一行作为文件名</li>
+<li>Note Refactor: Extract selection to new note-content only</li>
+<li>Note Refactor: Split note here- first line as file name</li>
+<li>Note Refactor: Split note here-content only</li>
+<li>Note Refactor: Split note by headings-h1：按H1的标题（<code>#</code>）来分割文档</li>
+<li>Note Refactor: Split note by headings-h2：按H2的标题（<code>##</code>）来分割文档</li>
+<li>Note Refactor: Split note by headings-h3：按H3的标题（<code>###</code>）来分割文档</li>
+</ul>
+<h3 id="按标题来分割文档">按标题来分割文档</h3>
+<p>例如我有一个文档为</p>
+<pre><code># 第1章 A
+第1章内容
+# 第2章 B
+第2章内容
+# 第3章 C
+第3章内容
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120540.png" alt="" loading="lazy"></figure>
+<p>运行<code>Note Refactor: Split note by headings-h1</code>命令后原文档就变成</p>
+<pre><code>[[第1章 A]]
+[[第2章 B]]
+[[第3章 C]]
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120558.png" alt="" loading="lazy"></figure>
+<p>在ob的库中则会生成对应的3张新卡片，以卡片“第1章 A”为例，其内部内容为：</p>
+<pre><code># 第1章 A
+第1章内容
+</code></pre>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203120615.png" alt="" loading="lazy"></figure>
+<h3 id="划词分割">划词分割</h3>
+<p>划选相关的段落，如下图，选中了</p>
+<pre><code>第1行：划词分割
+可以使用Note Refactor: Extract selection to new note-first line as file name命令进行操作
+</code></pre>
+<p><img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203121542.png" alt="" loading="lazy"><br>
+进行命令模式，执行<code>Note Refactor: Extract selection to new note-first line as file name</code>命令，则会将这文档做如下分割。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134120.png" alt="" loading="lazy"><br>
+如果要自选标题，可以可以使用<code>Note Refactor: Extract selection to new note-content only</code>，但会出现一个对话框，提醒你将所划选的内容添加到已有卡片或新建一张卡片。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134329.png" alt="" loading="lazy"><br>
+如果我输入一个新的标题，如“自选标题”，那效果如下<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134413.png" alt="" loading="lazy"></p>
+<h1 id="插件设置">插件设置</h1>
+<p>我没有太细究具体的插件设置，唯一我感觉需要设置的是Default location for new notes（新卡片默认位置），我习惯设为<code>Same folder as current file</code>(与当前卡片在同一目录下)。<br>
+<img src="https://gitee.com/cyddgi/picture-store/raw/master/img/20210203134602.png" alt="" loading="lazy"><br>
+这个插件的其他设置还是很丰富的，大家感兴趣可以去看看。</p>
+<h1 id="个人的话">个人的话</h1>
+<p>这一系列的插件介绍文章，可能只是为大家推介一些obsidian的插件，如果需要完全掌握还需去看具体github上的介绍。<br>
+我在文中所介绍的用法也多是个人习惯，不代表唯一的方法，也非全面的介绍。<br>
+这个插件给我的感觉，有点像Supermeno中的split，在文中我翻译为“分割”。这个插件可能可以用于拆书和增量学习中。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%91%98%E8%A6%81">摘要</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D">插件介绍</a>
+<ul>
+<li><a href="#%E5%85%B7%E4%BD%93%E6%93%8D%E4%BD%9C">具体操作</a>
+<ul>
+<li><a href="#%E6%8C%89%E6%A0%87%E9%A2%98%E6%9D%A5%E5%88%86%E5%89%B2%E6%96%87%E6%A1%A3">按标题来分割文档</a></li>
+<li><a href="#%E5%88%92%E8%AF%8D%E5%88%86%E5%89%B2">划词分割</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE">插件设置</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%AF%9D">个人的话</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cyddgh.github.io/post/202102022300/">
+              <h3 class="post-title">
+                Git回滚操作
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2b651bfa82376af59b3e',
+    clientSecret: 'dde60ece1554a451376e1c444a5f39cd60b06ed4',
+    repo: 'cyddgh.github.io',
+    owner: 'cyddgh',
+    admin: ['cyddgh'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://cyddgh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
